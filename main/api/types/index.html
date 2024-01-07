@@ -1,0 +1,5386 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>Available Types - Pyrofork Documentation v2.3.16.post2</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css?v=2410bb73" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#users-chats" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post2" class="md-header__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pyrofork Documentation v2.3.16.post2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Available Types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eyMarv/pyrofork/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyrofork
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../intro/quickstart.html" class="md-tabs__link">
+      <span class="md-ellipsis">Introduction</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../start/setup.html" class="md-tabs__link">
+      <span class="md-ellipsis">Getting Started</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../client.html" class="md-tabs__link md-tabs__link--active">
+      <span class="md-ellipsis">API Reference</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../topics/use-filters.html" class="md-tabs__link">
+      <span class="md-ellipsis">Topic Guides</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../faq/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Meta</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../telegram/functions/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Telegram Raw API</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post2" class="md-nav__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    Pyrofork Documentation v2.3.16.post2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eyMarv/pyrofork/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyrofork
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">Introduction</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Introduction</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/quickstart.html" class="md-nav__link">
+        <span class="md-ellipsis">Quick Start</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/install.html" class="md-nav__link">
+        <span class="md-ellipsis">Install Guide</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">Getting Started</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Getting Started</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/setup.html" class="md-nav__link">
+        <span class="md-ellipsis">Project Setup</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/auth.html" class="md-nav__link">
+        <span class="md-ellipsis">Authorization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/invoking.html" class="md-nav__link">
+        <span class="md-ellipsis">Invoking Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/updates.html" class="md-nav__link">
+        <span class="md-ellipsis">Handling Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/errors.html" class="md-nav__link">
+        <span class="md-ellipsis">Error Handling</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Examples</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          <span class="md-ellipsis">API Reference</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">API Reference</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client.html" class="md-nav__link">
+        <span class="md-ellipsis">Pyrofork Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+    
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__current-nested md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="#"><span class="md-ellipsis">Available Types</span></a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Available Types" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Available Types</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_1" type="checkbox" id="__nav_3_3_1" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#users-chats"><span class="md-ellipsis">Users &amp; Chats</span></a>
+          
+            <label for="__nav_3_3_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Users &amp; Chats" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Users &amp; Chats</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="User.html" class="md-nav__link">
+        <span class="md-ellipsis">User</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Chat.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatPreview.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Preview</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatPhoto.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Photo</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatMember.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Member</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatPermissions.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Permissions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatPrivileges.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Privileges</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatInviteLink.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Invite<wbr>Link</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatAdminWithInviteLinks.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Admin<wbr>With<wbr>Invite<wbr>Links</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatEvent.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Event</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatEventFilter.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Event<wbr>Filter</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatMemberUpdated.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Member<wbr>Updated</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatJoinRequest.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Join<wbr>Request</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatJoinedByRequest.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Joined<wbr>By<wbr>Request</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatJoiner.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Joiner</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Dialog.html" class="md-nav__link">
+        <span class="md-ellipsis">Dialog</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Restriction.html" class="md-nav__link">
+        <span class="md-ellipsis">Restriction</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EmojiStatus.html" class="md-nav__link">
+        <span class="md-ellipsis">Emoji<wbr>Status</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ForumTopic.html" class="md-nav__link">
+        <span class="md-ellipsis">Forum<wbr>Topic</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PeerUser.html" class="md-nav__link">
+        <span class="md-ellipsis">Peer<wbr>User</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PeerChannel.html" class="md-nav__link">
+        <span class="md-ellipsis">Peer<wbr>Channel</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotInfo.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Info</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatColor.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Color</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_2" type="checkbox" id="__nav_3_3_2" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#messages-media"><span class="md-ellipsis">Messages &amp; Media</span></a>
+          
+            <label for="__nav_3_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Messages &amp; Media" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Messages &amp; Media</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Message.html" class="md-nav__link">
+        <span class="md-ellipsis">Message</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageEntity.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Entity</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Photo.html" class="md-nav__link">
+        <span class="md-ellipsis">Photo</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Thumbnail.html" class="md-nav__link">
+        <span class="md-ellipsis">Thumbnail</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Audio.html" class="md-nav__link">
+        <span class="md-ellipsis">Audio</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Document.html" class="md-nav__link">
+        <span class="md-ellipsis">Document</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Animation.html" class="md-nav__link">
+        <span class="md-ellipsis">Animation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Video.html" class="md-nav__link">
+        <span class="md-ellipsis">Video</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Voice.html" class="md-nav__link">
+        <span class="md-ellipsis">Voice</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VideoNote.html" class="md-nav__link">
+        <span class="md-ellipsis">Video<wbr>Note</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Contact.html" class="md-nav__link">
+        <span class="md-ellipsis">Contact</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Location.html" class="md-nav__link">
+        <span class="md-ellipsis">Location</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Venue.html" class="md-nav__link">
+        <span class="md-ellipsis">Venue</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Sticker.html" class="md-nav__link">
+        <span class="md-ellipsis">Sticker</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StickerSet.html" class="md-nav__link">
+        <span class="md-ellipsis">Sticker<wbr>Set</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Game.html" class="md-nav__link">
+        <span class="md-ellipsis">Game</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Giveaway.html" class="md-nav__link">
+        <span class="md-ellipsis">Giveaway</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GiveawayLaunched.html" class="md-nav__link">
+        <span class="md-ellipsis">Giveaway<wbr>Launched</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GiveawayResult.html" class="md-nav__link">
+        <span class="md-ellipsis">Giveaway<wbr>Result</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageStory.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Story</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebPage.html" class="md-nav__link">
+        <span class="md-ellipsis">Web<wbr>Page</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebPageEmpty.html" class="md-nav__link">
+        <span class="md-ellipsis">Web<wbr>Page<wbr>Empty</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebPagePreview.html" class="md-nav__link">
+        <span class="md-ellipsis">Web<wbr>Page<wbr>Preview</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Poll.html" class="md-nav__link">
+        <span class="md-ellipsis">Poll</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PollOption.html" class="md-nav__link">
+        <span class="md-ellipsis">Poll<wbr>Option</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Dice.html" class="md-nav__link">
+        <span class="md-ellipsis">Dice</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Reaction.html" class="md-nav__link">
+        <span class="md-ellipsis">Reaction</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VideoChatScheduled.html" class="md-nav__link">
+        <span class="md-ellipsis">Video<wbr>Chat<wbr>Scheduled</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VideoChatStarted.html" class="md-nav__link">
+        <span class="md-ellipsis">Video<wbr>Chat<wbr>Started</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VideoChatEnded.html" class="md-nav__link">
+        <span class="md-ellipsis">Video<wbr>Chat<wbr>Ended</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VideoChatMembersInvited.html" class="md-nav__link">
+        <span class="md-ellipsis">Video<wbr>Chat<wbr>Members<wbr>Invited</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebAppData.html" class="md-nav__link">
+        <span class="md-ellipsis">Web<wbr>App<wbr>Data</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageReactions.html" class="md-nav__link">
+        <span class="md-ellipsis">Message<wbr>Reactions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChatReactions.html" class="md-nav__link">
+        <span class="md-ellipsis">Chat<wbr>Reactions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ForumTopicCreated.html" class="md-nav__link">
+        <span class="md-ellipsis">Forum<wbr>Topic<wbr>Created</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ForumTopicEdited.html" class="md-nav__link">
+        <span class="md-ellipsis">Forum<wbr>Topic<wbr>Edited</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ForumTopicClosed.html" class="md-nav__link">
+        <span class="md-ellipsis">Forum<wbr>Topic<wbr>Closed</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ForumTopicReopened.html" class="md-nav__link">
+        <span class="md-ellipsis">Forum<wbr>Topic<wbr>Reopened</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GeneralTopicHidden.html" class="md-nav__link">
+        <span class="md-ellipsis">General<wbr>Topic<wbr>Hidden</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GeneralTopicUnhidden.html" class="md-nav__link">
+        <span class="md-ellipsis">General<wbr>Topic<wbr>Unhidden</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_3" type="checkbox" id="__nav_3_3_3" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#stories"><span class="md-ellipsis">Stories</span></a>
+          
+            <label for="__nav_3_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Stories" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Stories</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Story.html" class="md-nav__link">
+        <span class="md-ellipsis">Story</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StoryDeleted.html" class="md-nav__link">
+        <span class="md-ellipsis">Story<wbr>Deleted</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StoryForwardHeader.html" class="md-nav__link">
+        <span class="md-ellipsis">Story<wbr>Forward<wbr>Header</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StorySkipped.html" class="md-nav__link">
+        <span class="md-ellipsis">Story<wbr>Skipped</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StoriesPrivacyRules.html" class="md-nav__link">
+        <span class="md-ellipsis">Stories<wbr>Privacy<wbr>Rules</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StoryViews.html" class="md-nav__link">
+        <span class="md-ellipsis">Story<wbr>Views</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MediaArea.html" class="md-nav__link">
+        <span class="md-ellipsis">Media<wbr>Area</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MediaAreaChannelPost.html" class="md-nav__link">
+        <span class="md-ellipsis">Media<wbr>Area<wbr>Channel<wbr>Post</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MediaAreaCoordinates.html" class="md-nav__link">
+        <span class="md-ellipsis">Media<wbr>Area<wbr>Coordinates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaArea.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Area</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaAreaChannelPost.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Area<wbr>Channel<wbr>Post</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_4" type="checkbox" id="__nav_3_3_4" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#pyromod"><span class="md-ellipsis">Pyromod</span></a>
+          
+            <label for="__nav_3_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Pyromod" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Pyromod</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Identifier.html" class="md-nav__link">
+        <span class="md-ellipsis">Identifier</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Listener.html" class="md-nav__link">
+        <span class="md-ellipsis">Listener</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_5" type="checkbox" id="__nav_3_3_5" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#bot-keyboards"><span class="md-ellipsis">Bot keyboards</span></a>
+          
+            <label for="__nav_3_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Bot keyboards" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Bot keyboards</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ReplyKeyboardMarkup.html" class="md-nav__link">
+        <span class="md-ellipsis">Reply<wbr>Keyboard<wbr>Markup</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="KeyboardButton.html" class="md-nav__link">
+        <span class="md-ellipsis">Keyboard<wbr>Button</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ReplyKeyboardRemove.html" class="md-nav__link">
+        <span class="md-ellipsis">Reply<wbr>Keyboard<wbr>Remove</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineKeyboardMarkup.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Keyboard<wbr>Markup</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineKeyboardButton.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Keyboard<wbr>Button</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RequestPeerTypeChannel.html" class="md-nav__link">
+        <span class="md-ellipsis">Request<wbr>Peer<wbr>Type<wbr>Channel</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RequestPeerTypeChat.html" class="md-nav__link">
+        <span class="md-ellipsis">Request<wbr>Peer<wbr>Type<wbr>Chat</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RequestPeerTypeUser.html" class="md-nav__link">
+        <span class="md-ellipsis">Request<wbr>Peer<wbr>Type<wbr>User</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="LoginUrl.html" class="md-nav__link">
+        <span class="md-ellipsis">Login<wbr>Url</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ForceReply.html" class="md-nav__link">
+        <span class="md-ellipsis">Force<wbr>Reply</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CallbackQuery.html" class="md-nav__link">
+        <span class="md-ellipsis">Callback<wbr>Query</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GameHighScore.html" class="md-nav__link">
+        <span class="md-ellipsis">Game<wbr>High<wbr>Score</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CallbackGame.html" class="md-nav__link">
+        <span class="md-ellipsis">Callback<wbr>Game</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebAppInfo.html" class="md-nav__link">
+        <span class="md-ellipsis">Web<wbr>App<wbr>Info</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MenuButton.html" class="md-nav__link">
+        <span class="md-ellipsis">Menu<wbr>Button</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MenuButtonCommands.html" class="md-nav__link">
+        <span class="md-ellipsis">Menu<wbr>Button<wbr>Commands</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MenuButtonWebApp.html" class="md-nav__link">
+        <span class="md-ellipsis">Menu<wbr>Button<wbr>Web<wbr>App</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MenuButtonDefault.html" class="md-nav__link">
+        <span class="md-ellipsis">Menu<wbr>Button<wbr>Default</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SentWebAppMessage.html" class="md-nav__link">
+        <span class="md-ellipsis">Sent<wbr>Web<wbr>App<wbr>Message</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_6" type="checkbox" id="__nav_3_3_6" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#bot-commands"><span class="md-ellipsis">Bot commands</span></a>
+          
+            <label for="__nav_3_3_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Bot commands" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Bot commands</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommand.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScope.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeDefault.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Default</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeAllPrivateChats.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>All<wbr>Private<wbr>Chats</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeAllGroupChats.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>All<wbr>Group<wbr>Chats</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeAllChatAdministrators.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>All<wbr>Chat<wbr>Administrators</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeChat.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Chat</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeChatAdministrators.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Chat<wbr>Administrators</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BotCommandScopeChatMember.html" class="md-nav__link">
+        <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Chat<wbr>Member</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_7" type="checkbox" id="__nav_3_3_7" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#input-media"><span class="md-ellipsis">Input Media</span></a>
+          
+            <label for="__nav_3_3_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Input Media" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Input Media</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMedia.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaPhoto.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Photo</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaVideo.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Video</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaAudio.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Audio</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaAnimation.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Animation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMediaDocument.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Media<wbr>Document</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputPhoneContact.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Phone<wbr>Contact</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_8" type="checkbox" id="__nav_3_3_8" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#inline-mode"><span class="md-ellipsis">Inline Mode</span></a>
+          
+            <label for="__nav_3_3_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Inline Mode" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Inline Mode</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQuery.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResult.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedAudio.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Audio</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedDocument.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Document</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedAnimation.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Animation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedPhoto.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Photo</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedSticker.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Sticker</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedVideo.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Video</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultCachedVoice.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Voice</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultArticle.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Article</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultAudio.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Audio</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultContact.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Contact</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultDocument.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Document</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultAnimation.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Animation</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultLocation.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Location</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultPhoto.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Photo</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultVenue.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Venue</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultVideo.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Video</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InlineQueryResultVoice.html" class="md-nav__link">
+        <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Voice</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChosenInlineResult.html" class="md-nav__link">
+        <span class="md-ellipsis">Chosen<wbr>Inline<wbr>Result</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_9" type="checkbox" id="__nav_3_3_9" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#inputmessagecontent"><span class="md-ellipsis">Input<wbr>Message<wbr>Content</span></a>
+          
+            <label for="__nav_3_3_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="InputMessageContent" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Input<wbr>Message<wbr>Content</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputMessageContent.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Message<wbr>Content</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputReplyToMessage.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Reply<wbr>To<wbr>Message</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputReplyToStory.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Reply<wbr>To<wbr>Story</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputTextMessageContent.html" class="md-nav__link">
+        <span class="md-ellipsis">Input<wbr>Text<wbr>Message<wbr>Content</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_3_10" type="checkbox" id="__nav_3_3_10" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="#authorization"><span class="md-ellipsis">Authorization</span></a>
+          
+            <label for="__nav_3_3_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Authorization" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_10">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Authorization</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SentCode.html" class="md-nav__link">
+        <span class="md-ellipsis">Sent<wbr>Code</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TermsOfService.html" class="md-nav__link">
+        <span class="md-ellipsis">Terms<wbr>Of<wbr>Service</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+      
+    <li class="md-nav__item md-nav__item--active md-nav__current-toc">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Available Types</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Available Types</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Available Types</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#users-chats" class="md-nav__link">
+    <span class="md-ellipsis">Users &amp; Chats</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Users &amp; Chats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="User.html" class="md-nav__link">
+    <span class="md-ellipsis">User</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Chat.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatPreview.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Preview</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatPhoto.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatMember.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Member</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatPermissions.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Permissions</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatPrivileges.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Privileges</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatInviteLink.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Invite<wbr>Link</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatAdminWithInviteLinks.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Admin<wbr>With<wbr>Invite<wbr>Links</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatEvent.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Event</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatEventFilter.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Event<wbr>Filter</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatMemberUpdated.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Member<wbr>Updated</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatJoinRequest.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Join<wbr>Request</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatJoinedByRequest.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Joined<wbr>By<wbr>Request</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatJoiner.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Joiner</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Dialog.html" class="md-nav__link">
+    <span class="md-ellipsis">Dialog</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Restriction.html" class="md-nav__link">
+    <span class="md-ellipsis">Restriction</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="EmojiStatus.html" class="md-nav__link">
+    <span class="md-ellipsis">Emoji<wbr>Status</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ForumTopic.html" class="md-nav__link">
+    <span class="md-ellipsis">Forum<wbr>Topic</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="PeerUser.html" class="md-nav__link">
+    <span class="md-ellipsis">Peer<wbr>User</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="PeerChannel.html" class="md-nav__link">
+    <span class="md-ellipsis">Peer<wbr>Channel</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotInfo.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Info</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatColor.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Color</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-media" class="md-nav__link">
+    <span class="md-ellipsis">Messages &amp; Media</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Messages &amp; Media">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="Message.html" class="md-nav__link">
+    <span class="md-ellipsis">Message</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MessageEntity.html" class="md-nav__link">
+    <span class="md-ellipsis">Message<wbr>Entity</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Photo.html" class="md-nav__link">
+    <span class="md-ellipsis">Photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Thumbnail.html" class="md-nav__link">
+    <span class="md-ellipsis">Thumbnail</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Audio.html" class="md-nav__link">
+    <span class="md-ellipsis">Audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Document.html" class="md-nav__link">
+    <span class="md-ellipsis">Document</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Animation.html" class="md-nav__link">
+    <span class="md-ellipsis">Animation</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Video.html" class="md-nav__link">
+    <span class="md-ellipsis">Video</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Voice.html" class="md-nav__link">
+    <span class="md-ellipsis">Voice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="VideoNote.html" class="md-nav__link">
+    <span class="md-ellipsis">Video<wbr>Note</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Contact.html" class="md-nav__link">
+    <span class="md-ellipsis">Contact</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Location.html" class="md-nav__link">
+    <span class="md-ellipsis">Location</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Venue.html" class="md-nav__link">
+    <span class="md-ellipsis">Venue</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Sticker.html" class="md-nav__link">
+    <span class="md-ellipsis">Sticker</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="StickerSet.html" class="md-nav__link">
+    <span class="md-ellipsis">Sticker<wbr>Set</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Game.html" class="md-nav__link">
+    <span class="md-ellipsis">Game</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Giveaway.html" class="md-nav__link">
+    <span class="md-ellipsis">Giveaway</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="GiveawayLaunched.html" class="md-nav__link">
+    <span class="md-ellipsis">Giveaway<wbr>Launched</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="GiveawayResult.html" class="md-nav__link">
+    <span class="md-ellipsis">Giveaway<wbr>Result</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MessageStory.html" class="md-nav__link">
+    <span class="md-ellipsis">Message<wbr>Story</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="WebPage.html" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>Page</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="WebPageEmpty.html" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>Page<wbr>Empty</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="WebPagePreview.html" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>Page<wbr>Preview</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Poll.html" class="md-nav__link">
+    <span class="md-ellipsis">Poll</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="PollOption.html" class="md-nav__link">
+    <span class="md-ellipsis">Poll<wbr>Option</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Dice.html" class="md-nav__link">
+    <span class="md-ellipsis">Dice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Reaction.html" class="md-nav__link">
+    <span class="md-ellipsis">Reaction</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="VideoChatScheduled.html" class="md-nav__link">
+    <span class="md-ellipsis">Video<wbr>Chat<wbr>Scheduled</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="VideoChatStarted.html" class="md-nav__link">
+    <span class="md-ellipsis">Video<wbr>Chat<wbr>Started</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="VideoChatEnded.html" class="md-nav__link">
+    <span class="md-ellipsis">Video<wbr>Chat<wbr>Ended</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="VideoChatMembersInvited.html" class="md-nav__link">
+    <span class="md-ellipsis">Video<wbr>Chat<wbr>Members<wbr>Invited</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="WebAppData.html" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>App<wbr>Data</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MessageReactions.html" class="md-nav__link">
+    <span class="md-ellipsis">Message<wbr>Reactions</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChatReactions.html" class="md-nav__link">
+    <span class="md-ellipsis">Chat<wbr>Reactions</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ForumTopicCreated.html" class="md-nav__link">
+    <span class="md-ellipsis">Forum<wbr>Topic<wbr>Created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ForumTopicEdited.html" class="md-nav__link">
+    <span class="md-ellipsis">Forum<wbr>Topic<wbr>Edited</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ForumTopicClosed.html" class="md-nav__link">
+    <span class="md-ellipsis">Forum<wbr>Topic<wbr>Closed</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ForumTopicReopened.html" class="md-nav__link">
+    <span class="md-ellipsis">Forum<wbr>Topic<wbr>Reopened</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="GeneralTopicHidden.html" class="md-nav__link">
+    <span class="md-ellipsis">General<wbr>Topic<wbr>Hidden</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="GeneralTopicUnhidden.html" class="md-nav__link">
+    <span class="md-ellipsis">General<wbr>Topic<wbr>Unhidden</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stories" class="md-nav__link">
+    <span class="md-ellipsis">Stories</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="Story.html" class="md-nav__link">
+    <span class="md-ellipsis">Story</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="StoryDeleted.html" class="md-nav__link">
+    <span class="md-ellipsis">Story<wbr>Deleted</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="StoryForwardHeader.html" class="md-nav__link">
+    <span class="md-ellipsis">Story<wbr>Forward<wbr>Header</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="StorySkipped.html" class="md-nav__link">
+    <span class="md-ellipsis">Story<wbr>Skipped</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="StoriesPrivacyRules.html" class="md-nav__link">
+    <span class="md-ellipsis">Stories<wbr>Privacy<wbr>Rules</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="StoryViews.html" class="md-nav__link">
+    <span class="md-ellipsis">Story<wbr>Views</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MediaArea.html" class="md-nav__link">
+    <span class="md-ellipsis">Media<wbr>Area</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MediaAreaChannelPost.html" class="md-nav__link">
+    <span class="md-ellipsis">Media<wbr>Area<wbr>Channel<wbr>Post</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MediaAreaCoordinates.html" class="md-nav__link">
+    <span class="md-ellipsis">Media<wbr>Area<wbr>Coordinates</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaArea.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Area</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaAreaChannelPost.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Area<wbr>Channel<wbr>Post</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyromod" class="md-nav__link">
+    <span class="md-ellipsis">Pyromod</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pyromod">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="Identifier.html" class="md-nav__link">
+    <span class="md-ellipsis">Identifier</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="Listener.html" class="md-nav__link">
+    <span class="md-ellipsis">Listener</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bot-keyboards" class="md-nav__link">
+    <span class="md-ellipsis">Bot keyboards</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bot keyboards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="ReplyKeyboardMarkup.html" class="md-nav__link">
+    <span class="md-ellipsis">Reply<wbr>Keyboard<wbr>Markup</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="KeyboardButton.html" class="md-nav__link">
+    <span class="md-ellipsis">Keyboard<wbr>Button</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ReplyKeyboardRemove.html" class="md-nav__link">
+    <span class="md-ellipsis">Reply<wbr>Keyboard<wbr>Remove</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineKeyboardMarkup.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Keyboard<wbr>Markup</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineKeyboardButton.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Keyboard<wbr>Button</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="RequestPeerTypeChannel.html" class="md-nav__link">
+    <span class="md-ellipsis">Request<wbr>Peer<wbr>Type<wbr>Channel</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="RequestPeerTypeChat.html" class="md-nav__link">
+    <span class="md-ellipsis">Request<wbr>Peer<wbr>Type<wbr>Chat</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="RequestPeerTypeUser.html" class="md-nav__link">
+    <span class="md-ellipsis">Request<wbr>Peer<wbr>Type<wbr>User</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="LoginUrl.html" class="md-nav__link">
+    <span class="md-ellipsis">Login<wbr>Url</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ForceReply.html" class="md-nav__link">
+    <span class="md-ellipsis">Force<wbr>Reply</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="CallbackQuery.html" class="md-nav__link">
+    <span class="md-ellipsis">Callback<wbr>Query</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="GameHighScore.html" class="md-nav__link">
+    <span class="md-ellipsis">Game<wbr>High<wbr>Score</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="CallbackGame.html" class="md-nav__link">
+    <span class="md-ellipsis">Callback<wbr>Game</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="WebAppInfo.html" class="md-nav__link">
+    <span class="md-ellipsis">Web<wbr>App<wbr>Info</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MenuButton.html" class="md-nav__link">
+    <span class="md-ellipsis">Menu<wbr>Button</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MenuButtonCommands.html" class="md-nav__link">
+    <span class="md-ellipsis">Menu<wbr>Button<wbr>Commands</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MenuButtonWebApp.html" class="md-nav__link">
+    <span class="md-ellipsis">Menu<wbr>Button<wbr>Web<wbr>App</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="MenuButtonDefault.html" class="md-nav__link">
+    <span class="md-ellipsis">Menu<wbr>Button<wbr>Default</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="SentWebAppMessage.html" class="md-nav__link">
+    <span class="md-ellipsis">Sent<wbr>Web<wbr>App<wbr>Message</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bot-commands" class="md-nav__link">
+    <span class="md-ellipsis">Bot commands</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bot commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="BotCommand.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScope.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeDefault.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Default</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeAllPrivateChats.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>All<wbr>Private<wbr>Chats</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeAllGroupChats.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>All<wbr>Group<wbr>Chats</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeAllChatAdministrators.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>All<wbr>Chat<wbr>Administrators</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeChat.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Chat</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeChatAdministrators.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Chat<wbr>Administrators</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="BotCommandScopeChatMember.html" class="md-nav__link">
+    <span class="md-ellipsis">Bot<wbr>Command<wbr>Scope<wbr>Chat<wbr>Member</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-media" class="md-nav__link">
+    <span class="md-ellipsis">Input Media</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Input Media">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="InputMedia.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaPhoto.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaVideo.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Video</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaAudio.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaAnimation.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Animation</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputMediaDocument.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Media<wbr>Document</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputPhoneContact.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Phone<wbr>Contact</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inline-mode" class="md-nav__link">
+    <span class="md-ellipsis">Inline Mode</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inline Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="InlineQuery.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResult.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedAudio.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedDocument.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Document</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedAnimation.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Animation</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedPhoto.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedSticker.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Sticker</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedVideo.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Video</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultCachedVoice.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Cached<wbr>Voice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultArticle.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Article</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultAudio.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultContact.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Contact</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultDocument.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Document</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultAnimation.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Animation</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultLocation.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Location</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultPhoto.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultVenue.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Venue</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultVideo.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Video</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InlineQueryResultVoice.html" class="md-nav__link">
+    <span class="md-ellipsis">Inline<wbr>Query<wbr>Result<wbr>Voice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="ChosenInlineResult.html" class="md-nav__link">
+    <span class="md-ellipsis">Chosen<wbr>Inline<wbr>Result</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputmessagecontent" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Message<wbr>Content</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InputMessageContent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="InputMessageContent.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Message<wbr>Content</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputReplyToMessage.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Reply<wbr>To<wbr>Message</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputReplyToStory.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Reply<wbr>To<wbr>Story</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="InputTextMessageContent.html" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Text<wbr>Message<wbr>Content</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">Authorization</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="SentCode.html" class="md-nav__link">
+    <span class="md-ellipsis">Sent<wbr>Code</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="TermsOfService.html" class="md-nav__link">
+    <span class="md-ellipsis">Terms<wbr>Of<wbr>Service</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bound-methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Bound Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enums/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Enumerations</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handlers.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Handlers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decorators.html" class="md-nav__link">
+        <span class="md-ellipsis">Decorators</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../errors/index.html" class="md-nav__link">
+        <span class="md-ellipsis">RPC Errors</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          <span class="md-ellipsis">Topic Guides</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Topic Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Topic Guides</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/use-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Using Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/create-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Creating Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/more-on-updates.html" class="md-nav__link">
+        <span class="md-ellipsis">More on Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/client-settings.html" class="md-nav__link">
+        <span class="md-ellipsis">Client Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/speedups.html" class="md-nav__link">
+        <span class="md-ellipsis">Speedups</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/text-formatting.html" class="md-nav__link">
+        <span class="md-ellipsis">Text Formatting</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/synchronous.html" class="md-nav__link">
+        <span class="md-ellipsis">Synchronous Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/smart-plugins.html" class="md-nav__link">
+        <span class="md-ellipsis">Smart Plugins</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/storage-engines.html" class="md-nav__link">
+        <span class="md-ellipsis">Storage Engines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/serializing.html" class="md-nav__link">
+        <span class="md-ellipsis">Object Serialization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/proxy.html" class="md-nav__link">
+        <span class="md-ellipsis">Proxy Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/scheduling.html" class="md-nav__link">
+        <span class="md-ellipsis">Scheduling Tasks</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/mtproto-vs-botapi.html" class="md-nav__link">
+        <span class="md-ellipsis">MTProto vs.<wbr> Bot API</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/debugging.html" class="md-nav__link">
+        <span class="md-ellipsis">Debugging</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/test-servers.html" class="md-nav__link">
+        <span class="md-ellipsis">Test Servers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/advanced-usage.html" class="md-nav__link">
+        <span class="md-ellipsis">Advanced Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/voice-calls.html" class="md-nav__link">
+        <span class="md-ellipsis">Voice Calls</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          <span class="md-ellipsis">Meta</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Meta" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Meta</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Frequently Asked Questions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support.html" class="md-nav__link">
+        <span class="md-ellipsis">Support Pyrofork</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          <span class="md-ellipsis">Telegram Raw API</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Telegram Raw API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Telegram Raw API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../telegram/functions/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Functions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../telegram/types/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../telegram/base/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Base</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Available Types</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#users-chats" class="md-nav__link">
+    <span class="md-ellipsis">Users &amp; Chats</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages-media" class="md-nav__link">
+    <span class="md-ellipsis">Messages &amp; Media</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stories" class="md-nav__link">
+    <span class="md-ellipsis">Stories</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyromod" class="md-nav__link">
+    <span class="md-ellipsis">Pyromod</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bot-keyboards" class="md-nav__link">
+    <span class="md-ellipsis">Bot keyboards</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bot-commands" class="md-nav__link">
+    <span class="md-ellipsis">Bot commands</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-media" class="md-nav__link">
+    <span class="md-ellipsis">Input Media</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inline-mode" class="md-nav__link">
+    <span class="md-ellipsis">Inline Mode</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputmessagecontent" class="md-nav__link">
+    <span class="md-ellipsis">Input<wbr>Message<wbr>Content</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorization" class="md-nav__link">
+    <span class="md-ellipsis">Authorization</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+<h1 id="available-types">Available Types<a class="headerlink" href="#available-types" title="Link to this heading">¶</a></h1>
+<p>This page is about Pyrofork Types. All types listed here are available through the <code class="docutils literal notranslate"><span class="pre">pyrogram.types</span></code> package.
+Unless required as argument to a client method, most of the types don’t need to be manually instantiated because they
+are only returned by other methods. You also don’t need to import them, unless you want to type-hint your variables.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">User</span><span class="p">,</span> <span class="n">Message</span><span class="p">,</span> <span class="o">...</span>
+</code></pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Optional fields always exist inside the object, but they could be empty and contain the value of <code class="docutils literal notranslate"><span class="pre">None</span></code>.
+Empty fields aren’t shown when, for example, using <code class="docutils literal notranslate"><span class="pre">print(message)</span></code> and this means that
+<code class="docutils literal notranslate"><span class="pre">hasattr(message,</span> <span class="pre">&quot;photo&quot;)</span></code> always returns <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>To tell whether a field is set or not, do a simple boolean check: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">message.photo:</span> <span class="pre">...</span></code>.</p>
+</div>
+<hr class="docutils" />
+<h2 id="users-chats">Users &amp; Chats<a class="headerlink" href="#users-chats" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a></p></td>
+<td><p>A Telegram user or bot.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a></p></td>
+<td><p>A chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatPreview.html#pyrogram.types.ChatPreview" title="pyrogram.types.ChatPreview (Python class) — A chat preview."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPreview</span></code></a></p></td>
+<td><p>A chat preview.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatPhoto.html#pyrogram.types.ChatPhoto" title="pyrogram.types.ChatPhoto (Python class) — A chat photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a></p></td>
+<td><p>A chat photo.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatMember.html#pyrogram.types.ChatMember" title="pyrogram.types.ChatMember (Python class) — Contains information about one member of a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMember</span></code></a></p></td>
+<td><p>Contains information about one member of a chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions (Python class) — Describes actions that a non-administrator user is allowed to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a></p></td>
+<td><p>Describes actions that a non-administrator user is allowed to take in a chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges (Python class) — Describes privileged actions an administrator is able to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a></p></td>
+<td><p>Describes privileged actions an administrator is able to take in a chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink (Python class) — An invite link for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a></p></td>
+<td><p>An invite link for a chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatAdminWithInviteLinks.html#pyrogram.types.ChatAdminWithInviteLinks" title="pyrogram.types.ChatAdminWithInviteLinks (Python class) — Represents a chat administrator that has created invite links in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminWithInviteLinks</span></code></a></p></td>
+<td><p>Represents a chat administrator that has created invite links in a chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatEvent.html#pyrogram.types.ChatEvent" title="pyrogram.types.ChatEvent (Python class) — A chat event from the recent actions log (also known as admin log)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEvent</span></code></a></p></td>
+<td><p>A chat event from the recent actions log (also known as admin log).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatEventFilter.html#pyrogram.types.ChatEventFilter" title="pyrogram.types.ChatEventFilter (Python class) — Set of filters used to obtain a chat event log."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEventFilter</span></code></a></p></td>
+<td><p>Set of filters used to obtain a chat event log.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatMemberUpdated.html#pyrogram.types.ChatMemberUpdated" title="pyrogram.types.ChatMemberUpdated (Python class) — Represents changes in the status of a chat member."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberUpdated</span></code></a></p></td>
+<td><p>Represents changes in the status of a chat member.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatJoinRequest.html#pyrogram.types.ChatJoinRequest" title="pyrogram.types.ChatJoinRequest (Python class) — Represents a join request sent to a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatJoinRequest</span></code></a></p></td>
+<td><p>Represents a join request sent to a chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatJoinedByRequest.html#pyrogram.types.ChatJoinedByRequest" title="pyrogram.types.ChatJoinedByRequest (Python class) — A service message about a user join request approved in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatJoinedByRequest</span></code></a></p></td>
+<td><p>A service message about a user join request approved in the chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatJoiner.html#pyrogram.types.ChatJoiner" title="pyrogram.types.ChatJoiner (Python class) — Contains information about a joiner member of a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatJoiner</span></code></a></p></td>
+<td><p>Contains information about a joiner member of a chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Dialog.html#pyrogram.types.Dialog" title="pyrogram.types.Dialog (Python class) — A user's dialog."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code></a></p></td>
+<td><p>A user's dialog.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Restriction.html#pyrogram.types.Restriction" title="pyrogram.types.Restriction (Python class) — A restriction applied to bots or chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restriction</span></code></a></p></td>
+<td><p>A restriction applied to bots or chats.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="EmojiStatus.html#pyrogram.types.EmojiStatus" title="pyrogram.types.EmojiStatus (Python class) — A user emoji status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a></p></td>
+<td><p>A user emoji status.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a></p></td>
+<td><p>A forum topic.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="PeerUser.html#pyrogram.types.PeerUser" title="pyrogram.types.PeerUser (Python class) — A PeerUser."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerUser</span></code></a></p></td>
+<td><p>A PeerUser.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="PeerChannel.html#pyrogram.types.PeerChannel" title="pyrogram.types.PeerChannel (Python class) — A PeerChannel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerChannel</span></code></a></p></td>
+<td><p>A PeerChannel.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="BotInfo.html#pyrogram.types.BotInfo" title="pyrogram.types.BotInfo (Python class) — A bot Information."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code></a></p></td>
+<td><p>A bot Information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Reply or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a></p></td>
+<td><p>Reply or profile color status.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="messages-media">Messages &amp; Media<a class="headerlink" href="#messages-media" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a></p></td>
+<td><p>A message.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a></p></td>
+<td><p>One special entity in a text message.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a></p></td>
+<td><p>A Photo.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Thumbnail.html#pyrogram.types.Thumbnail" title="pyrogram.types.Thumbnail (Python class) — One size of a photo or a file/sticker thumbnail."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Thumbnail</span></code></a></p></td>
+<td><p>One size of a photo or a file/sticker thumbnail.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio (Python class) — An audio file to be treated as music by the Telegram clients."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a></p></td>
+<td><p>An audio file to be treated as music by the Telegram clients.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Document.html#pyrogram.types.Document" title="pyrogram.types.Document (Python class) — A generic file (as opposed to photos, voice messages, audio files, ...)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a></p></td>
+<td><p>A generic file (as opposed to photos, voice messages, audio files, ...).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation (Python class) — An animation file (GIF or H.264/MPEG-4 AVC video without sound)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a></p></td>
+<td><p>An animation file (GIF or H.264/MPEG-4 AVC video without sound).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a></p></td>
+<td><p>A video file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice (Python class) — A voice note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a></p></td>
+<td><p>A voice note.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="VideoNote.html#pyrogram.types.VideoNote" title="pyrogram.types.VideoNote (Python class) — A video note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoNote</span></code></a></p></td>
+<td><p>A video note.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Contact.html#pyrogram.types.Contact" title="pyrogram.types.Contact (Python class) — A phone contact."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a></p></td>
+<td><p>A phone contact.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Location.html#pyrogram.types.Location" title="pyrogram.types.Location (Python class) — A point on the map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a></p></td>
+<td><p>A point on the map.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue (Python class) — A venue."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a></p></td>
+<td><p>A venue.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a></p></td>
+<td><p>A sticker.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="StickerSet.html#pyrogram.types.StickerSet" title="pyrogram.types.StickerSet (Python class) — A stickerset."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code></a></p></td>
+<td><p>A stickerset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Game.html#pyrogram.types.Game" title="pyrogram.types.Game (Python class) — A game. Use BotFather to create and edit games, their short names will act as unique identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a></p></td>
+<td><p>A game.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Giveaway.html#pyrogram.types.Giveaway" title="pyrogram.types.Giveaway (Python class) — A giveaway."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Giveaway</span></code></a></p></td>
+<td><p>A giveaway.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GiveawayLaunched.html#pyrogram.types.GiveawayLaunched" title="pyrogram.types.GiveawayLaunched (Python class) — A service message about a giveaway started in the channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayLaunched</span></code></a></p></td>
+<td><p>A service message about a giveaway started in the channel.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GiveawayResult.html#pyrogram.types.GiveawayResult" title="pyrogram.types.GiveawayResult (Python class) — A giveaway result."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayResult</span></code></a></p></td>
+<td><p>A giveaway result.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="MessageStory.html#pyrogram.types.MessageStory" title="pyrogram.types.MessageStory (Python class) — Contains information about a forwarded story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageStory</span></code></a></p></td>
+<td><p>Contains information about a forwarded story.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="WebPage.html#pyrogram.types.WebPage" title="pyrogram.types.WebPage (Python class) — A webpage preview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebPage</span></code></a></p></td>
+<td><p>A webpage preview</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="WebPageEmpty.html#pyrogram.types.WebPageEmpty" title="pyrogram.types.WebPageEmpty (Python class) — A webpage preview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebPageEmpty</span></code></a></p></td>
+<td><p>A webpage preview</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="WebPagePreview.html#pyrogram.types.WebPagePreview" title="pyrogram.types.WebPagePreview (Python class) — A web page preview."><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebPagePreview</span></code></a></p></td>
+<td><p>A web page preview.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll (Python class) — A Poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a></p></td>
+<td><p>A Poll.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="PollOption.html#pyrogram.types.PollOption" title="pyrogram.types.PollOption (Python class) — Contains information about one answer option in a poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOption</span></code></a></p></td>
+<td><p>Contains information about one answer option in a poll.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Dice.html#pyrogram.types.Dice" title="pyrogram.types.Dice (Python class) — A dice with a random value from 1 to 6 for currently supported base emoji."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code></a></p></td>
+<td><p>A dice with a random value from 1 to 6 for currently supported base emoji.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Reaction.html#pyrogram.types.Reaction" title="pyrogram.types.Reaction (Python class) — Contains information about a reaction."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Reaction</span></code></a></p></td>
+<td><p>Contains information about a reaction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="VideoChatScheduled.html#pyrogram.types.VideoChatScheduled" title="pyrogram.types.VideoChatScheduled (Python class) — A service message about a voice chat scheduled in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatScheduled</span></code></a></p></td>
+<td><p>A service message about a voice chat scheduled in the chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="VideoChatStarted.html#pyrogram.types.VideoChatStarted" title="pyrogram.types.VideoChatStarted (Python class) — A service message about a voice chat started in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatStarted</span></code></a></p></td>
+<td><p>A service message about a voice chat started in the chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="VideoChatEnded.html#pyrogram.types.VideoChatEnded" title="pyrogram.types.VideoChatEnded (Python class) — A service message about a voice chat ended in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatEnded</span></code></a></p></td>
+<td><p>A service message about a voice chat ended in the chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="VideoChatMembersInvited.html#pyrogram.types.VideoChatMembersInvited" title="pyrogram.types.VideoChatMembersInvited (Python class) — A service message about new members invited to a voice chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoChatMembersInvited</span></code></a></p></td>
+<td><p>A service message about new members invited to a voice chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="WebAppData.html#pyrogram.types.WebAppData" title="pyrogram.types.WebAppData (Python class) — Contains data sent from a Web App to the bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppData</span></code></a></p></td>
+<td><p>Contains data sent from a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> to the bot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="MessageReactions.html#pyrogram.types.MessageReactions" title="pyrogram.types.MessageReactions (Python class) — Contains information about a message reactions."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReactions</span></code></a></p></td>
+<td><p>Contains information about a message reactions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatReactions.html#pyrogram.types.ChatReactions" title="pyrogram.types.ChatReactions (Python class) — A chat reactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code></a></p></td>
+<td><p>A chat reactions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ForumTopicCreated.html#pyrogram.types.ForumTopicCreated" title="pyrogram.types.ForumTopicCreated (Python class) — A service message about a new forum topic created in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicCreated</span></code></a></p></td>
+<td><p>A service message about a new forum topic created in the chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ForumTopicEdited.html#pyrogram.types.ForumTopicEdited" title="pyrogram.types.ForumTopicEdited (Python class) — A service message about a forum topic renamed in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicEdited</span></code></a></p></td>
+<td><p>A service message about a forum topic renamed in the chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ForumTopicClosed.html#pyrogram.types.ForumTopicClosed" title="pyrogram.types.ForumTopicClosed (Python class) — A service message about a forum topic closed in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicClosed</span></code></a></p></td>
+<td><p>A service message about a forum topic closed in the chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ForumTopicReopened.html#pyrogram.types.ForumTopicReopened" title="pyrogram.types.ForumTopicReopened (Python class) — A service message about a forum topic reopened in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopicReopened</span></code></a></p></td>
+<td><p>A service message about a forum topic reopened in the chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="GeneralTopicHidden.html#pyrogram.types.GeneralTopicHidden" title="pyrogram.types.GeneralTopicHidden (Python class) — A service message about a general topic hidden in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralTopicHidden</span></code></a></p></td>
+<td><p>A service message about a general topic hidden in the chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GeneralTopicUnhidden.html#pyrogram.types.GeneralTopicUnhidden" title="pyrogram.types.GeneralTopicUnhidden (Python class) — A service message about a general topic unhidden in the chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralTopicUnhidden</span></code></a></p></td>
+<td><p>A service message about a general topic unhidden in the chat.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="stories">Stories<a class="headerlink" href="#stories" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — A story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a></p></td>
+<td><p>A story.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="StoryDeleted.html#pyrogram.types.StoryDeleted" title="pyrogram.types.StoryDeleted (Python class) — A deleted story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryDeleted</span></code></a></p></td>
+<td><p>A deleted story.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="StoryForwardHeader.html#pyrogram.types.StoryForwardHeader" title="pyrogram.types.StoryForwardHeader (Python class) — Contains information about origin of forwarded story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryForwardHeader</span></code></a></p></td>
+<td><p>Contains information about origin of forwarded story.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="StorySkipped.html#pyrogram.types.StorySkipped" title="pyrogram.types.StorySkipped (Python class) — A skipped story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StorySkipped</span></code></a></p></td>
+<td><p>A skipped story.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="StoriesPrivacyRules.html#pyrogram.types.StoriesPrivacyRules" title="pyrogram.types.StoriesPrivacyRules (Python class) — A story privacy."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code></a></p></td>
+<td><p>A story privacy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="StoryViews.html#pyrogram.types.StoryViews" title="pyrogram.types.StoryViews (Python class) — Contains information about a story viewers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryViews</span></code></a></p></td>
+<td><p>Contains information about a story viewers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="MediaArea.html#pyrogram.types.MediaArea" title="pyrogram.types.MediaArea (Python class) — Content of a media areas in story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a></p></td>
+<td><p>Content of a media areas in story.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="MediaAreaChannelPost.html#pyrogram.types.MediaAreaChannelPost" title="pyrogram.types.MediaAreaChannelPost (Python class) — A channel post media area."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaAreaChannelPost</span></code></a></p></td>
+<td><p>A channel post media area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="MediaAreaCoordinates.html#pyrogram.types.MediaAreaCoordinates" title="pyrogram.types.MediaAreaCoordinates (Python class) — A coordinates of media area."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaAreaCoordinates</span></code></a></p></td>
+<td><p>A coordinates of media area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InputMediaArea.html#pyrogram.types.InputMediaArea" title="pyrogram.types.InputMediaArea (Python class) — Content of a media area to be included in story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaArea</span></code></a></p></td>
+<td><p>Content of a media area to be included in story.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputMediaAreaChannelPost.html#pyrogram.types.InputMediaAreaChannelPost" title="pyrogram.types.InputMediaAreaChannelPost (Python class) — A channel post media area."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaAreaChannelPost</span></code></a></p></td>
+<td><p>A channel post media area.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="pyromod">Pyromod<a class="headerlink" href="#pyromod" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="Identifier.html#pyrogram.types.Identifier" title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a></p></td>
+<td><p>A dataclass that serves as a utility for matching listeners to the data of updates.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Listener.html#pyrogram.types.Listener" title="pyrogram.types.Listener (Python class) — Designed to manage and handle different types of listeners used in pyromod. It enables you to wait for specific events like messages or callback queries and provides mechanisms for defining the conditions and filters that trigger these listeners."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Listener</span></code></a></p></td>
+<td><p>Designed to manage and handle different types of listeners used in pyromod.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="bot-keyboards">Bot keyboards<a class="headerlink" href="#bot-keyboards" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup (Python class) — A custom keyboard with reply options."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a></p></td>
+<td><p>A custom keyboard with reply options.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="KeyboardButton.html#pyrogram.types.KeyboardButton" title="pyrogram.types.KeyboardButton (Python class) — One button of the reply keyboard. For simple text buttons String can be used instead of this object to specify text of the button. Optional fields are mutually exclusive."><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a></p></td>
+<td><p>One button of the reply keyboard.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove (Python class) — Object used to tell clients to remove a bot keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a></p></td>
+<td><p>Object used to tell clients to remove a bot keyboard.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a></p></td>
+<td><p>An inline keyboard that appears right next to the message it belongs to.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineKeyboardButton.html#pyrogram.types.InlineKeyboardButton" title="pyrogram.types.InlineKeyboardButton (Python class) — One button of an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardButton</span></code></a></p></td>
+<td><p>One button of an inline keyboard.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="RequestPeerTypeChannel.html#pyrogram.types.RequestPeerTypeChannel" title="pyrogram.types.RequestPeerTypeChannel (Python class) — Object used to request clients to send a channel identifier."><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestPeerTypeChannel</span></code></a></p></td>
+<td><p>Object used to request clients to send a channel identifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="RequestPeerTypeChat.html#pyrogram.types.RequestPeerTypeChat" title="pyrogram.types.RequestPeerTypeChat (Python class) — Object used to request clients to send a chat identifier."><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestPeerTypeChat</span></code></a></p></td>
+<td><p>Object used to request clients to send a chat identifier.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="RequestPeerTypeUser.html#pyrogram.types.RequestPeerTypeUser" title="pyrogram.types.RequestPeerTypeUser (Python class) — Object used to request clients to send a user identifier."><code class="xref py py-obj docutils literal notranslate"><span class="pre">RequestPeerTypeUser</span></code></a></p></td>
+<td><p>Object used to request clients to send a user identifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="LoginUrl.html#pyrogram.types.LoginUrl" title="pyrogram.types.LoginUrl (Python class) — Represents a parameter of the inline keyboard button used to automatically authorize a user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoginUrl</span></code></a></p></td>
+<td><p>Represents a parameter of the inline keyboard button used to automatically authorize a user.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply (Python class) — Object used to force clients to show a reply interface."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a></p></td>
+<td><p>Object used to force clients to show a reply interface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery (Python class) — An incoming callback query from a callback button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a></p></td>
+<td><p>An incoming callback query from a callback button in an inline keyboard.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="GameHighScore.html#pyrogram.types.GameHighScore" title="pyrogram.types.GameHighScore (Python class) — One row of the high scores table for a game."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GameHighScore</span></code></a></p></td>
+<td><p>One row of the high scores table for a game.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="CallbackGame.html#pyrogram.types.CallbackGame" title="pyrogram.types.CallbackGame (Python class) — Placeholder, currently holds no information."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackGame</span></code></a></p></td>
+<td><p>Placeholder, currently holds no information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="WebAppInfo.html#pyrogram.types.WebAppInfo" title="pyrogram.types.WebAppInfo (Python class) — Contains information about a Web App."><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppInfo</span></code></a></p></td>
+<td><p><p>Contains information about a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a>.</p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="MenuButton.html#pyrogram.types.MenuButton" title="pyrogram.types.MenuButton (Python class) — Describes the bot's menu button in a private chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButton</span></code></a></p></td>
+<td><p>Describes the bot's menu button in a private chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="MenuButtonCommands.html#pyrogram.types.MenuButtonCommands" title="pyrogram.types.MenuButtonCommands (Python class) — A menu button, which opens the bot's list of commands."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonCommands</span></code></a></p></td>
+<td><p>A menu button, which opens the bot's list of commands.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="MenuButtonWebApp.html#pyrogram.types.MenuButtonWebApp" title="pyrogram.types.MenuButtonWebApp (Python class) — A menu button, which launches a Web App."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonWebApp</span></code></a></p></td>
+<td><p><p>A menu button, which launches a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a>.</p>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="MenuButtonDefault.html#pyrogram.types.MenuButtonDefault" title="pyrogram.types.MenuButtonDefault (Python class) — Describes that no specific value for the menu button was set."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuButtonDefault</span></code></a></p></td>
+<td><p>Describes that no specific value for the menu button was set.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="SentWebAppMessage.html#pyrogram.types.SentWebAppMessage" title="pyrogram.types.SentWebAppMessage (Python class) — Contains information about an inline message sent by a Web App on behalf of a user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentWebAppMessage</span></code></a></p></td>
+<td><p><p>Contains information about an inline message sent by a <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> on behalf of a user.</p>
+</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="bot-commands">Bot commands<a class="headerlink" href="#bot-commands" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="BotCommand.html#pyrogram.types.BotCommand" title="pyrogram.types.BotCommand (Python class) — A bot command with the standard slash &quot;/&quot; prefix."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommand</span></code></a></p></td>
+<td><p>A bot command with the standard slash &quot;/&quot; prefix.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="BotCommandScope.html#pyrogram.types.BotCommandScope" title="pyrogram.types.BotCommandScope (Python class) — Represents the scope to which bot commands are applied."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScope</span></code></a></p></td>
+<td><p>Represents the scope to which bot commands are applied.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="BotCommandScopeDefault.html#pyrogram.types.BotCommandScopeDefault" title="pyrogram.types.BotCommandScopeDefault (Python class) — Represents the default scope of bot commands. Default commands are used if no commands with a narrower scope are specified for the user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeDefault</span></code></a></p></td>
+<td><p>Represents the default scope of bot commands.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="BotCommandScopeAllPrivateChats.html#pyrogram.types.BotCommandScopeAllPrivateChats" title="pyrogram.types.BotCommandScopeAllPrivateChats (Python class) — Represents the scope of bot commands, covering all private chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeAllPrivateChats</span></code></a></p></td>
+<td><p>Represents the scope of bot commands, covering all private chats.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="BotCommandScopeAllGroupChats.html#pyrogram.types.BotCommandScopeAllGroupChats" title="pyrogram.types.BotCommandScopeAllGroupChats (Python class) — Represents the scope of bot commands, covering all group and supergroup chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeAllGroupChats</span></code></a></p></td>
+<td><p>Represents the scope of bot commands, covering all group and supergroup chats.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="BotCommandScopeAllChatAdministrators.html#pyrogram.types.BotCommandScopeAllChatAdministrators" title="pyrogram.types.BotCommandScopeAllChatAdministrators (Python class) — Represents the scope of bot commands, covering all group and supergroup chat administrators."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeAllChatAdministrators</span></code></a></p></td>
+<td><p>Represents the scope of bot commands, covering all group and supergroup chat administrators.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="BotCommandScopeChat.html#pyrogram.types.BotCommandScopeChat" title="pyrogram.types.BotCommandScopeChat (Python class) — Represents the scope of bot commands, covering a specific chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeChat</span></code></a></p></td>
+<td><p>Represents the scope of bot commands, covering a specific chat.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="BotCommandScopeChatAdministrators.html#pyrogram.types.BotCommandScopeChatAdministrators" title="pyrogram.types.BotCommandScopeChatAdministrators (Python class) — Represents the scope of bot commands, covering all administrators of a specific group or supergroup chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeChatAdministrators</span></code></a></p></td>
+<td><p>Represents the scope of bot commands, covering all administrators of a specific group or supergroup chat.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="BotCommandScopeChatMember.html#pyrogram.types.BotCommandScopeChatMember" title="pyrogram.types.BotCommandScopeChatMember (Python class) — Represents the scope of bot commands, covering a specific member of a group or supergroup chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotCommandScopeChatMember</span></code></a></p></td>
+<td><p>Represents the scope of bot commands, covering a specific member of a group or supergroup chat.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="input-media">Input Media<a class="headerlink" href="#input-media" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputMedia.html#pyrogram.types.InputMedia" title="pyrogram.types.InputMedia (Python class) — Content of a media message to be sent."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a></p></td>
+<td><p>Content of a media message to be sent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto (Python class) — A photo to be sent inside an album. It is intended to be used with send_media_group."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a></p></td>
+<td><p>A photo to be sent inside an album.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputMediaVideo.html#pyrogram.types.InputMediaVideo" title="pyrogram.types.InputMediaVideo (Python class) — A video to be sent inside an album. It is intended to be used with send_media_group."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaVideo</span></code></a></p></td>
+<td><p>A video to be sent inside an album.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InputMediaAudio.html#pyrogram.types.InputMediaAudio" title="pyrogram.types.InputMediaAudio (Python class) — An audio to be sent inside an album."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaAudio</span></code></a></p></td>
+<td><p>An audio to be sent inside an album.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputMediaAnimation.html#pyrogram.types.InputMediaAnimation" title="pyrogram.types.InputMediaAnimation (Python class) — An animation file (GIF or H.264/MPEG-4 AVC video without sound) to be sent inside an album."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaAnimation</span></code></a></p></td>
+<td><p>An animation file (GIF or H.264/MPEG-4 AVC video without sound) to be sent inside an album.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InputMediaDocument.html#pyrogram.types.InputMediaDocument" title="pyrogram.types.InputMediaDocument (Python class) — A generic file to be sent inside an album."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaDocument</span></code></a></p></td>
+<td><p>A generic file to be sent inside an album.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputPhoneContact.html#pyrogram.types.InputPhoneContact" title="pyrogram.types.InputPhoneContact (Python class) — A Phone Contact to be added in your Telegram address book. It is intended to be used with add_contacts()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPhoneContact</span></code></a></p></td>
+<td><p>A Phone Contact to be added in your Telegram address book.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="inline-mode">Inline Mode<a class="headerlink" href="#inline-mode" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQuery.html#pyrogram.types.InlineQuery" title="pyrogram.types.InlineQuery (Python class) — An incoming inline query."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code></a></p></td>
+<td><p>An incoming inline query.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResult.html#pyrogram.types.InlineQueryResult" title="pyrogram.types.InlineQueryResult (Python class) — One result of an inline query."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResult</span></code></a></p></td>
+<td><p>One result of an inline query.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultCachedAudio.html#pyrogram.types.InlineQueryResultCachedAudio" title="pyrogram.types.InlineQueryResultCachedAudio (Python class) — A link to an MP3 audio file stored on the Telegram servers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedAudio</span></code></a></p></td>
+<td><p>A link to an MP3 audio file stored on the Telegram servers</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultCachedDocument.html#pyrogram.types.InlineQueryResultCachedDocument" title="pyrogram.types.InlineQueryResultCachedDocument (Python class) — A link to a file stored on the Telegram servers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedDocument</span></code></a></p></td>
+<td><p>A link to a file stored on the Telegram servers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultCachedAnimation.html#pyrogram.types.InlineQueryResultCachedAnimation" title="pyrogram.types.InlineQueryResultCachedAnimation (Python class) — A link to an animation file stored on the Telegram servers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedAnimation</span></code></a></p></td>
+<td><p>A link to an animation file stored on the Telegram servers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultCachedPhoto.html#pyrogram.types.InlineQueryResultCachedPhoto" title="pyrogram.types.InlineQueryResultCachedPhoto (Python class) — A link to a photo stored on the Telegram servers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedPhoto</span></code></a></p></td>
+<td><p>A link to a photo stored on the Telegram servers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultCachedSticker.html#pyrogram.types.InlineQueryResultCachedSticker" title="pyrogram.types.InlineQueryResultCachedSticker (Python class) — A link to a sticker stored on the Telegram servers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedSticker</span></code></a></p></td>
+<td><p>A link to a sticker stored on the Telegram servers</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultCachedVideo.html#pyrogram.types.InlineQueryResultCachedVideo" title="pyrogram.types.InlineQueryResultCachedVideo (Python class) — A link to a video file stored on the Telegram servers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedVideo</span></code></a></p></td>
+<td><p>A link to a video file stored on the Telegram servers.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultCachedVoice.html#pyrogram.types.InlineQueryResultCachedVoice" title="pyrogram.types.InlineQueryResultCachedVoice (Python class) — A link to a voice message stored on the Telegram servers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultCachedVoice</span></code></a></p></td>
+<td><p>A link to a voice message stored on the Telegram servers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultArticle.html#pyrogram.types.InlineQueryResultArticle" title="pyrogram.types.InlineQueryResultArticle (Python class) — Link to an article or web page."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultArticle</span></code></a></p></td>
+<td><p>Link to an article or web page.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultAudio.html#pyrogram.types.InlineQueryResultAudio" title="pyrogram.types.InlineQueryResultAudio (Python class) — Link to an audio file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultAudio</span></code></a></p></td>
+<td><p>Link to an audio file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultContact.html#pyrogram.types.InlineQueryResultContact" title="pyrogram.types.InlineQueryResultContact (Python class) — Contact with a phone number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultContact</span></code></a></p></td>
+<td><p>Contact with a phone number</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultDocument.html#pyrogram.types.InlineQueryResultDocument" title="pyrogram.types.InlineQueryResultDocument (Python class) — Link to a file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultDocument</span></code></a></p></td>
+<td><p>Link to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultAnimation.html#pyrogram.types.InlineQueryResultAnimation" title="pyrogram.types.InlineQueryResultAnimation (Python class) — Link to an animated GIF file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultAnimation</span></code></a></p></td>
+<td><p>Link to an animated GIF file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultLocation.html#pyrogram.types.InlineQueryResultLocation" title="pyrogram.types.InlineQueryResultLocation (Python class) — A location on a map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultLocation</span></code></a></p></td>
+<td><p>A location on a map.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultPhoto.html#pyrogram.types.InlineQueryResultPhoto" title="pyrogram.types.InlineQueryResultPhoto (Python class) — Link to a photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultPhoto</span></code></a></p></td>
+<td><p>Link to a photo.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultVenue.html#pyrogram.types.InlineQueryResultVenue" title="pyrogram.types.InlineQueryResultVenue (Python class) — A venue."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultVenue</span></code></a></p></td>
+<td><p>A venue.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InlineQueryResultVideo.html#pyrogram.types.InlineQueryResultVideo" title="pyrogram.types.InlineQueryResultVideo (Python class) — Link to a page containing an embedded video player or a video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultVideo</span></code></a></p></td>
+<td><p>Link to a page containing an embedded video player or a video file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InlineQueryResultVoice.html#pyrogram.types.InlineQueryResultVoice" title="pyrogram.types.InlineQueryResultVoice (Python class) — Link to a voice recording in an .OGG container encoded with OPUS."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultVoice</span></code></a></p></td>
+<td><p>Link to a voice recording in an .OGG container encoded with OPUS.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChosenInlineResult.html#pyrogram.types.ChosenInlineResult" title="pyrogram.types.ChosenInlineResult (Python class) — A result of an inline query chosen by the user and sent to their chat partner."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChosenInlineResult</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="InlineQueryResult.html"><span class="doc">result</span></a> of an inline query chosen by the user and sent to their chat partner.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="inputmessagecontent">InputMessageContent<a class="headerlink" href="#inputmessagecontent" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputMessageContent.html#pyrogram.types.InputMessageContent" title="pyrogram.types.InputMessageContent (Python class) — Content of a message to be sent as a result of an inline query."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMessageContent</span></code></a></p></td>
+<td><p>Content of a message to be sent as a result of an inline query.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InputReplyToMessage.html#pyrogram.types.InputReplyToMessage" title="pyrogram.types.InputReplyToMessage (Python class) — Contains information about a target replied message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputReplyToMessage</span></code></a></p></td>
+<td><p>Contains information about a target replied message.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="InputReplyToStory.html#pyrogram.types.InputReplyToStory" title="pyrogram.types.InputReplyToStory (Python class) — Contains information about a target replied story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputReplyToStory</span></code></a></p></td>
+<td><p>Contains information about a target replied story.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="InputTextMessageContent.html#pyrogram.types.InputTextMessageContent" title="pyrogram.types.InputTextMessageContent (Python class) — Content of a text message to be sent as the result of an inline query."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputTextMessageContent</span></code></a></p></td>
+<td><p>Content of a text message to be sent as the result of an inline query.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+<h2 id="authorization">Authorization<a class="headerlink" href="#authorization" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="SentCode.html#pyrogram.types.SentCode" title="pyrogram.types.SentCode (Python class) — Contains info on a sent confirmation code."><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentCode</span></code></a></p></td>
+<td><p>Contains info on a sent confirmation code.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="TermsOfService.html#pyrogram.types.TermsOfService" title="pyrogram.types.TermsOfService (Python class) — Telegram's Terms of Service returned by sign_in()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TermsOfService</span></code></a></p></td>
+<td><p>Telegram's Terms of Service returned by <a class="reference internal" href="../methods/sign_in.html#pyrogram.Client.sign_in" title="pyrogram.Client.sign_in (Python method) — Authorize a user in Telegram with a valid confirmation code."><code class="xref py py-meth docutils literal notranslate"><span class="pre">sign_in()</span></code></a>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../methods/save_file.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: save_file()" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              save_file()
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="User.html" class="md-footer__link md-footer__link--next" aria-label="Next: User" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              User
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    7.2.6.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": ["latest"], "title": "main", "version": "main"}, {"aliases": [], "title": "staging", "version": "staging"}], "versionPath": null}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=a56c686a"></script>
+    
+  </body>
+</html>
