@@ -1,0 +1,1545 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="">
+    
+    
+      
+        <title>UpdateShortChatMessage - Pyrofork Documentation v2.3.16.post2</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.af531f03affe68837.min.css?v=2410bb73" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post2" class="md-header__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pyrofork Documentation v2.3.16.post2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UpdateShortChatMessage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eyMarv/pyrofork/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyrofork
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../intro/quickstart.html" class="md-tabs__link">
+      <span class="md-ellipsis">Introduction</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../start/setup.html" class="md-tabs__link">
+      <span class="md-ellipsis">Getting Started</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../api/client.html" class="md-tabs__link">
+      <span class="md-ellipsis">API Reference</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../topics/use-filters.html" class="md-tabs__link">
+      <span class="md-ellipsis">Topic Guides</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../faq/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Meta</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../functions/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Telegram Raw API</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post2" class="md-nav__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+    </a>
+    Pyrofork Documentation v2.3.16.post2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eyMarv/pyrofork/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyrofork
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">Introduction</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Introduction</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/quickstart.html" class="md-nav__link">
+        <span class="md-ellipsis">Quick Start</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/install.html" class="md-nav__link">
+        <span class="md-ellipsis">Install Guide</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">Getting Started</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Getting Started</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/setup.html" class="md-nav__link">
+        <span class="md-ellipsis">Project Setup</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/auth.html" class="md-nav__link">
+        <span class="md-ellipsis">Authorization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/invoking.html" class="md-nav__link">
+        <span class="md-ellipsis">Invoking Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/updates.html" class="md-nav__link">
+        <span class="md-ellipsis">Handling Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/errors.html" class="md-nav__link">
+        <span class="md-ellipsis">Error Handling</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Examples</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          <span class="md-ellipsis">API Reference</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">API Reference</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/client.html" class="md-nav__link">
+        <span class="md-ellipsis">Pyrofork Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/types/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/bound-methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Bound Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/enums/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Enumerations</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/handlers.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Handlers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/decorators.html" class="md-nav__link">
+        <span class="md-ellipsis">Decorators</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/errors/index.html" class="md-nav__link">
+        <span class="md-ellipsis">RPC Errors</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          <span class="md-ellipsis">Topic Guides</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Topic Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Topic Guides</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/use-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Using Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/create-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Creating Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/more-on-updates.html" class="md-nav__link">
+        <span class="md-ellipsis">More on Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/client-settings.html" class="md-nav__link">
+        <span class="md-ellipsis">Client Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/speedups.html" class="md-nav__link">
+        <span class="md-ellipsis">Speedups</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/text-formatting.html" class="md-nav__link">
+        <span class="md-ellipsis">Text Formatting</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/synchronous.html" class="md-nav__link">
+        <span class="md-ellipsis">Synchronous Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/smart-plugins.html" class="md-nav__link">
+        <span class="md-ellipsis">Smart Plugins</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/storage-engines.html" class="md-nav__link">
+        <span class="md-ellipsis">Storage Engines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/serializing.html" class="md-nav__link">
+        <span class="md-ellipsis">Object Serialization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/proxy.html" class="md-nav__link">
+        <span class="md-ellipsis">Proxy Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/scheduling.html" class="md-nav__link">
+        <span class="md-ellipsis">Scheduling Tasks</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/mtproto-vs-botapi.html" class="md-nav__link">
+        <span class="md-ellipsis">MTProto vs.<wbr> Bot API</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/debugging.html" class="md-nav__link">
+        <span class="md-ellipsis">Debugging</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/test-servers.html" class="md-nav__link">
+        <span class="md-ellipsis">Test Servers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/advanced-usage.html" class="md-nav__link">
+        <span class="md-ellipsis">Advanced Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/voice-calls.html" class="md-nav__link">
+        <span class="md-ellipsis">Voice Calls</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          <span class="md-ellipsis">Meta</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Meta" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Meta</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Frequently Asked Questions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support.html" class="md-nav__link">
+        <span class="md-ellipsis">Support Pyrofork</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          <span class="md-ellipsis">Telegram Raw API</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Telegram Raw API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Telegram Raw API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Functions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Base</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+<h1 id="updateshortchatmessage">UpdateShortChatMessage<a class="headerlink" href="#updateshortchatmessage" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.raw.types.UpdateShortChatMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">UpdateShortChatMessage</span></span><a class="headerlink" href="#pyrogram.raw.types.UpdateShortChatMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Telegram API type.</p>
+<p>Constructor of <a class="reference internal" href="../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a>.</p>
+<dl class="simple">
+<dt>Details:</dt><dd><ul class="simple">
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">170</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">4D6DEEA5</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.raw.types.UpdateShortChatMessage-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.raw.types.UpdateShortChatMessage-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
+<li><p><strong>from_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – N/A</p></li>
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – N/A</p></li>
+<li><p><strong>message</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – N/A</p></li>
+<li><p><strong>pts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
+<li><p><strong>pts_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
+<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – N/A</p></li>
+<li><p><strong>out</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>mentioned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>media_unread</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>silent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>fwd_from</strong> (<a class="reference internal" href="../base/message-fwd-header.html#pyrogram.raw.base.MessageFwdHeader" title="pyrogram.raw.base.MessageFwdHeader (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageFwdHeader</span></code></a>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>via_bot_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>reply_to</strong> (<a class="reference internal" href="../base/message-reply-header.html#pyrogram.raw.base.MessageReplyHeader" title="pyrogram.raw.base.MessageReplyHeader (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplyHeader</span></code></a>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>entities</strong> (List of <a class="reference internal" href="../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>Functions:</dt><dd><p>This object can be returned by 97 functions.</p>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/account/get-notify-exceptions.html#pyrogram.raw.functions.account.GetNotifyExceptions" title="pyrogram.raw.functions.account.GetNotifyExceptions (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">account.GetNotifyExceptions</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/contacts/delete-contacts.html#pyrogram.raw.functions.contacts.DeleteContacts" title="pyrogram.raw.functions.contacts.DeleteContacts (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contacts.DeleteContacts</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/contacts/add-contact.html#pyrogram.raw.functions.contacts.AddContact" title="pyrogram.raw.functions.contacts.AddContact (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contacts.AddContact</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/contacts/accept-contact.html#pyrogram.raw.functions.contacts.AcceptContact" title="pyrogram.raw.functions.contacts.AcceptContact (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contacts.AcceptContact</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/contacts/get-located.html#pyrogram.raw.functions.contacts.GetLocated" title="pyrogram.raw.functions.contacts.GetLocated (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contacts.GetLocated</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/contacts/block-from-replies.html#pyrogram.raw.functions.contacts.BlockFromReplies" title="pyrogram.raw.functions.contacts.BlockFromReplies (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">contacts.BlockFromReplies</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/send-message.html#pyrogram.raw.functions.messages.SendMessage" title="pyrogram.raw.functions.messages.SendMessage (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendMessage</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-media.html#pyrogram.raw.functions.messages.SendMedia" title="pyrogram.raw.functions.messages.SendMedia (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendMedia</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/forward-messages.html#pyrogram.raw.functions.messages.ForwardMessages" title="pyrogram.raw.functions.messages.ForwardMessages (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ForwardMessages</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/edit-chat-title.html#pyrogram.raw.functions.messages.EditChatTitle" title="pyrogram.raw.functions.messages.EditChatTitle (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.EditChatTitle</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/edit-chat-photo.html#pyrogram.raw.functions.messages.EditChatPhoto" title="pyrogram.raw.functions.messages.EditChatPhoto (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.EditChatPhoto</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/add-chat-user.html#pyrogram.raw.functions.messages.AddChatUser" title="pyrogram.raw.functions.messages.AddChatUser (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.AddChatUser</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/delete-chat-user.html#pyrogram.raw.functions.messages.DeleteChatUser" title="pyrogram.raw.functions.messages.DeleteChatUser (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.DeleteChatUser</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/create-chat.html#pyrogram.raw.functions.messages.CreateChat" title="pyrogram.raw.functions.messages.CreateChat (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.CreateChat</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/import-chat-invite.html#pyrogram.raw.functions.messages.ImportChatInvite" title="pyrogram.raw.functions.messages.ImportChatInvite (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ImportChatInvite</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/start-bot.html#pyrogram.raw.functions.messages.StartBot" title="pyrogram.raw.functions.messages.StartBot (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.StartBot</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/migrate-chat.html#pyrogram.raw.functions.messages.MigrateChat" title="pyrogram.raw.functions.messages.MigrateChat (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.MigrateChat</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-inline-bot-result.html#pyrogram.raw.functions.messages.SendInlineBotResult" title="pyrogram.raw.functions.messages.SendInlineBotResult (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendInlineBotResult</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/edit-message.html#pyrogram.raw.functions.messages.EditMessage" title="pyrogram.raw.functions.messages.EditMessage (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.EditMessage</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/get-all-drafts.html#pyrogram.raw.functions.messages.GetAllDrafts" title="pyrogram.raw.functions.messages.GetAllDrafts (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetAllDrafts</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/set-game-score.html#pyrogram.raw.functions.messages.SetGameScore" title="pyrogram.raw.functions.messages.SetGameScore (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SetGameScore</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-screenshot-notification.html#pyrogram.raw.functions.messages.SendScreenshotNotification" title="pyrogram.raw.functions.messages.SendScreenshotNotification (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendScreenshotNotification</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/send-multi-media.html#pyrogram.raw.functions.messages.SendMultiMedia" title="pyrogram.raw.functions.messages.SendMultiMedia (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendMultiMedia</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/update-pinned-message.html#pyrogram.raw.functions.messages.UpdatePinnedMessage" title="pyrogram.raw.functions.messages.UpdatePinnedMessage (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.UpdatePinnedMessage</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/send-vote.html#pyrogram.raw.functions.messages.SendVote" title="pyrogram.raw.functions.messages.SendVote (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendVote</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/get-poll-results.html#pyrogram.raw.functions.messages.GetPollResults" title="pyrogram.raw.functions.messages.GetPollResults (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetPollResults</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/edit-chat-default-banned-rights.html#pyrogram.raw.functions.messages.EditChatDefaultBannedRights" title="pyrogram.raw.functions.messages.EditChatDefaultBannedRights (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.EditChatDefaultBannedRights</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-scheduled-messages.html#pyrogram.raw.functions.messages.SendScheduledMessages" title="pyrogram.raw.functions.messages.SendScheduledMessages (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendScheduledMessages</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/delete-scheduled-messages.html#pyrogram.raw.functions.messages.DeleteScheduledMessages" title="pyrogram.raw.functions.messages.DeleteScheduledMessages (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.DeleteScheduledMessages</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/set-history-ttl.html#pyrogram.raw.functions.messages.SetHistoryTTL" title="pyrogram.raw.functions.messages.SetHistoryTTL (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SetHistoryTTL</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/set-chat-theme.html#pyrogram.raw.functions.messages.SetChatTheme" title="pyrogram.raw.functions.messages.SetChatTheme (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SetChatTheme</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/hide-chat-join-request.html#pyrogram.raw.functions.messages.HideChatJoinRequest" title="pyrogram.raw.functions.messages.HideChatJoinRequest (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.HideChatJoinRequest</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/hide-all-chat-join-requests.html#pyrogram.raw.functions.messages.HideAllChatJoinRequests" title="pyrogram.raw.functions.messages.HideAllChatJoinRequests (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.HideAllChatJoinRequests</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/toggle-no-forwards.html#pyrogram.raw.functions.messages.ToggleNoForwards" title="pyrogram.raw.functions.messages.ToggleNoForwards (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ToggleNoForwards</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/send-reaction.html#pyrogram.raw.functions.messages.SendReaction" title="pyrogram.raw.functions.messages.SendReaction (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendReaction</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/get-messages-reactions.html#pyrogram.raw.functions.messages.GetMessagesReactions" title="pyrogram.raw.functions.messages.GetMessagesReactions (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetMessagesReactions</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/set-chat-available-reactions.html#pyrogram.raw.functions.messages.SetChatAvailableReactions" title="pyrogram.raw.functions.messages.SetChatAvailableReactions (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SetChatAvailableReactions</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-web-view-data.html#pyrogram.raw.functions.messages.SendWebViewData" title="pyrogram.raw.functions.messages.SendWebViewData (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendWebViewData</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/get-extended-media.html#pyrogram.raw.functions.messages.GetExtendedMedia" title="pyrogram.raw.functions.messages.GetExtendedMedia (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetExtendedMedia</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/send-bot-requested-peer.html#pyrogram.raw.functions.messages.SendBotRequestedPeer" title="pyrogram.raw.functions.messages.SendBotRequestedPeer (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SendBotRequestedPeer</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/set-chat-wall-paper.html#pyrogram.raw.functions.messages.SetChatWallPaper" title="pyrogram.raw.functions.messages.SetChatWallPaper (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.SetChatWallPaper</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/create-channel.html#pyrogram.raw.functions.channels.CreateChannel" title="pyrogram.raw.functions.channels.CreateChannel (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateChannel</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-admin.html#pyrogram.raw.functions.channels.EditAdmin" title="pyrogram.raw.functions.channels.EditAdmin (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditAdmin</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-title.html#pyrogram.raw.functions.channels.EditTitle" title="pyrogram.raw.functions.channels.EditTitle (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditTitle</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-photo.html#pyrogram.raw.functions.channels.EditPhoto" title="pyrogram.raw.functions.channels.EditPhoto (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditPhoto</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/join-channel.html#pyrogram.raw.functions.channels.JoinChannel" title="pyrogram.raw.functions.channels.JoinChannel (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.JoinChannel</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/leave-channel.html#pyrogram.raw.functions.channels.LeaveChannel" title="pyrogram.raw.functions.channels.LeaveChannel (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.LeaveChannel</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/invite-to-channel.html#pyrogram.raw.functions.channels.InviteToChannel" title="pyrogram.raw.functions.channels.InviteToChannel (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.InviteToChannel</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/delete-channel.html#pyrogram.raw.functions.channels.DeleteChannel" title="pyrogram.raw.functions.channels.DeleteChannel (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteChannel</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-signatures.html#pyrogram.raw.functions.channels.ToggleSignatures" title="pyrogram.raw.functions.channels.ToggleSignatures (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSignatures</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-banned.html#pyrogram.raw.functions.channels.EditBanned" title="pyrogram.raw.functions.channels.EditBanned (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditBanned</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/delete-history.html#pyrogram.raw.functions.channels.DeleteHistory" title="pyrogram.raw.functions.channels.DeleteHistory (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteHistory</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-pre-history-hidden.html#pyrogram.raw.functions.channels.TogglePreHistoryHidden" title="pyrogram.raw.functions.channels.TogglePreHistoryHidden (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.TogglePreHistoryHidden</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-creator.html#pyrogram.raw.functions.channels.EditCreator" title="pyrogram.raw.functions.channels.EditCreator (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditCreator</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-slow-mode.html#pyrogram.raw.functions.channels.ToggleSlowMode" title="pyrogram.raw.functions.channels.ToggleSlowMode (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSlowMode</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/convert-to-gigagroup.html#pyrogram.raw.functions.channels.ConvertToGigagroup" title="pyrogram.raw.functions.channels.ConvertToGigagroup (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ConvertToGigagroup</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-join-to-send.html#pyrogram.raw.functions.channels.ToggleJoinToSend" title="pyrogram.raw.functions.channels.ToggleJoinToSend (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinToSend</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-join-request.html#pyrogram.raw.functions.channels.ToggleJoinRequest" title="pyrogram.raw.functions.channels.ToggleJoinRequest (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinRequest</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-forum.html#pyrogram.raw.functions.channels.ToggleForum" title="pyrogram.raw.functions.channels.ToggleForum (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleForum</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/create-forum-topic.html#pyrogram.raw.functions.channels.CreateForumTopic" title="pyrogram.raw.functions.channels.CreateForumTopic (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateForumTopic</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-forum-topic.html#pyrogram.raw.functions.channels.EditForumTopic" title="pyrogram.raw.functions.channels.EditForumTopic (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditForumTopic</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-pinned-forum-topic.html#pyrogram.raw.functions.channels.UpdatePinnedForumTopic" title="pyrogram.raw.functions.channels.UpdatePinnedForumTopic (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePinnedForumTopic</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/reorder-pinned-forum-topics.html#pyrogram.raw.functions.channels.ReorderPinnedForumTopics" title="pyrogram.raw.functions.channels.ReorderPinnedForumTopics (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ReorderPinnedForumTopics</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-anti-spam.html#pyrogram.raw.functions.channels.ToggleAntiSpam" title="pyrogram.raw.functions.channels.ToggleAntiSpam (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAntiSpam</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-participants-hidden.html#pyrogram.raw.functions.channels.ToggleParticipantsHidden" title="pyrogram.raw.functions.channels.ToggleParticipantsHidden (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleParticipantsHidden</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-color.html#pyrogram.raw.functions.channels.UpdateColor" title="pyrogram.raw.functions.channels.UpdateColor (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateColor</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-view-forum-as-messages.html#pyrogram.raw.functions.channels.ToggleViewForumAsMessages" title="pyrogram.raw.functions.channels.ToggleViewForumAsMessages (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleViewForumAsMessages</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-emoji-status.html#pyrogram.raw.functions.channels.UpdateEmojiStatus" title="pyrogram.raw.functions.channels.UpdateEmojiStatus (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateEmojiStatus</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/allow-send-message.html#pyrogram.raw.functions.bots.AllowSendMessage" title="pyrogram.raw.functions.bots.AllowSendMessage (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.AllowSendMessage</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/assign-app-store-transaction.html#pyrogram.raw.functions.payments.AssignAppStoreTransaction" title="pyrogram.raw.functions.payments.AssignAppStoreTransaction (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignAppStoreTransaction</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/assign-play-market-transaction.html#pyrogram.raw.functions.payments.AssignPlayMarketTransaction" title="pyrogram.raw.functions.payments.AssignPlayMarketTransaction (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignPlayMarketTransaction</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/apply-gift-code.html#pyrogram.raw.functions.payments.ApplyGiftCode" title="pyrogram.raw.functions.payments.ApplyGiftCode (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ApplyGiftCode</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/launch-prepaid-giveaway.html#pyrogram.raw.functions.payments.LaunchPrepaidGiveaway" title="pyrogram.raw.functions.payments.LaunchPrepaidGiveaway (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.LaunchPrepaidGiveaway</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-call.html#pyrogram.raw.functions.phone.DiscardCall" title="pyrogram.raw.functions.phone.DiscardCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/set-call-rating.html#pyrogram.raw.functions.phone.SetCallRating" title="pyrogram.raw.functions.phone.SetCallRating (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SetCallRating</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/create-group-call.html#pyrogram.raw.functions.phone.CreateGroupCall" title="pyrogram.raw.functions.phone.CreateGroupCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateGroupCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/join-group-call.html#pyrogram.raw.functions.phone.JoinGroupCall" title="pyrogram.raw.functions.phone.JoinGroupCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/leave-group-call.html#pyrogram.raw.functions.phone.LeaveGroupCall" title="pyrogram.raw.functions.phone.LeaveGroupCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/invite-to-group-call.html#pyrogram.raw.functions.phone.InviteToGroupCall" title="pyrogram.raw.functions.phone.InviteToGroupCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteToGroupCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-group-call.html#pyrogram.raw.functions.phone.DiscardGroupCall" title="pyrogram.raw.functions.phone.DiscardGroupCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardGroupCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-settings.html#pyrogram.raw.functions.phone.ToggleGroupCallSettings" title="pyrogram.raw.functions.phone.ToggleGroupCallSettings (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallSettings</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-record.html#pyrogram.raw.functions.phone.ToggleGroupCallRecord" title="pyrogram.raw.functions.phone.ToggleGroupCallRecord (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallRecord</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-participant.html#pyrogram.raw.functions.phone.EditGroupCallParticipant" title="pyrogram.raw.functions.phone.EditGroupCallParticipant (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallParticipant</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-title.html#pyrogram.raw.functions.phone.EditGroupCallTitle" title="pyrogram.raw.functions.phone.EditGroupCallTitle (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallTitle</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-start-subscription.html#pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription" title="pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallStartSubscription</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/start-scheduled-group-call.html#pyrogram.raw.functions.phone.StartScheduledGroupCall" title="pyrogram.raw.functions.phone.StartScheduledGroupCall (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.StartScheduledGroupCall</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/join-group-call-presentation.html#pyrogram.raw.functions.phone.JoinGroupCallPresentation" title="pyrogram.raw.functions.phone.JoinGroupCallPresentation (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCallPresentation</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/leave-group-call-presentation.html#pyrogram.raw.functions.phone.LeaveGroupCallPresentation" title="pyrogram.raw.functions.phone.LeaveGroupCallPresentation (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCallPresentation</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/folders/edit-peer-folders.html#pyrogram.raw.functions.folders.EditPeerFolders" title="pyrogram.raw.functions.folders.EditPeerFolders (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders.EditPeerFolders</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-invite.html#pyrogram.raw.functions.chatlists.JoinChatlistInvite" title="pyrogram.raw.functions.chatlists.JoinChatlistInvite (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistInvite</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-updates.html#pyrogram.raw.functions.chatlists.JoinChatlistUpdates" title="pyrogram.raw.functions.chatlists.JoinChatlistUpdates (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistUpdates</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/leave-chatlist.html#pyrogram.raw.functions.chatlists.LeaveChatlist" title="pyrogram.raw.functions.chatlists.LeaveChatlist (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.LeaveChatlist</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/send-story.html#pyrogram.raw.functions.stories.SendStory" title="pyrogram.raw.functions.stories.SendStory (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendStory</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/edit-story.html#pyrogram.raw.functions.stories.EditStory" title="pyrogram.raw.functions.stories.EditStory (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.EditStory</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/activate-stealth-mode.html#pyrogram.raw.functions.stories.ActivateStealthMode" title="pyrogram.raw.functions.stories.ActivateStealthMode (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.ActivateStealthMode</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/send-reaction.html#pyrogram.raw.functions.stories.SendReaction" title="pyrogram.raw.functions.stories.SendReaction (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendReaction</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/get-all-read-peer-stories.html#pyrogram.raw.functions.stories.GetAllReadPeerStories" title="pyrogram.raw.functions.stories.GetAllReadPeerStories (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.GetAllReadPeerStories</span></code></a></p></td>
+<td><p>Telegram API function.</p></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</dd></dl>
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="update-short.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: UpdateShort" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              UpdateShort
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="update-short-message.html" class="md-footer__link md-footer__link--next" aria-label="Next: UpdateShortMessage" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              UpdateShortMessage
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    7.2.6.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": ["latest"], "title": "main", "version": "main"}, {"aliases": [], "title": "staging", "version": "staging"}], "versionPath": null}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=a56c686a"></script>
+    
+  </body>
+</html>
