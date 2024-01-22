@@ -13,7 +13,7 @@
     
     
       
-        <title>send_reaction() - Pyrofork Documentation v2.3.16.post4</title>
+        <title>send_reaction() - Pyrofork Documentation v2.3.19</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post4" class="md-header__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post4" data-md-component="logo">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.19" class="md-header__button md-logo" aria-label="Pyrofork Documentation v2.3.19" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -95,7 +95,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Pyrofork Documentation v2.3.16.post4
+            Pyrofork Documentation v2.3.19
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,12 +280,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post4" class="md-nav__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post4" data-md-component="logo">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.19" class="md-nav__button md-logo" aria-label="Pyrofork Documentation v2.3.19" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
     </a>
-    Pyrofork Documentation v2.3.16.post4
+    Pyrofork Documentation v2.3.19
   </label>
   
     <div class="md-nav__source">
@@ -941,7 +941,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.send_reaction" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Send a reaction to a message." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Service messages can&#39;t be reacted to. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.send_reaction">
@@ -2162,7 +2162,7 @@
       
         <li class="md-nav__item">
   <a href="#pyrogram.Client.send_reaction" class="md-nav__link">
-    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Send a reaction to a message." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
+    <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span><span title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Service messages can&#39;t be reacted to. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel." class="md-ellipsis">Client.<wbr>send_<wbr>reaction</span>
   </a>
   
     <nav class="md-nav" aria-label="Client.send_reaction">
@@ -2205,7 +2205,11 @@
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.Client.send_reaction">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_reaction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.send_reaction" title="Link to this definition">¶</a></dt>
-<dd><p>Send a reaction to a message.</p>
+<dd><p>Use this method to send reactions on a message/stories.
+Service messages can’t be reacted to.
+Automatically forwarded messages from
+a channel to its discussion group have the
+same available reactions as messages in the channel.</p>
 <strong>Usable by</strong>
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
@@ -2213,18 +2217,20 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the message.</p></li>
+<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the target message. If the message belongs to a media group, the reaction is set to the first non-deleted message in the group instead.</p></li>
 <li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the story.</p></li>
 <li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | List of <code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Reaction emoji.
 Pass None as emoji (default) to retract the reaction.
 Pass list of int or str to react multiple emojis.</p></li>
-<li><p><strong>big</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to show a bigger and longer reaction.
-Defaults to False.
-for message reaction only.</p></li>
+<li><p><strong>big</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to set the reaction with a big animation.
+For message reactions only.
+Defaults to False.</p></li>
+<li><p><strong>add_to_recent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the reaction should appear in the recently used reactions.
+This option is applicable only for users.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_reaction-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_reaction-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, True is returned.</p>
+<dd class="field-even"><p><a class="reference internal" href="../types/MessageReactions.html#pyrogram.types.MessageReactions" title="pyrogram.types.MessageReactions (Python class) — Contains information about a message reactions."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReactions</span></code></a> – On success, True is returned.</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

@@ -13,7 +13,7 @@
     
     
       
-        <title>Chat - Pyrofork Documentation v2.3.16.post4</title>
+        <title>Chat - Pyrofork Documentation v2.3.19</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post4" class="md-header__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post4" data-md-component="logo">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.19" class="md-header__button md-logo" aria-label="Pyrofork Documentation v2.3.19" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -95,7 +95,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Pyrofork Documentation v2.3.16.post4
+            Pyrofork Documentation v2.3.19
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -280,12 +280,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="Pyrofork Documentation v2.3.16.post4" class="md-nav__button md-logo" aria-label="Pyrofork Documentation v2.3.16.post4" data-md-component="logo">
+    <a href="../../index.html" title="Pyrofork Documentation v2.3.19" class="md-nav__button md-logo" aria-label="Pyrofork Documentation v2.3.19" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
     </a>
-    Pyrofork Documentation v2.3.16.post4
+    Pyrofork Documentation v2.3.19
   </label>
   
     <div class="md-nav__source">
@@ -1774,6 +1774,7 @@ See <em>restriction_reason</em> for details.</p></li>
 Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat (Python method) — Get up to date information about a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
 <li><p><strong>is_join_request</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the admin need to approve member(s) join request.</p></li>
 <li><p><strong>is_join_to_send</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if only chat members allowed to send message in chat.</p></li>
+<li><p><strong>is_slowmode_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if slowmode is enabled in chat.</p></li>
 <li><p><strong>is_antispam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if Aggressive Anti-Spam is enabled in chat.
 Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat (Python method) — Get up to date information about a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
 <li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Title, for supergroups, channels and basic group chats.</p></li>
@@ -1802,6 +1803,8 @@ Returned only in <a class="reference internal" href="../methods/get_chat.html#py
 <li><p><strong>can_set_sticker_set</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the group sticker set can be changed by you.
 Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat (Python method) — Get up to date information about a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
 <li><p><strong>members_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Chat members count, for groups, supergroups and channels only.
+Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat (Python method) — Get up to date information about a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
+<li><p><strong>slow_mode_delay</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – For supergroups, the minimum allowed delay between consecutive messages sent by each unpriviledged user in seconds.
 Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat (Python method) — Get up to date information about a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
 <li><p><strong>restrictions</strong> (List of <a class="reference internal" href="Restriction.html#pyrogram.types.Restriction" title="pyrogram.types.Restriction (Python class) — A restriction applied to bots or chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restriction</span></code></a>, <em>optional</em>) – The list of reasons why this chat might be unavailable to some users.
 This field is available only in case <em>is_restricted</em> is True.</p></li>
