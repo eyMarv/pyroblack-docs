@@ -13,7 +13,7 @@
     
     
       
-        <title>406 - NotAcceptable - pyroblack Documentation v2.3.60</title>
+        <title>406 - NotAcceptable - pyroblack Documentation v2.3.61</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.60" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.60" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.61" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.61" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -88,7 +88,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.60
+            pyroblack Documentation v2.3.61
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -273,10 +273,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.60" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.60" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.61" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.61" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.60
+    pyroblack Documentation v2.3.61
   </label>
   
     <div class="md-nav__source">
@@ -1270,20 +1270,26 @@
 <tr class="row-even"><td><p>CHANNEL_TOO_LARGE</p></td>
 <td><p>Сhannel is too large to be deleted. Contact support for removal</p></td>
 </tr>
-<tr class="row-odd"><td><p>FILEREF_UPGRADE_NEEDED</p></td>
+<tr class="row-odd"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
+<td><p>You can’t forward messages from a protected chat</p></td>
+</tr>
+<tr class="row-even"><td><p>FILEREF_UPGRADE_NEEDED</p></td>
 <td><p>The file reference has expired and you must use a refreshed one by obtaining the original media message</p></td>
 </tr>
-<tr class="row-even"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You were just elected admin, you can’t add or modify other admins yet</p></td>
 </tr>
-<tr class="row-odd"><td><p>FRESH_CHANGE_PHONE_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>FRESH_CHANGE_PHONE_FORBIDDEN</p></td>
 <td><p>You can’t change your phone number because your session was logged-in recently</p></td>
 </tr>
-<tr class="row-even"><td><p>FRESH_RESET_AUTHORISATION_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>FRESH_RESET_AUTHORISATION_FORBIDDEN</p></td>
 <td><p>You can’t terminate other authorized sessions because the current was logged-in recently</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIFTCODE_NOT_ALLOWED</p></td>
+<tr class="row-even"><td><p>GIFTCODE_NOT_ALLOWED</p></td>
 <td><p>Giftcode not allowed</p></td>
+</tr>
+<tr class="row-odd"><td><p>INVITE_HASH_EXPIRED</p></td>
+<td><p>The chat the user tried to join has expired and is not valid anymore</p></td>
 </tr>
 <tr class="row-even"><td><p>PHONE_NUMBER_INVALID</p></td>
 <td><p>The phone number is invalid</p></td>
@@ -1291,16 +1297,31 @@
 <tr class="row-odd"><td><p>PHONE_PASSWORD_FLOOD</p></td>
 <td><p>You have tried to log-in too many times</p></td>
 </tr>
-<tr class="row-even"><td><p>STICKERSET_INVALID</p></td>
+<tr class="row-even"><td><p>PREMIUM_CURRENTLY_UNAVAILABLE</p></td>
+<td><p>Premium currently unavailable</p></td>
+</tr>
+<tr class="row-odd"><td><p>PREVIOUS_CHAT_IMPORT_ACTIVE_WAIT_XMIN</p></td>
+<td><p>Similar to a flood wait, must wait {value} minutes</p></td>
+</tr>
+<tr class="row-even"><td><p>SEND_CODE_UNAVAILABLE</p></td>
+<td><p>Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend)</p></td>
+</tr>
+<tr class="row-odd"><td><p>STICKERSET_INVALID</p></td>
 <td><p>The sticker set is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>STICKERSET_OWNER_ANONYMOUS</p></td>
+<tr class="row-even"><td><p>STICKERSET_OWNER_ANONYMOUS</p></td>
 <td><p>This sticker set can’t be used as the group’s sticker set because it was created by one of its anonymous admins</p></td>
 </tr>
-<tr class="row-even"><td><p>USERPIC_UPLOAD_REQUIRED</p></td>
+<tr class="row-odd"><td><p>UPDATE_APP_TO_LOGIN</p></td>
+<td><p>Update app to login</p></td>
+</tr>
+<tr class="row-even"><td><p>USERPIC_PRIVACY_REQUIRED</p></td>
+<td><p>You need to disable privacy settings for your profile picture in order to make your geolocation public</p></td>
+</tr>
+<tr class="row-odd"><td><p>USERPIC_UPLOAD_REQUIRED</p></td>
 <td><p>You must have a profile picture to publish your geolocation</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_RESTRICTED</p></td>
+<tr class="row-even"><td><p>USER_RESTRICTED</p></td>
 <td><p>You are limited/restricted. You can’t perform this action</p></td>
 </tr>
 </tbody>

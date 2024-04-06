@@ -13,7 +13,7 @@
     
     
       
-        <title>403 - Forbidden - pyroblack Documentation v2.3.60</title>
+        <title>403 - Forbidden - pyroblack Documentation v2.3.61</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.60" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.60" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.61" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.61" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -88,7 +88,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.60
+            pyroblack Documentation v2.3.61
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -273,10 +273,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.60" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.60" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.61" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.61" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.60
+    pyroblack Documentation v2.3.61
   </label>
   
     <div class="md-nav__source">
@@ -1291,6 +1291,12 @@
 <tr class="row-odd"><td><p>MESSAGE_DELETE_FORBIDDEN</p></td>
 <td><p>You don’t have rights to delete messages in this chat, most likely because you are not the author of them</p></td>
 </tr>
+<tr class="row-even"><td><p>NOT_ALLOWED</p></td>
+<td><p>Not allowed</p></td>
+</tr>
+<tr class="row-odd"><td><p>PARTICIPANT_JOIN_MISSING</p></td>
+<td><p>Trying to enable a presentation, when the user hasn’t joined the Video Chat with phone.joinGroupCall</p></td>
+</tr>
 <tr class="row-even"><td><p>POLL_VOTE_REQUIRED</p></td>
 <td><p>Cast a vote in the poll before calling this method</p></td>
 </tr>
@@ -1300,20 +1306,26 @@
 <tr class="row-even"><td><p>PRIVACY_PREMIUM_REQUIRED</p></td>
 <td><p>The user has restricted from sending messages OR This action requires a premium account</p></td>
 </tr>
-<tr class="row-odd"><td><p>RIGHT_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>PUBLIC_CHANNEL_MISSING</p></td>
+<td><p>You can only export group call invite links for public chats or channels</p></td>
+</tr>
+<tr class="row-even"><td><p>RIGHT_FORBIDDEN</p></td>
 <td><p>You don’t have enough rights for this action, or you tried to set one or more admin rights that can’t be applied to this kind of chat (channel or supergroup)</p></td>
 </tr>
-<tr class="row-even"><td><p>SENSITIVE_CHANGE_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>SENSITIVE_CHANGE_FORBIDDEN</p></td>
 <td><p>Your sensitive content settings can’t be changed at this time</p></td>
 </tr>
-<tr class="row-odd"><td><p>TAKEOUT_REQUIRED</p></td>
+<tr class="row-even"><td><p>TAKEOUT_REQUIRED</p></td>
 <td><p>The method must be invoked inside a takeout session</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_BOT_INVALID</p></td>
+<tr class="row-odd"><td><p>USER_BOT_INVALID</p></td>
 <td><p>This method can only be called by a bot</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_CHANNELS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>USER_CHANNELS_TOO_MUCH</p></td>
 <td><p>One of the users you tried to add is already in too many channels/supergroups</p></td>
+</tr>
+<tr class="row-odd"><td><p>USER_DELETED</p></td>
+<td><p>You can’t send this secret message because the other participant deleted their account</p></td>
 </tr>
 <tr class="row-even"><td><p>USER_INVALID</p></td>
 <td><p>The provided user is invalid</p></td>
@@ -1369,13 +1381,16 @@
 <tr class="row-odd"><td><p>CHAT_WRITE_FORBIDDEN</p></td>
 <td><p>You can’t write in this chat</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>GROUPCALL_ALREADY_STARTED</p></td>
+<td><p>The groupcall has already started, you can join directly using phone.joinGroupCall</p></td>
+</tr>
+<tr class="row-odd"><td><p>GROUPCALL_FORBIDDEN</p></td>
 <td><p>The group call has already ended</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIVE_DISABLED</p></td>
+<tr class="row-even"><td><p>LIVE_DISABLED</p></td>
 <td><p>Story is disabled server-side</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_GUEST_SEND_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>CHAT_GUEST_SEND_FORBIDDEN</p></td>
 <td><p>You need to join the discussion group before commenting</p></td>
 </tr>
 </tbody>

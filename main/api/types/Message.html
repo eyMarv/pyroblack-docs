@@ -13,7 +13,7 @@
     
     
       
-        <title>Message - pyroblack Documentation v2.3.60</title>
+        <title>Message - pyroblack Documentation v2.3.61</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.60" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.60" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.61" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.61" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.60
+            pyroblack Documentation v2.3.61
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.60" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.60" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.61" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.61" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.60
+    pyroblack Documentation v2.3.61
   </label>
   
     <div class="md-nav__source">
@@ -2109,6 +2109,7 @@ for supergroups only</p></li>
 The channel itself for channel messages.
 The supergroup itself for messages from anonymous group administrators.
 The linked channel for messages automatically forwarded to the discussion group.</p></li>
+<li><p><strong>sender_business_bot</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Sender of the message, sent on behalf of a business bot.</p></li>
 <li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the message was sent.</p></li>
 <li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Conversation the message belongs to.</p></li>
 <li><p><strong>topics</strong> (<a class="reference internal" href="ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a>, <em>optional</em>) – Topic the message belongs to.
@@ -2128,6 +2129,7 @@ only returned using when client.get_messages.</p></li>
 <li><p><strong>reply_to_message</strong> (<a class="reference internal" href="#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>, <em>optional</em>) – For replies, the original message. Note that the Message object in this field will not contain
 further reply_to_message fields even if it itself is a reply.</p></li>
 <li><p><strong>reply_to_story</strong> (<a class="reference internal" href="Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — A story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a>, <em>optional</em>) – For replies, the original story.</p></li>
+<li><p><strong>business_connection_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The business connection identifier.</p></li>
 <li><p><strong>mentioned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The message contains a mention.</p></li>
 <li><p><strong>empty</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The message is empty.
 A message can be empty in case it was deleted or you tried to retrieve a message that doesn’t exist yet.</p></li>
