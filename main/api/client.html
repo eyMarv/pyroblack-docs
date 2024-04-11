@@ -13,7 +13,7 @@
     
     
       
-        <title>pyroblack Client - pyroblack Documentation v2.3.62</title>
+        <title>pyroblack Client - pyroblack Documentation v2.3.64</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.3.62" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.62" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.3.64" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.64" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.62
+            pyroblack Documentation v2.3.64
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.3.62" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.62" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.3.64" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.64" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.62
+    pyroblack Documentation v2.3.64
   </label>
   
     <div class="md-nav__source">
@@ -1285,8 +1285,6 @@ In order to reconnect again using an in-memory session without having to login a
 <a class="reference internal" href="methods/export_session_string.html#pyrogram.Client.export_session_string" title="pyrogram.Client.export_session_string (Python method) — Export the current authorized session as a serialized string."><code class="xref py py-meth docutils literal notranslate"><span class="pre">export_session_string()</span></code></a> before stopping the client to get a session string you can
 pass to the <code class="docutils literal notranslate"><span class="pre">session_string</span></code> parameter.
 Defaults to False.</p></li>
-<li><p><strong>mongodb</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>, <em>optional</em>) – Mongodb config as dict, e.g.: <em>dict(connection=async_pymongo.AsyncClient(“mongodb://…”), remove_peers=False)</em>.
-Only applicable for new sessions.</p></li>
 <li><p><strong>storage</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Storage</span></code>, <em>optional</em>) – Custom session storage.</p></li>
 <li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the phone number as string (with the Country Code prefix included) to avoid entering it manually.
 Only applicable for new sessions.</p></li>
@@ -1306,6 +1304,8 @@ You can combine both syntaxes together.</p></li>
 When updates are disabled the client can’t receive messages or other updates.
 Useful for batch programs that don’t need to deal with updates.
 Defaults to False (updates enabled and received).</p></li>
+<li><p><strong>skip_updates</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to skip pending updates that arrived while the client was offline.
+Defaults to True.</p></li>
 <li><p><strong>takeout</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to let the client use a takeout session instead of a normal one, implies <em>no_updates=True</em>.
 Useful for exporting Telegram data. Methods invoked inside a takeout session (such as get_chat_history,
 download_media, …) are less prone to throw FloodWait exceptions.

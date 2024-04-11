@@ -13,7 +13,7 @@
     
     
       
-        <title>Storage Engines - pyroblack Documentation v2.3.62</title>
+        <title>Storage Engines - pyroblack Documentation v2.3.64</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.3.62" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.62" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.3.64" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.64" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.62
+            pyroblack Documentation v2.3.64
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.3.62" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.62" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.3.64" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.64" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.62
+    pyroblack Documentation v2.3.64
   </label>
   
     <div class="md-nav__source">
@@ -872,13 +872,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#mongodb-storage" class="md-nav__link">
-    <span class="md-ellipsis">Mongodb Storage</span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1224,13 +1217,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#mongodb-storage" class="md-nav__link">
-    <span class="md-ellipsis">Mongodb Storage</span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1302,31 +1288,6 @@ session database will be automatically loaded.</p>
 </div>
 <p>This storage engine is still backed by SQLite, but the database exists purely in memory. This means that, once you stop
 a client, the entire database is discarded and the session details used for logging in again will be lost forever.</p>
-<h3 id="mongodb-storage">Mongodb Storage<a class="headerlink" href="#mongodb-storage" title="Link to this heading">¶</a></h3>
-<p>In case you want to have persistent session but you don’t have persistent storage you can use mongodb storage by passing
-mongodb config as <code class="docutils literal notranslate"><span class="pre">dict</span></code> to the <code class="docutils literal notranslate"><span class="pre">mongodb</span></code> parameter of the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client (Python class) — pyroblack Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> constructor:</p>
-<p>Using async_pymongo (Recommended for python3.9+):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">async_pymongo</span> <span class="kn">import</span> <span class="n">AsyncClient</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
-
-<span class="n">conn</span> <span class="o">=</span> <span class="n">AsyncClient</span><span class="p">(</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">)</span>
-
-<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">mongodb</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">connection</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
-</code></pre></div>
-</div>
-<p>Using motor:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">motor.motor_asyncio</span> <span class="kn">import</span> <span class="n">AsyncIOMotorClient</span>
-<span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
-
-<span class="n">conn</span> <span class="o">=</span> <span class="n">AsyncIOMotorClient</span><span class="p">(</span><span class="s2">&quot;mongodb://...&quot;</span><span class="p">)</span>
-
-<span class="k">async</span> <span class="k">with</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">mongodb</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">connection</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span> <span class="n">remove_peers</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="k">as</span> <span class="n">app</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_me</span><span class="p">())</span>
-</code></pre></div>
-</div>
-<p>This storage engine is backed by MongoDB, a session will be created and saved to mongodb database. Any subsequent client
-restart will make pyroblack search for a database named that way and the session database will be automatically loaded.</p>
 <h2 id="session-strings">Session Strings<a class="headerlink" href="#session-strings" title="Link to this heading">¶</a></h2>
 <p>In case you want to use an in-memory storage, but also want to keep access to the session you created, call
 <a class="reference internal" href="../api/methods/export_session_string.html#pyrogram.Client.export_session_string" title="pyrogram.Client.export_session_string (Python method) — Export the current authorized session as a serialized string."><code class="xref py py-meth docutils literal notranslate"><span class="pre">export_session_string()</span></code></a> anytime before stopping the client…</p>
