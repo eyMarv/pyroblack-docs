@@ -13,7 +13,7 @@
     
     
       
-        <title>delete_messages() - pyroblack Documentation v2.3.74</title>
+        <title>delete_messages() - pyroblack Documentation v2.3.75</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.74" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.74" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.75" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.75" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.74
+            pyroblack Documentation v2.3.75
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.74" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.74" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.75" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.75" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.74
+    pyroblack Documentation v2.3.75
   </label>
   
     <div class="md-nav__source">
@@ -1368,6 +1368,36 @@
   
   
     <li class="md-nav__item">
+      <a href="search_posts.html" class="md-nav__link">
+        <span class="md-ellipsis">search_<wbr>posts</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="search_posts_count.html" class="md-nav__link">
+        <span class="md-ellipsis">search_<wbr>posts_<wbr>count</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="search_global.html" class="md-nav__link">
         <span class="md-ellipsis">search_<wbr>global</span>
       </a>
@@ -2276,6 +2306,9 @@ You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str
 This is only for private cloud chats and normal groups, messages on
 channels and supergroups are always revoked (i.e.: deleted for everyone).
 Defaults to True.</p></li>
+<li><p><strong>is_scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the message will be deleted from the scheduled messages.
+For userbots only.
+Defaults to None.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.delete_messages-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.delete_messages-returns" title="Permalink to this headline">¶</a></dt>
@@ -2291,6 +2324,9 @@ Defaults to True.</p></li>
 
 <span class="c1"># Delete messages only on your side (without revoking)</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">delete_messages</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">message_id</span><span class="p">,</span> <span class="n">revoke</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Delete scheduled messages</span>
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">delete_messages</span><span class="p">(</span><span class="n">chat_id</span><span class="p">,</span> <span class="n">message_id</span><span class="p">,</span> <span class="n">is_scheduled</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </dd></dl>
