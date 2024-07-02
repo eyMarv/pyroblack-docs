@@ -13,7 +13,7 @@
     
     
       
-        <title>unarchive_chats() - pyroblack Documentation v2.3.84</title>
+        <title>unarchive_chats() - pyroblack Documentation v2.3.85</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.84" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.84" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.85" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.85" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.84
+            pyroblack Documentation v2.3.85
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.84" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.84" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.85" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.85" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.84
+    pyroblack Documentation v2.3.85
   </label>
   
     <div class="md-nav__source">
@@ -798,6 +798,51 @@
   
   
     <li class="md-nav__item">
+      <a href="delete_folder.html" class="md-nav__link">
+        <span class="md-ellipsis">delete_<wbr>folder</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="export_folder_link.html" class="md-nav__link">
+        <span class="md-ellipsis">export_<wbr>folder_<wbr>link</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="update_folder.html" class="md-nav__link">
+        <span class="md-ellipsis">update_<wbr>folder</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="set_chat_title.html" class="md-nav__link">
         <span class="md-ellipsis">set_<wbr>chat_<wbr>title</span>
       </a>
@@ -965,6 +1010,21 @@
     <li class="md-nav__item">
       <a href="get_dialogs_count.html" class="md-nav__link">
         <span class="md-ellipsis">get_<wbr>dialogs_<wbr>count</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="get_folders.html" class="md-nav__link">
+        <span class="md-ellipsis">get_<wbr>folders</span>
       </a>
     </li>
   
@@ -1505,6 +1565,36 @@
     <li class="md-nav__item">
       <a href="leave_folder.html" class="md-nav__link">
         <span class="md-ellipsis">leave_<wbr>folder</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="update_color.html" class="md-nav__link">
+        <span class="md-ellipsis">update_<wbr>color</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="update_folder.html" class="md-nav__link">
+        <span class="md-ellipsis">update_<wbr>folder</span>
       </a>
     </li>
   
@@ -2262,9 +2352,11 @@
 <dt class="sig sig-object highlight py" id="pyrogram.Client.unarchive_chats">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">unarchive_chats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.unarchive_chats" title="Link to this definition">¶</a></dt>
 <dd><p>Unarchive one or more chats.</p>
-<strong>Usable by</strong>
-<span class="usable-by">✅ Users</span>
-<span class="usable-by">❌ Bots</span><dl class="field-list simple">
+<blockquote>
+    <strong>Usable by</strong>
+    <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
+    <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span>
+</blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.unarchive_chats-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.unarchive_chats-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><p><strong>chat_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | List[<code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>]) – Unique identifier (int) or username (str) of the target chat.
 You can also pass a list of ids (int) or usernames (str).

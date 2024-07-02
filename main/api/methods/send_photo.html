@@ -13,7 +13,7 @@
     
     
       
-        <title>send_photo() - pyroblack Documentation v2.3.84</title>
+        <title>send_photo() - pyroblack Documentation v2.3.85</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.84" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.84" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.85" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.3.85" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.3.84
+            pyroblack Documentation v2.3.85
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.3.84" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.84" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.3.85" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.3.85" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.3.84
+    pyroblack Documentation v2.3.85
   </label>
   
     <div class="md-nav__source">
@@ -680,6 +680,21 @@
     <li class="md-nav__item">
       <a href="copy_media_group.html" class="md-nav__link">
         <span class="md-ellipsis">copy_<wbr>media_<wbr>group</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="send_paid_media.html" class="md-nav__link">
+        <span class="md-ellipsis">send_<wbr>paid_<wbr>media</span>
       </a>
     </li>
   
@@ -2351,9 +2366,11 @@
 <dt class="sig sig-object highlight py" id="pyrogram.Client.send_photo">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_photo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.send_photo" title="Link to this definition">¶</a></dt>
 <dd><p>Send photos.</p>
-<strong>Usable by</strong>
-<span class="usable-by">✅ Users</span>
-<span class="usable-by">✅ Bots</span><dl class="field-list simple">
+<blockquote>
+    <strong>Usable by</strong>
+    <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
+    <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span>
+</blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_photo-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_photo-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
@@ -2390,6 +2407,7 @@ for reply_to_message only.</p></li>
 for reply_to_message only.</p></li>
 <li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
+<li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The ID of the message animation effect to send.</p></li>
 <li><p><strong>view_once</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Self-Destruct Timer.
 If True, the photo will self-destruct after it was viewed.</p></li>
 <li><p><strong>invert_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Inverts the position of the photo and caption.</p></li>
@@ -2461,7 +2479,7 @@ case the upload is deliberately stopped with <a class="reference internal" href=
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="copy_media_group.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: copy_media_group()" rel="prev">
+        <a href="send_paid_media.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: send_paid_media()" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2470,7 +2488,7 @@ case the upload is deliberately stopped with <a class="reference internal" href=
               <span class="md-footer__direction">
                 Previous
               </span>
-              copy_media_group()
+              send_paid_media()
             </div>
           </div>
         </a>
