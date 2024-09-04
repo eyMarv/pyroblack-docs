@@ -1,0 +1,1622 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../_static/favicon.ico">
+    
+    
+      
+        <title>Update - pyroblack Documentation v2.4.8</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.37dfeca1a5899a14e.min.css?v=e07098ad" />
+        <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=a738118e" />
+        <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+      <img src="../../_static/pyroblack.png" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            pyroblack Documentation v2.4.8
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Update
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eyMarv/pyroblack/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyroblack
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../intro/quickstart.html" class="md-tabs__link">
+      <span class="md-ellipsis">Introduction</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../start/setup.html" class="md-tabs__link">
+      <span class="md-ellipsis">Getting Started</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../api/client.html" class="md-tabs__link">
+      <span class="md-ellipsis">API Reference</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../topics/use-filters.html" class="md-tabs__link">
+      <span class="md-ellipsis">Topic Guides</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../faq/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Meta</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../functions/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Telegram Raw API</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+      <img src="../../_static/pyroblack.png" alt="logo">
+    </a>
+    pyroblack Documentation v2.4.8
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eyMarv/pyroblack/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyroblack
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">Introduction</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Introduction</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/quickstart.html" class="md-nav__link">
+        <span class="md-ellipsis">Quick Start</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/install.html" class="md-nav__link">
+        <span class="md-ellipsis">Install Guide</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">Getting Started</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Getting Started</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/setup.html" class="md-nav__link">
+        <span class="md-ellipsis">Project Setup</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/auth.html" class="md-nav__link">
+        <span class="md-ellipsis">Authorization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/invoking.html" class="md-nav__link">
+        <span class="md-ellipsis">Invoking Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/updates.html" class="md-nav__link">
+        <span class="md-ellipsis">Handling Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/errors.html" class="md-nav__link">
+        <span class="md-ellipsis">Error Handling</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start/examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Examples</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          <span class="md-ellipsis">API Reference</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">API Reference</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/client.html" class="md-nav__link">
+        <span class="md-ellipsis">pyroblack Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/types/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/enums/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Enumerations</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/handlers.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Handlers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/decorators.html" class="md-nav__link">
+        <span class="md-ellipsis">Decorators</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/errors/index.html" class="md-nav__link">
+        <span class="md-ellipsis">RPC Errors</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          <span class="md-ellipsis">Topic Guides</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Topic Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Topic Guides</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/use-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Using Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/create-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Creating Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/more-on-updates.html" class="md-nav__link">
+        <span class="md-ellipsis">More on Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/client-settings.html" class="md-nav__link">
+        <span class="md-ellipsis">Client Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/speedups.html" class="md-nav__link">
+        <span class="md-ellipsis">Speedups</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/text-formatting.html" class="md-nav__link">
+        <span class="md-ellipsis">Text Formatting</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/synchronous.html" class="md-nav__link">
+        <span class="md-ellipsis">Synchronous Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/smart-plugins.html" class="md-nav__link">
+        <span class="md-ellipsis">Smart Plugins</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/storage-engines.html" class="md-nav__link">
+        <span class="md-ellipsis">Storage Engines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/serializing.html" class="md-nav__link">
+        <span class="md-ellipsis">Object Serialization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/proxy.html" class="md-nav__link">
+        <span class="md-ellipsis">Proxy Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/scheduling.html" class="md-nav__link">
+        <span class="md-ellipsis">Scheduling Tasks</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/mtproto-vs-botapi.html" class="md-nav__link">
+        <span class="md-ellipsis">MTProto vs.<wbr> Bot API</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/debugging.html" class="md-nav__link">
+        <span class="md-ellipsis">Debugging</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/test-servers.html" class="md-nav__link">
+        <span class="md-ellipsis">Test Servers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/advanced-usage.html" class="md-nav__link">
+        <span class="md-ellipsis">Advanced Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topics/voice-calls.html" class="md-nav__link">
+        <span class="md-ellipsis">Voice Calls</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          <span class="md-ellipsis">Meta</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Meta" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Meta</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Frequently Asked Questions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support.html" class="md-nav__link">
+        <span class="md-ellipsis">Support pyroblack</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          <span class="md-ellipsis">Telegram Raw API</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Telegram Raw API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Telegram Raw API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Functions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Base</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+<h1 id="update">Update<a class="headerlink" href="#update" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.raw.base.Update">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">Update</span></span><a class="headerlink" href="#pyrogram.raw.base.Update" title="Link to this definition">¶</a></dt>
+<dd><p>Telegram API base type.</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 139 constructors available.</p>
+<table class="autosummary longtable docutils data align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-attach-menu-bots.html#pyrogram.raw.types.UpdateAttachMenuBots" title="pyrogram.raw.types.UpdateAttachMenuBots (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateAttachMenuBots</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-auto-save-settings.html#pyrogram.raw.types.UpdateAutoSaveSettings" title="pyrogram.raw.types.UpdateAutoSaveSettings (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateAutoSaveSettings</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-business-connect.html#pyrogram.raw.types.UpdateBotBusinessConnect" title="pyrogram.raw.types.UpdateBotBusinessConnect (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotBusinessConnect</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-callback-query.html#pyrogram.raw.types.UpdateBotCallbackQuery" title="pyrogram.raw.types.UpdateBotCallbackQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotCallbackQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-chat-boost.html#pyrogram.raw.types.UpdateBotChatBoost" title="pyrogram.raw.types.UpdateBotChatBoost (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotChatBoost</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-chat-invite-requester.html#pyrogram.raw.types.UpdateBotChatInviteRequester" title="pyrogram.raw.types.UpdateBotChatInviteRequester (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotChatInviteRequester</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-commands.html#pyrogram.raw.types.UpdateBotCommands" title="pyrogram.raw.types.UpdateBotCommands (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotCommands</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-delete-business-message.html#pyrogram.raw.types.UpdateBotDeleteBusinessMessage" title="pyrogram.raw.types.UpdateBotDeleteBusinessMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotDeleteBusinessMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-edit-business-message.html#pyrogram.raw.types.UpdateBotEditBusinessMessage" title="pyrogram.raw.types.UpdateBotEditBusinessMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotEditBusinessMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-inline-query.html#pyrogram.raw.types.UpdateBotInlineQuery" title="pyrogram.raw.types.UpdateBotInlineQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotInlineQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-inline-send.html#pyrogram.raw.types.UpdateBotInlineSend" title="pyrogram.raw.types.UpdateBotInlineSend (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotInlineSend</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-menu-button.html#pyrogram.raw.types.UpdateBotMenuButton" title="pyrogram.raw.types.UpdateBotMenuButton (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotMenuButton</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-message-reaction.html#pyrogram.raw.types.UpdateBotMessageReaction" title="pyrogram.raw.types.UpdateBotMessageReaction (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotMessageReaction</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-message-reactions.html#pyrogram.raw.types.UpdateBotMessageReactions" title="pyrogram.raw.types.UpdateBotMessageReactions (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotMessageReactions</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-new-business-message.html#pyrogram.raw.types.UpdateBotNewBusinessMessage" title="pyrogram.raw.types.UpdateBotNewBusinessMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotNewBusinessMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-precheckout-query.html#pyrogram.raw.types.UpdateBotPrecheckoutQuery" title="pyrogram.raw.types.UpdateBotPrecheckoutQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotPrecheckoutQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-shipping-query.html#pyrogram.raw.types.UpdateBotShippingQuery" title="pyrogram.raw.types.UpdateBotShippingQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotShippingQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-stopped.html#pyrogram.raw.types.UpdateBotStopped" title="pyrogram.raw.types.UpdateBotStopped (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotStopped</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-bot-webhook-json.html#pyrogram.raw.types.UpdateBotWebhookJSON" title="pyrogram.raw.types.UpdateBotWebhookJSON (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotWebhookJSON</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-bot-webhook-json-query.html#pyrogram.raw.types.UpdateBotWebhookJSONQuery" title="pyrogram.raw.types.UpdateBotWebhookJSONQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBotWebhookJSONQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-broadcast-revenue-transactions.html#pyrogram.raw.types.UpdateBroadcastRevenueTransactions" title="pyrogram.raw.types.UpdateBroadcastRevenueTransactions (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBroadcastRevenueTransactions</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-business-bot-callback-query.html#pyrogram.raw.types.UpdateBusinessBotCallbackQuery" title="pyrogram.raw.types.UpdateBusinessBotCallbackQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateBusinessBotCallbackQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-channel.html#pyrogram.raw.types.UpdateChannel" title="pyrogram.raw.types.UpdateChannel (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannel</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-channel-available-messages.html#pyrogram.raw.types.UpdateChannelAvailableMessages" title="pyrogram.raw.types.UpdateChannelAvailableMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelAvailableMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-channel-message-forwards.html#pyrogram.raw.types.UpdateChannelMessageForwards" title="pyrogram.raw.types.UpdateChannelMessageForwards (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelMessageForwards</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-channel-message-views.html#pyrogram.raw.types.UpdateChannelMessageViews" title="pyrogram.raw.types.UpdateChannelMessageViews (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelMessageViews</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-channel-participant.html#pyrogram.raw.types.UpdateChannelParticipant" title="pyrogram.raw.types.UpdateChannelParticipant (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelParticipant</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-channel-pinned-topic.html#pyrogram.raw.types.UpdateChannelPinnedTopic" title="pyrogram.raw.types.UpdateChannelPinnedTopic (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelPinnedTopic</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-channel-pinned-topics.html#pyrogram.raw.types.UpdateChannelPinnedTopics" title="pyrogram.raw.types.UpdateChannelPinnedTopics (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelPinnedTopics</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-channel-read-messages-contents.html#pyrogram.raw.types.UpdateChannelReadMessagesContents" title="pyrogram.raw.types.UpdateChannelReadMessagesContents (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelReadMessagesContents</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-channel-too-long.html#pyrogram.raw.types.UpdateChannelTooLong" title="pyrogram.raw.types.UpdateChannelTooLong (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelTooLong</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-channel-user-typing.html#pyrogram.raw.types.UpdateChannelUserTyping" title="pyrogram.raw.types.UpdateChannelUserTyping (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelUserTyping</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-channel-view-forum-as-messages.html#pyrogram.raw.types.UpdateChannelViewForumAsMessages" title="pyrogram.raw.types.UpdateChannelViewForumAsMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelViewForumAsMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-channel-web-page.html#pyrogram.raw.types.UpdateChannelWebPage" title="pyrogram.raw.types.UpdateChannelWebPage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChannelWebPage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-chat.html#pyrogram.raw.types.UpdateChat" title="pyrogram.raw.types.UpdateChat (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChat</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-chat-default-banned-rights.html#pyrogram.raw.types.UpdateChatDefaultBannedRights" title="pyrogram.raw.types.UpdateChatDefaultBannedRights (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatDefaultBannedRights</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-chat-participant.html#pyrogram.raw.types.UpdateChatParticipant" title="pyrogram.raw.types.UpdateChatParticipant (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatParticipant</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-chat-participant-add.html#pyrogram.raw.types.UpdateChatParticipantAdd" title="pyrogram.raw.types.UpdateChatParticipantAdd (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatParticipantAdd</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-chat-participant-admin.html#pyrogram.raw.types.UpdateChatParticipantAdmin" title="pyrogram.raw.types.UpdateChatParticipantAdmin (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatParticipantAdmin</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-chat-participant-delete.html#pyrogram.raw.types.UpdateChatParticipantDelete" title="pyrogram.raw.types.UpdateChatParticipantDelete (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatParticipantDelete</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-chat-participants.html#pyrogram.raw.types.UpdateChatParticipants" title="pyrogram.raw.types.UpdateChatParticipants (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatParticipants</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-chat-user-typing.html#pyrogram.raw.types.UpdateChatUserTyping" title="pyrogram.raw.types.UpdateChatUserTyping (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateChatUserTyping</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-config.html#pyrogram.raw.types.UpdateConfig" title="pyrogram.raw.types.UpdateConfig (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateConfig</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-contacts-reset.html#pyrogram.raw.types.UpdateContactsReset" title="pyrogram.raw.types.UpdateContactsReset (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateContactsReset</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-dc-options.html#pyrogram.raw.types.UpdateDcOptions" title="pyrogram.raw.types.UpdateDcOptions (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDcOptions</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-delete-channel-messages.html#pyrogram.raw.types.UpdateDeleteChannelMessages" title="pyrogram.raw.types.UpdateDeleteChannelMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDeleteChannelMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-delete-messages.html#pyrogram.raw.types.UpdateDeleteMessages" title="pyrogram.raw.types.UpdateDeleteMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDeleteMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-delete-quick-reply.html#pyrogram.raw.types.UpdateDeleteQuickReply" title="pyrogram.raw.types.UpdateDeleteQuickReply (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDeleteQuickReply</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-delete-quick-reply-messages.html#pyrogram.raw.types.UpdateDeleteQuickReplyMessages" title="pyrogram.raw.types.UpdateDeleteQuickReplyMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDeleteQuickReplyMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-delete-scheduled-messages.html#pyrogram.raw.types.UpdateDeleteScheduledMessages" title="pyrogram.raw.types.UpdateDeleteScheduledMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDeleteScheduledMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-dialog-filter.html#pyrogram.raw.types.UpdateDialogFilter" title="pyrogram.raw.types.UpdateDialogFilter (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDialogFilter</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-dialog-filter-order.html#pyrogram.raw.types.UpdateDialogFilterOrder" title="pyrogram.raw.types.UpdateDialogFilterOrder (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDialogFilterOrder</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-dialog-filters.html#pyrogram.raw.types.UpdateDialogFilters" title="pyrogram.raw.types.UpdateDialogFilters (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDialogFilters</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-dialog-pinned.html#pyrogram.raw.types.UpdateDialogPinned" title="pyrogram.raw.types.UpdateDialogPinned (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDialogPinned</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-dialog-unread-mark.html#pyrogram.raw.types.UpdateDialogUnreadMark" title="pyrogram.raw.types.UpdateDialogUnreadMark (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDialogUnreadMark</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-draft-message.html#pyrogram.raw.types.UpdateDraftMessage" title="pyrogram.raw.types.UpdateDraftMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateDraftMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-edit-channel-message.html#pyrogram.raw.types.UpdateEditChannelMessage" title="pyrogram.raw.types.UpdateEditChannelMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateEditChannelMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-edit-message.html#pyrogram.raw.types.UpdateEditMessage" title="pyrogram.raw.types.UpdateEditMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateEditMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-encrypted-chat-typing.html#pyrogram.raw.types.UpdateEncryptedChatTyping" title="pyrogram.raw.types.UpdateEncryptedChatTyping (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateEncryptedChatTyping</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-encrypted-messages-read.html#pyrogram.raw.types.UpdateEncryptedMessagesRead" title="pyrogram.raw.types.UpdateEncryptedMessagesRead (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateEncryptedMessagesRead</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-encryption.html#pyrogram.raw.types.UpdateEncryption" title="pyrogram.raw.types.UpdateEncryption (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateEncryption</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-faved-stickers.html#pyrogram.raw.types.UpdateFavedStickers" title="pyrogram.raw.types.UpdateFavedStickers (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateFavedStickers</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-folder-peers.html#pyrogram.raw.types.UpdateFolderPeers" title="pyrogram.raw.types.UpdateFolderPeers (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateFolderPeers</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-geo-live-viewed.html#pyrogram.raw.types.UpdateGeoLiveViewed" title="pyrogram.raw.types.UpdateGeoLiveViewed (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateGeoLiveViewed</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-group-call.html#pyrogram.raw.types.UpdateGroupCall" title="pyrogram.raw.types.UpdateGroupCall (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateGroupCall</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-group-call-connection.html#pyrogram.raw.types.UpdateGroupCallConnection" title="pyrogram.raw.types.UpdateGroupCallConnection (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateGroupCallConnection</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-group-call-participants.html#pyrogram.raw.types.UpdateGroupCallParticipants" title="pyrogram.raw.types.UpdateGroupCallParticipants (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateGroupCallParticipants</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-inline-bot-callback-query.html#pyrogram.raw.types.UpdateInlineBotCallbackQuery" title="pyrogram.raw.types.UpdateInlineBotCallbackQuery (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateInlineBotCallbackQuery</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-lang-pack.html#pyrogram.raw.types.UpdateLangPack" title="pyrogram.raw.types.UpdateLangPack (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateLangPack</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-lang-pack-too-long.html#pyrogram.raw.types.UpdateLangPackTooLong" title="pyrogram.raw.types.UpdateLangPackTooLong (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateLangPackTooLong</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-login-token.html#pyrogram.raw.types.UpdateLoginToken" title="pyrogram.raw.types.UpdateLoginToken (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateLoginToken</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-message-extended-media.html#pyrogram.raw.types.UpdateMessageExtendedMedia" title="pyrogram.raw.types.UpdateMessageExtendedMedia (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateMessageExtendedMedia</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-message-id.html#pyrogram.raw.types.UpdateMessageID" title="pyrogram.raw.types.UpdateMessageID (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateMessageID</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-message-poll.html#pyrogram.raw.types.UpdateMessagePoll" title="pyrogram.raw.types.UpdateMessagePoll (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateMessagePoll</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-message-poll-vote.html#pyrogram.raw.types.UpdateMessagePollVote" title="pyrogram.raw.types.UpdateMessagePollVote (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateMessagePollVote</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-message-reactions.html#pyrogram.raw.types.UpdateMessageReactions" title="pyrogram.raw.types.UpdateMessageReactions (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateMessageReactions</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-move-sticker-set-to-top.html#pyrogram.raw.types.UpdateMoveStickerSetToTop" title="pyrogram.raw.types.UpdateMoveStickerSetToTop (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateMoveStickerSetToTop</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-new-authorization.html#pyrogram.raw.types.UpdateNewAuthorization" title="pyrogram.raw.types.UpdateNewAuthorization (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewAuthorization</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-new-channel-message.html#pyrogram.raw.types.UpdateNewChannelMessage" title="pyrogram.raw.types.UpdateNewChannelMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewChannelMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-new-encrypted-message.html#pyrogram.raw.types.UpdateNewEncryptedMessage" title="pyrogram.raw.types.UpdateNewEncryptedMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewEncryptedMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-new-message.html#pyrogram.raw.types.UpdateNewMessage" title="pyrogram.raw.types.UpdateNewMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-new-quick-reply.html#pyrogram.raw.types.UpdateNewQuickReply" title="pyrogram.raw.types.UpdateNewQuickReply (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewQuickReply</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-new-scheduled-message.html#pyrogram.raw.types.UpdateNewScheduledMessage" title="pyrogram.raw.types.UpdateNewScheduledMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewScheduledMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-new-sticker-set.html#pyrogram.raw.types.UpdateNewStickerSet" title="pyrogram.raw.types.UpdateNewStickerSet (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewStickerSet</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-new-story-reaction.html#pyrogram.raw.types.UpdateNewStoryReaction" title="pyrogram.raw.types.UpdateNewStoryReaction (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNewStoryReaction</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-notify-settings.html#pyrogram.raw.types.UpdateNotifySettings" title="pyrogram.raw.types.UpdateNotifySettings (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateNotifySettings</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-peer-blocked.html#pyrogram.raw.types.UpdatePeerBlocked" title="pyrogram.raw.types.UpdatePeerBlocked (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePeerBlocked</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-peer-history-ttl.html#pyrogram.raw.types.UpdatePeerHistoryTTL" title="pyrogram.raw.types.UpdatePeerHistoryTTL (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePeerHistoryTTL</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-peer-located.html#pyrogram.raw.types.UpdatePeerLocated" title="pyrogram.raw.types.UpdatePeerLocated (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePeerLocated</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-peer-settings.html#pyrogram.raw.types.UpdatePeerSettings" title="pyrogram.raw.types.UpdatePeerSettings (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePeerSettings</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-peer-wallpaper.html#pyrogram.raw.types.UpdatePeerWallpaper" title="pyrogram.raw.types.UpdatePeerWallpaper (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePeerWallpaper</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-pending-join-requests.html#pyrogram.raw.types.UpdatePendingJoinRequests" title="pyrogram.raw.types.UpdatePendingJoinRequests (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePendingJoinRequests</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-phone-call.html#pyrogram.raw.types.UpdatePhoneCall" title="pyrogram.raw.types.UpdatePhoneCall (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePhoneCall</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-phone-call-signaling-data.html#pyrogram.raw.types.UpdatePhoneCallSignalingData" title="pyrogram.raw.types.UpdatePhoneCallSignalingData (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePhoneCallSignalingData</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-pinned-channel-messages.html#pyrogram.raw.types.UpdatePinnedChannelMessages" title="pyrogram.raw.types.UpdatePinnedChannelMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePinnedChannelMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-pinned-dialogs.html#pyrogram.raw.types.UpdatePinnedDialogs" title="pyrogram.raw.types.UpdatePinnedDialogs (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePinnedDialogs</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-pinned-messages.html#pyrogram.raw.types.UpdatePinnedMessages" title="pyrogram.raw.types.UpdatePinnedMessages (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePinnedMessages</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-pinned-saved-dialogs.html#pyrogram.raw.types.UpdatePinnedSavedDialogs" title="pyrogram.raw.types.UpdatePinnedSavedDialogs (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePinnedSavedDialogs</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-privacy.html#pyrogram.raw.types.UpdatePrivacy" title="pyrogram.raw.types.UpdatePrivacy (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePrivacy</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-pts-changed.html#pyrogram.raw.types.UpdatePtsChanged" title="pyrogram.raw.types.UpdatePtsChanged (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdatePtsChanged</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-quick-replies.html#pyrogram.raw.types.UpdateQuickReplies" title="pyrogram.raw.types.UpdateQuickReplies (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateQuickReplies</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-quick-reply-message.html#pyrogram.raw.types.UpdateQuickReplyMessage" title="pyrogram.raw.types.UpdateQuickReplyMessage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateQuickReplyMessage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-read-channel-discussion-inbox.html#pyrogram.raw.types.UpdateReadChannelDiscussionInbox" title="pyrogram.raw.types.UpdateReadChannelDiscussionInbox (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadChannelDiscussionInbox</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-read-channel-discussion-outbox.html#pyrogram.raw.types.UpdateReadChannelDiscussionOutbox" title="pyrogram.raw.types.UpdateReadChannelDiscussionOutbox (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadChannelDiscussionOutbox</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-read-channel-inbox.html#pyrogram.raw.types.UpdateReadChannelInbox" title="pyrogram.raw.types.UpdateReadChannelInbox (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadChannelInbox</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-read-channel-outbox.html#pyrogram.raw.types.UpdateReadChannelOutbox" title="pyrogram.raw.types.UpdateReadChannelOutbox (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadChannelOutbox</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-read-featured-emoji-stickers.html#pyrogram.raw.types.UpdateReadFeaturedEmojiStickers" title="pyrogram.raw.types.UpdateReadFeaturedEmojiStickers (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadFeaturedEmojiStickers</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-read-featured-stickers.html#pyrogram.raw.types.UpdateReadFeaturedStickers" title="pyrogram.raw.types.UpdateReadFeaturedStickers (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadFeaturedStickers</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-read-history-inbox.html#pyrogram.raw.types.UpdateReadHistoryInbox" title="pyrogram.raw.types.UpdateReadHistoryInbox (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadHistoryInbox</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-read-history-outbox.html#pyrogram.raw.types.UpdateReadHistoryOutbox" title="pyrogram.raw.types.UpdateReadHistoryOutbox (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadHistoryOutbox</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-read-messages-contents.html#pyrogram.raw.types.UpdateReadMessagesContents" title="pyrogram.raw.types.UpdateReadMessagesContents (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadMessagesContents</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-read-stories.html#pyrogram.raw.types.UpdateReadStories" title="pyrogram.raw.types.UpdateReadStories (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateReadStories</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-recent-emoji-statuses.html#pyrogram.raw.types.UpdateRecentEmojiStatuses" title="pyrogram.raw.types.UpdateRecentEmojiStatuses (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateRecentEmojiStatuses</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-recent-reactions.html#pyrogram.raw.types.UpdateRecentReactions" title="pyrogram.raw.types.UpdateRecentReactions (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateRecentReactions</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-recent-stickers.html#pyrogram.raw.types.UpdateRecentStickers" title="pyrogram.raw.types.UpdateRecentStickers (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateRecentStickers</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-saved-dialog-pinned.html#pyrogram.raw.types.UpdateSavedDialogPinned" title="pyrogram.raw.types.UpdateSavedDialogPinned (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateSavedDialogPinned</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-saved-gifs.html#pyrogram.raw.types.UpdateSavedGifs" title="pyrogram.raw.types.UpdateSavedGifs (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateSavedGifs</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-saved-reaction-tags.html#pyrogram.raw.types.UpdateSavedReactionTags" title="pyrogram.raw.types.UpdateSavedReactionTags (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateSavedReactionTags</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-saved-ringtones.html#pyrogram.raw.types.UpdateSavedRingtones" title="pyrogram.raw.types.UpdateSavedRingtones (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateSavedRingtones</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-sent-story-reaction.html#pyrogram.raw.types.UpdateSentStoryReaction" title="pyrogram.raw.types.UpdateSentStoryReaction (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateSentStoryReaction</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-service-notification.html#pyrogram.raw.types.UpdateServiceNotification" title="pyrogram.raw.types.UpdateServiceNotification (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateServiceNotification</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-sms-job.html#pyrogram.raw.types.UpdateSmsJob" title="pyrogram.raw.types.UpdateSmsJob (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateSmsJob</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-stars-balance.html#pyrogram.raw.types.UpdateStarsBalance" title="pyrogram.raw.types.UpdateStarsBalance (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStarsBalance</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-stars-revenue-status.html#pyrogram.raw.types.UpdateStarsRevenueStatus" title="pyrogram.raw.types.UpdateStarsRevenueStatus (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStarsRevenueStatus</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-sticker-sets.html#pyrogram.raw.types.UpdateStickerSets" title="pyrogram.raw.types.UpdateStickerSets (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStickerSets</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-sticker-sets-order.html#pyrogram.raw.types.UpdateStickerSetsOrder" title="pyrogram.raw.types.UpdateStickerSetsOrder (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStickerSetsOrder</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-stories-stealth-mode.html#pyrogram.raw.types.UpdateStoriesStealthMode" title="pyrogram.raw.types.UpdateStoriesStealthMode (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStoriesStealthMode</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-story.html#pyrogram.raw.types.UpdateStory" title="pyrogram.raw.types.UpdateStory (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStory</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-story-id.html#pyrogram.raw.types.UpdateStoryID" title="pyrogram.raw.types.UpdateStoryID (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateStoryID</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-theme.html#pyrogram.raw.types.UpdateTheme" title="pyrogram.raw.types.UpdateTheme (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateTheme</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-transcribed-audio.html#pyrogram.raw.types.UpdateTranscribedAudio" title="pyrogram.raw.types.UpdateTranscribedAudio (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateTranscribedAudio</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-user.html#pyrogram.raw.types.UpdateUser" title="pyrogram.raw.types.UpdateUser (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateUser</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-user-emoji-status.html#pyrogram.raw.types.UpdateUserEmojiStatus" title="pyrogram.raw.types.UpdateUserEmojiStatus (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateUserEmojiStatus</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-user-name.html#pyrogram.raw.types.UpdateUserName" title="pyrogram.raw.types.UpdateUserName (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateUserName</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-user-phone.html#pyrogram.raw.types.UpdateUserPhone" title="pyrogram.raw.types.UpdateUserPhone (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateUserPhone</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-user-status.html#pyrogram.raw.types.UpdateUserStatus" title="pyrogram.raw.types.UpdateUserStatus (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateUserStatus</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-user-typing.html#pyrogram.raw.types.UpdateUserTyping" title="pyrogram.raw.types.UpdateUserTyping (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateUserTyping</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/update-web-page.html#pyrogram.raw.types.UpdateWebPage" title="pyrogram.raw.types.UpdateWebPage (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateWebPage</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/update-web-view-result-sent.html#pyrogram.raw.types.UpdateWebViewResultSent" title="pyrogram.raw.types.UpdateWebViewResultSent (Python class) — Telegram API type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateWebViewResultSent</span></code></a></p></td>
+<td><p>Telegram API type.</p></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</dd></dl>
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="top-peer-category-peers.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: TopPeerCategoryPeers" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              TopPeerCategoryPeers
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="updates.html" class="md-footer__link md-footer__link--next" aria-label="Next: Updates" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Updates
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    8.0.2.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": ["latest"], "title": "main", "version": "main"}, {"aliases": [], "title": "staging", "version": "staging"}], "versionPath": null}}</script>
+    
+      
+        <script src="../../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=a56c686a"></script>
+    
+  </body>
+</html>
