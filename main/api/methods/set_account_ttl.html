@@ -13,7 +13,7 @@
     
     
       
-        <title>set_account_ttl() - pyroblack Documentation v2.4.8</title>
+        <title>set_account_ttl() - pyroblack Documentation v2.4.9</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.9" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.9" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.4.8
+            pyroblack Documentation v2.4.9
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.9" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.9" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.4.8
+    pyroblack Documentation v2.4.9
   </label>
   
     <div class="md-nav__source">
@@ -1527,6 +1527,10 @@
 <dt class="sig sig-object highlight py" id="pyrogram.Client.set_account_ttl">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">set_account_ttl</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.set_account_ttl" title="Link to this definition">¶</a></dt>
 <dd><p>Set days to live of account.</p>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>Days should be in range 30-730</p>
+</div>
 <blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
@@ -1540,7 +1544,7 @@
 </dd>
 </dl>
 <p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Set ttl in days</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Set account ttl to 1 year</span>
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">set_account_ttl</span><span class="p">(</span><span class="mi">365</span><span class="p">)</span>
 </code></pre></div>
 </div>

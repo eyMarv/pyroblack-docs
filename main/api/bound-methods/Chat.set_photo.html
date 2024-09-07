@@ -13,7 +13,7 @@
     
     
       
-        <title>Chat.set_photo() - pyroblack Documentation v2.4.8</title>
+        <title>Chat.set_photo() - pyroblack Documentation v2.4.9</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.9" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.9" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -88,7 +88,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.4.8
+            pyroblack Documentation v2.4.9
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -271,10 +271,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.9" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.9" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.4.8
+    pyroblack Documentation v2.4.9
   </label>
   
     <div class="md-nav__source">
@@ -1113,12 +1113,14 @@
 <span class="c1"># Set chat photo using an existing Photo file_id</span>
 <span class="k">await</span> <span class="n">chat</span><span class="o">.</span><span class="n">set_photo</span><span class="p">(</span><span class="n">photo</span><span class="o">=</span><span class="n">photo</span><span class="o">.</span><span class="n">file_id</span><span class="p">)</span>
 
+<span class="c1"># set chat photo with emoji</span>
+<span class="k">await</span> <span class="n">chat</span><span class="o">.</span><span class="n">set_photo</span><span class="p">(</span><span class="n">photo</span><span class="o">=</span><span class="s2">&quot;photo.jpg&quot;</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="mi">5366316836101038579</span><span class="p">)</span>
 
-<span class="c1"># Set chat video using a local file</span>
+<span class="c1"># set chat photo with emoji and emoji_background</span>
+<span class="k">await</span> <span class="n">chat</span><span class="o">.</span><span class="n">set_photo</span><span class="p">(</span><span class="n">photo</span><span class="o">=</span><span class="s2">&quot;photo.jpg&quot;</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="mi">5366316836101038579</span><span class="p">,</span> <span class="n">emoji_background</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Set chat video</span>
 <span class="k">await</span> <span class="n">chat</span><span class="o">.</span><span class="n">set_photo</span><span class="p">(</span><span class="n">video</span><span class="o">=</span><span class="s2">&quot;video.mp4&quot;</span><span class="p">)</span>
-
-<span class="c1"># Set chat photo using an existing Video file_id</span>
-<span class="k">await</span> <span class="n">chat</span><span class="o">.</span><span class="n">set_photo</span><span class="p">(</span><span class="n">video</span><span class="o">=</span><span class="n">video</span><span class="o">.</span><span class="n">file_id</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <dl class="field-list simple">
@@ -1127,14 +1129,17 @@
 <li><p><strong>photo</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – New chat photo. You can pass a <a class="reference internal" href="../types/Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a> file_id, a file path to upload a new photo
 from your local machine or a binary file-like object with its attribute
 “.name” set for in-memory uploads.</p></li>
-<li><p><strong>video</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – New chat video. You can pass a <a class="reference internal" href="../types/Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a> file_id, a file path to upload a new video
+<li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier (int) of the emoji to be used as the chat photo.</p></li>
+<li><p><strong>emoji_background</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – hexadecimal colors or List of hexadecimal colors to be used as the chat photo background.</p></li>
+<li><p><strong>video</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – New chat video. You can pass a file path to upload a new video
 from your local machine or a binary file-like object with its attribute
 “.name” set for in-memory uploads.</p></li>
 <li><p><strong>video_start_ts</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>optional</em>) – The timestamp in seconds of the video frame to use as photo profile preview.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.Chat.set_photo-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Chat.set_photo-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – True on success.</p>
+<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | <code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, a service message will be returned (when applicable),
+otherwise, in case a message object couldn’t be returned, True is returned.</p>
 </dd>
 <dt class="field-odd" id="pyrogram.types.Chat.set_photo-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Chat.set_photo-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">

@@ -13,7 +13,7 @@
     
     
       
-        <title>Giveaway - pyroblack Documentation v2.4.8</title>
+        <title>Giveaway - pyroblack Documentation v2.4.9</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.9" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.4.9" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.4.8
+            pyroblack Documentation v2.4.9
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.4.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.8" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.4.9" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.4.9" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.4.8
+    pyroblack Documentation v2.4.9
   </label>
   
     <div class="md-nav__source">
@@ -2238,12 +2238,14 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chats</strong> (List of <a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – List of channel(s) which host the giveaway.</p></li>
 <li><p><strong>quantity</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Quantity of the giveaway prize.</p></li>
-<li><p><strong>months</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – How long the telegram premium last (in month).</p></li>
+<li><p><strong>months</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – How long the telegram premium last (in month).</p></li>
+<li><p><strong>stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – How many stars the giveaway winner(s) get.</p></li>
 <li><p><strong>expire_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – Date the giveaway winner(s) will be choosen.</p></li>
 <li><p><strong>new_subscribers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the giveaway only for new subscribers.</p></li>
 <li><p><strong>additional_price</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Additional prize for the giveaway winner(s).</p></li>
 <li><p><strong>allowed_countries</strong> (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – List of ISO country codes which eligible to join the giveaway.</p></li>
 <li><p><strong>private_channel_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of Unique channel identifier of private channel which host the giveaway.</p></li>
+<li><p><strong>is_winners_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the giveaway winners are hidden.</p></li>
 </ul>
 </dd>
 </dl>
