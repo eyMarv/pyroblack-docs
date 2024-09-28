@@ -4,13 +4,13 @@
 }
 
 .usable-by {
-    border: 1px ;
+    border: 1px;
     border-radius: .2em;
     padding: 2px 5px;
     background-color: #1a1c1e;
 }
 
 .sidebar-logo {
-    width:128px;
-    height:auto;
+    width: 128px;
+    height: auto;
 }
