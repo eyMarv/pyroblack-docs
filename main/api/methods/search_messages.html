@@ -13,7 +13,7 @@
     
     
       
-        <title>search_messages() - pyroblack Documentation v2.5.3</title>
+        <title>search_messages() - pyroblack Documentation v2.5.4</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.3" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.4" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.4" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.3
+            pyroblack Documentation v2.5.4
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.3" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.4" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.4" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.3
+    pyroblack Documentation v2.5.4
   </label>
   
     <div class="md-nav__source">
@@ -2435,6 +2435,7 @@ Defaults to any message (no filter).</p></li>
 <li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of messages to be retrieved.
 By default, no limit is applied and all messages are returned.</p></li>
 <li><p><strong>from_user</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the target user you want to search for messages from.</p></li>
+<li><p><strong>thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier of the thread (Message.message_thread_id or Message.reply_top_message_id) to search in.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.search_messages-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_messages-returns" title="Permalink to this headline">¶</a></dt>
