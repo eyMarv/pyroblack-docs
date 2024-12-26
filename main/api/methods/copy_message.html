@@ -13,7 +13,7 @@
     
     
       
-        <title>copy_message() - pyroblack Documentation v2.5.5</title>
+        <title>copy_message() - pyroblack Documentation v2.5.6</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.5" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.5
+            pyroblack Documentation v2.5.6
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.5" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.5
+    pyroblack Documentation v2.5.6
   </label>
   
     <div class="md-nav__source">
@@ -635,6 +635,21 @@
     <li class="md-nav__item">
       <a href="send_message.html" class="md-nav__link">
         <span class="md-ellipsis">send_<wbr>message</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="forward_media_group.html" class="md-nav__link">
+        <span class="md-ellipsis">forward_<wbr>media_<wbr>group</span>
       </a>
     </li>
   
@@ -2442,6 +2457,9 @@ Users will receive a notification with no sound.</p></li>
 <li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target message thread (topic) of the forum.
 for forum supergroups only.</p></li>
 <li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
+<li><p><strong>reply_to_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the origin chat.
+for reply to message from another chat.
+You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
 <li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
 <li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only.</p></li>

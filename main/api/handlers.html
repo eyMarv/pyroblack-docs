@@ -13,7 +13,7 @@
     
     
       
-        <title>Update Handlers - pyroblack Documentation v2.5.5</title>
+        <title>Update Handlers - pyroblack Documentation v2.5.6</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.5.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.5" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.5
+            pyroblack Documentation v2.5.6
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.5.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.5" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.5
+    pyroblack Documentation v2.5.6
   </label>
   
     <div class="md-nav__source">
@@ -2723,9 +2723,13 @@ is established.</p></li>
 <a class="reference internal" href="decorators.html#pyrogram.Client.on_raw_update" title="pyrogram.Client.on_raw_update (Python function) — Decorator for handling raw updates."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_raw_update()</span></code></a> decorator.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.handlers.RawUpdateHandler-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – A function that will be called when a new update is received from the server. It takes
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – A function that will be called when a new update is received from the server. It takes
 <em>(client, update, users, chats)</em> as positional arguments (look at the section below for
-a detailed description).</p>
+a detailed description).</p></li>
+<li><p><strong>filters</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters</span></code>) – Pass one or more filters to allow only a subset of callback queries to be passed
+in your callback function.</p></li>
+</ul>
 </dd>
 <dt class="field-even" id="pyrogram.handlers.RawUpdateHandler-other-parameters">Other Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.handlers.RawUpdateHandler-other-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><ul class="simple">
