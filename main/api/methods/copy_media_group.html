@@ -13,7 +13,7 @@
     
     
       
-        <title>copy_media_group() - pyroblack Documentation v2.5.6</title>
+        <title>copy_media_group() - pyroblack Documentation v2.5.7</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.1c495b8425a51fa92.min.css?v=9d1d8efc" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.6
+            pyroblack Documentation v2.5.7
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.6
+    pyroblack Documentation v2.5.7
   </label>
   
     <div class="md-nav__source">
@@ -1638,6 +1638,21 @@
   
   
     <li class="md-nav__item">
+      <a href="transcribe_audio.html" class="md-nav__link">
+        <span class="md-ellipsis">transcribe_<wbr>audio</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="translate_message_text.html" class="md-nav__link">
         <span class="md-ellipsis">translate_<wbr>message_<wbr>text</span>
       </a>
@@ -2450,13 +2465,18 @@ Pass “” (empty string) to remove the caption.</p>
 If a list of <code class="docutils literal notranslate"><span class="pre">string</span></code> passed, each element becomes caption for each media element.
 You can pass <code class="docutils literal notranslate"><span class="pre">None</span></code> in list to keep the original caption (see examples below).</p>
 </li>
+<li><p><strong>has_spoilers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
 <li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
 Users will receive a notification with no sound.</p></li>
 <li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target message thread (topic) of the forum.
 for forum supergroups only.</p></li>
+<li><p><strong>send_as</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the chat or channel to send the message as.
+You can use this to send the message on behalf of a chat or channel where you have appropriate permissions.</p></li>
 <li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
 <li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving</p></li>
+<li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
+<li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.copy_media_group-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.copy_media_group-returns" title="Permalink to this headline">¶</a></dt>

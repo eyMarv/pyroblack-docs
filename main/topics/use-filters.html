@@ -13,7 +13,7 @@
     
     
       
-        <title>Using Filters - pyroblack Documentation v2.5.6</title>
+        <title>Using Filters - pyroblack Documentation v2.5.7</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.1c495b8425a51fa92.min.css?v=9d1d8efc" />
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
         <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.6
+            pyroblack Documentation v2.5.7
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.6
+    pyroblack Documentation v2.5.7
   </label>
   
     <div class="md-nav__source">
@@ -1207,22 +1207,22 @@ updates are allowed or not to be passed in your callback functions, based on the
 <ul>
 <li><p>This example will show you how to <strong>only</strong> handle messages containing a <a class="reference internal" href="../api/types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-class docutils literal notranslate"><span class="pre">Sticker</span></code></a> object and
 ignore any other message. Filters are passed as the first argument of the decorator:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">filters</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">filters</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">sticker</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </li>
 <li><p>or, without decorators. Here filters are passed as the second argument of the handler constructor; the first is the
 callback function itself:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">filters</span>
-<span class="kn">from</span> <span class="nn">pyrogram.handlers</span> <span class="kn">import</span> <span class="n">MessageHandler</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">filters</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.handlers</span><span class="w"> </span><span class="kn">import</span> <span class="n">MessageHandler</span>
 
 
-<span class="k">async</span> <span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 
 
@@ -1242,14 +1242,14 @@ operators <code class="docutils literal notranslate"><span class="pre">~</span><
 <ul>
 <li><p>Message is a <strong>text</strong> message <strong>or</strong> a <strong>photo</strong>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">text</span> <span class="o">|</span> <span class="n">filters</span><span class="o">.</span><span class="n">photo</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </li>
 <li><p>Message is a <strong>sticker</strong> <strong>and</strong> is coming from a <strong>channel or</strong> a <strong>private</strong> chat.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">sticker</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">channel</span> <span class="o">|</span> <span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1261,14 +1261,14 @@ can also accept arguments:</p>
 <ul>
 <li><p>Message is either a <em>/start</em> or <em>/help</em> <strong>command</strong>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">command</span><span class="p">([</span><span class="s2">&quot;start&quot;</span><span class="p">,</span> <span class="s2">&quot;help&quot;</span><span class="p">]))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </li>
 <li><p>Message is a <strong>text</strong> message or a media <strong>caption</strong> matching the given <strong>regex</strong> pattern.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">regex</span><span class="p">(</span><span class="s2">&quot;pyrogram&quot;</span><span class="p">))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">my_handler</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1276,17 +1276,17 @@ can also accept arguments:</p>
 </ul>
 <p>More handlers using different filters can also live together.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;start&quot;</span><span class="p">))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">start_command</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">start_command</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is the /start command&quot;</span><span class="p">)</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;help&quot;</span><span class="p">))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">help_command</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">help_command</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is the /help command&quot;</span><span class="p">)</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">chat</span><span class="p">(</span><span class="s2">&quot;OpenFileZ&quot;</span><span class="p">))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">from_openfiles</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">from_openfiles</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;New message in @OpenFileZ&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>

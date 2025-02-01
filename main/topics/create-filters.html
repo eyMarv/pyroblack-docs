@@ -13,7 +13,7 @@
     
     
       
-        <title>Creating Filters - pyroblack Documentation v2.5.6</title>
+        <title>Creating Filters - pyroblack Documentation v2.5.7</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.1c495b8425a51fa92.min.css?v=9d1d8efc" />
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
         <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.6
+            pyroblack Documentation v2.5.7
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.6
+    pyroblack Documentation v2.5.7
   </label>
   
     <div class="md-nav__source">
@@ -1222,7 +1222,7 @@ specific one for your needs or want to build a custom filter by yourself you can
 of a user pressing an inline button attached to the bot’s message; create and <a class="reference internal" href="../start/auth.html"><span class="doc">authorize your bot</span></a>,
 then send a message with an inline keyboard to yourself. This allows you to test your filter by pressing the inline
 button:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram.types</span> <span class="kn">import</span> <span class="n">InlineKeyboardMarkup</span><span class="p">,</span> <span class="n">InlineKeyboardButton</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.types</span><span class="w"> </span><span class="kn">import</span> <span class="n">InlineKeyboardMarkup</span><span class="p">,</span> <span class="n">InlineKeyboardButton</span>
 
 <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
     <span class="s2">&quot;username&quot;</span><span class="p">,</span>  <span class="c1"># Change this to your username or id</span>
@@ -1239,9 +1239,9 @@ button:</p>
 either <code class="docutils literal notranslate"><span class="pre">True</span></code>, in case you want the update to pass the filter or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <p>In this example we are matching the query data to “pyrogram”, which means that the filter will only allow callback
 queries containing “pyrogram” as data:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">filters</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">filters</span>
 
-<span class="k">async</span> <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">__</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">__</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">query</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="s2">&quot;pyrogram&quot;</span>
 
 <span class="n">static_data_filter</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
@@ -1250,7 +1250,7 @@ queries containing “pyrogram” as data:</p>
 <p>The first two arguments of the callback function are unused here and because of this we named them using underscores.</p>
 <p>Finally, the filter usage remains the same:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_callback_query</span><span class="p">(</span><span class="n">static_data_filter</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">pyrogram_data</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">pyrogram_data</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
     <span class="n">query</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="s2">&quot;it works!&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1260,10 +1260,10 @@ A dynamic filter like this will make use of named arguments for the <a class="re
 first argument of the callback function, which is a reference to the filter object itself holding the extra data passed
 via named arguments.</p>
 <p>This is how a dynamic custom filter looks like:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">filters</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">filters</span>
 
-<span class="k">def</span> <span class="nf">dynamic_data_filter</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">flt</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">dynamic_data_filter</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">flt</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">flt</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="n">query</span><span class="o">.</span><span class="n">data</span>
 
     <span class="c1"># &quot;data&quot; kwarg is accessed with &quot;flt.data&quot; above</span>
@@ -1272,7 +1272,7 @@ via named arguments.</p>
 </div>
 <p>And finally its usage:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_callback_query</span><span class="p">(</span><span class="n">dynamic_data_filter</span><span class="p">(</span><span class="s2">&quot;pyrogram&quot;</span><span class="p">))</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">pyrogram_data</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">pyrogram_data</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
     <span class="n">query</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="s2">&quot;it works!&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1280,7 +1280,7 @@ via named arguments.</p>
 <p>The missing piece we haven’t covered yet is the second argument of a filter callback function, namely, the <code class="docutils literal notranslate"><span class="pre">client</span></code>
 argument. This is a reference to the <a class="reference internal" href="../api/client.html#pyrogram.Client" title="pyrogram.Client (Python class) — pyroblack Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> instance that is running the filter and it is useful in
 case you would like to make some API calls before deciding whether the filter should allow the update or not:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">client</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
     <span class="c1"># r = await client.some_api_method()</span>
     <span class="c1"># check response &quot;r&quot; and decide to return True or False</span>
     <span class="o">...</span>

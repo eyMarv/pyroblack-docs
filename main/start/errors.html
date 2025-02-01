@@ -13,7 +13,7 @@
     
     
       
-        <title>Error Handling - pyroblack Documentation v2.5.6</title>
+        <title>Error Handling - pyroblack Documentation v2.5.7</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.1c495b8425a51fa92.min.css?v=9d1d8efc" />
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
         <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.6
+            pyroblack Documentation v2.5.7
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.6
+    pyroblack Documentation v2.5.7
   </label>
   
     <div class="md-nav__source">
@@ -1219,7 +1219,7 @@
 <h1 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading">¶</a></h1>
 <p>Errors can be correctly handled with <code class="docutils literal notranslate"><span class="pre">try...except</span></code> blocks in order to control the behaviour of your application.
 pyroblack errors all live inside the <code class="docutils literal notranslate"><span class="pre">errors</span></code> package:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">errors</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">errors</span>
 </code></pre></div>
 </div>
 <nav class="contents local" id="contents">
@@ -1236,7 +1236,7 @@ pyroblack errors all live inside the <code class="docutils literal notranslate">
 <h2 id="rpcerror">RPCError<a class="headerlink" href="#rpcerror" title="Link to this heading">¶</a></h2>
 <p>The father of all errors is named <code class="docutils literal notranslate"><span class="pre">RPCError</span></code> and is able to catch all Telegram API related errors.
 This error is raised every time a method call against Telegram’s API was unsuccessful.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram.errors</span> <span class="kn">import</span> <span class="n">RPCError</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">RPCError</span>
 </code></pre></div>
 </div>
 <div class="warning admonition">
@@ -1247,7 +1247,7 @@ traceback), because it makes it impossible to understand what went wrong.</p>
 <h2 id="error-categories">Error Categories<a class="headerlink" href="#error-categories" title="Link to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">RPCError</span></code> packs together all the possible errors Telegram could raise, but to make things tidier, pyroblack
 provides categories of errors, which are named after the common HTTP errors and are subclass-ed from the <code class="docutils literal notranslate"><span class="pre">RPCError</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram.errors</span> <span class="kn">import</span> <span class="n">BadRequest</span><span class="p">,</span> <span class="n">Forbidden</span><span class="p">,</span> <span class="o">...</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">BadRequest</span><span class="p">,</span> <span class="n">Forbidden</span><span class="p">,</span> <span class="o">...</span>
 </code></pre></div>
 </div>
 <ul class="simple">
@@ -1262,7 +1262,7 @@ provides categories of errors, which are named after the common HTTP errors and 
 <h2 id="single-errors">Single Errors<a class="headerlink" href="#single-errors" title="Link to this heading">¶</a></h2>
 <p>For a fine-grained control over every single error, pyroblack does also expose errors that deal each with a specific
 issue. For example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram.errors</span> <span class="kn">import</span> <span class="n">FloodWait</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">FloodWait</span>
 </code></pre></div>
 </div>
 <p>These errors subclass directly from the category of errors they belong to, which in turn subclass from the father
@@ -1302,8 +1302,8 @@ whole category of errors and be sure to also handle these unknown errors.</p>
 <p>Exception objects may also contain some informative values. For example, <code class="docutils literal notranslate"><span class="pre">FloodWait</span></code> holds the amount of seconds you
 have to wait before you can try again, some other errors contain the DC number on which the request must be repeated on.
 The value is stored in the <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute of the exception object:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="kn">from</span> <span class="nn">pyrogram.errors</span> <span class="kn">import</span> <span class="n">FloodWait</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">FloodWait</span>
 
 <span class="o">...</span>
     <span class="k">try</span><span class="p">:</span>

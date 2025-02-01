@@ -13,7 +13,7 @@
     
     
       
-        <title>More on Updates - pyroblack Documentation v2.5.6</title>
+        <title>More on Updates - pyroblack Documentation v2.5.7</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.1c495b8425a51fa92.min.css?v=9d1d8efc" />
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
         <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.6
+            pyroblack Documentation v2.5.7
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.5.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.6
+    pyroblack Documentation v2.5.7
   </label>
   
     <div class="md-nav__source">
@@ -1233,25 +1233,25 @@ group. Dispatching groups hold one or more handlers and are processed sequential
 (number 0 being the default) and sorted, that is, a lower group number has a higher priority:</p>
 <p>For example, take these two handlers:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">text</span> <span class="o">|</span> <span class="n">filters</span><span class="o">.</span><span class="n">sticker</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">text_or_sticker</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">text_or_sticker</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Text or Sticker&quot;</span><span class="p">)</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">just_text</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">just_text</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Just Text&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Here, <code class="docutils literal notranslate"><span class="pre">just_text</span></code> is never executed because <code class="docutils literal notranslate"><span class="pre">text_or_sticker</span></code>, which has been registered first, already handles
 texts (<code class="docutils literal notranslate"><span class="pre">filters.text</span></code> is shared and conflicting). To enable it, register the handler using a different group:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">just_text</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">just_text</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Just Text&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Or, if you want <code class="docutils literal notranslate"><span class="pre">just_text</span></code> to be executed <em>before</em> <code class="docutils literal notranslate"><span class="pre">text_or_sticker</span></code> (note <code class="docutils literal notranslate"><span class="pre">-1</span></code>, which is less than <code class="docutils literal notranslate"><span class="pre">0</span></code>):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">group</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">just_text</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">just_text</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Just Text&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1265,17 +1265,17 @@ than once. Any incoming update will be sequentially processed by all of your reg
 groups priority policy described above. Even in case any handler raises an unhandled exception, pyroblack will still
 continue to propagate the same update to the next groups until all the handlers are done. Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Unhandled exception!&quot;</span><span class="p">)</span>  <span class="c1"># Simulate an unhandled exception</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1301,26 +1301,26 @@ update anymore.</p>
 </div>
 <p>Example with <code class="docutils literal notranslate"><span class="pre">stop_propagation()</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">message</span><span class="o">.</span><span class="n">stop_propagation</span><span class="p">()</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Example with <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">StopPropagation</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">StopPropagation</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">StopPropagation</span>
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
 
@@ -1331,7 +1331,7 @@ update anymore.</p>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </div>
@@ -1360,39 +1360,39 @@ next available handler.</p>
 </div>
 <p>Example with <code class="docutils literal notranslate"><span class="pre">continue_propagation()</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">message</span><span class="o">.</span><span class="n">continue_propagation</span><span class="p">()</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">message</span><span class="o">.</span><span class="n">continue_propagation</span><span class="p">()</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <p>Example with <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">ContinuePropagation</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">ContinuePropagation</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">ContinuePropagation</span>
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="k">raise</span> <span class="n">ContinuePropagation</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">raise</span> <span class="n">ContinuePropagation</span>
 
 
 <span class="nd">@app</span><span class="o">.</span><span class="n">on_message</span><span class="p">(</span><span class="n">filters</span><span class="o">.</span><span class="n">private</span><span class="p">)</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </div>

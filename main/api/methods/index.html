@@ -13,7 +13,7 @@
     
     
       
-        <title>Available Methods - pyroblack Documentation v2.5.6</title>
+        <title>Available Methods - pyroblack Documentation v2.5.7</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.1c495b8425a51fa92.min.css?v=9d1d8efc" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.6
+            pyroblack Documentation v2.5.7
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.6" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.5.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.7" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.6
+    pyroblack Documentation v2.5.7
   </label>
   
     <div class="md-nav__source">
@@ -1970,6 +1970,21 @@
     <li class="md-nav__item">
       <a href="send_paid_reaction.html" class="md-nav__link">
         <span class="md-ellipsis">send_<wbr>paid_<wbr>reaction</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="transcribe_audio.html" class="md-nav__link">
+        <span class="md-ellipsis">transcribe_<wbr>audio</span>
       </a>
     </li>
   
@@ -4305,6 +4320,21 @@
 
             
           
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="get_similar_bots.html" class="md-nav__link">
+        <span class="md-ellipsis">get_<wbr>similar_<wbr>bots</span>
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -5482,6 +5512,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="transcribe_audio.html" class="md-nav__link">
+    <span class="md-ellipsis">transcribe_<wbr>audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="translate_message_text.html" class="md-nav__link">
     <span class="md-ellipsis">translate_<wbr>message_<wbr>text</span>
   </a>
@@ -6530,6 +6567,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="get_similar_bots.html" class="md-nav__link">
+    <span class="md-ellipsis">get_<wbr>similar_<wbr>bots</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -7428,7 +7472,7 @@
 <p>This page is about pyroblack methods. All the methods listed here are bound to a <a class="reference internal" href="../client.html#pyrogram.Client" title="pyrogram.Client (Python class) — pyroblack Client, the main means for interacting with Telegram."><code class="xref py py-class docutils literal notranslate"><span class="pre">Client</span></code></a> instance,
 except for <a class="reference internal" href="idle.html#pyrogram.idle" title="pyrogram.idle (Python function) — Block the main script execution until a signal is received."><code class="xref py py-meth docutils literal notranslate"><span class="pre">idle()</span></code></a> and <a class="reference internal" href="compose.html#pyrogram.compose" title="pyrogram.compose (Python function) — Run multiple clients at once."><code class="xref py py-meth docutils literal notranslate"><span class="pre">compose()</span></code></a>, which are special functions that can be found in
 the main package directly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pyrogram</span> <span class="kn">import</span> <span class="n">Client</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pyrogram</span><span class="w"> </span><span class="kn">import</span> <span class="n">Client</span>
 
 <span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">)</span>
 
@@ -7595,7 +7639,7 @@ the main package directly.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="send_cached_media.html#pyrogram.Client.send_cached_media" title="pyrogram.Client.send_cached_media (Python method) — Send any media stored on the Telegram servers using a file_id."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_cached_media</span></code></a></p></td>
 <td><p>Send any media stored on the Telegram servers using a file_id.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="send_reaction.html#pyrogram.Client.send_reaction" title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Service messages can't be reacted to. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_reaction</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="send_reaction.html#pyrogram.Client.send_reaction" title="pyrogram.Client.send_reaction (Python method) — Use this method to send reactions on a message/stories. Automatically forwarded messages from a channel to its discussion group have the same available reactions as messages in the channel. Bots can't use paid reactions."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_reaction</span></code></a></p></td>
 <td><p>Use this method to send reactions on a message/stories.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="edit_message_text.html#pyrogram.Client.edit_message_text" title="pyrogram.Client.edit_message_text (Python method) — Edit the text of messages."><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit_message_text</span></code></a></p></td>
@@ -7721,7 +7765,10 @@ the main package directly.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="send_paid_reaction.html#pyrogram.Client.send_paid_reaction" title="pyrogram.Client.send_paid_reaction (Python method) — Send a paid reaction to a message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_paid_reaction</span></code></a></p></td>
 <td><p>Send a paid reaction to a message.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="translate_message_text.html#pyrogram.Client.translate_message_text" title="pyrogram.Client.translate_message_text (Python method) — Translates a text or message(s) to the given language. If the current user is a Telegram Premium user, then text formatting is preserved."><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate_message_text</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="transcribe_audio.html#pyrogram.Client.transcribe_audio" title="pyrogram.Client.transcribe_audio (Python method) — Transcribes the audio of a voice message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">transcribe_audio</span></code></a></p></td>
+<td><p>Transcribes the audio of a voice message.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="translate_message_text.html#pyrogram.Client.translate_message_text" title="pyrogram.Client.translate_message_text (Python method) — Translates a text or message(s) to the given language. If the current user is a Telegram Premium user, then text formatting is preserved."><code class="xref py py-obj docutils literal notranslate"><span class="pre">translate_message_text</span></code></a></p></td>
 <td><p>Translates a text or message(s) to the given language.</p></td>
 </tr>
 </tbody>
@@ -8178,6 +8225,9 @@ the main package directly.</p>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="get_owned_bots.html#pyrogram.Client.get_owned_bots" title="pyrogram.Client.get_owned_bots (Python method) — Returns the list of bots owned by the current user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_owned_bots</span></code></a></p></td>
 <td><p>Returns the list of bots owned by the current user.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_similar_bots.html#pyrogram.Client.get_similar_bots" title="pyrogram.Client.get_similar_bots (Python method) — Get a list of bots similar to the target bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_similar_bots</span></code></a></p></td>
+<td><p>Get a list of bots similar to the target bot.</p></td>
 </tr>
 </tbody>
 </table>
