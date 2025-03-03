@@ -13,7 +13,7 @@
     
     
       
-        <title>send_paid_reaction() - pyroblack Documentation v2.5.9</title>
+        <title>send_paid_reaction() - pyroblack Documentation v2.6.0</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.9" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.5.9" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.6.0" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.0" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.5.9
+            pyroblack Documentation v2.6.0
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.5.9" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.5.9" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.6.0" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.0" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.5.9
+    pyroblack Documentation v2.6.0
   </label>
   
     <div class="md-nav__source">
@@ -2452,7 +2452,9 @@
 <li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
 <li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Identifier of the message.</p></li>
 <li><p><strong>amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Amount of stars to send.</p></li>
-<li><p><strong>is_private</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to hide you from top reactors.</p></li>
+<li><p><strong>privacy</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidReactionPrivacy</span></code>, <em>optional</em>) – Reaction privacy type.</p></li>
+<li><p><strong>send_as</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the send_as chat.
+Applicable when privacy is <code class="xref py py-obj docutils literal notranslate"><span class="pre">CHAT</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_paid_reaction-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_paid_reaction-returns" title="Permalink to this headline">¶</a></dt>
