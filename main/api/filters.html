@@ -1,0 +1,2905 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../_static/favicon.ico">
+    
+    
+      
+        <title>Update Filters - pyroblack Documentation v2.6.2</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.9d9c7b7aac7cac9f3.min.css?v=33075b9b" />
+        <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5f99b059" />
+        <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-pyrogram.filters" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="pyroblack Documentation v2.6.2" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.2" data-md-component="logo">
+      <img src="../_static/pyroblack.png" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            pyroblack Documentation v2.6.2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Update Filters
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eyMarv/pyroblack/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyroblack
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../intro/quickstart.html" class="md-tabs__link">
+      <span class="md-ellipsis">Introduction</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../start/setup.html" class="md-tabs__link">
+      <span class="md-ellipsis">Getting Started</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="client.html" class="md-tabs__link md-tabs__link--active">
+      <span class="md-ellipsis">API Reference</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../topics/use-filters.html" class="md-tabs__link">
+      <span class="md-ellipsis">Topic Guides</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../faq/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Meta</span>
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../telegram/functions/index.html" class="md-tabs__link">
+      <span class="md-ellipsis">Telegram Raw API</span>
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="pyroblack Documentation v2.6.2" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.2" data-md-component="logo">
+      <img src="../_static/pyroblack.png" alt="logo">
+    </a>
+    pyroblack Documentation v2.6.2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eyMarv/pyroblack/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pyroblack
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          <span class="md-ellipsis">Introduction</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Introduction</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/quickstart.html" class="md-nav__link">
+        <span class="md-ellipsis">Quick Start</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/install.html" class="md-nav__link">
+        <span class="md-ellipsis">Install Guide</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          <span class="md-ellipsis">Getting Started</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Getting Started</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/setup.html" class="md-nav__link">
+        <span class="md-ellipsis">Project Setup</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/auth.html" class="md-nav__link">
+        <span class="md-ellipsis">Authorization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/invoking.html" class="md-nav__link">
+        <span class="md-ellipsis">Invoking Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/updates.html" class="md-nav__link">
+        <span class="md-ellipsis">Handling Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/errors.html" class="md-nav__link">
+        <span class="md-ellipsis">Error Handling</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start/examples/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Examples</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          <span class="md-ellipsis">API Reference</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">API Reference</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="client.html" class="md-nav__link">
+        <span class="md-ellipsis">pyroblack Client</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="methods/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Methods</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Available Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Enumerations</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="handlers.html" class="md-nav__link">
+        <span class="md-ellipsis">Update Handlers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="decorators.html" class="md-nav__link">
+        <span class="md-ellipsis">Decorators</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="errors/index.html" class="md-nav__link">
+        <span class="md-ellipsis">RPC Errors</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Update Filters</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Update Filters</span>
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Update Filters</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-pyrogram.filters" class="md-nav__link">
+    <span title="pyrogram.filters (Python module)" class="md-ellipsis">Details</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.create" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.filters.create (Python function) — Easily create a custom filter." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>create</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.create">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.create-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.all" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.all (Python data) — Filter all messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>all</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.me" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.me (Python data) — Filter messages generated by you yourself." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>me</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.bot" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.bot (Python data) — Filter messages coming from bots." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>bot</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.incoming" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.incoming (Python data) — Filter incoming messages. Messages sent to your own chat (Saved Messages) are also recognised as incoming." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>incoming</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.outgoing" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.outgoing (Python data) — Filter outgoing messages. Messages sent to your own chat (Saved Messages) are not recognized as outgoing." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>outgoing</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.text" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.text (Python data) — Filter text messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>text</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.reply" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.reply (Python data) — Filter messages that are replies to other messages or stories." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>reply</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.react" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.react (Python data) — Filter reactions." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>react</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forwarded" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forwarded (Python data) — Filter messages that are forwarded." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forwarded</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.caption" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.caption (Python data) — Filter media messages that contain captions." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>caption</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.self_destruction" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.self_destruction (Python data) — Filter self-destruction media messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>self_<wbr>destruction</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.audio" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.audio (Python data) — Filter messages that contain Audio objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.document" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.document (Python data) — Filter messages that contain Document objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>document</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.photo" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.photo (Python data) — Filter messages that contain Photo objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.sticker" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.sticker (Python data) — Filter messages that contain Sticker objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>sticker</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.animation" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.animation (Python data) — Filter messages that contain Animation objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>animation</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.game" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.game (Python data) — Filter messages that contain Game objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>game</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video (Python data) — Filter messages that contain Video objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.media_group" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.media_group (Python data) — Filter messages containing photos or videos being part of an album." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>media_<wbr>group</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.voice" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.voice (Python data) — Filter messages that contain Voice note objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>voice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_note" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_note (Python data) — Filter messages that contain VideoNote objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>note</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.contact" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.contact (Python data) — Filter messages that contain Contact objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>contact</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.location" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.location (Python data) — Filter messages that contain Location objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>location</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.venue" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.venue (Python data) — Filter messages that contain Venue objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>venue</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.web_page" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.web_page (Python data) — Filter messages sent with a webpage preview." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>web_<wbr>page</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.poll" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.poll (Python data) — Filter messages that contain Poll objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>poll</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.dice" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.dice (Python data) — Filter messages that contain Dice objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>dice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.media_spoiler" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.media_spoiler (Python data) — Filter media messages that contain a spoiler." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>media_<wbr>spoiler</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.private" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.private (Python data) — Filter messages sent in private chats." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>private</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.group" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.group (Python data) — Filter messages sent in group or supergroup chats." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>group</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.channel" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.channel (Python data) — Filter messages sent in channels." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>channel</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.new_chat_members" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.new_chat_members (Python data) — Filter service messages for new chat members." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>new_<wbr>chat_<wbr>members</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.left_chat_member" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.left_chat_member (Python data) — Filter service messages for members that left the chat." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>left_<wbr>chat_<wbr>member</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.new_chat_title" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.new_chat_title (Python data) — Filter service messages for new chat titles." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>new_<wbr>chat_<wbr>title</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.new_chat_photo" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.new_chat_photo (Python data) — Filter service messages for new chat photos." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>new_<wbr>chat_<wbr>photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.delete_chat_photo" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.delete_chat_photo (Python data) — Filter service messages for deleted photos." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>delete_<wbr>chat_<wbr>photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.group_chat_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.group_chat_created (Python data) — Filter service messages for group chat creations." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>group_<wbr>chat_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.supergroup_chat_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.supergroup_chat_created (Python data) — Filter service messages for supergroup chat creations." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>supergroup_<wbr>chat_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.channel_chat_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.channel_chat_created (Python data) — Filter service messages for channel chat creations." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>channel_<wbr>chat_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.migrate_to_chat_id" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.migrate_to_chat_id (Python data) — Filter service messages that contain migrate_to_chat_id." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>migrate_<wbr>to_<wbr>chat_<wbr>id</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.migrate_from_chat_id" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.migrate_from_chat_id (Python data) — Filter service messages that contain migrate_from_chat_id." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>migrate_<wbr>from_<wbr>chat_<wbr>id</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.pinned_message" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.pinned_message (Python data) — Filter service messages for pinned messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>pinned_<wbr>message</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.game_high_score" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.game_high_score (Python data) — Filter service messages for game high scores." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>game_<wbr>high_<wbr>score</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.reply_keyboard" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.reply_keyboard (Python data) — Filter messages containing reply keyboard markups" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>reply_<wbr>keyboard</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.inline_keyboard" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.inline_keyboard (Python data) — Filter messages containing inline keyboard markups" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>inline_<wbr>keyboard</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.mentioned" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.mentioned (Python data) — Filter messages containing mentions" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>mentioned</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.via_bot" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.via_bot (Python data) — Filter messages sent via inline bots" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>via_<wbr>bot</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.via_bot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.via_bot-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_chat_started" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_chat_started (Python data) — Filter messages for started video chats" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>chat_<wbr>started</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_chat_ended" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_chat_ended (Python data) — Filter messages for ended video chats" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>chat_<wbr>ended</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_chat_members_invited" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_chat_members_invited (Python data) — Filter messages for voice chat invited members" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>chat_<wbr>members_<wbr>invited</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.successful_payment" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.successful_payment (Python data) — Filter messages for successful payments" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>successful_<wbr>payment</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.service" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.service (Python data) — Filter service messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>service</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.media" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.media (Python data) — Filter media messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>media</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.scheduled" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.scheduled (Python data) — Filter messages that have been scheduled (not yet sent)." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>scheduled</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.from_scheduled" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.from_scheduled (Python data) — Filter new automatically sent messages that were previously scheduled." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>from_<wbr>scheduled</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.linked_channel" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.linked_channel (Python data) — Filter messages that are automatically forwarded from the linked channel to the group chat." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>linked_<wbr>channel</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_closed" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_closed (Python data) — Filter service message for closed forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>closed</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_created (Python data) — Filter service message for created forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_edited" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_edited (Python data) — Filter service message for edited forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>edited</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_reopened" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_reopened (Python data) — Filter service message for reopened forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>reopened</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.general_forum_topic_hidden" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.general_forum_topic_hidden (Python data) — Filter service message for hidden general forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>general_<wbr>forum_<wbr>topic_<wbr>hidden</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.general_forum_topic_unhidden" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.general_forum_topic_unhidden (Python data) — Filter service message for unhidden general forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>general_<wbr>forum_<wbr>topic_<wbr>unhidden</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.command" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.filters.command (Python function) — Filter commands, i.e.: text messages starting with &#34;/&#34; or any other custom prefix." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>command</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.command-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.regex" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.filters.regex (Python function) — Filter updates that match a given regular expression pattern." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>regex</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.regex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.regex-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.user" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.filters.user (Python class) — Filter messages coming from one or more users." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>user</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.user-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.chat" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.filters.chat (Python class) — Filter messages coming from one or more chats." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>chat</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.chat-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.topic" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.filters.topic (Python class) — Filter messages coming from one or more topics." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>topic</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.topic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.topic-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          <span class="md-ellipsis">Topic Guides</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Topic Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Topic Guides</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/use-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Using Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/create-filters.html" class="md-nav__link">
+        <span class="md-ellipsis">Creating Filters</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/more-on-updates.html" class="md-nav__link">
+        <span class="md-ellipsis">More on Updates</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/client-settings.html" class="md-nav__link">
+        <span class="md-ellipsis">Client Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/speedups.html" class="md-nav__link">
+        <span class="md-ellipsis">Speedups</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/text-formatting.html" class="md-nav__link">
+        <span class="md-ellipsis">Text Formatting</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/synchronous.html" class="md-nav__link">
+        <span class="md-ellipsis">Synchronous Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/smart-plugins.html" class="md-nav__link">
+        <span class="md-ellipsis">Smart Plugins</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/storage-engines.html" class="md-nav__link">
+        <span class="md-ellipsis">Storage Engines</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/serializing.html" class="md-nav__link">
+        <span class="md-ellipsis">Object Serialization</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/proxy.html" class="md-nav__link">
+        <span class="md-ellipsis">Proxy Settings</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/scheduling.html" class="md-nav__link">
+        <span class="md-ellipsis">Scheduling Tasks</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/mtproto-vs-botapi.html" class="md-nav__link">
+        <span class="md-ellipsis">MTProto vs.<wbr> Bot API</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/debugging.html" class="md-nav__link">
+        <span class="md-ellipsis">Debugging</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/test-servers.html" class="md-nav__link">
+        <span class="md-ellipsis">Test Servers</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/advanced-usage.html" class="md-nav__link">
+        <span class="md-ellipsis">Advanced Usage</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../topics/voice-calls.html" class="md-nav__link">
+        <span class="md-ellipsis">Voice Calls</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          <span class="md-ellipsis">Meta</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Meta" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Meta</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Frequently Asked Questions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support.html" class="md-nav__link">
+        <span class="md-ellipsis">Support pyroblack</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          <span class="md-ellipsis">Telegram Raw API</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Telegram Raw API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Telegram Raw API</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telegram/functions/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Functions</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telegram/types/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Types</span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telegram/base/index.html" class="md-nav__link">
+        <span class="md-ellipsis">Raw Base</span>
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span class="md-ellipsis">Update Filters</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-pyrogram.filters" class="md-nav__link">
+    <span title="pyrogram.filters (Python module)" class="md-ellipsis">Details</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.create" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.filters.create (Python function) — Easily create a custom filter." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>create</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.create">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.create-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.all" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.all (Python data) — Filter all messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>all</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.me" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.me (Python data) — Filter messages generated by you yourself." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>me</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.bot" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.bot (Python data) — Filter messages coming from bots." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>bot</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.incoming" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.incoming (Python data) — Filter incoming messages. Messages sent to your own chat (Saved Messages) are also recognised as incoming." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>incoming</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.outgoing" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.outgoing (Python data) — Filter outgoing messages. Messages sent to your own chat (Saved Messages) are not recognized as outgoing." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>outgoing</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.text" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.text (Python data) — Filter text messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>text</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.reply" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.reply (Python data) — Filter messages that are replies to other messages or stories." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>reply</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.react" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.react (Python data) — Filter reactions." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>react</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forwarded" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forwarded (Python data) — Filter messages that are forwarded." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forwarded</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.caption" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.caption (Python data) — Filter media messages that contain captions." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>caption</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.self_destruction" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.self_destruction (Python data) — Filter self-destruction media messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>self_<wbr>destruction</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.audio" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.audio (Python data) — Filter messages that contain Audio objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>audio</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.document" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.document (Python data) — Filter messages that contain Document objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>document</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.photo" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.photo (Python data) — Filter messages that contain Photo objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.sticker" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.sticker (Python data) — Filter messages that contain Sticker objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>sticker</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.animation" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.animation (Python data) — Filter messages that contain Animation objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>animation</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.game" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.game (Python data) — Filter messages that contain Game objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>game</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video (Python data) — Filter messages that contain Video objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.media_group" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.media_group (Python data) — Filter messages containing photos or videos being part of an album." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>media_<wbr>group</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.voice" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.voice (Python data) — Filter messages that contain Voice note objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>voice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_note" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_note (Python data) — Filter messages that contain VideoNote objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>note</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.contact" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.contact (Python data) — Filter messages that contain Contact objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>contact</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.location" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.location (Python data) — Filter messages that contain Location objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>location</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.venue" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.venue (Python data) — Filter messages that contain Venue objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>venue</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.web_page" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.web_page (Python data) — Filter messages sent with a webpage preview." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>web_<wbr>page</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.poll" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.poll (Python data) — Filter messages that contain Poll objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>poll</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.dice" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.dice (Python data) — Filter messages that contain Dice objects." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>dice</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.media_spoiler" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.media_spoiler (Python data) — Filter media messages that contain a spoiler." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>media_<wbr>spoiler</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.private" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.private (Python data) — Filter messages sent in private chats." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>private</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.group" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.group (Python data) — Filter messages sent in group or supergroup chats." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>group</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.channel" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.channel (Python data) — Filter messages sent in channels." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>channel</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.new_chat_members" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.new_chat_members (Python data) — Filter service messages for new chat members." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>new_<wbr>chat_<wbr>members</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.left_chat_member" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.left_chat_member (Python data) — Filter service messages for members that left the chat." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>left_<wbr>chat_<wbr>member</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.new_chat_title" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.new_chat_title (Python data) — Filter service messages for new chat titles." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>new_<wbr>chat_<wbr>title</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.new_chat_photo" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.new_chat_photo (Python data) — Filter service messages for new chat photos." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>new_<wbr>chat_<wbr>photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.delete_chat_photo" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.delete_chat_photo (Python data) — Filter service messages for deleted photos." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>delete_<wbr>chat_<wbr>photo</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.group_chat_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.group_chat_created (Python data) — Filter service messages for group chat creations." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>group_<wbr>chat_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.supergroup_chat_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.supergroup_chat_created (Python data) — Filter service messages for supergroup chat creations." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>supergroup_<wbr>chat_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.channel_chat_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.channel_chat_created (Python data) — Filter service messages for channel chat creations." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>channel_<wbr>chat_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.migrate_to_chat_id" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.migrate_to_chat_id (Python data) — Filter service messages that contain migrate_to_chat_id." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>migrate_<wbr>to_<wbr>chat_<wbr>id</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.migrate_from_chat_id" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.migrate_from_chat_id (Python data) — Filter service messages that contain migrate_from_chat_id." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>migrate_<wbr>from_<wbr>chat_<wbr>id</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.pinned_message" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.pinned_message (Python data) — Filter service messages for pinned messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>pinned_<wbr>message</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.game_high_score" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.game_high_score (Python data) — Filter service messages for game high scores." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>game_<wbr>high_<wbr>score</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.reply_keyboard" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.reply_keyboard (Python data) — Filter messages containing reply keyboard markups" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>reply_<wbr>keyboard</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.inline_keyboard" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.inline_keyboard (Python data) — Filter messages containing inline keyboard markups" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>inline_<wbr>keyboard</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.mentioned" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.mentioned (Python data) — Filter messages containing mentions" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>mentioned</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.via_bot" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.via_bot (Python data) — Filter messages sent via inline bots" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>via_<wbr>bot</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.via_bot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.via_bot-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_chat_started" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_chat_started (Python data) — Filter messages for started video chats" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>chat_<wbr>started</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_chat_ended" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_chat_ended (Python data) — Filter messages for ended video chats" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>chat_<wbr>ended</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.video_chat_members_invited" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.video_chat_members_invited (Python data) — Filter messages for voice chat invited members" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>video_<wbr>chat_<wbr>members_<wbr>invited</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.successful_payment" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.successful_payment (Python data) — Filter messages for successful payments" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>successful_<wbr>payment</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.service" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.service (Python data) — Filter service messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>service</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.media" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.media (Python data) — Filter media messages." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>media</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.scheduled" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.scheduled (Python data) — Filter messages that have been scheduled (not yet sent)." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>scheduled</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.from_scheduled" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.from_scheduled (Python data) — Filter new automatically sent messages that were previously scheduled." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>from_<wbr>scheduled</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.linked_channel" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.linked_channel (Python data) — Filter messages that are automatically forwarded from the linked channel to the group chat." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>linked_<wbr>channel</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_closed" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_closed (Python data) — Filter service message for closed forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>closed</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_created" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_created (Python data) — Filter service message for created forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>created</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_edited" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_edited (Python data) — Filter service message for edited forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>edited</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.forum_topic_reopened" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.forum_topic_reopened (Python data) — Filter service message for reopened forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>forum_<wbr>topic_<wbr>reopened</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.general_forum_topic_hidden" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.general_forum_topic_hidden (Python data) — Filter service message for hidden general forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>general_<wbr>forum_<wbr>topic_<wbr>hidden</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.general_forum_topic_unhidden" class="md-nav__link">
+    <span aria-label="Python data" class="objinfo-icon objinfo-icon__alias" title="Python data">V</span><span title="pyrogram.filters.general_forum_topic_unhidden (Python data) — Filter service message for unhidden general forum topics" class="md-ellipsis">pyrogram.<wbr>filters.<wbr>general_<wbr>forum_<wbr>topic_<wbr>unhidden</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.command" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.filters.command (Python function) — Filter commands, i.e.: text messages starting with &#34;/&#34; or any other custom prefix." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>command</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.command-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.regex" class="md-nav__link">
+    <span aria-label="Python function" class="objinfo-icon objinfo-icon__procedure" title="Python function">F</span><span title="pyrogram.filters.regex (Python function) — Filter updates that match a given regular expression pattern." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>regex</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.regex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.regex-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.user" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.filters.user (Python class) — Filter messages coming from one or more users." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>user</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.user-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.chat" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.filters.chat (Python class) — Filter messages coming from one or more chats." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>chat</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.chat-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.topic" class="md-nav__link">
+    <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span><span title="pyrogram.filters.topic (Python class) — Filter messages coming from one or more topics." class="md-ellipsis">pyrogram.<wbr>filters.<wbr>topic</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.filters.topic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.filters.topic-parameters" class="md-nav__link">
+    <span class="md-ellipsis">Parameters</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+<h1 id="update-filters">Update Filters<a class="headerlink" href="#update-filters" title="Link to this heading">¶</a></h1>
+<p>Filters are objects that can be used to filter the content of incoming updates.
+<a class="reference internal" href="../topics/use-filters.html"><span class="doc">Read more about how filters work</span></a>.</p>
+<h2 id="module-pyrogram.filters"><span id="details"></span>Details<a class="headerlink" href="#module-pyrogram.filters" title="Link to this heading">¶</a></h2>
+<dl class="py function objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.create">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.13)"><span class="pre">Callable</span></a></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em></span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Filter</span></span></span><a class="headerlink" href="#pyrogram.filters.create" title="Link to this definition">¶</a></dt>
+<dd><p>Easily create a custom filter.</p>
+<p>Custom filters give you extra control over which updates are allowed or not to be processed by your handlers.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.create-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.create-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>func</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – A function that accepts three positional arguments <em>(filter, client, update)</em> and returns a boolean: True if the
+update should be handled, False otherwise.
+The <em>filter</em> argument refers to the filter itself and can be used to access keyword arguments (read below).
+The <em>client</em> argument refers to the <a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client (Python class) — pyroblack Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> that received the update.
+The <em>update</em> argument type will vary depending on which <a class="reference external" href="handlers">Handler</a> is coming from.
+For example, in a <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> the <em>update</em> argument will be a <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.CallbackQueryHandler" title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQueryHandler</span></code></a> the <em>update</em> will be a <a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery (Python class) — An incoming callback query from a callback button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>.
+Your function body can then access the incoming update attributes and decide whether to allow it or not.</p></li>
+<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Your filter’s name. Can be anything you like.
+Defaults to “CustomFilter”.</p></li>
+<li><p><strong>**kwargs</strong> (<code class="docutils literal notranslate"><span class="pre">any</span></code>, <em>optional</em>) – Any keyword argument you would like to pass. Useful when creating parameterized custom filters, such as
+<a class="reference internal" href="#pyrogram.filters.command" title="pyrogram.filters.command (Python function) — Filter commands, i.e.: text messages starting with &quot;/&quot; or any other custom prefix."><code class="xref py py-meth docutils literal notranslate"><span class="pre">command()</span></code></a> or <a class="reference internal" href="#pyrogram.filters.regex" title="pyrogram.filters.regex (Python function) — Filter updates that match a given regular expression pattern."><code class="xref py py-meth docutils literal notranslate"><span class="pre">regex()</span></code></a>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.all">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">all</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">all_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.all" title="Link to this definition">¶</a></dt>
+<dd><p>Filter all messages.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.me">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">me</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">me_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.me" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages generated by you yourself.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.bot">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">bot</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">bot_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.bot" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages coming from bots.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.incoming">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">incoming</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">incoming_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.incoming" title="Link to this definition">¶</a></dt>
+<dd><p>Filter incoming messages. Messages sent to your own chat (Saved Messages) are also recognised as incoming.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.outgoing">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">outgoing</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">outgoing_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.outgoing" title="Link to this definition">¶</a></dt>
+<dd><p>Filter outgoing messages. Messages sent to your own chat (Saved Messages) are not recognized as outgoing.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.text">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">text</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">text_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.text" title="Link to this definition">¶</a></dt>
+<dd><p>Filter text messages.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.reply">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">reply</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">reply_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.reply" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that are replies to other messages or stories.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.react">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">react</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">reaction_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.react" title="Link to this definition">¶</a></dt>
+<dd><p>Filter reactions.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.forwarded">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forwarded</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">forwarded_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.forwarded" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that are forwarded.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.caption">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">caption</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">caption_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.caption" title="Link to this definition">¶</a></dt>
+<dd><p>Filter media messages that contain captions.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.self_destruction">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">self_destruction</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">self_destruction_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.self_destruction" title="Link to this definition">¶</a></dt>
+<dd><p>Filter self-destruction media messages.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.audio">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">audio</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">audio_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.audio" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio (Python class) — An audio file to be treated as music by the Telegram clients."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.document">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">document</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">document_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.document" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Document.html#pyrogram.types.Document" title="pyrogram.types.Document (Python class) — A generic file (as opposed to photos, voice messages, audio files, ...)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.photo">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">photo</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">photo_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.photo" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.sticker">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">sticker</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">sticker_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.sticker" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.animation">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">animation</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">animation_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.animation" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation (Python class) — An animation file (GIF or H.264/MPEG-4 AVC video without sound)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.game">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">game_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.game" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Game.html#pyrogram.types.Game" title="pyrogram.types.Game (Python class) — A game. Use BotFather to create and edit games, their short names will act as unique identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.video">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">video_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.video" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.media_group">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media_group</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">media_group_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.media_group" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages containing photos or videos being part of an album.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.voice">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">voice</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">voice_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.voice" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice (Python class) — A voice note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a> note objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.video_note">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_note</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">video_note_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.video_note" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/VideoNote.html#pyrogram.types.VideoNote" title="pyrogram.types.VideoNote (Python class) — A video note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoNote</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.contact">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">contact</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">contact_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.contact" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Contact.html#pyrogram.types.Contact" title="pyrogram.types.Contact (Python class) — A phone contact."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.location">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">location</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">location_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.location" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Location.html#pyrogram.types.Location" title="pyrogram.types.Location (Python class) — A point on the map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.venue">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">venue</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">venue_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.venue" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue (Python class) — A venue."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.web_page">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">web_page</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">web_page_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.web_page" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages sent with a webpage preview.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.poll">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">poll</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">poll_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.poll" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll (Python class) — A Poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.dice">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">dice</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">dice_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.dice" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that contain <a class="reference internal" href="types/Dice.html#pyrogram.types.Dice" title="pyrogram.types.Dice (Python class) — A dice with a random value from 1 to 6 for currently supported base emoji."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.media_spoiler">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media_spoiler</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">media_spoiler_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.media_spoiler" title="Link to this definition">¶</a></dt>
+<dd><p>Filter media messages that contain a spoiler.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.private">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">private</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">private_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.private" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages sent in private chats.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.group">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">group</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">group_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.group" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages sent in group or supergroup chats.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.channel">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">channel</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">channel_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.channel" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages sent in channels.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.new_chat_members">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_members</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">new_chat_members_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.new_chat_members" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for new chat members.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.left_chat_member">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">left_chat_member</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">left_chat_member_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.left_chat_member" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for members that left the chat.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.new_chat_title">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_title</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">new_chat_title_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.new_chat_title" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for new chat titles.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.new_chat_photo">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">new_chat_photo</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">new_chat_photo_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.new_chat_photo" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for new chat photos.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.delete_chat_photo">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">delete_chat_photo</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">delete_chat_photo_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.delete_chat_photo" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for deleted photos.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.group_chat_created">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">group_chat_created</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">group_chat_created_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.group_chat_created" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for group chat creations.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.supergroup_chat_created">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">supergroup_chat_created</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">supergroup_chat_created_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.supergroup_chat_created" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for supergroup chat creations.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.channel_chat_created">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">channel_chat_created</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">channel_chat_created_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.channel_chat_created" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for channel chat creations.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.migrate_to_chat_id">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">migrate_to_chat_id</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">migrate_to_chat_id_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.migrate_to_chat_id" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages that contain migrate_to_chat_id.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.migrate_from_chat_id">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">migrate_from_chat_id</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">migrate_from_chat_id_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.migrate_from_chat_id" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages that contain migrate_from_chat_id.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.pinned_message">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">pinned_message</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">pinned_message_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.pinned_message" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for pinned messages.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.game_high_score">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">game_high_score</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">game_high_score_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.game_high_score" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages for game high scores.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.reply_keyboard">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">reply_keyboard</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">reply_keyboard_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.reply_keyboard" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages containing reply keyboard markups</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.inline_keyboard">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">inline_keyboard</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">inline_keyboard_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.inline_keyboard" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages containing inline keyboard markups</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.mentioned">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">mentioned</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">mentioned_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.mentioned" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages containing mentions</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.via_bot">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">via_bot</span></span><span class="p"> <span class="pre">:</span> </span><span class="desctype"><span class="pre">Filter</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="p">{}</span></code><a class="headerlink" href="#pyrogram.filters.via_bot" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages sent via inline bots</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.via_bot-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.via_bot-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><strong>user_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the target chat.
+For your personal cloud (Saved Messages) you can simply use “me” or “self”.
+For a contact that exists in your Telegram address book you can use his phone number (str).
+Defaults to None (all bots).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.video_chat_started">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_started</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">video_chat_started_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.video_chat_started" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages for started video chats</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.video_chat_ended">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_ended</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">video_chat_ended_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.video_chat_ended" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages for ended video chats</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.video_chat_members_invited">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">video_chat_members_invited</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">video_chat_members_invited_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.video_chat_members_invited" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages for voice chat invited members</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.successful_payment">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">successful_payment</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">successful_payment_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.successful_payment" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages for successful payments</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.service">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">service</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">service_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.service" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service messages.</p>
+<p>A service message contains any of the following fields set: <em>left_chat_member</em>,
+<em>new_chat_title</em>, <em>new_chat_photo</em>, <em>delete_chat_photo</em>, <em>group_chat_created</em>, <em>supergroup_chat_created</em>,
+<em>channel_chat_created</em>, <em>migrate_to_chat_id</em>, <em>migrate_from_chat_id</em>, <em>pinned_message</em>, <em>game_score</em>,
+<em>video_chat_started</em>, <em>video_chat_ended</em>, <em>video_chat_members_invited</em>, <em>successful_payment</em>, <em>successful_payment</em>.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.media">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">media</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">media_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.media" title="Link to this definition">¶</a></dt>
+<dd><p>Filter media messages.</p>
+<p>A media message contains any of the following fields set: <em>audio</em>, <em>document</em>, <em>photo</em>, <em>sticker</em>, <em>video</em>,
+<em>animation</em>, <em>voice</em>, <em>video_note</em>, <em>contact</em>, <em>location</em>, <em>venue</em>, <em>poll</em>.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.scheduled">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">scheduled</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">scheduled_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.scheduled" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that have been scheduled (not yet sent).</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.from_scheduled">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">from_scheduled</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">from_scheduled_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.from_scheduled" title="Link to this definition">¶</a></dt>
+<dd><p>Filter new automatically sent messages that were previously scheduled.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.linked_channel">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">linked_channel</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">linked_channel_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.linked_channel" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages that are automatically forwarded from the linked channel to the group chat.</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.forum_topic_closed">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_closed</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">forum_topic_closed_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.forum_topic_closed" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service message for closed forum topics</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.forum_topic_created">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_created</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">forum_topic_created_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.forum_topic_created" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service message for created forum topics</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.forum_topic_edited">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_edited</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">forum_topic_edited_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.forum_topic_edited" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service message for edited forum topics</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.forum_topic_reopened">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">forum_topic_reopened</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">forum_topic_reopened_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.forum_topic_reopened" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service message for reopened forum topics</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.general_forum_topic_hidden">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_hidden</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">general_topic_hidden_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.general_forum_topic_hidden" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service message for hidden general forum topics</p>
+</dd></dl>
+
+<dl class="py data objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.general_forum_topic_unhidden">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">general_forum_topic_unhidden</span></span><span class="p"> <span class="pre">=</span> </span><code class="code python docutils literal highlight highlight-python"><span class="o">&lt;</span><span class="n">pyrogram</span><span class="o">.</span><span class="n">filters</span><span class="o">.</span><span class="n">general_topic_unhidden_filter</span> <span class="nb">object</span><span class="o">&gt;</span></code><a class="headerlink" href="#pyrogram.filters.general_forum_topic_unhidden" title="Link to this definition">¶</a></dt>
+<dd><p>Filter service message for unhidden general forum topics</p>
+</dd></dl>
+
+<dl class="py function objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.command">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">command</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">prefixes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'/'</span></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">case_sensitive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em></span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.command" title="Link to this definition">¶</a></dt>
+<dd><p>Filter commands, i.e.: text messages starting with “/” or any other custom prefix.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.command-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.command-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commands</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – The command or list of commands as string the filter should look for.
+Examples: “start”, [“start”, “help”, “settings”]. When a message text containing
+a command arrives, the command itself and its arguments will be stored in the <em>command</em>
+field of the <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
+<li><p><strong>prefixes</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>, <em>optional</em>) – A prefix or a list of prefixes as string the filter should look for.
+Defaults to “/” (slash). Examples: “.”, “!”, [“/”, “!”, “.”], list(“.:!”).
+Pass None or “” (empty string) to allow commands with no prefix at all.</p></li>
+<li><p><strong>case_sensitive</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if you want your command(s) to be case sensitive. Defaults to False.
+Examples: when True, command=”Start” would trigger /Start but not /start.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.regex">
+<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">regex</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">pattern</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Pattern" title="(in Python v3.13)"><span class="pre">Pattern</span></a></span></em>, </span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em></span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.regex" title="Link to this definition">¶</a></dt>
+<dd><p>Filter updates that match a given regular expression pattern.</p>
+<p>Can be applied to handlers that receive one of the following updates:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">text</span></code> or <code class="docutils literal notranslate"><span class="pre">caption</span></code>.</p></li>
+<li><p><a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery (Python class) — An incoming callback query from a callback button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">data</span></code>.</p></li>
+<li><p><a class="reference internal" href="types/InlineQuery.html#pyrogram.types.InlineQuery" title="pyrogram.types.InlineQuery (Python class) — An incoming inline query."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQuery</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">query</span></code>.</p></li>
+<li><p><a class="reference internal" href="types/PreCheckoutQuery.html#pyrogram.types.PreCheckoutQuery" title="pyrogram.types.PreCheckoutQuery (Python class) — An incoming pre-checkout query from a buy button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PreCheckoutQuery</span></code></a>: The filter will match <code class="docutils literal notranslate"><span class="pre">payload</span></code>.</p></li>
+</ul>
+<p>When a pattern matches, all the <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> are
+stored in the <code class="docutils literal notranslate"><span class="pre">matches</span></code> field of the update object itself.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.regex-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.regex-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pattern</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">Pattern</span></code>) – The regex pattern as string or as pre-compiled pattern.</p></li>
+<li><p><strong>flags</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Regex flags.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.user">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">user</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">users</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em></span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.user" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages coming from one or more users.</p>
+<p>You can use <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set">set bound methods</a> to manipulate the
+users container.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.user-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.user-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><strong>users</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – Pass one or more user ids/usernames to filter users.
+For you yourself, “me” or “self” can be used as well.
+Defaults to None (no users).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight sig-wrap py" id="pyrogram.filters.chat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">chat</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">chats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em></span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.chat" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages coming from one or more chats.</p>
+<p>You can use <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set">set bound methods</a> to manipulate the
+chats container.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.chat-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.chat-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><strong>chats</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – Pass one or more chat ids/usernames to filter chats.
+For your personal cloud (Saved Messages) you can simply use “me” or “self”.
+Defaults to None (no chats).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.filters.topic">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">topic</span></span><span class="sig-paren">(</span><span class="sig-param-decl"><em class="sig-param"><span class="n"><span class="pre">topics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.13)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em></span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.filters.topic" title="Link to this definition">¶</a></dt>
+<dd><p>Filter messages coming from one or more topics.</p>
+<p>You can use <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set">set bound methods</a> to manipulate the
+topics container.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.filters.topic-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.topic-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p><strong>topics</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – Pass one or more topic ids to filter messages in specific topics.
+Pass 1 for general topic.
+Defaults to None (no topics).</p>
+</dd>
+</dl>
+</dd></dl>
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="errors/internal-server-error.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 500 - InternalServerError" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              500 - InternalServerError
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../topics/use-filters.html" class="md-footer__link md-footer__link--next" aria-label="Next: Using Filters" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Using Filters
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    8.0.2.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "navigation.top", "search.share", "toc.follow", "toc.sticky", "content.tabs.link", "announce.dismiss"], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike", "staticVersions": [{"aliases": ["latest"], "title": "main", "version": "main"}, {"aliases": [], "title": "staging", "version": "staging"}], "versionPath": null}}</script>
+    
+      
+        <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=a56c686a"></script>
+    
+  </body>
+</html>
