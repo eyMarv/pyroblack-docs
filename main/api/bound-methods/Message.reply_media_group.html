@@ -13,7 +13,7 @@
     
     
       
-        <title>Message.reply_media_group() - pyroblack Documentation v2.6.7</title>
+        <title>Message.reply_media_group() - pyroblack Documentation v2.6.8</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.6.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.7" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.6.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.8" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -88,7 +88,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.6.7
+            pyroblack Documentation v2.6.8
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -271,10 +271,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.6.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.7" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.6.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.8" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.6.7
+    pyroblack Documentation v2.6.8
   </label>
   
     <div class="md-nav__source">
@@ -1137,14 +1137,29 @@ for reply_to_message only.</p></li>
 <li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots</p></li>
 <li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
 <li><p><strong>invert_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Inverts the position of the media and caption.</p></li>
+<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
+detailed description) and will be called back each time a new file chunk has been successfully
+transmitted.</p></li>
+<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.
+You can pass anything you need to be available in the progress callback scope; for example, a Message
+object or a Client instance in order to edit the message with the updated progress status.</p></li>
 </ul>
 </dd>
-<dt class="field-even" id="pyrogram.types.Message.reply_media_group-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_media_group-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p>On success, a <code class="xref py py-obj docutils literal notranslate"><span class="pre">Messages</span></code> object is returned containing all the
+<dt class="field-even" id="pyrogram.types.Message.reply_media_group-other-parameters">Other Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_media_group-other-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>current</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The amount of bytes transmitted so far.</p></li>
+<li><p><strong>total</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The total size of the file.</p></li>
+<li><p><strong>*args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments as defined in the <code class="docutils literal notranslate"><span class="pre">progress_args</span></code> parameter.
+You can either keep <code class="docutils literal notranslate"><span class="pre">*args</span></code> or add every single extra argument in your function signature.</p></li>
+</ul>
+</dd>
+<dt class="field-odd" id="pyrogram.types.Message.reply_media_group-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_media_group-returns" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><p>On success, a <code class="xref py py-obj docutils literal notranslate"><span class="pre">Messages</span></code> object is returned containing all the
 single messages sent.</p>
 </dd>
-<dt class="field-odd" id="pyrogram.types.Message.reply_media_group-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_media_group-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dt class="field-even" id="pyrogram.types.Message.reply_media_group-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_media_group-raises" title="Permalink to this headline">¶</a></dt>
+<dd class="field-even"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
 </dd>
 </dl>
 </dd></dl>

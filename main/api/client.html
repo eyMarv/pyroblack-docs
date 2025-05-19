@@ -13,7 +13,7 @@
     
     
       
-        <title>pyroblack Client - pyroblack Documentation v2.6.7</title>
+        <title>pyroblack Client - pyroblack Documentation v2.6.8</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v2.6.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.7" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.6.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.8" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.6.7
+            pyroblack Documentation v2.6.8
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v2.6.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.7" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v2.6.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.8" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.6.7
+    pyroblack Documentation v2.6.8
   </label>
   
     <div class="md-nav__source">
@@ -1268,6 +1268,7 @@ Do you want a .session file? Use <code class="docutils literal notranslate"><spa
 for in-memory use <code class="docutils literal notranslate"><span class="pre">in_memory=True</span></code>.</p></li>
 <li><p><strong>is_telethon_string</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> if your provided session_string is in the telethon format.
 Requires <code class="docutils literal notranslate"><span class="pre">session_string</span></code> to be filled.</p></li>
+<li><p><strong>use_qrcode</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to login using a QR code.</p></li>
 <li><p><strong>in_memory</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to start an in-memory session that will be discarded as soon as the client stops.
 In order to reconnect again using an in-memory session without having to login again, you can use
 <a class="reference internal" href="methods/export_session_string.html#pyrogram.Client.export_session_string" title="pyrogram.Client.export_session_string (Python method) — Export the current authorized session as a serialized string."><code class="xref py py-meth docutils literal notranslate"><span class="pre">export_session_string()</span></code></a> before stopping the client to get a session string you can

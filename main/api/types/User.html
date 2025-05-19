@@ -13,7 +13,7 @@
     
     
       
-        <title>User - pyroblack Documentation v2.6.7</title>
+        <title>User - pyroblack Documentation v2.6.8</title>
       
     
     
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.6.7" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.7" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.6.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.6.8" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.6.7
+            pyroblack Documentation v2.6.8
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.6.7" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.7" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.6.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.6.8" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.6.7
+    pyroblack Documentation v2.6.8
   </label>
   
     <div class="md-nav__source">
@@ -1941,6 +1941,7 @@
 <li><p><strong>is_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is in your contacts.</p></li>
 <li><p><strong>is_mutual_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if you both have each other’s contact.</p></li>
 <li><p><strong>is_deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is deleted.</p></li>
+<li><p><strong>is_frozen</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is frozen.</p></li>
 <li><p><strong>is_bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is a bot.</p></li>
 <li><p><strong>is_verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been verified by Telegram.</p></li>
 <li><p><strong>is_restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been restricted. Bots only.
@@ -1976,6 +1977,8 @@ You can use <code class="docutils literal notranslate"><span class="pre">user.me
 (“html” or “md”/”markdown”) use <code class="docutils literal notranslate"><span class="pre">user.mention(style=&quot;md&quot;)</span></code>.</p></li>
 <li><p><strong>reply_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Reply or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat reply color.</p></li>
 <li><p><strong>profile_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Reply or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat profile color.</p></li>
+<li><p><strong>frozen_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Frozen account icon.
+This field is available only in case <em>is_frozen</em> is True.</p></li>
 <li><p><strong>added_to_attachment_menu</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user added the bot to the attachment menu.</p></li>
 <li><p><strong>active_users_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of recently (monthly) active users of the bot.</p></li>
 <li><p><strong>inline_need_location</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot supports inline <a class="reference external" href="https://core.telegram.org/bots/inline#location-based-results">user location</a> requests. Returned only in get_me.</p></li>
