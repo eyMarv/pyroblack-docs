@@ -13,7 +13,7 @@
     
     
       
-        <title>Listener - pyroblack Documentation v2.7.4</title>
+        <title>Listener - pyroblack Documentation v2.7.5</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.1fbe08d9a12ad949f.min.css?v=6cf97753" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.30b2b08b91b832a08.min.css?v=68542d09" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.7.4" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.7.4" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.7.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.7.5" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.7.4
+            pyroblack Documentation v2.7.5
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.7.4" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.7.4" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.7.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.7.5" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.7.4
+    pyroblack Documentation v2.7.5
   </label>
   
     <div class="md-nav__source">
@@ -1464,8 +1464,8 @@ It can be either a “message” or a “callback_query.”</p></li>
 Setting this to True will send an alert message to the user in such cases.</p></li>
 <li><p><strong>identifier</strong> (<a class="reference internal" href="Identifier.html#pyrogram.types.Identifier" title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a>) – An <a class="reference internal" href="Identifier.html#pyrogram.types.Identifier" title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a> instance that defines the criteria for the event.
 It includes properties like chat_id, message_id, from_user_id, and inline_message_id that you want to match against the incoming event.</p></li>
-<li><p><strong>future</strong> (<a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a>, <em>optional</em>) – A <a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a> object representing the asynchronous task that waits for the event.
-When the event occurs, the <a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a> will be resolved, and the listener will be able to proceed.</p></li>
+<li><p><strong>future</strong> (<a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a>, <em>optional</em>) – A <a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a> object representing the asynchronous task that waits for the event.
+When the event occurs, the <a class="reference external" href="https://docs.python.org/3/library/asyncio-future.html#asyncio.Future" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Future</span></code></a> will be resolved, and the listener will be able to proceed.</p></li>
 <li><p><strong>callback</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – The callback to call when the listener is fulfilled.</p></li>
 </ul>
 </dd>

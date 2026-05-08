@@ -13,7 +13,7 @@
     
     
       
-        <title>send_poll() - pyroblack Documentation v2.7.4</title>
+        <title>send_poll() - pyroblack Documentation v2.7.5</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.1fbe08d9a12ad949f.min.css?v=6cf97753" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.30b2b08b91b832a08.min.css?v=68542d09" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.7.4" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.7.4" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.7.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.7.5" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.7.4
+            pyroblack Documentation v2.7.5
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.7.4" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.7.4" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.7.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.7.5" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.7.4
+    pyroblack Documentation v2.7.5
   </label>
   
     <div class="md-nav__source">
@@ -2532,7 +2532,7 @@ You can combine both syntaxes together.</p></li>
 <em>parse_mode</em>.</p></li>
 <li><p><strong>open_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Amount of time in seconds the poll will be active after creation, 5-600.
 Can’t be used together with <em>close_date</em>.</p></li>
-<li><p><strong>close_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time when the poll will be automatically closed.
+<li><p><strong>close_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time when the poll will be automatically closed.
 Must be at least 5 and no more than 600 seconds in the future.
 Can’t be used together with <em>open_period</em>.</p></li>
 <li><p><strong>is_closed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if the poll needs to be immediately closed.
@@ -2556,7 +2556,7 @@ for reply_to_message only.</p></li>
 <li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, quote_text are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.
 For quote_text.</p></li>
-<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
+<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup (Python class) — A custom keyboard with reply options."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove (Python class) — Object used to tell clients to remove a bot keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply (Python class) — Object used to force clients to show a reply interface."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
 instructions to remove reply keyboard or to force a reply from the user.</p></li>
 </ul>

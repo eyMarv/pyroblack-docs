@@ -13,7 +13,7 @@
     
     
       
-        <title>run() - pyroblack Documentation v2.7.4</title>
+        <title>run() - pyroblack Documentation v2.7.5</title>
       
     
     
@@ -32,7 +32,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.1fbe08d9a12ad949f.min.css?v=6cf97753" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.30b2b08b91b832a08.min.css?v=68542d09" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -83,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.7.4" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.7.4" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.7.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.7.5" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -93,7 +93,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.7.4
+            pyroblack Documentation v2.7.5
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -278,10 +278,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.7.4" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.7.4" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.7.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.7.5" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.7.4
+    pyroblack Documentation v2.7.5
   </label>
   
     <div class="md-nav__source">
@@ -1666,7 +1666,7 @@
 <a class="reference internal" href="start.html#pyrogram.Client.start" title="pyrogram.Client.start (Python method) — Start the client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a>, <a class="reference internal" href="idle.html#pyrogram.idle" title="pyrogram.idle (Python function) — Block the main script execution until a signal is received."><code class="xref py py-meth docutils literal notranslate"><span class="pre">idle()</span></code></a> and <a class="reference internal" href="stop.html#pyrogram.Client.stop" title="pyrogram.Client.stop (Python method) — Stop the Client."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop()</span></code></a> in sequence.
 It makes running a single client less verbose.</p>
 <p>In case a coroutine is passed as argument, runs the coroutine until it’s completed and doesn’t do any client
-operation. This is almost the same as <a class="reference external" href="https://docs.python.org/3/library/asyncio-runner.html#asyncio.run" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">asyncio.run</span></code></a> except for the fact that Pyrogram’s <code class="docutils literal notranslate"><span class="pre">run</span></code> uses the
+operation. This is almost the same as <a class="reference external" href="https://docs.python.org/3/library/asyncio-runner.html#asyncio.run" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">asyncio.run</span></code></a> except for the fact that Pyrogram’s <code class="docutils literal notranslate"><span class="pre">run</span></code> uses the
 current event loop instead of a new one.</p>
 <p>If you want to run multiple clients at once, see <a class="reference internal" href="compose.html#pyrogram.compose" title="pyrogram.compose (Python function) — Run multiple clients at once."><code class="xref py py-meth docutils literal notranslate"><span class="pre">pyrogram.compose()</span></code></a>.</p>
 <dl class="field-list simple">
@@ -1674,7 +1674,7 @@ current event loop instead of a new one.</p>
 <dd class="field-odd"><p><strong>coroutine</strong> (<code class="docutils literal notranslate"><span class="pre">Coroutine</span></code>, <em>optional</em>) – Pass a coroutine to run it until it completes.</p>
 </dd>
 <dt class="field-even" id="pyrogram.Client.run-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.run-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ConnectionError" title="(in Python v3.13)"><strong>ConnectionError</strong></a> – In case you try to run an already started client.</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ConnectionError" title="(in Python v3.14)"><strong>ConnectionError</strong></a> – In case you try to run an already started client.</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
