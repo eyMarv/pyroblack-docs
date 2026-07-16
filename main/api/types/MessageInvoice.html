@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pyrogram.types.MessageInvoice" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1566,6 +1571,19 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Message<wbr>Invoice</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
         
   
@@ -1577,6 +1595,54 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Message<wbr>Invoice</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.MessageInvoice" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.MessageInvoice (Python class) — Contains information about an Invoice."><span>pyrogram.<wbr>types.<wbr>Message<wbr>Invoice</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.MessageInvoice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.MessageInvoice-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4463,9 +4529,47 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Message<wbr>Invoice</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.MessageInvoice" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.MessageInvoice (Python class) — Contains information about an Invoice."><span>pyrogram.<wbr>types.<wbr>Message<wbr>Invoice</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.MessageInvoice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.MessageInvoice-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -4482,6 +4586,25 @@
 
 
 <h1 id="messageinvoice">MessageInvoice<a class="headerlink" href="#messageinvoice" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.types.MessageInvoice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">MessageInvoice</span></span><a class="headerlink" href="#pyrogram.types.MessageInvoice" title="Link to this definition">¶</a></dt>
+<dd><p>Contains information about an Invoice.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.types.MessageInvoice-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.MessageInvoice-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product name.</p></li>
+<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Product description.</p></li>
+<li><p><strong>currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Currency code.</p></li>
+<li><p><strong>total_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Total price in the smallest units of the currency.</p></li>
+<li><p><strong>start_parameter</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique bot deep-linking parameter that can be used to generate this invoice.</p></li>
+<li><p><strong>shipping_address_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the the shipping address is requested.</p></li>
+<li><p><strong>test</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the invoice is a test invoice.</p></li>
+<li><p><strong>receipt_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The message_id of the message sent to the chat when the invoice is paid.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 
 

@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pyrogram.types.RequestPeerTypeChat" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1158,6 +1163,19 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Request<wbr>Peer<wbr>Type<wbr>Chat</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
         
   
@@ -1169,6 +1187,54 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Request<wbr>Peer<wbr>Type<wbr>Chat</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.RequestPeerTypeChat" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.RequestPeerTypeChat (Python class) — Object used to request clients to send a chat identifier."><span>pyrogram.<wbr>types.<wbr>Request<wbr>Peer<wbr>Type<wbr>Chat</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.RequestPeerTypeChat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.RequestPeerTypeChat-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2543,9 +2609,47 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Request<wbr>Peer<wbr>Type<wbr>Chat</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.RequestPeerTypeChat" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.RequestPeerTypeChat (Python class) — Object used to request clients to send a chat identifier."><span>pyrogram.<wbr>types.<wbr>Request<wbr>Peer<wbr>Type<wbr>Chat</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.RequestPeerTypeChat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.RequestPeerTypeChat-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2562,6 +2666,31 @@
 
 
 <h1 id="requestpeertypechat">RequestPeerTypeChat<a class="headerlink" href="#requestpeertypechat" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.types.RequestPeerTypeChat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">RequestPeerTypeChat</span></span><a class="headerlink" href="#pyrogram.types.RequestPeerTypeChat" title="Link to this definition">¶</a></dt>
+<dd><p>Object used to request clients to send a chat identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.types.RequestPeerTypeChat-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.RequestPeerTypeChat-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>is_creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Chat which user is the owner.</p></li>
+<li><p><strong>is_bot_participant</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Chat where bot is a participant.</p></li>
+<li><p><strong>is_username</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Chat which has username.</p></li>
+<li><p><strong>is_forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, show only Chat which is a forum.</p></li>
+<li><p><strong>max</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Maximum number of chats to be returned.
+default 1.</p></li>
+<li><p><strong>is_name_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, Chat name is requested.
+default True.</p></li>
+<li><p><strong>is_username_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, Chat username is requested.
+default True.</p></li>
+<li><p><strong>is_photo_requested</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, Chat photo is requested.
+default True.</p></li>
+<li><p><strong>user_privileges</strong> (<a class="reference internal" href="ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges (Python class) — Describes privileged actions an administrator is able to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a>, <em>optional</em>) – Privileged actions that an user administrator is able to take.</p></li>
+<li><p><strong>bot_privileges</strong> (<a class="reference internal" href="ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges (Python class) — Describes privileged actions an administrator is able to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a>, <em>optional</em>) – Privileged actions that a bot administrator is able to take.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 
 

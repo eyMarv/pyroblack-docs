@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pyrogram.types.AlternativeVideo" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1206,6 +1211,19 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Alternative<wbr>Video</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
         
   
@@ -1217,6 +1235,54 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Alternative<wbr>Video</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.AlternativeVideo" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.AlternativeVideo (Python class) — Describes an alternative reencoded quality of a video file."><span>pyrogram.<wbr>types.<wbr>Alternative<wbr>Video</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.AlternativeVideo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.AlternativeVideo-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4463,9 +4529,47 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Alternative<wbr>Video</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.AlternativeVideo" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.AlternativeVideo (Python class) — Describes an alternative reencoded quality of a video file."><span>pyrogram.<wbr>types.<wbr>Alternative<wbr>Video</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.AlternativeVideo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.AlternativeVideo-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -4482,6 +4586,30 @@
 
 
 <h1 id="alternativevideo">AlternativeVideo<a class="headerlink" href="#alternativevideo" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.types.AlternativeVideo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">AlternativeVideo</span></span><a class="headerlink" href="#pyrogram.types.AlternativeVideo" title="Link to this definition">¶</a></dt>
+<dd><p>Describes an alternative reencoded quality of a video file.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.types.AlternativeVideo-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.AlternativeVideo-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier for this file, which can be used to download or reuse the file.</p></li>
+<li><p><strong>file_unique_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this file, which is supposed to be the same over time and for different accounts.
+Can’t be used to download or reuse the file.</p></li>
+<li><p><strong>width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video width as defined by sender.</p></li>
+<li><p><strong>height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video height as defined by sender.</p></li>
+<li><p><strong>codec</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Codec used for video file encoding, for example, “h264”, “h265”, or “av1”.</p></li>
+<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Duration of the video in seconds as defined by sender.</p></li>
+<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Video file name.</p></li>
+<li><p><strong>mime_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Mime type of a file as defined by sender.</p></li>
+<li><p><strong>file_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – File size.</p></li>
+<li><p><strong>supports_streaming</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the video was uploaded with streaming support.</p></li>
+<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the video was sent.</p></li>
+<li><p><strong>thumbs</strong> (List of <a class="reference internal" href="Thumbnail.html#pyrogram.types.Thumbnail" title="pyrogram.types.Thumbnail (Python class) — One size of a photo or a file/sticker thumbnail."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Thumbnail</span></code></a>, <em>optional</em>) – Video thumbnails.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 
 

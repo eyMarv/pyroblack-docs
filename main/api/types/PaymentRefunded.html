@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pyrogram.types.PaymentRefunded" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1038,6 +1043,19 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Payment<wbr>Refunded</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
         
   
@@ -1049,6 +1067,54 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Payment<wbr>Refunded</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.PaymentRefunded" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.PaymentRefunded (Python class) — Contains information about a refunded payment."><span>pyrogram.<wbr>types.<wbr>Payment<wbr>Refunded</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.PaymentRefunded">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.PaymentRefunded-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2135,9 +2201,47 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Payment<wbr>Refunded</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.PaymentRefunded" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.PaymentRefunded (Python class) — Contains information about a refunded payment."><span>pyrogram.<wbr>types.<wbr>Payment<wbr>Refunded</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.PaymentRefunded">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.PaymentRefunded-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2154,6 +2258,23 @@
 
 
 <h1 id="paymentrefunded">PaymentRefunded<a class="headerlink" href="#paymentrefunded" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.types.PaymentRefunded">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">PaymentRefunded</span></span><a class="headerlink" href="#pyrogram.types.PaymentRefunded" title="Link to this definition">¶</a></dt>
+<dd><p>Contains information about a refunded payment.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.types.PaymentRefunded-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.PaymentRefunded-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – The user that refunded the payment.</p></li>
+<li><p><strong>currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Three-letter ISO 4217 currency code.</p></li>
+<li><p><strong>total_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Total price in the smallest units of the currency.</p></li>
+<li><p><strong>payload</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Bot specified invoice payload. Only available to the bot that received the payment.</p></li>
+<li><p><strong>telegram_payment_charge_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Telegram payment identifier.</p></li>
+<li><p><strong>provider_payment_charge_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Provider payment identifier.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 
 

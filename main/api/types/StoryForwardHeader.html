@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pyrogram.types.StoryForwardHeader" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -942,6 +947,19 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    <span>Story<wbr>Forward<wbr>Header</span>
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="#" class="md-nav__link md-nav__link--active">
         
   
@@ -953,6 +971,54 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Story<wbr>Forward<wbr>Header</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.StoryForwardHeader" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.StoryForwardHeader (Python class) — Contains information about origin of forwarded story."><span>pyrogram.<wbr>types.<wbr>Story<wbr>Forward<wbr>Header</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.StoryForwardHeader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.StoryForwardHeader-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2279,9 +2345,47 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span>Story<wbr>Forward<wbr>Header</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrogram.types.StoryForwardHeader" class="md-nav__link">
+    
+      <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
+    
+    <span class="md-ellipsis">
+      <span title="pyrogram.types.StoryForwardHeader (Python class) — Contains information about origin of forwarded story."><span>pyrogram.<wbr>types.<wbr>Story<wbr>Forward<wbr>Header</span></span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pyrogram.types.StoryForwardHeader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrogram.types.StoryForwardHeader-parameters" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Parameters</span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2298,6 +2402,22 @@
 
 
 <h1 id="storyforwardheader">StoryForwardHeader<a class="headerlink" href="#storyforwardheader" title="Link to this heading">¶</a></h1>
+<dl class="py class objdesc">
+<dt class="sig sig-object highlight py" id="pyrogram.types.StoryForwardHeader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">StoryForwardHeader</span></span><a class="headerlink" href="#pyrogram.types.StoryForwardHeader" title="Link to this definition">¶</a></dt>
+<dd><p>Contains information about origin of forwarded story.</p>
+<dl class="field-list simple">
+<dt class="field-odd" id="pyrogram.types.StoryForwardHeader-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.StoryForwardHeader-parameters" title="Permalink to this headline">¶</a></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Sender of the story.</p></li>
+<li><p><strong>sender_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For stories forwarded from users who have hidden their accounts, name of the user.</p></li>
+<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Sender of the story. If the story is from channel.</p></li>
+<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique identifier for the original story.</p></li>
+<li><p><strong>is_modified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the story is modified.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 
 
