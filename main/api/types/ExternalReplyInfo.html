@@ -21,7 +21,7 @@
     
     
       
-        <title>ExternalReplyInfo - pyroblack Documentation v2.9.3</title>
+        <title>ExternalReplyInfo - pyroblack Documentation v2.9.4</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.3" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.4" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.4" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.9.3
+            pyroblack Documentation v2.9.4
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -328,10 +328,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.3" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.4" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.4" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.9.3
+    pyroblack Documentation v2.9.4
   </label>
   
     <div class="md-nav__source">
@@ -4593,10 +4593,14 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ExternalReplyInfo-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ExternalReplyInfo-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>origin</strong> (<a class="reference internal" href="MessageOrigin.html#pyrogram.types.MessageOrigin" title="pyrogram.types.MessageOrigin (Python class) — This object describes the origin of a message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageOrigin</span></code></a>, <em>optional</em>) – Origin of the message replied to by the given message</p></li>
-<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Chat the original message belongs to. Available only if the chat is a supergroup or a channel.</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique message identifier inside the original chat. Available only if the original chat is a supergroup or a channel.</p></li>
-<li><p><strong>link_preview_options</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkPreviewOptions</span></code>, <em>optional</em>) – Options used for link preview generation for the original message, if it is a text message</p></li>
+<li><p><strong>origin</strong> (<a class="reference internal" href="MessageOrigin.html#pyrogram.types.MessageOrigin" title="pyrogram.types.MessageOrigin (Python class) — This object describes the origin of a message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageOrigin</span></code></a>, <em>optional</em>) – Origin of the message replied to by the given message.</p></li>
+<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Chat the original message belongs to.
+Available only if the chat is a supergroup or a channel.</p></li>
+<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique message identifier inside the original chat.
+Available only if the original chat is a supergroup or a channel.</p></li>
+<li><p><strong>media</strong> (<a class="reference internal" href="../enums/MessageMediaType.html#pyrogram.enums.MessageMediaType" title="pyrogram.enums.MessageMediaType (Python class) — Message media type enumeration used in Message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaType</span></code></a>, <em>optional</em>) – The message is a media message.
+This field will contain the enumeration type of the media message.
+You can use <code class="docutils literal notranslate"><span class="pre">media</span> <span class="pre">=</span> <span class="pre">getattr(message,</span> <span class="pre">message.media.value)</span></code> to access the media message.</p></li>
 <li><p><strong>animation</strong> (<a class="reference internal" href="Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation (Python class) — An animation file (GIF or H.264/MPEG-4 AVC video without sound)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a>, <em>optional</em>) – Message is an animation, information about the animation.</p></li>
 <li><p><strong>audio</strong> (<a class="reference internal" href="Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio (Python class) — An audio file to be treated as music by the Telegram clients."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a>, <em>optional</em>) – Message is an audio file, information about the file.</p></li>
 <li><p><strong>document</strong> (<a class="reference internal" href="Document.html#pyrogram.types.Document" title="pyrogram.types.Document (Python class) — A generic file (as opposed to photos, voice messages, audio files, ...)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a>, <em>optional</em>) – Message is a general file, information about the file.</p></li>
@@ -4608,19 +4612,16 @@
 <li><p><strong>video_note</strong> (<a class="reference internal" href="VideoNote.html#pyrogram.types.VideoNote" title="pyrogram.types.VideoNote (Python class) — A video note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoNote</span></code></a>, <em>optional</em>) – Message is a video note, information about the video message.</p></li>
 <li><p><strong>voice</strong> (<a class="reference internal" href="Voice.html#pyrogram.types.Voice" title="pyrogram.types.Voice (Python class) — A voice note."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Voice</span></code></a>, <em>optional</em>) – Message is a voice message, information about the file.</p></li>
 <li><p><strong>has_media_spoiler</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the message media is covered by a spoiler animation.</p></li>
-<li><p><strong>checklist</strong> (<a class="reference internal" href="Checklist.html#pyrogram.types.Checklist" title="pyrogram.types.Checklist (Python class) — Describes a checklist."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Checklist</span></code></a>, <em>optional</em>) – Message is a checklist.</p></li>
 <li><p><strong>contact</strong> (<a class="reference internal" href="Contact.html#pyrogram.types.Contact" title="pyrogram.types.Contact (Python class) — A phone contact."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contact</span></code></a>, <em>optional</em>) – Message is a shared contact, information about the contact.</p></li>
 <li><p><strong>dice</strong> (<a class="reference internal" href="Dice.html#pyrogram.types.Dice" title="pyrogram.types.Dice (Python class) — A dice with a random value from 1 to 6 for currently supported base emoji."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dice</span></code></a>, <em>optional</em>) – A dice containing a value that is randomly generated by Telegram.</p></li>
 <li><p><strong>game</strong> (<a class="reference internal" href="Game.html#pyrogram.types.Game" title="pyrogram.types.Game (Python class) — A game. Use BotFather to create and edit games, their short names will act as unique identifiers."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Game</span></code></a>, <em>optional</em>) – Message is a game, information about the game.</p></li>
-<li><p><strong>giveaway</strong> (<a class="reference internal" href="Giveaway.html#pyrogram.types.Giveaway" title="pyrogram.types.Giveaway (Python class) — This object represents a message about a scheduled giveaway."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Giveaway</span></code></a>, <em>optional</em>) – Message is a scheduled giveaway, information about the giveaway</p></li>
-<li><p><strong>giveaway_winners</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayWinners</span></code>, <em>optional</em>) – A giveaway with public winners was completed</p></li>
-<li><p><strong>invoice</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Invoice</span></code>, <em>optional</em>) – Message is an invoice for a <a class="reference external" href="https://core.telegram.org/bots/api#payments">payment</a>, information about the invoice. <a class="reference external" href="https://core.telegram.org/bots/api#payments">More about payments »</a></p></li>
+<li><p><strong>giveaway</strong> (<a class="reference internal" href="Giveaway.html#pyrogram.types.Giveaway" title="pyrogram.types.Giveaway (Python class) — This object represents a message about a scheduled giveaway."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Giveaway</span></code></a>, <em>optional</em>) – Message is a scheduled giveaway, information about the giveaway.</p></li>
+<li><p><strong>giveaway_result</strong> (<a class="reference internal" href="GiveawayResult.html#pyrogram.types.GiveawayResult" title="pyrogram.types.GiveawayResult (Python class) — A giveaway result."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayResult</span></code></a>, <em>optional</em>) – Message is a giveaway result, information about the giveaway result.</p></li>
+<li><p><strong>invoice</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Invoice</span></code>, <em>optional</em>) – Message is a invoice, information about the invoice.
+<a class="reference external" href="https://core.telegram.org/bots/api#payments">More about payments »</a></p></li>
 <li><p><strong>location</strong> (<a class="reference internal" href="Location.html#pyrogram.types.Location" title="pyrogram.types.Location (Python class) — A point on the map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a>, <em>optional</em>) – Message is a shared location, information about the location.</p></li>
 <li><p><strong>poll</strong> (<a class="reference internal" href="Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll (Python class) — A Poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a>, <em>optional</em>) – Message is a native poll, information about the poll.</p></li>
 <li><p><strong>venue</strong> (<a class="reference internal" href="Venue.html#pyrogram.types.Venue" title="pyrogram.types.Venue (Python class) — A venue."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Venue</span></code></a>, <em>optional</em>) – Message is a venue, information about the venue.</p></li>
-<li><p><strong>media</strong> (<a class="reference internal" href="../enums/MessageMediaType.html#pyrogram.enums.MessageMediaType" title="pyrogram.enums.MessageMediaType (Python class) — Message media type enumeration used in Message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaType</span></code></a>, <em>optional</em>) – The external reply is a media message.
-This field will contain the enumeration type of the media message.
-You can use <code class="docutils literal notranslate"><span class="pre">media</span> <span class="pre">=</span> <span class="pre">getattr(external_reply,</span> <span class="pre">external_reply.media.value)</span></code> to access the media message.</p></li>
 </ul>
 </dd>
 </dl>

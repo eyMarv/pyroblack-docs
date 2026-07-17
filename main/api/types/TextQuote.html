@@ -21,7 +21,7 @@
     
     
       
-        <title>TextQuote - pyroblack Documentation v2.9.3</title>
+        <title>TextQuote - pyroblack Documentation v2.9.4</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.3" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.4" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.4" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.9.3
+            pyroblack Documentation v2.9.4
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -328,10 +328,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.3" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.4" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.4" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.9.3
+    pyroblack Documentation v2.9.4
   </label>
   
     <div class="md-nav__source">
@@ -1786,7 +1786,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.TextQuote (Python class) — This object contains information about the quoted part of a message that is replied to by the given message."><span>pyrogram.<wbr>types.<wbr>Text<wbr>Quote</span></span>
+      <span title="pyrogram.types.TextQuote (Python class) — Describes manually or automatically chosen quote from another message."><span>pyrogram.<wbr>types.<wbr>Text<wbr>Quote</span></span>
     </span>
   </a>
   
@@ -4547,7 +4547,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.TextQuote (Python class) — This object contains information about the quoted part of a message that is replied to by the given message."><span>pyrogram.<wbr>types.<wbr>Text<wbr>Quote</span></span>
+      <span title="pyrogram.types.TextQuote (Python class) — Describes manually or automatically chosen quote from another message."><span>pyrogram.<wbr>types.<wbr>Text<wbr>Quote</span></span>
     </span>
   </a>
   
@@ -4589,14 +4589,16 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.types.TextQuote">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">TextQuote</span></span><a class="headerlink" href="#pyrogram.types.TextQuote" title="Link to this definition">¶</a></dt>
-<dd><p>This object contains information about the quoted part of a message that is replied to by the given message.</p>
+<dd><p>Describes manually or automatically chosen quote from another message.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.TextQuote-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.TextQuote-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the quoted part of a message that is replied to by the given message</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities that appear in the quote. Currently, only bold, italic, underline, strikethrough, spoiler, and custom_emoji entities are kept in quotes.</p></li>
-<li><p><strong>position</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Approximate quote position in the original message in UTF-16 code units as specified by the sender</p></li>
-<li><p><strong>is_manual</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the quote was chosen manually by the message sender. Otherwise, the quote was added automatically by the server.</p></li>
+<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the quoted part of a message that is replied to by the given message.</p></li>
+<li><p><strong>entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities that appear in the quote.
+Currently, only bold, italic, underline, strikethrough, spoiler, and custom_emoji entities are kept in quotes.</p></li>
+<li><p><strong>position</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Approximate quote position in the original message in UTF-16 code units as specified by the sender.</p></li>
+<li><p><strong>is_manual</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the quote was chosen manually by the message sender.
+Otherwise, the quote was added automatically by the server.</p></li>
 </ul>
 </dd>
 </dl>
