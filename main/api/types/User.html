@@ -21,7 +21,7 @@
     
     
       
-        <title>User - pyroblack Documentation v2.9.5</title>
+        <title>User - pyroblack Documentation v2.9.6</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.5" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.6" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.9.5
+            pyroblack Documentation v2.9.6
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -328,10 +328,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.5" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.6" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.9.5
+    pyroblack Documentation v2.9.6
   </label>
   
     <div class="md-nav__source">
@@ -2947,6 +2947,10 @@
 <li><p><strong>is_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is in your contacts.</p></li>
 <li><p><strong>is_mutual_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if you both have each other’s contact.</p></li>
 <li><p><strong>is_deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is deleted.</p></li>
+<li><p><strong>is_frozen</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user account is frozen.
+Present for pyroblack &lt;= 2.7.2 compatibility (derived from frozen_icon / bot_verification_icon).</p></li>
+<li><p><strong>is_contacts_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user only accepts messages from contacts (alias of <em>restricts_new_chats</em>; pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>is_bot_business</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this bot can be connected to a business account (pyroblack &lt;= 2.7.2).</p></li>
 <li><p><strong>is_verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been verified by Telegram.</p></li>
 <li><p><strong>is_restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been restricted. Bots only.
 See <em>restrictions</em> for details.</p></li>
@@ -2965,6 +2969,7 @@ to its assigned DC). More info at <a class="reference external" href="/faq#what-
 <li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – User’s phone number.</p></li>
 <li><p><strong>photo</strong> (<a class="reference internal" href="ChatPhoto.html#pyrogram.types.ChatPhoto" title="pyrogram.types.ChatPhoto (Python class) — A chat photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a>, <em>optional</em>) – User’s or bot’s current profile photo. Suitable for downloads only.</p></li>
 <li><p><strong>active_usernames</strong> (List of <a class="reference internal" href="Username.html#pyrogram.types.Username" title="pyrogram.types.Username (Python class) — Describes usernames assigned to a user, a supergroup, or a channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – If non-empty, the list of all <a class="reference external" href="https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames">active chat usernames</a>; for private chats, supergroups and channels.</p></li>
+<li><p><strong>usernames</strong> (List of <a class="reference internal" href="Username.html#pyrogram.types.Username" title="pyrogram.types.Username (Python class) — Describes usernames assigned to a user, a supergroup, or a channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – Alias of <em>active_usernames</em> for pyroblack &lt;= 2.7.2.</p></li>
 <li><p><strong>restrictions</strong> (List of <a class="reference internal" href="Restriction.html#pyrogram.types.Restriction" title="pyrogram.types.Restriction (Python class) — A restriction applied to bots or chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restriction</span></code></a>, <em>optional</em>) – The list of reasons why this bot might be unavailable to some users.
 This field is available only in case <em>is_restricted</em> is True.</p></li>
 <li><p><strong>is_bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is a bot.</p></li>
@@ -2979,14 +2984,18 @@ This field is available only in case <em>is_restricted</em> is True.</p></li>
 <li><p><strong>can_be_edited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the current user can edit this bot’s profile picture.</p></li>
 <li><p><strong>is_close_friend</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is a close friend of the current user; implies that the user is a contact</p></li>
 <li><p><strong>accent_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Accent or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat accent color.</p></li>
+<li><p><strong>reply_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Accent or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Alias of <em>accent_color</em> for pyroblack &lt;= 2.7.2.</p></li>
 <li><p><strong>profile_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Accent or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat profile color.</p></li>
 <li><p><strong>have_access</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If False, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can’t be passed to any method.</p></li>
 <li><p><strong>has_main_web_app</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot has a main Web App. Returned only in get_me.</p></li>
 <li><p><strong>active_user_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of recently active users of the bot.</p></li>
+<li><p><strong>active_users_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Alias of <em>active_user_count</em> for pyroblack &lt;= 2.7.2.</p></li>
 <li><p><strong>paid_message_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use <code class="docutils literal notranslate"><span class="pre">canSendMessageToUser</span></code> to check whether the current user must pay.</p></li>
 <li><p><strong>has_topics_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot has forum topic mode enabled in private chats. Returned only in get_me.</p></li>
 <li><p><strong>allows_users_to_create_topics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if users can create and delete topics in the chat with the bot. Returned only in get_me.</p></li>
 <li><p><strong>can_manage_bots</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if other bots can be created to be controlled by the bot. Returned only in get_me.</p></li>
+<li><p><strong>frozen_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Frozen account icon (custom emoji id).
+Available only when <em>is_frozen</em> is True (pyroblack &lt;= 2.7.2 field).</p></li>
 <li><p><strong>mention</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a text mention for this user.
 You can use <code class="docutils literal notranslate"><span class="pre">user.mention()</span></code> to mention the user using their first name (styled using html), or
 <code class="docutils literal notranslate"><span class="pre">user.mention(&quot;another</span> <span class="pre">name&quot;)</span></code> for a custom name. To choose a different style

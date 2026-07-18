@@ -21,7 +21,7 @@
     
     
       
-        <title>send_payment_form() - pyroblack Documentation v2.9.5</title>
+        <title>send_payment_form() - pyroblack Documentation v2.9.6</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.5" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.5" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.6" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.6" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.9.5
+            pyroblack Documentation v2.9.6
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -328,10 +328,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.5" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.5" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v2.9.6" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.6" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.9.5
+    pyroblack Documentation v2.9.6
   </label>
   
     <div class="md-nav__source">
@@ -2026,7 +2026,7 @@
       <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.Client.send_payment_form (Python method) — Send a filled-out payment form to the bot for final verification."><span>Client.<wbr>send_<wbr>payment_<wbr>form</span></span>
+      <span title="pyrogram.Client.send_payment_form (Python method) — Send a filled-out payment form / pay an invoice."><span>Client.<wbr>send_<wbr>payment_<wbr>form</span></span>
     </span>
   </a>
   
@@ -3261,7 +3261,7 @@
       <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.Client.send_payment_form (Python method) — Send a filled-out payment form to the bot for final verification."><span>Client.<wbr>send_<wbr>payment_<wbr>form</span></span>
+      <span title="pyrogram.Client.send_payment_form (Python method) — Send a filled-out payment form / pay an invoice."><span>Client.<wbr>send_<wbr>payment_<wbr>form</span></span>
     </span>
   </a>
   
@@ -3313,7 +3313,9 @@
 <dl class="py method objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.Client.send_payment_form">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">send_payment_form</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.send_payment_form" title="Link to this definition">¶</a></dt>
-<dd><p>Send a filled-out payment form to the bot for final verification.</p>
+<dd><p>Send a filled-out payment form / pay an invoice.</p>
+<p>Supports modern <code class="docutils literal notranslate"><span class="pre">payment_form_id</span></code> + <code class="docutils literal notranslate"><span class="pre">input_invoice</span></code> and pyroblack
+&lt;= 2.7.2 <code class="docutils literal notranslate"><span class="pre">chat_id</span></code> + <code class="docutils literal notranslate"><span class="pre">message_id</span></code> (stars) call style.</p>
 <blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
@@ -3321,47 +3323,18 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_payment_form-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_payment_form-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>payment_form_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Payment form identifier returned by <a class="reference internal" href="get_payment_form.html#pyrogram.Client.get_payment_form" title="pyrogram.Client.get_payment_form (Python method) — Get an invoice payment form."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_payment_form()</span></code></a>.</p></li>
-<li><p><strong>input_invoice</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoice</span></code>) – The invoice.</p></li>
-<li><p><strong>credentials</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputCredentials</span></code>, <em>optional</em>) – The credentials chosen by user for payment.
-Pass None for a payment in Telegram Stars.</p></li>
+<li><p><strong>payment_form_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Payment form id from <a class="reference internal" href="get_payment_form.html#pyrogram.Client.get_payment_form" title="pyrogram.Client.get_payment_form (Python method) — Get an invoice payment form."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_payment_form()</span></code></a>.</p></li>
+<li><p><strong>input_invoice</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoice</span></code>, <em>optional</em>) – The invoice (modern API).</p></li>
+<li><p><strong>credentials</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputCredentials</span></code>, <em>optional</em>) – Payment credentials. None for Telegram Stars.</p></li>
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Target chat (pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Message id or invoice link/slug (pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>invoice_link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Invoice link or slug.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_payment_form-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_payment_form-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaymentResult</span></code> – On success, the payment result is returned.</p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">PaymentResult</span></code> | list – On success.</p>
 </dd>
 </dl>
-<p class="example rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="c1"># Pay regular invoice from message</span>
-<span class="n">invoice</span> <span class="o">=</span> <span class="n">types</span><span class="o">.</span><span class="n">InputInvoiceMessage</span><span class="p">(</span>
-    <span class="n">chat_id</span><span class="o">=</span><span class="n">chat_id</span><span class="p">,</span>
-    <span class="n">message_id</span><span class="o">=</span><span class="mi">123</span>
-<span class="p">)</span>
-
-<span class="n">form</span> <span class="o">=</span> <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_payment_form</span><span class="p">(</span><span class="n">invoice</span><span class="p">)</span>
-
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_payment_form</span><span class="p">(</span>
-    <span class="n">payment_form_id</span><span class="o">=</span><span class="n">form</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">input_invoice</span><span class="o">=</span><span class="n">invoice</span><span class="p">,</span>
-    <span class="n">credentials</span><span class="o">=</span><span class="n">types</span><span class="o">.</span><span class="n">InputCredentialsNew</span><span class="p">(</span>
-        <span class="n">data</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;card&quot;</span><span class="p">}),</span> <span class="c1"># Pass the token received from the payment provider</span>
-    <span class="p">)</span>
-<span class="p">)</span>
-
-<span class="c1"># Pay star invoice from message</span>
-<span class="n">invoice</span> <span class="o">=</span> <span class="n">types</span><span class="o">.</span><span class="n">InputInvoiceMessage</span><span class="p">(</span>
-    <span class="n">chat_id</span><span class="o">=</span><span class="n">chat_id</span><span class="p">,</span>
-    <span class="n">message_id</span><span class="o">=</span><span class="mi">123</span>
-<span class="p">)</span>
-
-<span class="n">form</span> <span class="o">=</span> <span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">get_payment_form</span><span class="p">(</span><span class="n">invoice</span><span class="p">)</span>
-
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_payment_form</span><span class="p">(</span>
-    <span class="n">payment_form_id</span><span class="o">=</span><span class="n">form</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
-    <span class="n">input_invoice</span><span class="o">=</span><span class="n">invoice</span>
-<span class="p">)</span>
-</code></pre></div>
-</div>
 </dd></dl>
 
 
