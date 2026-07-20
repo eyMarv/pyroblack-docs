@@ -3128,57 +3128,60 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Message.reply_photo-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_photo-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>photo</strong> (<a class="reference internal" href="../types/InputMediaPhoto.html#pyrogram.types.InputMediaPhoto" title="pyrogram.types.InputMediaPhoto (Python class) — A photo to be sent."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMediaPhoto</span></code></a>) – Photo to send.</p></li>
-<li><p><strong>quote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
+<li><p><strong>photo (:obj:`~pyrogram.types.InputMediaPhoto`)</strong> – Photo to send.</p></li>
+<li><p><strong>quote (``bool``, *optional*)</strong> – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
 If <em>reply_to_message_id</em> is passed, this parameter will be ignored.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Photo caption, 0-1024 characters.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>caption (``str``, *optional*)</strong> – Photo caption, 0-1024 characters.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>show_caption_above_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if the caption must be shown above the message media.</p></li>
-<li><p><strong>has_spoiler</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
-<li><p><strong>ttl_seconds</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The message will be self-destructed in the specified time after its content was opened.
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>show_caption_above_media (``bool``, *optional*)</strong> – Pass True, if the caption must be shown above the message media.</p></li>
+<li><p><strong>has_spoiler (``bool``, *optional*)</strong> – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
+<li><p><strong>ttl_seconds (``int``, *optional*)</strong> – The message will be self-destructed in the specified time after its content was opened.
 The message’s self-destruct time, in seconds; must be between 0 and 60 in private chats.</p></li>
-<li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
+<li><p><strong>disable_notification (``bool``, *optional*)</strong> – Sends the message silently.
 Users will receive a notification with no sound.</p></li>
-<li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
-<li><p><strong>reply_parameters</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyParameters</span></code>, <em>optional</em>) – Description of the message to reply to</p></li>
-<li><p><strong>send_as</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the chat or channel to send the message as.
+<li><p><strong>message_effect_id (``int`` ``64-bit``, *optional*)</strong> – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
+<li><p><strong>reply_parameters (:obj:`~pyrogram.types.ReplyParameters`, *optional*)</strong> – Description of the message to reply to</p></li>
+<li><p><strong>send_as (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the chat or channel to send the message as.
 You can use this to send the message on behalf of a chat or channel where you have appropriate permissions.
 Use the <a class="reference internal" href="../methods/get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats (Python method) — Get the list of &quot;send_as&quot; chats available."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_send_as_chats()</span></code></a> to return the list of message sender identifiers, which can be used to send messages in the chat,
 This setting applies to the current message and will remain effective for future messages unless explicitly changed.
 To set this behavior permanently for all messages, use <a class="reference internal" href="../methods/set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat (Python method) — Set the default &quot;send_as&quot; chat for a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_send_as_chat()</span></code></a>.</p></li>
-<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the content of the message must be protected from forwarding and saving; for bots only.</p></li>
-<li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
-<li><p><strong>view_once</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the message should be opened only once and should be self-destructed once closed; private chats only.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup (Python class) — A custom keyboard with reply options."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove (Python class) — Object used to tell clients to remove a bot keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply (Python class) — Object used to force clients to show a reply interface."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
+<li><p><strong>schedule_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the message will be automatically sent.</p></li>
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Pass True if the content of the message must be protected from forwarding and saving; for bots only.</p></li>
+<li><p><strong>allow_paid_broadcast (``bool``, *optional*)</strong> – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
+<li><p><strong>view_once (``bool``, *optional*)</strong> – Pass True if the message should be opened only once and should be self-destructed once closed; private chats only.</p></li>
+<li><p><strong>reply_markup (:obj:`~pyrogram.types.InlineKeyboardMarkup` | :obj:`~pyrogram.types.ReplyKeyboardMarkup` | :obj:`~pyrogram.types.ReplyKeyboardRemove` | :obj:`~pyrogram.types.ForceReply`, *optional*)</strong> – Additional interface options. An object for an inline keyboard, custom reply keyboard,
 instructions to remove reply keyboard or to force a reply from the user.</p></li>
-<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+<li><p><strong>progress (``Callable``, *optional*)</strong> – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
 detailed description) and will be called back each time a new file chunk has been successfully
 transmitted.</p></li>
-<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.
+<li><p><strong>progress_args (``tuple``, *optional*)</strong> – Extra custom arguments for the progress callback function.
 You can pass anything you need to be available in the progress callback scope; for example, a Message
 object or a Client instance in order to edit the message with the updated progress status.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.Message.reply_photo-other-parameters">Other Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_photo-other-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>current</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The amount of bytes transmitted so far.</p></li>
-<li><p><strong>total</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The total size of the file.</p></li>
-<li><p><strong>*args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments as defined in the <code class="docutils literal notranslate"><span class="pre">progress_args</span></code> parameter.
+<li><p><strong>current (``int``)</strong> – The amount of bytes transmitted so far.</p></li>
+<li><p><strong>total (``int``)</strong> – The total size of the file.</p></li>
+<li><p><strong>*args (``tuple``, *optional*)</strong> – Extra custom arguments as defined in the <code class="docutils literal notranslate"><span class="pre">progress_args</span></code> parameter.
 You can either keep <code class="docutils literal notranslate"><span class="pre">*args</span></code> or add every single extra argument in your function signature.</p></li>
 </ul>
 </dd>
 <dt class="field-odd" id="pyrogram.types.Message.reply_photo-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_photo-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p>On success, the sent <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> is returned.
-In case the upload is deliberately stopped with <a class="reference internal" href="../methods/stop_transmission.html#pyrogram.Client.stop_transmission" title="pyrogram.Client.stop_transmission (Python method) — Stop downloading or uploading a file."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop_transmission()</span></code></a>, None is returned
-instead.</p>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>On success, the sent <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> is returned.</p></li>
+<li><p>In case the upload is deliberately stopped with <a class="reference internal" href="../methods/stop_transmission.html#pyrogram.Client.stop_transmission" title="pyrogram.Client.stop_transmission (Python method) — Stop downloading or uploading a file."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop_transmission()</span></code></a>, None is returned</p></li>
+<li><p><em>instead.</em></p></li>
+</ul>
+</p>
 </dd>
 <dt class="field-even" id="pyrogram.types.Message.reply_photo-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_photo-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dd class="field-even"><p><strong>RPCError</strong> – </p>
 </dd>
 </dl>
 </dd></dl>

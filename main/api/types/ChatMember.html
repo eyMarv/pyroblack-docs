@@ -2937,27 +2937,27 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChatMember-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChatMember-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>status</strong> (<a class="reference internal" href="../enums/ChatMemberStatus.html#pyrogram.enums.ChatMemberStatus" title="pyrogram.enums.ChatMemberStatus (Python class) — Chat member status enumeration used in ChatMember."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberStatus</span></code></a>) – The member’s status in the chat.</p></li>
-<li><p><strong>user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Information about the user.</p></li>
-<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Information about the chat (useful in case of banned channel senders).</p></li>
-<li><p><strong>joined_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the user joined.
+<li><p><strong>status (:obj:`~pyrogram.enums.ChatMemberStatus`)</strong> – The member’s status in the chat.</p></li>
+<li><p><strong>user (:obj:`~pyrogram.types.User`, *optional*)</strong> – Information about the user.</p></li>
+<li><p><strong>chat (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – Information about the chat (useful in case of banned channel senders).</p></li>
+<li><p><strong>joined_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the user joined.
 Not available for the owner.</p></li>
-<li><p><strong>custom_title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – A custom title that will be shown to all members instead of “Owner” or “Admin”.
+<li><p><strong>custom_title (``str``, *optional*)</strong> – A custom title that will be shown to all members instead of “Owner” or “Admin”.
 Creator (owner) and administrators only. Can be None in case there’s no custom title set.</p></li>
-<li><p><strong>tag</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Tag of the chat member or its custom title if the member is an administrator of the chat.
+<li><p><strong>tag (``str``, *optional*)</strong> – Tag of the chat member or its custom title if the member is an administrator of the chat.
 0-16 characters without emoji.
 Applicable to basic groups and supergroups only.</p></li>
-<li><p><strong>until_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Member, restricted, banned only.
+<li><p><strong>until_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Member, restricted, banned only.
 If status is RESTRICTED or BANNED, Date when restrictions will be lifted for this user.
 If status is MEMBER, Date when the user’s subscription will expire.</p></li>
-<li><p><strong>invited_by</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Administrators and self member only. Information about the user who invited this member.
+<li><p><strong>invited_by (:obj:`~pyrogram.types.User`, *optional*)</strong> – Administrators and self member only. Information about the user who invited this member.
 In case the user joined by himself this will be the same as “user”.</p></li>
-<li><p><strong>promoted_by</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Administrators only. Information about the user who promoted this member as administrator.</p></li>
-<li><p><strong>restricted_by</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Restricted and banned only. Information about the user who restricted or banned this member.</p></li>
-<li><p><strong>is_member</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Restricted only. True, if the user is a member of the chat at the moment of the request.</p></li>
-<li><p><strong>can_be_edited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the you are allowed to edit administrator privileges of the user.</p></li>
-<li><p><strong>permissions</strong> (<a class="reference internal" href="ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions (Python class) — Describes actions that a non-administrator user is allowed to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>, <em>optional</em>) – Restricted only. Restricted actions that a non-administrator user is allowed to take.</p></li>
-<li><p><strong>privileges</strong> (<a class="reference internal" href="ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges (Python class) — Describes privileged actions an administrator is able to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a>, <em>optional</em>) – Administrators only. Privileged actions that an administrator is able to take.</p></li>
+<li><p><strong>promoted_by (:obj:`~pyrogram.types.User`, *optional*)</strong> – Administrators only. Information about the user who promoted this member as administrator.</p></li>
+<li><p><strong>restricted_by (:obj:`~pyrogram.types.User`, *optional*)</strong> – Restricted and banned only. Information about the user who restricted or banned this member.</p></li>
+<li><p><strong>is_member (``bool``, *optional*)</strong> – Restricted only. True, if the user is a member of the chat at the moment of the request.</p></li>
+<li><p><strong>can_be_edited (``bool``, *optional*)</strong> – True, if the you are allowed to edit administrator privileges of the user.</p></li>
+<li><p><strong>permissions (:obj:`~pyrogram.types.ChatPermissions`, *optional*)</strong> – Restricted only. Restricted actions that a non-administrator user is allowed to take.</p></li>
+<li><p><strong>privileges (:obj:`~pyrogram.types.ChatPrivileges`, *optional*)</strong> – Administrators only. Privileged actions that an administrator is able to take.</p></li>
 </ul>
 </dd>
 </dl>

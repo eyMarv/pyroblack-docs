@@ -4062,17 +4062,20 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.set_chat_direct_messages_group-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_chat_direct_messages_group-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>is_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the direct messages group is enabled for the channel chat. Pass False otherwise.</p></li>
-<li><p><strong>paid_message_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – The new number of Telegram Stars that must be paid for each message that is sent to the direct messages chat unless the sender is an administrator of the channel chat, 0-<code class="docutils literal notranslate"><span class="pre">stars_paid_message_amount_max</span></code>.</p></li>
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>is_enabled (``bool``, *optional*)</strong> – Pass True if the direct messages group is enabled for the channel chat. Pass False otherwise.</p></li>
+<li><p><strong>paid_message_star_count (``bool``)</strong> – The new number of Telegram Stars that must be paid for each message that is sent to the direct messages chat unless the sender is an administrator of the channel chat, 0-<code class="docutils literal notranslate"><span class="pre">stars_paid_message_amount_max</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.set_chat_direct_messages_group-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_chat_direct_messages_group-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | <code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, a service message will be returned (when applicable),
-otherwise, in case a message object couldn’t be returned, True is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.Message` | ``bool``</strong> (<em>On success, a service message will be returned (when applicable),</em>)</p></li>
+<li><p><em>otherwise, in case a message object couldn’t be returned, True is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 <dt class="field-odd" id="pyrogram.Client.set_chat_direct_messages_group-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_chat_direct_messages_group-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dd class="field-odd"><p><strong>RPCError</strong> – </p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

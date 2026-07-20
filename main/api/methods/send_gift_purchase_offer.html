@@ -3321,18 +3321,18 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_gift_purchase_offer-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_gift_purchase_offer-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>owner_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat that currently owns the gift and will receive the offer.
+<li><p><strong>owner_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat that currently owns the gift and will receive the offer.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>gift_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Name or link of the upgraded gift.</p></li>
-<li><p><strong>price</strong> (<a class="reference internal" href="../types/GiftResalePrice.html#pyrogram.types.GiftResalePrice" title="pyrogram.types.GiftResalePrice (Python class) — Describes price of a resold gift."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftResalePrice</span></code></a>) – The price that the user agreed to pay for the gift.</p></li>
-<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Duration of the offer, in seconds.
+<li><p><strong>gift_name (``str``)</strong> – Name or link of the upgraded gift.</p></li>
+<li><p><strong>price (:obj:`~pyrogram.types.GiftResalePrice`)</strong> – The price that the user agreed to pay for the gift.</p></li>
+<li><p><strong>duration (``int``)</strong> – Duration of the offer, in seconds.
 Must be one of 21600, 43200, 86400, 129600, 172800, or 259200.</p></li>
-<li><p><strong>paid_message_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of Telegram Stars the user agreed to pay additionally for sending of the offer message to the current gift owner.
+<li><p><strong>paid_message_star_count (``int``, *optional*)</strong> – The number of Telegram Stars the user agreed to pay additionally for sending of the offer message to the current gift owner.
 Pass User.paid_message_star_count for users and None otherwise.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_gift_purchase_offer-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_gift_purchase_offer-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent Message is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Message`</strong> (<em>On success, the sent Message is returned.</em>)</p>
 </dd>
 </dl>
 </dd></dl>

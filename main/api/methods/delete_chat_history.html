@@ -4421,23 +4421,23 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.delete_chat_history-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.delete_chat_history-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Maximum ID of message to delete.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>max_id (``int``, *optional*)</strong> – Maximum ID of message to delete.
 Defaults to 0.</p></li>
-<li><p><strong>revoke</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to delete messages for all chat members.
+<li><p><strong>revoke (``bool``, *optional*)</strong> – Pass True to delete messages for all chat members.
 Always True if using in <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.CHANNEL" title="pyrogram.enums.ChatType.CHANNEL (Python attribute) — Chat is a channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CHANNEL</span></code></a> and <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.SUPERGROUP" title="pyrogram.enums.ChatType.SUPERGROUP (Python attribute) — Chat is a supergroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SUPERGROUP</span></code></a> chats.</p></li>
-<li><p><strong>just_clear</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to clear history for the current user, without actually removing chat.
+<li><p><strong>just_clear (``bool``, *optional*)</strong> – Pass True to clear history for the current user, without actually removing chat.
 For <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.PRIVATE" title="pyrogram.enums.ChatType.PRIVATE (Python attribute) — Chat is a private chat with a user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PRIVATE</span></code></a> and <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.GROUP" title="pyrogram.enums.ChatType.GROUP (Python attribute) — Chat is a group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GROUP</span></code></a> chats only.</p></li>
-<li><p><strong>min_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – The minimum date of the messages to delete.
+<li><p><strong>min_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – The minimum date of the messages to delete.
 Delete all messages newer than this time.
 For <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.PRIVATE" title="pyrogram.enums.ChatType.PRIVATE (Python attribute) — Chat is a private chat with a user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PRIVATE</span></code></a> and <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.GROUP" title="pyrogram.enums.ChatType.GROUP (Python attribute) — Chat is a group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GROUP</span></code></a> chats only.</p></li>
-<li><p><strong>max_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – The maximum date of the messages to delete.
+<li><p><strong>max_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – The maximum date of the messages to delete.
 Delete all messages older than this time.
 For <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.PRIVATE" title="pyrogram.enums.ChatType.PRIVATE (Python attribute) — Chat is a private chat with a user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PRIVATE</span></code></a> and <a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType.GROUP" title="pyrogram.enums.ChatType.GROUP (Python attribute) — Chat is a group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GROUP</span></code></a> chats only.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.delete_chat_history-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.delete_chat_history-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code> – Amount of affected messages</p>
+<dd class="field-even"><p><strong>``int``</strong> (<em>Amount of affected messages</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

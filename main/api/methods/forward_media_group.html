@@ -4185,25 +4185,25 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.forward_media_group-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.forward_media_group-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>from_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the source chat where the original message was sent.
+<li><p><strong>from_chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the source chat where the original message was sent.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Message identifier in the chat specified in <em>from_chat_id</em>.</p></li>
-<li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier of a message thread to which the message belongs.
+<li><p><strong>message_id (``int``)</strong> – Message identifier in the chat specified in <em>from_chat_id</em>.</p></li>
+<li><p><strong>message_thread_id (``int``, *optional*)</strong> – Unique identifier of a message thread to which the message belongs.
 For supergroups only.</p></li>
-<li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
+<li><p><strong>disable_notification (``bool``, *optional*)</strong> – Sends the message silently.
 Users will receive a notification with no sound.</p></li>
-<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
-<li><p><strong>hide_sender_name</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the original author of the message will not be shown.</p></li>
-<li><p><strong>hide_captions</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the original media captions will be removed.</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
+<li><p><strong>schedule_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the message will be automatically sent.</p></li>
+<li><p><strong>hide_sender_name (``bool``, *optional*)</strong> – If True, the original author of the message will not be shown.</p></li>
+<li><p><strong>hide_captions (``bool``, *optional*)</strong> – If True, the original media captions will be removed.</p></li>
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Protects the contents of the sent message from forwarding and saving.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.forward_media_group-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.forward_media_group-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p>List of <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, a list of forwarded messages is returned.</p>
+<dd class="field-even"><p><strong>List of :obj:`~pyrogram.types.Message`</strong> (<em>On success, a list of forwarded messages is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

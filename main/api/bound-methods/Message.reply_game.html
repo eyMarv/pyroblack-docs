@@ -3108,22 +3108,22 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Message.reply_game-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_game-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>game_short_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Short name of the game, serves as the unique identifier for the game. Set up your games via Botfather.</p></li>
-<li><p><strong>quote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
+<li><p><strong>game_short_name (``str``)</strong> – Short name of the game, serves as the unique identifier for the game. Set up your games via Botfather.</p></li>
+<li><p><strong>quote (``bool``, *optional*)</strong> – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
 If <em>reply_to_message_id</em> is passed, this parameter will be ignored.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
-<li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
+<li><p><strong>disable_notification (``bool``, *optional*)</strong> – Sends the message silently.
 Users will receive a notification with no sound.</p></li>
-<li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
-<li><p><strong>reply_parameters</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyParameters</span></code>, <em>optional</em>) – Description of the message to reply to</p></li>
-<li><p><strong>send_as</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the chat or channel to send the message as.
+<li><p><strong>message_effect_id (``int`` ``64-bit``, *optional*)</strong> – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
+<li><p><strong>reply_parameters (:obj:`~pyrogram.types.ReplyParameters`, *optional*)</strong> – Description of the message to reply to</p></li>
+<li><p><strong>send_as (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the chat or channel to send the message as.
 You can use this to send the message on behalf of a chat or channel where you have appropriate permissions.
 Use the <a class="reference internal" href="../methods/get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats (Python method) — Get the list of &quot;send_as&quot; chats available."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_send_as_chats()</span></code></a> to return the list of message sender identifiers, which can be used to send messages in the chat,
 This setting applies to the current message and will remain effective for future messages unless explicitly changed.
 To set this behavior permanently for all messages, use <a class="reference internal" href="../methods/set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat (Python method) — Set the default &quot;send_as&quot; chat for a chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_send_as_chat()</span></code></a>.</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the content of the message must be protected from forwarding and saving; for bots only.</p></li>
-<li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a>, <em>optional</em>) – An object for an inline keyboard. If empty, one ‘Play game_title’ button will be shown automatically.
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Pass True if the content of the message must be protected from forwarding and saving; for bots only.</p></li>
+<li><p><strong>allow_paid_broadcast (``bool``, *optional*)</strong> – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
+<li><p><strong>reply_markup (:obj:`~pyrogram.types.InlineKeyboardMarkup`, *optional*)</strong> – An object for an inline keyboard. If empty, one ‘Play game_title’ button will be shown automatically.
 If not empty, the first button must launch the game.</p></li>
 </ul>
 </dd>
@@ -3131,7 +3131,7 @@ If not empty, the first button must launch the game.</p></li>
 <dd class="field-even"><p>On success, the sent <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> is returned.</p>
 </dd>
 <dt class="field-odd" id="pyrogram.types.Message.reply_game-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.reply_game-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dd class="field-odd"><p><strong>RPCError</strong> – </p>
 </dd>
 </dl>
 </dd></dl>

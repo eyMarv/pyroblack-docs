@@ -2337,22 +2337,22 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.add_sticker_to_set-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.add_sticker_to_set-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>set_short_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Stickerset shortname.</p></li>
-<li><p><strong>sticker</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – sticker to add.
+<li><p><strong>set_short_name (``str``)</strong> – Stickerset shortname.</p></li>
+<li><p><strong>sticker (``str``)</strong> – sticker to add.
 Pass a file_id as string to add a sticker that exists on the Telegram servers,
 pass an HTTP URL as a string for Telegram to get a sticker from the Internet,
 pass a file path as string to upload a new sticker that exists on your local machine, or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the Stickerset owner.
+<li><p><strong>user_id (``int`` | ``str``, *optional*)</strong> – Unique identifier (int) or username (str) of the Stickerset owner.
 For you yourself you can simply use “me” or “self” (users only).
 required for bots.
 default to “me”.</p></li>
-<li><p><strong>emoji</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Associated emoji.
+<li><p><strong>emoji (``str``, *optional*)</strong> – Associated emoji.
 default to “🤔”</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.add_sticker_to_set-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.add_sticker_to_set-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/StickerSet.html#pyrogram.types.StickerSet" title="pyrogram.types.StickerSet (Python class) — A stickerset."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code></a> – On success, the StickerSet information is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.StickerSet`</strong> (<em>On success, the StickerSet information is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

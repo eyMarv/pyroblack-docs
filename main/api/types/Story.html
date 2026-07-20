@@ -2409,33 +2409,33 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Story-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Story-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique story identifier among stories of the given sender.</p></li>
-<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – Identifier of the chat that posted the story.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the story was published.</p></li>
-<li><p><strong>expire_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the story will be expired.</p></li>
-<li><p><strong>is_edited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story was edited.</p></li>
-<li><p><strong>is_posted_to_chat_page</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story is saved in the sender’s profile and will be available there after expiration</p></li>
-<li><p><strong>is_visible_only_for_self</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story is visible only for the current user.</p></li>
-<li><p><strong>repost_info</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryRepostInfo</span></code>, <em>optional</em>) – Information about the original story; may be None if the story wasn’t reposted.</p></li>
-<li><p><strong>privacy_settings</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryPrivacySettings</span></code>, <em>optional</em>) – Privacy rules affecting story visibility; may be approximate for non-owned stories.</p></li>
-<li><p><strong>media</strong> (<a class="reference internal" href="../enums/MessageMediaType.html#pyrogram.enums.MessageMediaType" title="pyrogram.enums.MessageMediaType (Python class) — Message media type enumeration used in Message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaType</span></code></a>, <em>optional</em>) – The media type of the Story.
+<li><p><strong>id (``int``)</strong> – Unique story identifier among stories of the given sender.</p></li>
+<li><p><strong>chat (:obj:`~pyrogram.types.Chat`)</strong> – Identifier of the chat that posted the story.</p></li>
+<li><p><strong>date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date the story was published.</p></li>
+<li><p><strong>expire_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date the story will be expired.</p></li>
+<li><p><strong>is_edited (``bool``, *optional*)</strong> – True, if the story was edited.</p></li>
+<li><p><strong>is_posted_to_chat_page (``bool``, *optional*)</strong> – True, if the story is saved in the sender’s profile and will be available there after expiration</p></li>
+<li><p><strong>is_visible_only_for_self (``bool``, *optional*)</strong> – True, if the story is visible only for the current user.</p></li>
+<li><p><strong>repost_info (:obj:`~pyrogram.types.StoryRepostInfo`, *optional*)</strong> – Information about the original story; may be None if the story wasn’t reposted.</p></li>
+<li><p><strong>privacy_settings (:obj:`~pyrogram.types.StoryPrivacySettings`, *optional*)</strong> – Privacy rules affecting story visibility; may be approximate for non-owned stories.</p></li>
+<li><p><strong>media (:obj:`~pyrogram.enums.MessageMediaType`, *optional*)</strong> – The media type of the Story.
 This field will contain the enumeration type of the media message.
 You can use <code class="docutils literal notranslate"><span class="pre">media</span> <span class="pre">=</span> <span class="pre">getattr(story,</span> <span class="pre">story.media.value)</span></code> to access the media message.</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Story is a photo, information about the photo.</p></li>
-<li><p><strong>video</strong> (<a class="reference internal" href="Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a>, <em>optional</em>) – Story is a video, information about the video.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Caption for the Story, 0-1024 characters.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the caption.</p></li>
-<li><p><strong>areas</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryArea</span></code>, <em>optional</em>) – Clickable areas to be shown on the story content.</p></li>
-<li><p><strong>has_protected_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story can’t be forwarded as a message or reposted as a story.</p></li>
-<li><p><strong>reactions</strong> (List of <a class="reference internal" href="Reaction.html#pyrogram.types.Reaction" title="pyrogram.types.Reaction (Python class) — Contains information about a reaction."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Reaction</span></code></a>) – List of the reactions to this story.</p></li>
-<li><p><strong>views</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Stories views.</p></li>
-<li><p><strong>forwards</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Stories forwards.</p></li>
-<li><p><strong>skipped</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The story is skipped.
+<li><p><strong>photo (:obj:`~pyrogram.types.Photo`, *optional*)</strong> – Story is a photo, information about the photo.</p></li>
+<li><p><strong>video (:obj:`~pyrogram.types.Video`, *optional*)</strong> – Story is a video, information about the video.</p></li>
+<li><p><strong>caption (``str``, *optional*)</strong> – Caption for the Story, 0-1024 characters.</p></li>
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the caption.</p></li>
+<li><p><strong>areas (List of :obj:`~pyrogram.types.StoryArea`, *optional*)</strong> – Clickable areas to be shown on the story content.</p></li>
+<li><p><strong>has_protected_content (``bool``, *optional*)</strong> – True, if the story can’t be forwarded as a message or reposted as a story.</p></li>
+<li><p><strong>reactions (List of :obj:`~pyrogram.types.Reaction`)</strong> – List of the reactions to this story.</p></li>
+<li><p><strong>views (``int``, *optional*)</strong> – Stories views.</p></li>
+<li><p><strong>forwards (``int``, *optional*)</strong> – Stories forwards.</p></li>
+<li><p><strong>skipped (``bool``, *optional*)</strong> – The story is skipped.
 A story can be skipped in case it was skipped.</p></li>
-<li><p><strong>deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The story is deleted.
+<li><p><strong>deleted (``bool``, *optional*)</strong> – The story is deleted.
 A story can be deleted in case it was deleted or you tried to retrieve a story that doesn’t exist yet.</p></li>
-<li><p><strong>album_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>) – Identifiers of story albums to which the story is added; only for manageable stories.</p></li>
-<li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a link to this story, only for Telegram Premium chats having usernames. Can be None if the story cannot have a link.</p></li>
+<li><p><strong>album_ids (List of ``int``)</strong> – Identifiers of story albums to which the story is added; only for manageable stories.</p></li>
+<li><p><strong>link (``str``, *property*)</strong> – Generate a link to this story, only for Telegram Premium chats having usernames. Can be None if the story cannot have a link.</p></li>
 </ul>
 </dd>
 </dl>

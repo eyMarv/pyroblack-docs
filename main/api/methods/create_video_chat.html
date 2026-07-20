@@ -2386,14 +2386,14 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.create_video_chat-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.create_video_chat-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat in which the video chat will be created. A chat can be either a basic group, supergroup or a channel.</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Group call title; if empty, chat title will be used.</p></li>
-<li><p><strong>start_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future.</p></li>
-<li><p><strong>is_rtmp_stream</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass true to create an RTMP stream instead of an ordinary video chat; requires owner privileges.</p></li>
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat in which the video chat will be created. A chat can be either a basic group, supergroup or a channel.</p></li>
+<li><p><strong>title (``str``, *optional*)</strong> – Group call title; if empty, chat title will be used.</p></li>
+<li><p><strong>start_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Point in time (Unix timestamp) when the group call is expected to be started by an administrator; 0 to start the video chat immediately. The date must be at least 10 seconds and at most 8 days in the future.</p></li>
+<li><p><strong>is_rtmp_stream (``bool``, *optional*)</strong> – Pass true to create an RTMP stream instead of an ordinary video chat; requires owner privileges.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.create_video_chat-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.create_video_chat-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent service message is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Message`</strong> (<em>On success, the sent service message is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

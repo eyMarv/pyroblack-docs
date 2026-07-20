@@ -3323,15 +3323,15 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_payment_form-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_payment_form-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>input_invoice</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoice</span></code>, <em>optional</em>) – The invoice (modern API).</p></li>
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Target chat (pyroblack &lt;= 2.7.2 / positional style).</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Message id with the invoice, or a <code class="docutils literal notranslate"><span class="pre">t.me/$...</span></code> link / slug
+<li><p><strong>input_invoice (:obj:`~pyrogram.types.InputInvoice`, *optional*)</strong> – The invoice (modern API).</p></li>
+<li><p><strong>chat_id (``int`` | ``str``, *optional*)</strong> – Target chat (pyroblack &lt;= 2.7.2 / positional style).</p></li>
+<li><p><strong>message_id (``int`` | ``str``, *optional*)</strong> – Message id with the invoice, or a <code class="docutils literal notranslate"><span class="pre">t.me/$...</span></code> link / slug
 (pyroblack &lt;= 2.7.2 style).</p></li>
-<li><p><strong>invoice_link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Invoice link or slug.</p></li>
+<li><p><strong>invoice_link (``str``, *optional*)</strong> – Invoice link or slug.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_payment_form-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_payment_form-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/PaymentForm.html#pyrogram.types.PaymentForm" title="pyrogram.types.PaymentForm (Python class) — This object contains basic information about an payment form."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaymentForm</span></code></a> – On success, a payment form is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.PaymentForm`</strong> (<em>On success, a payment form is returned.</em>)</p>
 </dd>
 </dl>
 </dd></dl>

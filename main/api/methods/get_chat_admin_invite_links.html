@@ -2722,19 +2722,19 @@ As the chat or channel owner you can get everyones links.</p>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_chat_admin_invite_links-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_admin_invite_links-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for the target chat or username of the target channel/supergroup
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier for the target chat or username of the target channel/supergroup
 (in the format &#64;username).</p></li>
-<li><p><strong>admin_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user.
+<li><p><strong>admin_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target user.
 For you yourself you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>revoked</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if you want to get revoked links instead.
+<li><p><strong>revoked (``bool``, *optional*)</strong> – True, if you want to get revoked links instead.
 Defaults to False (get active links only).</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of invite links to be retrieved.
+<li><p><strong>limit (``int``, *optional*)</strong> – Limits the number of invite links to be retrieved.
 By default, no limit is applied and all invite links are returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_chat_admin_invite_links-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_admin_invite_links-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink (Python class) — An invite link for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink (Python class) — An invite link for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a> objects.)</p>
 </dd>
 <dt class="field-odd" id="pyrogram.Client.get_chat_admin_invite_links-yields">Yields<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_admin_invite_links-yields" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../types/ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink (Python class) — An invite link for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a> objects.</p>

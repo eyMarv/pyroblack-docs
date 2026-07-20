@@ -3321,21 +3321,21 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_gift-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_gift-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique identifier of star gift.
+<li><p><strong>gift_id (``int``)</strong> – Unique identifier of star gift.
 To get all available star gifts use <a class="reference internal" href="get_available_gifts.html#pyrogram.Client.get_available_gifts" title="pyrogram.Client.get_available_gifts (Python method) — Get all available star gifts that can be sent to other users."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_available_gifts()</span></code></a>.</p></li>
-<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text that will be shown along with the gift, 0-128 characters.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>text (``str``, *optional*)</strong> – Text that will be shown along with the gift, 0-128 characters.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>is_private</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to show gift text and sender only to the gift receiver. Otherwise, everyone will be able to see them.</p></li>
-<li><p><strong>pay_for_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to additionally pay for the gift upgrade and allow the receiver to upgrade it for free.</p></li>
+<li><p><strong>entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>is_private (``bool``, *optional*)</strong> – Pass True to show gift text and sender only to the gift receiver. Otherwise, everyone will be able to see them.</p></li>
+<li><p><strong>pay_for_upgrade (``bool``, *optional*)</strong> – Pass True to additionally pay for the gift upgrade and allow the receiver to upgrade it for free.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_gift-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_gift-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent message is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Message`</strong> (<em>On success, the sent message is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

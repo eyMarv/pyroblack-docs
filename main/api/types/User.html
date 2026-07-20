@@ -2937,70 +2937,70 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.User-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.User-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique identifier for this user or bot.</p></li>
-<li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – User’s or bot’s first name.</p></li>
-<li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – User’s or bot’s last name.</p></li>
-<li><p><strong>username</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – User’s or bot’s username.</p></li>
-<li><p><strong>language_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – IETF language tag of the user’s language.</p></li>
-<li><p><strong>is_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is a premium user.</p></li>
-<li><p><strong>is_self</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is you yourself.</p></li>
-<li><p><strong>is_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is in your contacts.</p></li>
-<li><p><strong>is_mutual_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if you both have each other’s contact.</p></li>
-<li><p><strong>is_deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is deleted.</p></li>
-<li><p><strong>is_frozen</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user account is frozen.
+<li><p><strong>id (``int``)</strong> – Unique identifier for this user or bot.</p></li>
+<li><p><strong>first_name (``str``, *optional*)</strong> – User’s or bot’s first name.</p></li>
+<li><p><strong>last_name (``str``, *optional*)</strong> – User’s or bot’s last name.</p></li>
+<li><p><strong>username (``str``, *optional*)</strong> – User’s or bot’s username.</p></li>
+<li><p><strong>language_code (``str``, *optional*)</strong> – IETF language tag of the user’s language.</p></li>
+<li><p><strong>is_premium (``bool``, *optional*)</strong> – True, if this user is a premium user.</p></li>
+<li><p><strong>is_self(``bool``, *optional*)</strong> – True, if this user is you yourself.</p></li>
+<li><p><strong>is_contact(``bool``, *optional*)</strong> – True, if this user is in your contacts.</p></li>
+<li><p><strong>is_mutual_contact(``bool``, *optional*)</strong> – True, if you both have each other’s contact.</p></li>
+<li><p><strong>is_deleted(``bool``, *optional*)</strong> – True, if this user is deleted.</p></li>
+<li><p><strong>is_frozen (``bool``, *optional*)</strong> – True, if this user account is frozen.
 Present for pyroblack &lt;= 2.7.2 compatibility (derived from frozen_icon / bot_verification_icon).</p></li>
-<li><p><strong>is_contacts_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user only accepts messages from contacts (alias of <em>restricts_new_chats</em>; pyroblack &lt;= 2.7.2).</p></li>
-<li><p><strong>is_bot_business</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this bot can be connected to a business account (pyroblack &lt;= 2.7.2).</p></li>
-<li><p><strong>is_verified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been verified by Telegram.</p></li>
-<li><p><strong>is_restricted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been restricted. Bots only.
+<li><p><strong>is_contacts_only (``bool``, *optional*)</strong> – True, if this user only accepts messages from contacts (alias of <em>restricts_new_chats</em>; pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>is_bot_business (``bool``, *optional*)</strong> – True, if this bot can be connected to a business account (pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>is_verified (``bool``, *optional*)</strong> – True, if this user has been verified by Telegram.</p></li>
+<li><p><strong>is_restricted (``bool``, *optional*)</strong> – True, if this user has been restricted. Bots only.
 See <em>restrictions</em> for details.</p></li>
-<li><p><strong>is_scam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been flagged for scam.</p></li>
-<li><p><strong>is_fake</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user has been flagged for impersonation.</p></li>
-<li><p><strong>is_support</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is part of the Telegram support team.</p></li>
-<li><p><strong>restricts_new_chats</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user may restrict new chats with non-contacts.</p></li>
-<li><p><strong>status</strong> (<a class="reference internal" href="../enums/UserStatus.html#pyrogram.enums.UserStatus" title="pyrogram.enums.UserStatus (Python class) — User status enumeration used in User."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code></a>, <em>optional</em>) – User’s last seen &amp; online status. <code class="docutils literal notranslate"><span class="pre">None</span></code>, for bots.</p></li>
-<li><p><strong>last_online_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Last online date of a user. Only available in case status is <a class="reference internal" href="../enums/UserStatus.html#pyrogram.enums.UserStatus.OFFLINE" title="pyrogram.enums.UserStatus.OFFLINE (Python attribute) — User is offline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OFFLINE</span></code></a>.</p></li>
-<li><p><strong>next_offline_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when a user will automatically go offline. Only available in case status is <a class="reference internal" href="../enums/UserStatus.html#pyrogram.enums.UserStatus.ONLINE" title="pyrogram.enums.UserStatus.ONLINE (Python attribute) — User is online"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ONLINE</span></code></a>.</p></li>
-<li><p><strong>emoji_status</strong> (<a class="reference internal" href="EmojiStatus.html#pyrogram.types.EmojiStatus" title="pyrogram.types.EmojiStatus (Python class) — A user emoji status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>) – Emoji status.</p></li>
-<li><p><strong>dc_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – User’s or bot’s assigned DC (data center). Available only in case the user has set a public profile photo.
+<li><p><strong>is_scam (``bool``, *optional*)</strong> – True, if this user has been flagged for scam.</p></li>
+<li><p><strong>is_fake (``bool``, *optional*)</strong> – True, if this user has been flagged for impersonation.</p></li>
+<li><p><strong>is_support (``bool``, *optional*)</strong> – True, if this user is part of the Telegram support team.</p></li>
+<li><p><strong>restricts_new_chats (``bool``, *optional*)</strong> – True, if the user may restrict new chats with non-contacts.</p></li>
+<li><p><strong>status (:obj:`~pyrogram.enums.UserStatus`, *optional*)</strong> – User’s last seen &amp; online status. <code class="docutils literal notranslate"><span class="pre">None</span></code>, for bots.</p></li>
+<li><p><strong>last_online_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Last online date of a user. Only available in case status is <a class="reference internal" href="../enums/UserStatus.html#pyrogram.enums.UserStatus.OFFLINE" title="pyrogram.enums.UserStatus.OFFLINE (Python attribute) — User is offline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OFFLINE</span></code></a>.</p></li>
+<li><p><strong>next_offline_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when a user will automatically go offline. Only available in case status is <a class="reference internal" href="../enums/UserStatus.html#pyrogram.enums.UserStatus.ONLINE" title="pyrogram.enums.UserStatus.ONLINE (Python attribute) — User is online"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ONLINE</span></code></a>.</p></li>
+<li><p><strong>emoji_status (:obj:`~pyrogram.types.EmojiStatus`, *optional*)</strong> – Emoji status.</p></li>
+<li><p><strong>dc_id (``int``, *optional*)</strong> – User’s or bot’s assigned DC (data center). Available only in case the user has set a public profile photo.
 Note that this information is approximate; it is based on where Telegram stores a user profile pictures and
 does not by any means tell you the user location (i.e. a user might travel far away, but will still connect
 to its assigned DC). More info at <a class="reference external" href="/faq#what-are-the-ip-addresses-of-telegram-data-centers">FAQs</a>.</p></li>
-<li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – User’s phone number.</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="ChatPhoto.html#pyrogram.types.ChatPhoto" title="pyrogram.types.ChatPhoto (Python class) — A chat photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a>, <em>optional</em>) – User’s or bot’s current profile photo. Suitable for downloads only.</p></li>
-<li><p><strong>active_usernames</strong> (List of <a class="reference internal" href="Username.html#pyrogram.types.Username" title="pyrogram.types.Username (Python class) — Describes usernames assigned to a user, a supergroup, or a channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – If non-empty, the list of all <a class="reference external" href="https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames">active chat usernames</a>; for private chats, supergroups and channels.</p></li>
-<li><p><strong>usernames</strong> (List of <a class="reference internal" href="Username.html#pyrogram.types.Username" title="pyrogram.types.Username (Python class) — Describes usernames assigned to a user, a supergroup, or a channel."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – Alias of <em>active_usernames</em> for pyroblack &lt;= 2.7.2.</p></li>
-<li><p><strong>restrictions</strong> (List of <a class="reference internal" href="Restriction.html#pyrogram.types.Restriction" title="pyrogram.types.Restriction (Python class) — A restriction applied to bots or chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Restriction</span></code></a>, <em>optional</em>) – The list of reasons why this bot might be unavailable to some users.
+<li><p><strong>phone_number (``str``, *optional*)</strong> – User’s phone number.</p></li>
+<li><p><strong>photo (:obj:`~pyrogram.types.ChatPhoto`, *optional*)</strong> – User’s or bot’s current profile photo. Suitable for downloads only.</p></li>
+<li><p><strong>active_usernames (List of :obj:`~pyrogram.types.Username`, *optional*)</strong> – If non-empty, the list of all <a class="reference external" href="https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames">active chat usernames</a>; for private chats, supergroups and channels.</p></li>
+<li><p><strong>usernames (List of :obj:`~pyrogram.types.Username`, *optional*)</strong> – Alias of <em>active_usernames</em> for pyroblack &lt;= 2.7.2.</p></li>
+<li><p><strong>restrictions (List of :obj:`~pyrogram.types.Restriction`, *optional*)</strong> – The list of reasons why this bot might be unavailable to some users.
 This field is available only in case <em>is_restricted</em> is True.</p></li>
-<li><p><strong>is_bot</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user is a bot.</p></li>
-<li><p><strong>can_be_added_to_attachment_menu</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot can be added to attachment or side menu.</p></li>
-<li><p><strong>added_to_attachment_menu</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if this user added the bot to the attachment menu.</p></li>
-<li><p><strong>can_join_groups</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot can be invited to groups. Returned only in get_me.</p></li>
-<li><p><strong>can_read_all_group_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if privacy mode is disabled for the bot. Returned only in get_me.</p></li>
-<li><p><strong>supports_inline_queries</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot supports inline queries. Returned only in get_me.</p></li>
-<li><p><strong>can_connect_to_business</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot can be connected to a Telegram Business account to receive its messages.</p></li>
-<li><p><strong>inline_query_placeholder</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Placeholder for inline queries (displayed on the application input field)</p></li>
-<li><p><strong>inline_need_location</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot supports inline <a class="reference external" href="https://core.telegram.org/bots/inline#location-based-results">user location</a> requests. Returned only in get_me.</p></li>
-<li><p><strong>can_be_edited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the current user can edit this bot’s profile picture.</p></li>
-<li><p><strong>is_close_friend</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is a close friend of the current user; implies that the user is a contact</p></li>
-<li><p><strong>accent_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Accent or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat accent color.</p></li>
-<li><p><strong>reply_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Accent or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Alias of <em>accent_color</em> for pyroblack &lt;= 2.7.2.</p></li>
-<li><p><strong>profile_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor (Python class) — Accent or profile color status."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat profile color.</p></li>
-<li><p><strong>have_access</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If False, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can’t be passed to any method.</p></li>
-<li><p><strong>has_main_web_app</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot has a main Web App. Returned only in get_me.</p></li>
-<li><p><strong>active_user_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of recently active users of the bot.</p></li>
-<li><p><strong>active_users_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Alias of <em>active_user_count</em> for pyroblack &lt;= 2.7.2.</p></li>
-<li><p><strong>paid_message_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use <code class="docutils literal notranslate"><span class="pre">canSendMessageToUser</span></code> to check whether the current user must pay.</p></li>
-<li><p><strong>has_topics_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the bot has forum topic mode enabled in private chats. Returned only in get_me.</p></li>
-<li><p><strong>allows_users_to_create_topics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if users can create and delete topics in the chat with the bot. Returned only in get_me.</p></li>
-<li><p><strong>can_manage_bots</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if other bots can be created to be controlled by the bot. Returned only in get_me.</p></li>
-<li><p><strong>frozen_icon</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Frozen account icon (custom emoji id).
+<li><p><strong>is_bot (``bool``, *optional*)</strong> – True, if this user is a bot.</p></li>
+<li><p><strong>can_be_added_to_attachment_menu (``bool``, *optional*)</strong> – True, if the bot can be added to attachment or side menu.</p></li>
+<li><p><strong>added_to_attachment_menu (``bool``, *optional*)</strong> – True, if this user added the bot to the attachment menu.</p></li>
+<li><p><strong>can_join_groups (``bool``, *optional*)</strong> – True, if the bot can be invited to groups. Returned only in get_me.</p></li>
+<li><p><strong>can_read_all_group_messages (``bool``, *optional*)</strong> – True, if privacy mode is disabled for the bot. Returned only in get_me.</p></li>
+<li><p><strong>supports_inline_queries (``bool``, *optional*)</strong> – True, if the bot supports inline queries. Returned only in get_me.</p></li>
+<li><p><strong>can_connect_to_business (``bool``, *optional*)</strong> – True, if the bot can be connected to a Telegram Business account to receive its messages.</p></li>
+<li><p><strong>inline_query_placeholder (``str``, *optional*)</strong> – Placeholder for inline queries (displayed on the application input field)</p></li>
+<li><p><strong>inline_need_location (``bool``, *optional*)</strong> – True, if the bot supports inline <a class="reference external" href="https://core.telegram.org/bots/inline#location-based-results">user location</a> requests. Returned only in get_me.</p></li>
+<li><p><strong>can_be_edited (``bool``, *optional*)</strong> – True, if the current user can edit this bot’s profile picture.</p></li>
+<li><p><strong>is_close_friend (``bool``, *optional*)</strong> – True, if the user is a close friend of the current user; implies that the user is a contact</p></li>
+<li><p><strong>accent_color (:obj:`~pyrogram.types.ChatColor`, *optional*)</strong> – Chat accent color.</p></li>
+<li><p><strong>reply_color (:obj:`~pyrogram.types.ChatColor`, *optional*)</strong> – Alias of <em>accent_color</em> for pyroblack &lt;= 2.7.2.</p></li>
+<li><p><strong>profile_color (:obj:`~pyrogram.types.ChatColor`, *optional*)</strong> – Chat profile color.</p></li>
+<li><p><strong>have_access (``bool``, *optional*)</strong> – If False, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can’t be passed to any method.</p></li>
+<li><p><strong>has_main_web_app (``bool``, *optional*)</strong> – True, if the bot has a main Web App. Returned only in get_me.</p></li>
+<li><p><strong>active_user_count (``int``, *optional*)</strong> – The number of recently active users of the bot.</p></li>
+<li><p><strong>active_users_count (``int``, *optional*)</strong> – Alias of <em>active_user_count</em> for pyroblack &lt;= 2.7.2.</p></li>
+<li><p><strong>paid_message_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that must be paid by general user for each sent message to the user. If positive and userFullInfo is unknown, use <code class="docutils literal notranslate"><span class="pre">canSendMessageToUser</span></code> to check whether the current user must pay.</p></li>
+<li><p><strong>has_topics_enabled (``bool``, *optional*)</strong> – True, if the bot has forum topic mode enabled in private chats. Returned only in get_me.</p></li>
+<li><p><strong>allows_users_to_create_topics (``bool``, *optional*)</strong> – True, if users can create and delete topics in the chat with the bot. Returned only in get_me.</p></li>
+<li><p><strong>can_manage_bots (``bool``, *optional*)</strong> – True, if other bots can be created to be controlled by the bot. Returned only in get_me.</p></li>
+<li><p><strong>frozen_icon (``int``, *optional*)</strong> – Frozen account icon (custom emoji id).
 Available only when <em>is_frozen</em> is True (pyroblack &lt;= 2.7.2 field).</p></li>
-<li><p><strong>mention</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a text mention for this user.
+<li><p><strong>mention (``str``, *property*)</strong> – Generate a text mention for this user.
 You can use <code class="docutils literal notranslate"><span class="pre">user.mention()</span></code> to mention the user using their first name (styled using html), or
 <code class="docutils literal notranslate"><span class="pre">user.mention(&quot;another</span> <span class="pre">name&quot;)</span></code> for a custom name. To choose a different style
 (“HTML” or “MARKDOWN”) use <code class="docutils literal notranslate"><span class="pre">user.mention(style=ParseMode.MARKDOWN)</span></code>.</p></li>
-<li><p><strong>full_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Full name of the other party in a private chat, for private chats and bots.</p></li>
+<li><p><strong>full_name (``str``, *property*)</strong> – Full name of the other party in a private chat, for private chats and bots.</p></li>
 </ul>
 </dd>
 </dl>

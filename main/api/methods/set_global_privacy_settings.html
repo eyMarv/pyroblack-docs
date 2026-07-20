@@ -2505,29 +2505,29 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.set_global_privacy_settings-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_global_privacy_settings-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>archive_and_mute_new_chats</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to archive and mute new chats from non-contacts,</p></li>
-<li><p><strong>keep_unmuted_chats_archived</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether unmuted chats will be kept in
+<li><p><strong>archive_and_mute_new_chats (``bool``, *optional*)</strong> – Whether to archive and mute new chats from non-contacts,</p></li>
+<li><p><strong>keep_unmuted_chats_archived (``bool``, *optional*)</strong> – Whether unmuted chats will be kept in
 the Archive chat list when they get a new message.</p></li>
-<li><p><strong>keep_chats_from_folders_archived</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether unmuted chats, that are always included or pinned
+<li><p><strong>keep_chats_from_folders_archived (``bool``, *optional*)</strong> – Whether unmuted chats, that are always included or pinned
 in a folder, will be kept in the Archive chat list when they get
 a new message. Ignored if keep_unmuted_chats_archived is set.</p></li>
-<li><p><strong>show_read_date</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if message read date is shown to other users in private chats.
+<li><p><strong>show_read_date (``bool``, *optional*)</strong> – True, if message read date is shown to other users in private chats.
 If false and the current user isn’t a Telegram Premium user,
 then they will not be able to see other’s message read date.</p></li>
-<li><p><strong>allow_new_chats_from_unknown_users</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if non-contacts users are able to write first to the current user.
+<li><p><strong>allow_new_chats_from_unknown_users (``bool``, *optional*)</strong> – True, if non-contacts users are able to write first to the current user.
 Telegram Premium subscribers are able to write first regardless of this setting.</p></li>
-<li><p><strong>incoming_paid_message_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid for every incoming private message
+<li><p><strong>incoming_paid_message_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that must be paid for every incoming private message
 by non-contacts.
 Must be between 0-<code class="docutils literal notranslate"><span class="pre">paid_message_star_count_max</span></code>.
 If positive, then allow_new_chats_from_unknown_users must be true.
 The current user will receive <code class="docutils literal notranslate"><span class="pre">paid_message_earnings_per_mille</span></code> Telegram Stars
 for each 1000 Telegram Stars paid for message sending.</p></li>
-<li><p><strong>show_gift_button</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if a button for sending a gift to the user or by the user must be always shown in the input field.</p></li>
-<li><p><strong>accepted_gift_types</strong> (<a class="reference internal" href="../types/AcceptedGiftTypes.html#pyrogram.types.AcceptedGiftTypes" title="pyrogram.types.AcceptedGiftTypes (Python class) — Accepts gift types."><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcceptedGiftTypes</span></code></a>, <em>optional</em>) – Information about gifts that can be received by the user.</p></li>
+<li><p><strong>show_gift_button (``bool``, *optional*)</strong> – True, if a button for sending a gift to the user or by the user must be always shown in the input field.</p></li>
+<li><p><strong>accepted_gift_types (:obj:`~pyrogram.types.AcceptedGiftTypes`, *optional*)</strong> – Information about gifts that can be received by the user.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.set_global_privacy_settings-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_global_privacy_settings-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">GlobalPrivacySettings</span></code> – On success, the new global privacy settings is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.GlobalPrivacySettings`</strong> (<em>On success, the new global privacy settings is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

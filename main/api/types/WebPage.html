@@ -1666,7 +1666,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.WebPage (Python class) — A webpage preview"><span>pyrogram.<wbr>types.<wbr>Web<wbr>Page</span></span>
+      <span title="pyrogram.types.WebPage (Python class) — A webpage preview."><span>pyrogram.<wbr>types.<wbr>Web<wbr>Page</span></span>
     </span>
   </a>
   
@@ -4547,7 +4547,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.WebPage (Python class) — A webpage preview"><span>pyrogram.<wbr>types.<wbr>Web<wbr>Page</span></span>
+      <span title="pyrogram.types.WebPage (Python class) — A webpage preview."><span>pyrogram.<wbr>types.<wbr>Web<wbr>Page</span></span>
     </span>
   </a>
   
@@ -4589,30 +4589,30 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.types.WebPage">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">WebPage</span></span><a class="headerlink" href="#pyrogram.types.WebPage" title="Link to this definition">¶</a></dt>
-<dd><p>A webpage preview</p>
+<dd><p>A webpage preview.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.WebPage-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.WebPage-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this webpage.</p></li>
-<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Full URL for this webpage.</p></li>
-<li><p><strong>display_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Display URL for this webpage.</p></li>
-<li><p><strong>type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Type of webpage preview, known types (at the time of writing) are:
+<li><p><strong>id (``str``)</strong> – Unique identifier for this webpage.</p></li>
+<li><p><strong>url (``str``)</strong> – Full URL for this webpage.</p></li>
+<li><p><strong>display_url (``str``)</strong> – Display URL for this webpage.</p></li>
+<li><p><strong>type (``str``, *optional*)</strong> – Type of webpage preview, known types (at the time of writing) are:
 <em>“article”</em>, <em>“photo”</em>, <em>“gif”</em>, <em>“video”</em> and <em>“document”</em>,
 <em>“telegram_user”</em>, <em>“telegram_bot”</em>, <em>“telegram_channel”</em>, <em>“telegram_megagroup”</em>.</p></li>
-<li><p><strong>site_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Webpage site name.</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Title of this webpage.</p></li>
-<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Description of this webpage.</p></li>
-<li><p><strong>audio</strong> (<a class="reference internal" href="Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio (Python class) — An audio file to be treated as music by the Telegram clients."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a>, <em>optional</em>) – Webpage preview is an audio file, information about the file.</p></li>
-<li><p><strong>document</strong> (<a class="reference internal" href="Document.html#pyrogram.types.Document" title="pyrogram.types.Document (Python class) — A generic file (as opposed to photos, voice messages, audio files, ...)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Document</span></code></a>, <em>optional</em>) – Webpage preview is a general file, information about the file.</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Webpage preview is a photo, information about the photo.</p></li>
-<li><p><strong>animation</strong> (<a class="reference internal" href="Animation.html#pyrogram.types.Animation" title="pyrogram.types.Animation (Python class) — An animation file (GIF or H.264/MPEG-4 AVC video without sound)."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Animation</span></code></a>, <em>optional</em>) – Webpage preview is an animation, information about the animation.</p></li>
-<li><p><strong>video</strong> (<a class="reference internal" href="Video.html#pyrogram.types.Video" title="pyrogram.types.Video (Python class) — A video file."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a>, <em>optional</em>) – Webpage preview is a video, information about the video.</p></li>
-<li><p><strong>embed_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Embedded content URL.</p></li>
-<li><p><strong>embed_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Embedded content type, like <cite>iframe</cite></p></li>
-<li><p><strong>embed_width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Embedded content width.</p></li>
-<li><p><strong>embed_height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Embedded content height.</p></li>
-<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unknown at the time of writing.</p></li>
-<li><p><strong>author</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Author of the webpage, eg the Twitter user for a tweet, or the author in an article.</p></li>
+<li><p><strong>site_name (``str``, *optional*)</strong> – Webpage site name.</p></li>
+<li><p><strong>title (``str``, *optional*)</strong> – Title of this webpage.</p></li>
+<li><p><strong>description (``str``, *optional*)</strong> – Description of this webpage.</p></li>
+<li><p><strong>audio (:obj:`~pyrogram.types.Audio`, *optional*)</strong> – Webpage preview is an audio file, information about the file.</p></li>
+<li><p><strong>document (:obj:`~pyrogram.types.Document`, *optional*)</strong> – Webpage preview is a general file, information about the file.</p></li>
+<li><p><strong>photo (:obj:`~pyrogram.types.Photo`, *optional*)</strong> – Webpage preview is a photo, information about the photo.</p></li>
+<li><p><strong>animation (:obj:`~pyrogram.types.Animation`, *optional*)</strong> – Webpage preview is an animation, information about the animation.</p></li>
+<li><p><strong>video (:obj:`~pyrogram.types.Video`, *optional*)</strong> – Webpage preview is a video, information about the video.</p></li>
+<li><p><strong>embed_url (``str``, *optional*)</strong> – Embedded content URL.</p></li>
+<li><p><strong>embed_type (``str``, *optional*)</strong> – Embedded content type, like <cite>iframe</cite></p></li>
+<li><p><strong>embed_width (``int``, *optional*)</strong> – Embedded content width.</p></li>
+<li><p><strong>embed_height (``int``, *optional*)</strong> – Embedded content height.</p></li>
+<li><p><strong>duration (``int``, *optional*)</strong> – Unknown at the time of writing.</p></li>
+<li><p><strong>author (``str``, *optional*)</strong> – Author of the webpage, eg the Twitter user for a tweet, or the author in an article.</p></li>
 </ul>
 </dd>
 </dl>

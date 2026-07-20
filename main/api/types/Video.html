@@ -4593,22 +4593,22 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Video-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Video-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>file_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier for this file, which can be used to download or reuse the file.</p></li>
-<li><p><strong>file_unique_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this file, which is supposed to be the same over time and for different accounts.
+<li><p><strong>file_id (``str``)</strong> – Identifier for this file, which can be used to download or reuse the file.</p></li>
+<li><p><strong>file_unique_id (``str``)</strong> – Unique identifier for this file, which is supposed to be the same over time and for different accounts.
 Can’t be used to download or reuse the file.</p></li>
-<li><p><strong>width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video width as defined by sender.</p></li>
-<li><p><strong>height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video height as defined by sender.</p></li>
-<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Duration of the video in seconds as defined by sender.</p></li>
-<li><p><strong>thumbs</strong> (List of <a class="reference internal" href="Thumbnail.html#pyrogram.types.Thumbnail" title="pyrogram.types.Thumbnail (Python class) — One size of a photo or a file/sticker thumbnail."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Thumbnail</span></code></a>, <em>optional</em>) – Video thumbnails.</p></li>
-<li><p><strong>cover</strong> (<a class="reference internal" href="Photo.html#pyrogram.types.Photo" title="pyrogram.types.Photo (Python class) — A Photo."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Cover of the video available in the message.</p></li>
-<li><p><strong>start_timestamp</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>. <em>optional</em>) – Timestamp from which the video playing must start, in seconds.</p></li>
-<li><p><strong>qualities</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoQuality</span></code>, <em>optional</em>) – List of available qualities of the video.</p></li>
-<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Video file name.</p></li>
-<li><p><strong>mime_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Mime type of a file as defined by sender.</p></li>
-<li><p><strong>file_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – File size.</p></li>
-<li><p><strong>supports_streaming</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the video was uploaded with streaming support.</p></li>
-<li><p><strong>ttl_seconds</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>. <em>optional</em>) – Time-to-live seconds, for secret photos.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the video was sent.</p></li>
+<li><p><strong>width (``int``)</strong> – Video width as defined by sender.</p></li>
+<li><p><strong>height (``int``)</strong> – Video height as defined by sender.</p></li>
+<li><p><strong>duration (``int``)</strong> – Duration of the video in seconds as defined by sender.</p></li>
+<li><p><strong>thumbs (List of :obj:`~pyrogram.types.Thumbnail`, *optional*)</strong> – Video thumbnails.</p></li>
+<li><p><strong>cover (:obj:`~pyrogram.types.Photo`, *optional*)</strong> – Cover of the video available in the message.</p></li>
+<li><p><strong>start_timestamp (``int``. *optional*)</strong> – Timestamp from which the video playing must start, in seconds.</p></li>
+<li><p><strong>qualities (List of :obj:`~pyrogram.types.VideoQuality`, *optional*)</strong> – List of available qualities of the video.</p></li>
+<li><p><strong>file_name (``str``, *optional*)</strong> – Video file name.</p></li>
+<li><p><strong>mime_type (``str``, *optional*)</strong> – Mime type of a file as defined by sender.</p></li>
+<li><p><strong>file_size (``int``, *optional*)</strong> – File size.</p></li>
+<li><p><strong>supports_streaming (``bool``, *optional*)</strong> – True, if the video was uploaded with streaming support.</p></li>
+<li><p><strong>ttl_seconds (``int``. *optional*)</strong> – Time-to-live seconds, for secret photos.</p></li>
+<li><p><strong>date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date the video was sent.</p></li>
 </ul>
 </dd>
 </dl>

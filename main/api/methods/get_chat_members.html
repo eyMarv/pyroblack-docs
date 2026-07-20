@@ -4043,19 +4043,19 @@ Requires administrator rights in channels.</p>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_chat_members-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_members-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Query string to filter members based on their display names and usernames.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>query (``str``, *optional*)</strong> – Query string to filter members based on their display names and usernames.
 Only applicable to supergroups and channels. Defaults to “” (empty string).
 A query string is applicable only for <a class="reference internal" href="../enums/ChatMembersFilter.html#pyrogram.enums.ChatMembersFilter.SEARCH" title="pyrogram.enums.ChatMembersFilter.SEARCH (Python attribute) — Search for members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SEARCH</span></code></a>,
 <a class="reference internal" href="../enums/ChatMembersFilter.html#pyrogram.enums.ChatMembersFilter.BANNED" title="pyrogram.enums.ChatMembersFilter.BANNED (Python attribute) — Banned members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BANNED</span></code></a> and <a class="reference internal" href="../enums/ChatMembersFilter.html#pyrogram.enums.ChatMembersFilter.RESTRICTED" title="pyrogram.enums.ChatMembersFilter.RESTRICTED (Python attribute) — Restricted members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RESTRICTED</span></code></a>
 filters only.</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of members to be retrieved.</p></li>
-<li><p><strong>filter</strong> (<a class="reference internal" href="../enums/ChatMembersFilter.html#pyrogram.enums.ChatMembersFilter" title="pyrogram.enums.ChatMembersFilter (Python class) — Chat members filter enumeration used in get_chat_members()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMembersFilter</span></code></a>, <em>optional</em>) – Filter used to select the kind of members you want to retrieve. Only applicable for supergroups
+<li><p><strong>limit (``int``, *optional*)</strong> – Limits the number of members to be retrieved.</p></li>
+<li><p><strong>filter (:obj:`~pyrogram.enums.ChatMembersFilter`, *optional*)</strong> – Filter used to select the kind of members you want to retrieve. Only applicable for supergroups
 and channels.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_chat_members-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_members-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – On success, a generator yielding <a class="reference internal" href="../types/ChatMember.html#pyrogram.types.ChatMember" title="pyrogram.types.ChatMember (Python class) — Contains information about one member of a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMember</span></code></a> objects is returned.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (On success, a generator yielding <a class="reference internal" href="../types/ChatMember.html#pyrogram.types.ChatMember" title="pyrogram.types.ChatMember (Python class) — Contains information about one member of a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMember</span></code></a> objects is returned.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

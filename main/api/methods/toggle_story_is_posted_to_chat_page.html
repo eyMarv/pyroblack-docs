@@ -3009,15 +3009,15 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.toggle_story_is_posted_to_chat_page-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.toggle_story_is_posted_to_chat_page-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>story_poster_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier of the chat that posted the story.
+<li><p><strong>story_poster_chat_id (``int`` | ``str``)</strong> – Identifier of the chat that posted the story.
 Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.</p></li>
-<li><p><strong>story_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>) – List of identifiers of the target stories.</p></li>
-<li><p><strong>is_posted_to_chat_page</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to make the story accessible after expiration; pass False to make it private.</p></li>
+<li><p><strong>story_ids (``int`` | Iterable of ``int``)</strong> – List of identifiers of the target stories.</p></li>
+<li><p><strong>is_posted_to_chat_page (``bool``, *optional*)</strong> – Pass True to make the story accessible after expiration; pass False to make it private.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.toggle_story_is_posted_to_chat_page-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.toggle_story_is_posted_to_chat_page-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p>List of <code class="docutils literal notranslate"><span class="pre">int</span></code> – List of updated story IDs.</p>
+<dd class="field-even"><p><strong>List of ``int``</strong> (<em>List of updated story IDs.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

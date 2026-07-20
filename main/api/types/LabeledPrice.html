@@ -1306,7 +1306,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.LabeledPrice (Python class) — This object represents a portion of the price for goods or services."><span>pyrogram.<wbr>types.<wbr>Labeled<wbr>Price</span></span>
+      <span title="pyrogram.types.LabeledPrice (Python class) — This object represents a price for goods or services."><span>pyrogram.<wbr>types.<wbr>Labeled<wbr>Price</span></span>
     </span>
   </a>
   
@@ -4547,7 +4547,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.LabeledPrice (Python class) — This object represents a portion of the price for goods or services."><span>pyrogram.<wbr>types.<wbr>Labeled<wbr>Price</span></span>
+      <span title="pyrogram.types.LabeledPrice (Python class) — This object represents a price for goods or services."><span>pyrogram.<wbr>types.<wbr>Labeled<wbr>Price</span></span>
     </span>
   </a>
   
@@ -4589,12 +4589,15 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.types.LabeledPrice">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">LabeledPrice</span></span><a class="headerlink" href="#pyrogram.types.LabeledPrice" title="Link to this definition">¶</a></dt>
-<dd><p>This object represents a portion of the price for goods or services.</p>
+<dd><p>This object represents a price for goods or services.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.LabeledPrice-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.LabeledPrice-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>label</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Portion label.</p></li>
-<li><p><strong>amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Price of the product in the smallest units of the currency (integer, <strong>not</strong> float/double). For example, for a price of <code class="docutils literal notranslate"><span class="pre">US$</span> <span class="pre">1.45</span></code> pass <code class="docutils literal notranslate"><span class="pre">amount</span> <span class="pre">=</span> <span class="pre">145</span></code>. See the __exp__ parameter in <a class="reference external" href="https://core.telegram.org/bots/payments/currencies.json">currencies.json</a>, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).</p></li>
+<li><p><strong>label (``str``)</strong> – Portion label.</p></li>
+<li><p><strong>amount (``int``)</strong> – Price of the product in the smallest units of the currency (integer, not float/double).
+The minimum amuont for telegram stars is 1.
+The minimum amount for other currencies is US$1.
+you need to add 2 extra zeros to the amount (except stars), example 100 for 1 usd.</p></li>
 </ul>
 </dd>
 </dl>

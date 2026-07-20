@@ -2313,14 +2313,14 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.InputReplyToMessage-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.InputReplyToMessage-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – ID of the original message you want to reply.</p></li>
-<li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target message thread (topic) of the forum.
+<li><p><strong>reply_to_message_id (``int``, *optional*)</strong> – ID of the original message you want to reply.</p></li>
+<li><p><strong>message_thread_id (``int``, *optional*)</strong> – Unique identifier for the target message thread (topic) of the forum.
 for forum supergroups only.</p></li>
-<li><p><strong>reply_to_chat</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code>, <em>optional</em>) – Unique identifier for the origin chat.
+<li><p><strong>reply_to_chat (:obj:`~pyrogram.raw.InputPeer`, *optional*)</strong> – Unique identifier for the origin chat.
 for reply to message from another chat.</p></li>
-<li><p><strong>quote_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text to quote.
+<li><p><strong>quote_text (``str``, *optional*)</strong> – Text to quote.
 for reply_to_message only.</p></li>
-<li><p><strong>quote_entities</strong> (List of <a class="reference internal" href="../../telegram/base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – Entities to quote.
+<li><p><strong>quote_entities (List of :obj:`~pyrogram.raw.base.MessageEntity`)</strong> – Entities to quote.
 for reply_to_message only.</p></li>
 </ul>
 </dd>

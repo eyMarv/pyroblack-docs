@@ -4593,14 +4593,14 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.PollOption-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.PollOption-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>persistent_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier of the option, persistent on option addition and deletion.</p></li>
-<li><p><strong>text</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">FormattedText</span></code>) – Option text, 1-100 characters.</p></li>
-<li><p><strong>voter_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Number of users that voted for this option.
+<li><p><strong>persistent_id (``str``)</strong> – Unique identifier of the option, persistent on option addition and deletion.</p></li>
+<li><p><strong>text (:obj:`~pyrogram.types.FormattedText`)</strong> – Option text, 1-100 characters.</p></li>
+<li><p><strong>voter_count (``int``)</strong> – Number of users that voted for this option.
 Equals to 0 until you vote.</p></li>
-<li><p><strong>added_by_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – User who added the option; omitted if the option wasn’t added by a user after poll creation.</p></li>
-<li><p><strong>added_by_chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Chat that added the option; omitted if the option wasn’t added by a chat after poll creation.</p></li>
-<li><p><strong>addition_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date the message was last edited.</p></li>
-<li><p><strong>data</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>) – The data this poll option is holding.</p></li>
+<li><p><strong>added_by_user (:obj:`~pyrogram.types.User`, *optional*)</strong> – User who added the option; omitted if the option wasn’t added by a user after poll creation.</p></li>
+<li><p><strong>added_by_chat (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – Chat that added the option; omitted if the option wasn’t added by a chat after poll creation.</p></li>
+<li><p><strong>addition_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date the message was last edited.</p></li>
+<li><p><strong>data (``bytes``)</strong> – The data this poll option is holding.</p></li>
 </ul>
 </dd>
 </dl>

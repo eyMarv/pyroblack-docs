@@ -4598,25 +4598,25 @@ Polls can be sent to a private chat only if the chat is a chat with a bot or the
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Poll-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Poll-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique poll identifier.</p></li>
-<li><p><strong>question</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">FormattedText</span></code>) – Poll question, 1-255 characters.</p></li>
-<li><p><strong>options</strong> (List of <a class="reference internal" href="PollOption.html#pyrogram.types.PollOption" title="pyrogram.types.PollOption (Python class) — Contains information about one answer option in a poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollOption</span></code></a>) – List of poll options.</p></li>
-<li><p><strong>total_voter_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Total number of users that voted in the poll.</p></li>
-<li><p><strong>is_closed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the poll is closed.</p></li>
-<li><p><strong>is_anonymous</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the poll is anonymous</p></li>
-<li><p><strong>type</strong> (<a class="reference internal" href="../enums/PollType.html#pyrogram.enums.PollType" title="pyrogram.enums.PollType (Python class) — Poll type enumeration used in Poll."><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollType</span></code></a>) – Poll type.</p></li>
-<li><p><strong>allows_multiple_answers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the poll allows multiple answers.</p></li>
-<li><p><strong>allows_revoting</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the poll allows to change the chosen answer options.</p></li>
-<li><p><strong>chosen_option_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – 0-based index of the chosen option), None in case of no vote yet.</p></li>
-<li><p><strong>correct_option_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Array of 0-based identifiers of the correct answer options.
+<li><p><strong>id (``str``)</strong> – Unique poll identifier.</p></li>
+<li><p><strong>question (:obj:`~pyrogram.types.FormattedText`)</strong> – Poll question, 1-255 characters.</p></li>
+<li><p><strong>options (List of :obj:`~pyrogram.types.PollOption`)</strong> – List of poll options.</p></li>
+<li><p><strong>total_voter_count (``int``)</strong> – Total number of users that voted in the poll.</p></li>
+<li><p><strong>is_closed (``bool``)</strong> – True, if the poll is closed.</p></li>
+<li><p><strong>is_anonymous (``bool``)</strong> – True, if the poll is anonymous</p></li>
+<li><p><strong>type (:obj:`~pyrogram.enums.PollType`)</strong> – Poll type.</p></li>
+<li><p><strong>allows_multiple_answers (``bool``)</strong> – True, if the poll allows multiple answers.</p></li>
+<li><p><strong>allows_revoting (``bool``)</strong> – True, if the poll allows to change the chosen answer options.</p></li>
+<li><p><strong>chosen_option_id (``int``, *optional*)</strong> – 0-based index of the chosen option), None in case of no vote yet.</p></li>
+<li><p><strong>correct_option_ids (List of ``int``, *optional*)</strong> – Array of 0-based identifiers of the correct answer options.
 Available only for polls in quiz mode which are closed or were sent (not forwarded) by the bot or to the private chat with the bot.</p></li>
-<li><p><strong>explanation</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">FormattedText</span></code>, <em>optional</em>) – Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll,
+<li><p><strong>explanation (:obj:`~pyrogram.types.FormattedText`, *optional*)</strong> – Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll,
 0-200 characters.</p></li>
-<li><p><strong>open_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Amount of time in seconds the poll will be active after creation.</p></li>
-<li><p><strong>close_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time when the poll will be automatically closed.</p></li>
-<li><p><strong>has_open_answers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Participants can suggest new options.</p></li>
-<li><p><strong>description</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">FormattedText</span></code>, <em>optional</em>) – Description of the poll; for polls inside the Message object only.</p></li>
-<li><p><strong>can_add_option</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if an option can be added to the poll using <a class="reference internal" href="../methods/add_poll_option.html#pyrogram.Client.add_poll_option" title="pyrogram.Client.add_poll_option (Python method) — Adds an option to a poll."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_poll_option()</span></code></a>.</p></li>
+<li><p><strong>open_period (``int``, *optional*)</strong> – Amount of time in seconds the poll will be active after creation.</p></li>
+<li><p><strong>close_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Point in time when the poll will be automatically closed.</p></li>
+<li><p><strong>has_open_answers (``bool``, *optional*)</strong> – Participants can suggest new options.</p></li>
+<li><p><strong>description (:obj:`~pyrogram.types.FormattedText`, *optional*)</strong> – Description of the poll; for polls inside the Message object only.</p></li>
+<li><p><strong>can_add_option (``bool``, *property*)</strong> – True, if an option can be added to the poll using <a class="reference internal" href="../methods/add_poll_option.html#pyrogram.Client.add_poll_option" title="pyrogram.Client.add_poll_option (Python method) — Adds an option to a poll."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_poll_option()</span></code></a>.</p></li>
 </ul>
 </dd>
 </dl>

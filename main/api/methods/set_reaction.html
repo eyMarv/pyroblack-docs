@@ -4201,21 +4201,21 @@ Bots can’t use paid reactions.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.set_reaction-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_reaction-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the target message. If the message belongs to a media group, the reaction is set to the first non-deleted message in the group instead.</p></li>
-<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the story.</p></li>
-<li><p><strong>reaction</strong> (List of <a class="reference internal" href="../types/ReactionType.html#pyrogram.types.ReactionType" title="pyrogram.types.ReactionType (Python class) — This object describes the type of a reaction. Currently, it can be one of"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReactionType</span></code></a>, <em>optional</em>) – New list of reaction types to set on the message.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>message_id (``int``, *optional*)</strong> – Identifier of the target message. If the message belongs to a media group, the reaction is set to the first non-deleted message in the group instead.</p></li>
+<li><p><strong>story_id (``int``, *optional*)</strong> – Identifier of the story.</p></li>
+<li><p><strong>reaction (List of :obj:`~pyrogram.types.ReactionType`, *optional*)</strong> – New list of reaction types to set on the message.
 Pass None as emoji (default) to retract the reaction.
 Use <a class="reference internal" href="add_paid_message_reaction.html#pyrogram.Client.add_paid_message_reaction" title="pyrogram.Client.add_paid_message_reaction (Python method) — Adds the paid message reaction to a message."><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_paid_message_reaction()</span></code></a> instead to add a paid reaction.</p></li>
-<li><p><strong>is_big</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to set the reaction with a big animation.
+<li><p><strong>is_big (``bool``, *optional*)</strong> – Pass True to set the reaction with a big animation.
 Defaults to False.</p></li>
-<li><p><strong>add_to_recent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the reaction should appear in the recently used reactions.
+<li><p><strong>add_to_recent (``bool``, *optional*)</strong> – Pass True if the reaction should appear in the recently used reactions.
 This option is applicable only for users.
 Defaults to True.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.set_reaction-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_reaction-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p>On success, <a class="reference internal" href="../types/MessageReactions.html#pyrogram.types.MessageReactions" title="pyrogram.types.MessageReactions (Python class) — Contains information about a message reactions."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReactions</span></code></a> – is returned.</p>
+<dd class="field-even"><p><strong>On success, :obj:`~pyrogram.types.MessageReactions`</strong> (<em>is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

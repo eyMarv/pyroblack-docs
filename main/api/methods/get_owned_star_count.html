@@ -2672,12 +2672,12 @@
     <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_owned_star_count-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_owned_star_count-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the bot for which the star count should be returned instead of the current user.
+<dd class="field-odd"><p><strong>user_id (``int`` | ``str``, *optional*)</strong> – Unique identifier (int) or username (str) of the bot for which the star count should be returned instead of the current user.
 The bot should have <code class="docutils literal notranslate"><span class="pre">can_be_edited</span></code> property set to True.
 Pass <code class="docutils literal notranslate"><span class="pre">None</span></code> to return the count of the current user.</p>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_owned_star_count-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_owned_star_count-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/StarAmount.html#pyrogram.types.StarAmount" title="pyrogram.types.StarAmount (Python class) — This object Describes a possibly non-integer amount of Telegram Stars."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarAmount</span></code></a> – On success, the current stars balance is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.StarAmount`</strong> (<em>On success, the current stars balance is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

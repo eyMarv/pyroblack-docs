@@ -2937,27 +2937,27 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChatPermissions-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChatPermissions-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>can_send_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send text messages, contacts, giveaways, giveaway winners, invoices, locations and venues</p></li>
-<li><p><strong>can_send_audios</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send audios</p></li>
-<li><p><strong>can_send_documents</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send documents</p></li>
-<li><p><strong>can_send_photos</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send photos</p></li>
-<li><p><strong>can_send_videos</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send videos</p></li>
-<li><p><strong>can_send_video_notes</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send video notes</p></li>
-<li><p><strong>can_send_voice_notes</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send voice notes</p></li>
-<li><p><strong>can_send_polls</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send polls</p></li>
-<li><p><strong>can_send_other_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send animations, games, stickers and use inline bots</p></li>
-<li><p><strong>can_add_web_page_previews</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to add web page previews to their messages</p></li>
-<li><p><strong>can_change_info</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to change the chat title, photo and other settings
+<li><p><strong>can_send_messages (``bool``, *optional*)</strong> – True, if the user is allowed to send text messages, contacts, giveaways, giveaway winners, invoices, locations and venues</p></li>
+<li><p><strong>can_send_audios (``bool``, *optional*)</strong> – True, if the user is allowed to send audios</p></li>
+<li><p><strong>can_send_documents (``bool``, *optional*)</strong> – True, if the user is allowed to send documents</p></li>
+<li><p><strong>can_send_photos (``bool``, *optional*)</strong> – True, if the user is allowed to send photos</p></li>
+<li><p><strong>can_send_videos (``bool``, *optional*)</strong> – True, if the user is allowed to send videos</p></li>
+<li><p><strong>can_send_video_notes (``bool``, *optional*)</strong> – True, if the user is allowed to send video notes</p></li>
+<li><p><strong>can_send_voice_notes (``bool``, *optional*)</strong> – True, if the user is allowed to send voice notes</p></li>
+<li><p><strong>can_send_polls (``bool``, *optional*)</strong> – True, if the user is allowed to send polls</p></li>
+<li><p><strong>can_send_other_messages (``bool``, *optional*)</strong> – True, if the user is allowed to send animations, games, stickers and use inline bots</p></li>
+<li><p><strong>can_add_web_page_previews (``bool``, *optional*)</strong> – True, if the user is allowed to add web page previews to their messages</p></li>
+<li><p><strong>can_change_info (``bool``, *optional*)</strong> – True, if the user is allowed to change the chat title, photo and other settings
 Ignored in public supergroups</p></li>
-<li><p><strong>can_invite_users</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to invite new users to the chat</p></li>
-<li><p><strong>can_pin_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to pin messages
+<li><p><strong>can_invite_users (``bool``, *optional*)</strong> – True, if the user is allowed to invite new users to the chat</p></li>
+<li><p><strong>can_pin_messages (``bool``, *optional*)</strong> – True, if the user is allowed to pin messages
 Ignored in public supergroups</p></li>
-<li><p><strong>can_manage_topics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to create forum topics
+<li><p><strong>can_manage_topics (``bool``, *optional*)</strong> – True, if the user is allowed to create forum topics
 If omitted defaults to the value of can_pin_messages</p></li>
-<li><p><strong>can_send_media_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to send audios, documents, photos, videos, video notes and voice notes.
+<li><p><strong>can_send_media_messages (``bool``, *optional*)</strong> – True, if the user is allowed to send audios, documents, photos, videos, video notes and voice notes.
 Implies <em>can_send_messages</em>.</p></li>
-<li><p><strong>can_edit_tag</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user may change the tag of self.</p></li>
-<li><p><strong>can_react_to_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the user is allowed to react to messages. If omitted, defaults to the value of <em>can_send_messages</em>.</p></li>
+<li><p><strong>can_edit_tag (``bool``, *optional*)</strong> – True, if the user may change the tag of self.</p></li>
+<li><p><strong>can_react_to_messages (``bool``, *optional*)</strong> – True, if the user is allowed to react to messages. If omitted, defaults to the value of <em>can_send_messages</em>.</p></li>
 </ul>
 </dd>
 </dl>

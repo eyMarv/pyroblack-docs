@@ -4593,17 +4593,17 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChatBoost-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChatBoost-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this set of boosts.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – Date the boost was applied.</p></li>
-<li><p><strong>expire_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – Point in time when the boost will expire.</p></li>
-<li><p><strong>multiplier</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – If set, this boost counts as multiplier boosts, otherwise it counts as a single boost.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – The user that that applied the boost.</p></li>
-<li><p><strong>is_gift</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this boost was applied because the channel/supergroup directly gifted a subscription to the user.</p></li>
-<li><p><strong>is_giveaway</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this boost was applied because the user was chosen in a giveaway started by the channel/supergroup.</p></li>
-<li><p><strong>is_unclaimed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, the user hasn’t yet invoked <a class="reference internal" href="../methods/apply_gift_code.html#pyrogram.Client.apply_gift_code" title="pyrogram.Client.apply_gift_code (Python method) — Apply a gift code."><code class="xref py py-meth docutils literal notranslate"><span class="pre">apply_gift_code()</span></code></a> to claim a subscription gifted directly or in a giveaway by the channel.</p></li>
-<li><p><strong>giveaway_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The message identifier of the giveaway.</p></li>
-<li><p><strong>used_gift_slug</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The created Telegram Premium gift code, only set if either gift or giveaway are set AND it is either a gift code for the currently logged in user or if it was already claimed.</p></li>
-<li><p><strong>stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Stars amount.</p></li>
+<li><p><strong>id (``str``)</strong> – Unique identifier for this set of boosts.</p></li>
+<li><p><strong>date (:py:obj:`~datetime.datetime`)</strong> – Date the boost was applied.</p></li>
+<li><p><strong>expire_date (:py:obj:`~datetime.datetime`)</strong> – Point in time when the boost will expire.</p></li>
+<li><p><strong>multiplier (``int``)</strong> – If set, this boost counts as multiplier boosts, otherwise it counts as a single boost.</p></li>
+<li><p><strong>from_user (:obj:`~pyrogram.types.User`, *optional*)</strong> – The user that that applied the boost.</p></li>
+<li><p><strong>is_gift (``bool``, *optional*)</strong> – Whether this boost was applied because the channel/supergroup directly gifted a subscription to the user.</p></li>
+<li><p><strong>is_giveaway (``bool``, *optional*)</strong> – Whether this boost was applied because the user was chosen in a giveaway started by the channel/supergroup.</p></li>
+<li><p><strong>is_unclaimed (``bool``, *optional*)</strong> – If set, the user hasn’t yet invoked <a class="reference internal" href="../methods/apply_gift_code.html#pyrogram.Client.apply_gift_code" title="pyrogram.Client.apply_gift_code (Python method) — Apply a gift code."><code class="xref py py-meth docutils literal notranslate"><span class="pre">apply_gift_code()</span></code></a> to claim a subscription gifted directly or in a giveaway by the channel.</p></li>
+<li><p><strong>giveaway_message_id (``int``, *optional*)</strong> – The message identifier of the giveaway.</p></li>
+<li><p><strong>used_gift_slug (``str``, *optional*)</strong> – The created Telegram Premium gift code, only set if either gift or giveaway are set AND it is either a gift code for the currently logged in user or if it was already claimed.</p></li>
+<li><p><strong>stars (``int``, *optional*)</strong> – Stars amount.</p></li>
 </ul>
 </dd>
 </dl>

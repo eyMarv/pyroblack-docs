@@ -2937,23 +2937,23 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChatInviteLink-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChatInviteLink-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>invite_link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The invite link. If the link was created by another chat administrator, then the second part of the
+<li><p><strong>invite_link (``str``)</strong> – The invite link. If the link was created by another chat administrator, then the second part of the
 link will be replaced with “…”.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – The date when the link was created.</p></li>
-<li><p><strong>is_primary</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the link is primary.</p></li>
-<li><p><strong>is_revoked</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the link is revoked.</p></li>
-<li><p><strong>creator</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – Creator of the link.</p></li>
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Invite link name</p></li>
-<li><p><strong>creates_join_request</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if users joining the chat via the link need to be approved by chat administrators.</p></li>
-<li><p><strong>start_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time when the link has been edited.</p></li>
-<li><p><strong>expire_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Point in time when the link will expire or has been expired.</p></li>
-<li><p><strong>member_limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Maximum number of users that can be members of the chat simultaneously after joining the chat via this
+<li><p><strong>date (:py:obj:`~datetime.datetime`)</strong> – The date when the link was created.</p></li>
+<li><p><strong>is_primary (``bool``)</strong> – True, if the link is primary.</p></li>
+<li><p><strong>is_revoked (``bool``)</strong> – True, if the link is revoked.</p></li>
+<li><p><strong>creator (:obj:`~pyrogram.types.User`, *optional*)</strong> – Creator of the link.</p></li>
+<li><p><strong>name (``str``, *optional*)</strong> – Invite link name</p></li>
+<li><p><strong>creates_join_request (``bool``, *optional*)</strong> – True, if users joining the chat via the link need to be approved by chat administrators.</p></li>
+<li><p><strong>start_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Point in time when the link has been edited.</p></li>
+<li><p><strong>expire_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Point in time when the link will expire or has been expired.</p></li>
+<li><p><strong>member_limit (``int``, *optional*)</strong> – Maximum number of users that can be members of the chat simultaneously after joining the chat via this
 invite link; 1-99999.</p></li>
-<li><p><strong>member_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of users that joined via this link and are currently member of the chat.</p></li>
-<li><p><strong>pending_join_request_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of pending join requests created using this link.</p></li>
-<li><p><strong>expired_member_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of chat members, which joined the chat using the link, but have already left because of expired subscription; for subscription links only.</p></li>
-<li><p><strong>subscription_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of seconds the subscription will be active for before the next payment.</p></li>
-<li><p><strong>subscription_price</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The amount of Telegram Stars a user must pay initially and after each subsequent subscription period to be a member of the chat using the link.</p></li>
+<li><p><strong>member_count (``int``, *optional*)</strong> – Number of users that joined via this link and are currently member of the chat.</p></li>
+<li><p><strong>pending_join_request_count (``int``, *optional*)</strong> – Number of pending join requests created using this link.</p></li>
+<li><p><strong>expired_member_count (``int``, *optional*)</strong> – Number of chat members, which joined the chat using the link, but have already left because of expired subscription; for subscription links only.</p></li>
+<li><p><strong>subscription_period (``int``, *optional*)</strong> – The number of seconds the subscription will be active for before the next payment.</p></li>
+<li><p><strong>subscription_price (``int``, *optional*)</strong> – The amount of Telegram Stars a user must pay initially and after each subsequent subscription period to be a member of the chat using the link.</p></li>
 </ul>
 </dd>
 </dl>

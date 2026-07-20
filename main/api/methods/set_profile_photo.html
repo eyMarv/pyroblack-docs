@@ -2723,21 +2723,21 @@ Pass either one as named argument (see examples below).</p>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.set_profile_photo-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_profile_photo-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>photo</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a>, <em>optional</em>) – Profile photo to set.
+<li><p><strong>photo (``str`` | :obj:`io.BytesIO`, *optional*)</strong> – Profile photo to set.
 Pass a file path as string to upload a new photo that exists on your local machine or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>video</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a>, <em>optional</em>) – Profile video to set.
+<li><p><strong>video (``str`` | :obj:`io.BytesIO`, *optional*)</strong> – Profile video to set.
 Pass a file path as string to upload a new video that exists on your local machine or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>public</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to upload a public profile photo for users who are restricted from viewing your real profile photos due to your privacy settings.
+<li><p><strong>public (``bool``, *optional*)</strong> – Pass True to upload a public profile photo for users who are restricted from viewing your real profile photos due to your privacy settings.
 Defaults to False.</p></li>
-<li><p><strong>for_my_bot</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the bot for which profile photo has to be updated instead of the current user.
+<li><p><strong>for_my_bot (``int`` | ``str``, *optional*)</strong> – Unique identifier (int) or username (str) of the bot for which profile photo has to be updated instead of the current user.
 The bot should have <code class="docutils literal notranslate"><span class="pre">can_be_edited</span></code> property set to True.</p></li>
-<li><p><strong>photo_frame_start_timestamp</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>optional</em>) – Floating point UNIX timestamp in seconds, indicating the frame of the video/sticker that should be used as static preview; can only be used if <code class="docutils literal notranslate"><span class="pre">video</span></code> is set.</p></li>
+<li><p><strong>photo_frame_start_timestamp (``float``, *optional*)</strong> – Floating point UNIX timestamp in seconds, indicating the frame of the video/sticker that should be used as static preview; can only be used if <code class="docutils literal notranslate"><span class="pre">video</span></code> is set.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.set_profile_photo-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_profile_photo-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – True on success.</p>
+<dd class="field-even"><p><strong>``bool``</strong> (<em>True on success.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

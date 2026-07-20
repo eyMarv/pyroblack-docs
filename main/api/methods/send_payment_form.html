@@ -3323,16 +3323,16 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_payment_form-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_payment_form-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>payment_form_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Payment form id from <a class="reference internal" href="get_payment_form.html#pyrogram.Client.get_payment_form" title="pyrogram.Client.get_payment_form (Python method) — Get an invoice payment form."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_payment_form()</span></code></a>.</p></li>
-<li><p><strong>input_invoice</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputInvoice</span></code>, <em>optional</em>) – The invoice (modern API).</p></li>
-<li><p><strong>credentials</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputCredentials</span></code>, <em>optional</em>) – Payment credentials. None for Telegram Stars.</p></li>
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Target chat (pyroblack &lt;= 2.7.2).</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Message id or invoice link/slug (pyroblack &lt;= 2.7.2).</p></li>
-<li><p><strong>invoice_link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Invoice link or slug.</p></li>
+<li><p><strong>payment_form_id (``int``, *optional*)</strong> – Payment form id from <a class="reference internal" href="get_payment_form.html#pyrogram.Client.get_payment_form" title="pyrogram.Client.get_payment_form (Python method) — Get an invoice payment form."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_payment_form()</span></code></a>.</p></li>
+<li><p><strong>input_invoice (:obj:`~pyrogram.types.InputInvoice`, *optional*)</strong> – The invoice (modern API).</p></li>
+<li><p><strong>credentials (:obj:`~pyrogram.types.InputCredentials`, *optional*)</strong> – Payment credentials. None for Telegram Stars.</p></li>
+<li><p><strong>chat_id (``int`` | ``str``, *optional*)</strong> – Target chat (pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>message_id (``int`` | ``str``, *optional*)</strong> – Message id or invoice link/slug (pyroblack &lt;= 2.7.2).</p></li>
+<li><p><strong>invoice_link (``str``, *optional*)</strong> – Invoice link or slug.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_payment_form-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_payment_form-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">PaymentResult</span></code> | list – On success.</p>
+<dd class="field-even"><p><strong>``bool`` | :obj:`~pyrogram.types.PaymentResult` | list</strong> (<em>On success.</em>)</p>
 </dd>
 </dl>
 </dd></dl>

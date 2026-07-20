@@ -2585,24 +2585,24 @@ you must replace its content using <em>input_message_content</em>.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.InlineQueryResultVideo-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.InlineQueryResultVideo-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>video_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – A valid URL for the embedded video player or video file.</p></li>
-<li><p><strong>thumbnail_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – URL of the thumbnail (JPEG only) for the video.</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Title for the result.</p></li>
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier for this result, 1-64 bytes.
+<li><p><strong>video_url (``str``)</strong> – A valid URL for the embedded video player or video file.</p></li>
+<li><p><strong>thumbnail_url (``str``)</strong> – URL of the thumbnail (JPEG only) for the video.</p></li>
+<li><p><strong>title (``str``)</strong> – Title for the result.</p></li>
+<li><p><strong>id (``str``, *optional*)</strong> – Unique identifier for this result, 1-64 bytes.
 Defaults to a randomly generated UUID4.</p></li>
-<li><p><strong>mime_type</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Mime type of the content of video url, “text/html” or “video/mp4”.
+<li><p><strong>mime_type (``str``)</strong> – Mime type of the content of video url, “text/html” or “video/mp4”.
 Defaults to “video/mp4”.</p></li>
-<li><p><strong>video_width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video width.</p></li>
-<li><p><strong>video_height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video height.</p></li>
-<li><p><strong>video_duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Video duration in seconds.</p></li>
-<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Short description of the result.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Caption of the video to be sent, 0-1024 characters.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>video_width (``int``)</strong> – Video width.</p></li>
+<li><p><strong>video_height (``int``)</strong> – Video height.</p></li>
+<li><p><strong>video_duration (``int``)</strong> – Video duration in seconds.</p></li>
+<li><p><strong>description (``str``, *optional*)</strong> – Short description of the result.</p></li>
+<li><p><strong>caption (``str``, *optional*)</strong> – Caption of the video to be sent, 0-1024 characters.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>show_caption_above_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if the caption must be shown above the message media.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a>, <em>optional</em>) – Inline keyboard attached to the message</p></li>
-<li><p><strong>input_message_content</strong> (<a class="reference internal" href="InputMessageContent.html#pyrogram.types.InputMessageContent" title="pyrogram.types.InputMessageContent (Python class) — Content of a message to be sent as a result of an inline query."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMessageContent</span></code></a>) – Content of the message to be sent instead of the video. This field is required if InlineQueryResultVideo is
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>show_caption_above_media (``bool``, *optional*)</strong> – Pass True, if the caption must be shown above the message media.</p></li>
+<li><p><strong>reply_markup (:obj:`~pyrogram.types.InlineKeyboardMarkup`, *optional*)</strong> – Inline keyboard attached to the message</p></li>
+<li><p><strong>input_message_content (:obj:`~pyrogram.types.InputMessageContent`)</strong> – Content of the message to be sent instead of the video. This field is required if InlineQueryResultVideo is
 used to send an HTML-page as a result (e.g., a YouTube video).</p></li>
 </ul>
 </dd>

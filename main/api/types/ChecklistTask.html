@@ -4593,15 +4593,15 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChecklistTask-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChecklistTask-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique identifier of the task.</p></li>
-<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the task.</p></li>
-<li><p><strong>text_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities that appear in the task text.
+<li><p><strong>id (``int``)</strong> – Unique identifier of the task.</p></li>
+<li><p><strong>text (``str``)</strong> – Text of the task.</p></li>
+<li><p><strong>text_entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – Special entities that appear in the task text.
 May contain only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, Url, EmailAddress, Mention, Hashtag, Cashtag and PhoneNumber entities.</p></li>
-<li><p><strong>completed_by_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – User that completed the task.
+<li><p><strong>completed_by_user (:obj:`~pyrogram.types.User`, *optional*)</strong> – User that completed the task.
 omitted if the task wasn’t completed by a user.</p></li>
-<li><p><strong>completed_by_chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Chat that completed the task.
+<li><p><strong>completed_by_chat (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – Chat that completed the task.
 omitted if the task wasn’t completed by a chat.</p></li>
-<li><p><strong>completion_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the task was completed.
+<li><p><strong>completion_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the task was completed.
 None if the task isn’t completed.</p></li>
 </ul>
 </dd>

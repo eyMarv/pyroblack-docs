@@ -4040,13 +4040,16 @@
     <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_folders-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_folders-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>folder_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pass a single folder identifier or an iterable of folder ids (as integers) to get the content of the
+<dd class="field-odd"><p><strong>folder_ids (``int`` | Iterable of ``int``, *optional*)</strong> – Pass a single folder identifier or an iterable of folder ids (as integers) to get the content of the
 folders themselves.
 By default all folders are returned.</p>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_folders-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_folders-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Folder.html#pyrogram.types.Folder" title="pyrogram.types.Folder (Python class) — Represents a folder for user chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Folder</span></code></a> | List of <a class="reference internal" href="../types/Folder.html#pyrogram.types.Folder" title="pyrogram.types.Folder (Python class) — Represents a folder for user chats."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Folder</span></code></a> – In case <em>folder_ids</em> was not
-a list, a single folder is returned, otherwise a list of folders is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.Folder` | List of :obj:`~pyrogram.types.Folder`</strong> (<em>In case *folder_ids</em> was not*)</p></li>
+<li><p><em>a list, a single folder is returned, otherwise a list of folders is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

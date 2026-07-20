@@ -2084,19 +2084,19 @@
 <dl class="field-list">
 <dt class="field-odd" id="pyrogram.types.InlineQuery.answer-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.InlineQuery.answer-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul>
-<li><p><strong>results</strong> (List of <a class="reference internal" href="../types/InlineQueryResult.html#pyrogram.types.InlineQueryResult" title="pyrogram.types.InlineQueryResult (Python class) — This object represents one result of an inline query. Telegram clients currently support results of the following 20 types:"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResult</span></code></a>) – A list of results for the inline query.</p></li>
-<li><p><strong>cache_time</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum amount of time in seconds that the result of the inline query may be cached on the server.
+<li><p><strong>results (List of :obj:`~pyrogram.types.InlineQueryResult`)</strong> – A list of results for the inline query.</p></li>
+<li><p><strong>cache_time (``int``, *optional*)</strong> – The maximum amount of time in seconds that the result of the inline query may be cached on the server.
 Defaults to 300.</p></li>
-<li><p><strong>is_gallery</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if results should be displayed in gallery mode instead of list mode.
+<li><p><strong>is_gallery (``bool``, *optional*)</strong> – Pass True, if results should be displayed in gallery mode instead of list mode.
 Defaults to False.</p></li>
-<li><p><strong>is_personal</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if results may be cached on the server side only for the user that sent the query.
+<li><p><strong>is_personal (``bool``, *optional*)</strong> – Pass True, if results may be cached on the server side only for the user that sent the query.
 By default (False), results may be returned to any user who sends the same query.</p></li>
-<li><p><strong>next_offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the offset that a client should send in the next query with the same text to receive more results.
+<li><p><strong>next_offset (``str``, *optional*)</strong> – Pass the offset that a client should send in the next query with the same text to receive more results.
 Pass an empty string if there are no more results or if you don‘t support pagination.
 Offset length can’t exceed 64 bytes.</p></li>
-<li><p><strong>switch_pm_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If passed, clients will display a button with specified text that switches the user to a private chat
+<li><p><strong>switch_pm_text (``str``, *optional*)</strong> – If passed, clients will display a button with specified text that switches the user to a private chat
 with the bot and sends the bot a start message with the parameter switch_pm_parameter</p></li>
-<li><p><strong>switch_pm_parameter</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – <a class="reference external" href="https://core.telegram.org/bots#deep-linking">Deep-linking</a> parameter for the /start message sent to
+<li><p><strong>switch_pm_parameter (``str``, *optional*)</strong> – <a class="reference external" href="https://core.telegram.org/bots#deep-linking">Deep-linking</a> parameter for the /start message sent to
 the bot when user presses the switch button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.</p>
 <p>Example: An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube
 account to adapt search results accordingly. To do this, it displays a “Connect your YouTube account”

@@ -2937,12 +2937,12 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChatJoinRequest-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChatJoinRequest-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – Chat to which the request was sent.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – User that sent the join request.</p></li>
-<li><p><strong>user_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Identifier of a private chat with the user who sent the join request. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier. The bot can use this identifier for 5 minutes to send messages until the join request is processed, assuming no other administrator contacted the user.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – Date the request was sent.</p></li>
-<li><p><strong>bio</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Bio of the user.</p></li>
-<li><p><strong>invite_link</strong> (<a class="reference internal" href="ChatInviteLink.html#pyrogram.types.ChatInviteLink" title="pyrogram.types.ChatInviteLink (Python class) — An invite link for a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatInviteLink</span></code></a>, <em>optional</em>) – Chat invite link that was used by the user to send the join request.</p></li>
+<li><p><strong>chat (:obj:`~pyrogram.types.Chat`)</strong> – Chat to which the request was sent.</p></li>
+<li><p><strong>from_user (:obj:`~pyrogram.types.User`)</strong> – User that sent the join request.</p></li>
+<li><p><strong>user_chat_id (``int``)</strong> – Identifier of a private chat with the user who sent the join request. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier. The bot can use this identifier for 5 minutes to send messages until the join request is processed, assuming no other administrator contacted the user.</p></li>
+<li><p><strong>date (:py:obj:`~datetime.datetime`)</strong> – Date the request was sent.</p></li>
+<li><p><strong>bio (``str``, *optional*)</strong> – Bio of the user.</p></li>
+<li><p><strong>invite_link (:obj:`~pyrogram.types.ChatInviteLink`, *optional*)</strong> – Chat invite link that was used by the user to send the join request.</p></li>
 </ul>
 </dd>
 </dl>

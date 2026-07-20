@@ -3035,30 +3035,30 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.post_story-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.post_story-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.</p></li>
-<li><p><strong>content</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputStoryContent</span></code>) – Content of the story.</p></li>
-<li><p><strong>active_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Period after which the story is moved to the archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Caption of the story, 0-2048 characters after entities parsing.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>content (:obj:`~pyrogram.types.InputStoryContent`)</strong> – Content of the story.</p></li>
+<li><p><strong>active_period (``int``, *optional*)</strong> – Period after which the story is moved to the archive, in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400.</p></li>
+<li><p><strong>caption (``str``, *optional*)</strong> – Caption of the story, 0-2048 characters after entities parsing.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>areas</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryArea</span></code>, <em>optional</em>) – List of of clickable areas to be shown on the story.</p></li>
-<li><p><strong>post_to_chat_page</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to keep the story accessible after it expires.</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the content of the story must be protected from forwarding and screenshotting.</p></li>
-<li><p><strong>business_connection_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier of the business connection.</p></li>
-<li><p><strong>privacy_settings</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryPrivacySettings</span></code>, <em>optional</em>) – The privacy settings for the story; ignored for stories sent to supergroup and channel chats.
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>areas (List of :obj:`~pyrogram.types.StoryArea`, *optional*)</strong> – List of of clickable areas to be shown on the story.</p></li>
+<li><p><strong>post_to_chat_page (``bool``, *optional*)</strong> – Pass True to keep the story accessible after it expires.</p></li>
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Pass True if the content of the story must be protected from forwarding and screenshotting.</p></li>
+<li><p><strong>business_connection_id (``str``)</strong> – Unique identifier of the business connection.</p></li>
+<li><p><strong>privacy_settings (:obj:`~pyrogram.types.StoryPrivacySettings`, *optional*)</strong> – The privacy settings for the story; ignored for stories sent to supergroup and channel chats.
 Defaults to <code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryPrivacySettingsEveryone</span></code>.</p></li>
-<li><p><strong>album_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifiers of story albums to which the story will be added upon posting. An album can have up to <code class="docutils literal notranslate"><span class="pre">stories_album_stories_limit</span></code>.</p></li>
-<li><p><strong>from_story_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Full identifier of the original story, which content was used to create the story; pass None if the story isn’t repost of another story.
+<li><p><strong>album_ids (List of ``int``, *optional*)</strong> – Identifiers of story albums to which the story will be added upon posting. An album can have up to <code class="docutils literal notranslate"><span class="pre">stories_album_stories_limit</span></code>.</p></li>
+<li><p><strong>from_story_chat_id (``int`` | ``str``, *optional*)</strong> – Full identifier of the original story, which content was used to create the story; pass None if the story isn’t repost of another story.
 Identifier of the chat that posted the story.</p></li>
-<li><p><strong>from_story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Full identifier of the original story, which content was used to create the story; pass None if the story isn’t repost of another story.
+<li><p><strong>from_story_id (``int``, *optional*)</strong> – Full identifier of the original story, which content was used to create the story; pass None if the story isn’t repost of another story.
 Unique story identifier among stories of the given sender.</p></li>
-<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+<li><p><strong>progress (``Callable``, *optional*)</strong> – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
 detailed description) and will be called back each time a new file chunk has been successfully
 transmitted.</p></li>
-<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.
+<li><p><strong>progress_args (``tuple``, *optional*)</strong> – Extra custom arguments for the progress callback function.
 You can pass anything you need to be available in the progress callback scope; for example, a Message
 object or a Client instance in order to edit the message with the updated progress status.</p></li>
 </ul>
@@ -3075,8 +3075,8 @@ object or a Client instance in order to edit the message with the updated progre
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.post_story-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.post_story-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.</p></li>
-<li><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.:</p></li>
+<li><p><strong>RPCError</strong> – </p></li>
 </ul>
 </dd>
 </dl>

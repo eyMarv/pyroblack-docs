@@ -2597,42 +2597,45 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Story.download-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Story.download-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – A custom <em>file_name</em> to be used instead of the one provided by Telegram.
+<li><p><strong>file_name (``str``, *optional*)</strong> – A custom <em>file_name</em> to be used instead of the one provided by Telegram.
 By default, all files are downloaded in the <em>downloads</em> folder in your working directory.
 You can also specify a path for downloading files in a custom location: paths that end with “/”
 are considered directories. All non-existent folders will be created automatically.</p></li>
-<li><p><strong>in_memory</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to download the media in-memory.
+<li><p><strong>in_memory (``bool``, *optional*)</strong> – Pass True to download the media in-memory.
 A binary file-like object with its attribute “.name” set will be returned.
 Defaults to False.</p></li>
-<li><p><strong>block</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Blocks the code execution until the file has been downloaded.
+<li><p><strong>block (``bool``, *optional*)</strong> – Blocks the code execution until the file has been downloaded.
 Defaults to True.</p></li>
-<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+<li><p><strong>progress (``Callable``, *optional*)</strong> – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
 detailed description) and will be called back each time a new file chunk has been successfully
 transmitted.</p></li>
-<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.
+<li><p><strong>progress_args (``tuple``, *optional*)</strong> – Extra custom arguments for the progress callback function.
 You can pass anything you need to be available in the progress callback scope; for example, a Message
 object or a Client instance in order to edit the message with the updated progress status.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.Story.download-other-parameters">Other Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Story.download-other-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>current</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The amount of bytes transmitted so far.</p></li>
-<li><p><strong>total</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The total size of the file.</p></li>
-<li><p><strong>*args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments as defined in the <code class="docutils literal notranslate"><span class="pre">progress_args</span></code> parameter.
+<li><p><strong>current (``int``)</strong> – The amount of bytes transmitted so far.</p></li>
+<li><p><strong>total (``int``)</strong> – The total size of the file.</p></li>
+<li><p><strong>*args (``tuple``, *optional*)</strong> – Extra custom arguments as defined in the <code class="docutils literal notranslate"><span class="pre">progress_args</span></code> parameter.
 You can either keep <code class="docutils literal notranslate"><span class="pre">*args</span></code> or add every single extra argument in your function signature.</p></li>
 </ul>
 </dd>
 <dt class="field-odd" id="pyrogram.types.Story.download-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Story.download-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">None</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a> – On success, the absolute path of the downloaded file is returned,
-otherwise, in case the download failed or was deliberately stopped with
-<a class="reference internal" href="../methods/stop_transmission.html#pyrogram.Client.stop_transmission" title="pyrogram.Client.stop_transmission (Python method) — Stop downloading or uploading a file."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop_transmission()</span></code></a>, None is returned.
-Otherwise, in case <code class="docutils literal notranslate"><span class="pre">in_memory=True</span></code>, a binary file-like object with its attribute “.name” set is returned.</p>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><strong>``str`` | ``None`` | :obj:`io.BytesIO`</strong> (<em>On success, the absolute path of the downloaded file is returned,</em>)</p></li>
+<li><p><em>otherwise, in case the download failed or was deliberately stopped with</em></p></li>
+<li><p><a class="reference internal" href="../methods/stop_transmission.html#pyrogram.Client.stop_transmission" title="pyrogram.Client.stop_transmission (Python method) — Stop downloading or uploading a file."><code class="xref py py-meth docutils literal notranslate"><span class="pre">stop_transmission()</span></code></a>, None is returned.</p></li>
+<li><p>Otherwise, in case <code class="docutils literal notranslate"><span class="pre">in_memory=True</span></code>, a binary file-like object with its attribute “.name” set is returned.</p></li>
+</ul>
+</p>
 </dd>
 <dt class="field-even" id="pyrogram.types.Story.download-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Story.download-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – If the message doesn’t contain any downloadable media.</p></li>
-<li><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – If the message doesn’t contain any downloadable media.:</p></li>
+<li><p><strong>RPCError</strong> – </p></li>
 </ul>
 </dd>
 </dl>

@@ -2673,17 +2673,17 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ReplyKeyboardMarkup-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ReplyKeyboardMarkup-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>keyboard</strong> (List of List of <a class="reference internal" href="KeyboardButton.html#pyrogram.types.KeyboardButton" title="pyrogram.types.KeyboardButton (Python class) — One button of the reply keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a>) – List of button rows, each represented by a List of KeyboardButton objects.</p></li>
-<li><p><strong>is_persistent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Requests clients to always show the keyboard when the regular keyboard is hidden.
+<li><p><strong>keyboard (List of List of :obj:`~pyrogram.types.KeyboardButton`)</strong> – List of button rows, each represented by a List of KeyboardButton objects.</p></li>
+<li><p><strong>is_persistent (``bool``, *optional*)</strong> – Requests clients to always show the keyboard when the regular keyboard is hidden.
 Defaults to false, in which case the custom keyboard can be hidden and opened with a keyboard icon.</p></li>
-<li><p><strong>resize_keyboard</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if
+<li><p><strong>resize_keyboard (``bool``, *optional*)</strong> – Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if
 there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of
 the same height as the app’s standard keyboard.</p></li>
-<li><p><strong>one_time_keyboard</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Requests clients to hide the keyboard as soon as it’s been used. The keyboard will still be available,
+<li><p><strong>one_time_keyboard (``bool``, *optional*)</strong> – Requests clients to hide the keyboard as soon as it’s been used. The keyboard will still be available,
 but clients will automatically display the usual letter-keyboard in the chat – the user can press a
 special button in the input field to see the custom keyboard again. Defaults to false.</p></li>
-<li><p><strong>input_field_placeholder</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The placeholder to be shown in the input field when the keyboard is active; 1-64 characters.</p></li>
-<li><p><strong>selective</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Use this parameter if you want to show the keyboard to specific users only. Targets:
+<li><p><strong>input_field_placeholder (``str``, *optional*)</strong> – The placeholder to be shown in the input field when the keyboard is active; 1-64 characters.</p></li>
+<li><p><strong>selective (``bool``, *optional*)</strong> – Use this parameter if you want to show the keyboard to specific users only. Targets:
 1) users that are &#64;mentioned in the text of the Message object;
 2) if the bot’s message is a reply (has reply_to_message_id), sender of the original message.
 Example: A user requests to change the bot’s language, bot replies to the request with a keyboard to

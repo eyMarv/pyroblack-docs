@@ -4593,15 +4593,15 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Giveaway-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Giveaway-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chats</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – The list of chats which the user must join to participate in the giveaway</p></li>
-<li><p><strong>winners_selection_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>) – Point in time (Unix timestamp) when winners of the giveaway will be selected</p></li>
-<li><p><strong>winner_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The number of users which are supposed to be selected as winners of the giveaway</p></li>
-<li><p><strong>only_new_members</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if only users who join the chats after the giveaway started should be eligible to win</p></li>
-<li><p><strong>has_public_winners</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the list of giveaway winners will be visible to everyone</p></li>
-<li><p><strong>prize_description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Description of additional giveaway prize</p></li>
-<li><p><strong>country_codes</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – A list of two-letter <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country codes indicating the countries from which eligible users for the giveaway must come. If empty, then all users can participate in the giveaway. Users with a phone number that was bought on Fragment can always participate in giveaways.</p></li>
-<li><p><strong>prize_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of Telegram Stars to be split between giveaway winners; for Telegram Star giveaways only</p></li>
-<li><p><strong>premium_subscription_month_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of months the Telegram Premium subscription won from the giveaway will be active for</p></li>
+<li><p><strong>chats (:obj:`~pyrogram.types.Chat`)</strong> – The list of chats which the user must join to participate in the giveaway</p></li>
+<li><p><strong>winners_selection_date (:py:obj:`~datetime.datetime`)</strong> – Point in time (Unix timestamp) when winners of the giveaway will be selected</p></li>
+<li><p><strong>winner_count (``int``)</strong> – The number of users which are supposed to be selected as winners of the giveaway</p></li>
+<li><p><strong>only_new_members (``bool``, *optional*)</strong> – True, if only users who join the chats after the giveaway started should be eligible to win</p></li>
+<li><p><strong>has_public_winners (``bool``, *optional*)</strong> – True, if the list of giveaway winners will be visible to everyone</p></li>
+<li><p><strong>prize_description (``str``, *optional*)</strong> – Description of additional giveaway prize</p></li>
+<li><p><strong>country_codes (``str``, *optional*)</strong> – A list of two-letter <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a> country codes indicating the countries from which eligible users for the giveaway must come. If empty, then all users can participate in the giveaway. Users with a phone number that was bought on Fragment can always participate in giveaways.</p></li>
+<li><p><strong>prize_star_count (``int``, *optional*)</strong> – The number of Telegram Stars to be split between giveaway winners; for Telegram Star giveaways only</p></li>
+<li><p><strong>premium_subscription_month_count (``int``, *optional*)</strong> – The number of months the Telegram Premium subscription won from the giveaway will be active for</p></li>
 </ul>
 </dd>
 </dl>

@@ -4061,13 +4061,16 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_forum_topic-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topic-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>message_thread_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pass a single message thread identifier or an iterable of message thread identifiers (as integers) to get the information of the topic themselves.</p></li>
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>message_thread_ids (``int`` | Iterable of ``int``, *optional*)</strong> – Pass a single message thread identifier or an iterable of message thread identifiers (as integers) to get the information of the topic themselves.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_forum_topic-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topic-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a> | List of <a class="reference internal" href="../types/ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a> – In case <em>message_thread_ids</em> was not
-a list, a single topic is returned, otherwise a list of topics is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.ForumTopic` | List of :obj:`~pyrogram.types.ForumTopic`</strong> (<em>In case *message_thread_ids</em> was not*)</p></li>
+<li><p><em>a list, a single topic is returned, otherwise a list of topics is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
@@ -4080,7 +4083,7 @@ a list, a single topic is returned, otherwise a list of topics is returned.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_forum_topic-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topic-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.:</p>
 </dd>
 </dl>
 </dd></dl>

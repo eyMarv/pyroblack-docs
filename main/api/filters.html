@@ -4067,16 +4067,16 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.create-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.create-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>func</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>) – A function that accepts three positional arguments <em>(filter, client, update)</em> and returns a boolean: True if the
+<li><p><strong>func (``Callable``)</strong> – A function that accepts three positional arguments <em>(filter, client, update)</em> and returns a boolean: True if the
 update should be handled, False otherwise.
 The <em>filter</em> argument refers to the filter itself and can be used to access keyword arguments (read below).
 The <em>client</em> argument refers to the <a class="reference internal" href="client.html#pyrogram.Client" title="pyrogram.Client (Python class) — Pyrogram Client, the main means for interacting with Telegram."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a> that received the update.
 The <em>update</em> argument type will vary depending on which <a class="reference external" href="handlers">Handler</a> is coming from.
-For example, in a <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> the <em>update</em> argument will be a <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.CallbackQueryHandler" title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQueryHandler</span></code></a> the <em>update</em> will be a <a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery (Python class) — An incoming callback query from a callback button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.RawUpdateHandler" title="pyrogram.handlers.RawUpdateHandler (Python class) — The Raw Update handler class. Used to handle raw updates. It is intended to be used with add_handler()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RawUpdateHandler</span></code></a> the <em>update</em> will be a <a class="reference internal" href="../telegram/base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a>.
+For example, in a <a class="reference internal" href="handlers.html#pyrogram.handlers.MessageHandler" title="pyrogram.handlers.MessageHandler (Python class) — The Message handler class. Used to handle new messages. It is intended to be used with add_handler()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageHandler</span></code></a> the <em>update</em> argument will be a <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.CallbackQueryHandler" title="pyrogram.handlers.CallbackQueryHandler (Python class) — The CallbackQuery handler class. Used to handle callback queries coming from inline buttons. It is intended to be used with add_handler()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQueryHandler</span></code></a> the <em>update</em> will be a <a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery (Python class) — An incoming callback query from a callback button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a>; in a <a class="reference internal" href="handlers.html#pyrogram.handlers.RawUpdateHandler" title="pyrogram.handlers.RawUpdateHandler (Python class) — The Raw Update handler class. Used to handle raw updates. It is intended to be used with add_handler()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">RawUpdateHandler</span></code></a> the <em>update</em> will be a <a class="reference internal" href="../telegram/base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a>.
 Your function body can then access the incoming update attributes and decide whether to allow it or not.</p></li>
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Your filter’s name. Can be anything you like.
+<li><p><strong>name (``str``, *optional*)</strong> – Your filter’s name. Can be anything you like.
 Defaults to “CustomFilter”.</p></li>
-<li><p><strong>**kwargs</strong> (<code class="docutils literal notranslate"><span class="pre">any</span></code>, <em>optional</em>) – Any keyword argument you would like to pass. Useful when creating parameterized custom filters, such as
+<li><p><strong>**kwargs (``any``, *optional*)</strong> – Any keyword argument you would like to pass. Useful when creating parameterized custom filters, such as
 <a class="reference internal" href="#pyrogram.filters.command" title="pyrogram.filters.command (Python function) — Filter commands, i.e.: text messages starting with &quot;/&quot; or any other custom prefix."><code class="xref py py-meth docutils literal notranslate"><span class="pre">command()</span></code></a> or <a class="reference internal" href="#pyrogram.filters.regex" title="pyrogram.filters.regex (Python function) — Filter updates that match a given regular expression pattern."><code class="xref py py-meth docutils literal notranslate"><span class="pre">regex()</span></code></a>.</p></li>
 </ul>
 </dd>
@@ -4451,14 +4451,14 @@ Defaults to None (all bots).</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.command-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.command-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>commands</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – The command or list of commands as string the filter should look for.
+<li><p><strong>commands (``str`` | ``list``)</strong> – The command or list of commands as string the filter should look for.
 Examples: “start”, [“start”, “help”, “settings”]. When a message text containing
 a command arrives, the command itself and its arguments will be stored in the <em>command</em>
 field of the <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
-<li><p><strong>prefixes</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>, <em>optional</em>) – A prefix or a list of prefixes as string the filter should look for.
+<li><p><strong>prefixes (``str`` | ``list``, *optional*)</strong> – A prefix or a list of prefixes as string the filter should look for.
 Defaults to “/” (slash). Examples: “.”, “!”, [“/”, “!”, “.”], list(“.:!”).
 Pass None or “” (empty string) to allow commands with no prefix at all.</p></li>
-<li><p><strong>case_sensitive</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if you want your command(s) to be case sensitive. Defaults to False.
+<li><p><strong>case_sensitive (``bool``, *optional*)</strong> – Pass True if you want your command(s) to be case sensitive. Defaults to False.
 Examples: when True, command=”Start” would trigger /Start but not /start.</p></li>
 </ul>
 </dd>
@@ -4472,10 +4472,10 @@ Examples: when True, command=”Start” would trigger /Start but not /start.</p
 <p>Can be applied to handlers that receive <a class="reference internal" href="types/CallbackQuery.html#pyrogram.types.CallbackQuery" title="pyrogram.types.CallbackQuery (Python class) — An incoming callback query from a callback button in an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">CallbackQuery</span></code></a> updates.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.cq_data-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.cq_data-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>data</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list[str]</span></code>) – The data or list of data strings to match against the callback query.</p>
+<dd class="field-odd"><p><strong>data (``str`` | ``list[str]``)</strong> – The data or list of data strings to match against the callback query.</p>
 </dd>
 <dt class="field-even" id="pyrogram.filters.cq_data-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.cq_data-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#callable" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">callable</span></code></a> – A filter function that matches callback query updates based on the provided data.</p>
+<dd class="field-even"><p><strong>:obj:`callable`</strong> (<em>A filter function that matches callback query updates based on the provided data.</em>)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -4497,8 +4497,8 @@ stored in the <code class="docutils literal notranslate"><span class="pre">match
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.regex-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.regex-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>pattern</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">Pattern</span></code>) – The regex pattern as string or as pre-compiled pattern.</p></li>
-<li><p><strong>flags</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Regex flags.</p></li>
+<li><p><strong>pattern (``str`` | ``Pattern``)</strong> – The regex pattern as string or as pre-compiled pattern.</p></li>
+<li><p><strong>flags (``int``, *optional*)</strong> – Regex flags.</p></li>
 </ul>
 </dd>
 </dl>
@@ -4512,7 +4512,7 @@ stored in the <code class="docutils literal notranslate"><span class="pre">match
 users container.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.user-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.user-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>users</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – Pass one or more user ids/usernames to filter users.
+<dd class="field-odd"><p><strong>users (``int`` | ``str`` | ``list``)</strong> – Pass one or more user ids/usernames to filter users.
 For you yourself, “me” or “self” can be used as well.
 Defaults to None (no users).</p>
 </dd>
@@ -4527,7 +4527,7 @@ Defaults to None (no users).</p>
 chats container.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.chat-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.chat-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>chats</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – Pass one or more chat ids/usernames to filter chats.
+<dd class="field-odd"><p><strong>chats (``int`` | ``str`` | ``list``)</strong> – Pass one or more chat ids/usernames to filter chats.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 Defaults to None (no chats).</p>
 </dd>
@@ -4554,7 +4554,7 @@ Defaults to None (no chats).</p>
 message_thread_ids container.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.thread-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.thread-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>message_thread_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – Pass one or more message thread ids to filter messages in specific threads.
+<dd class="field-odd"><p><strong>message_thread_ids (``int`` | ``list``)</strong> – Pass one or more message thread ids to filter messages in specific threads.
 Defaults to None (no threads).</p>
 </dd>
 </dl>
@@ -4567,7 +4567,7 @@ Defaults to None (no threads).</p>
 <p>Same as <a class="reference internal" href="#pyrogram.filters.thread" title="pyrogram.filters.thread (Python class) — Filter messages coming from one or more threads."><code class="xref py py-class docutils literal notranslate"><span class="pre">thread</span></code></a>. Pass topic ids (use <code class="docutils literal notranslate"><span class="pre">1</span></code> for General).</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.filters.topic-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.filters.topic-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>topics</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">list</span></code>) – One or more forum topic / message_thread ids.</p>
+<dd class="field-odd"><p><strong>topics (``int`` | ``list``)</strong> – One or more forum topic / message_thread ids.</p>
 </dd>
 </dl>
 </dd></dl>

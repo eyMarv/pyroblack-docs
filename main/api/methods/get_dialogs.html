@@ -4041,17 +4041,17 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_dialogs-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_dialogs-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of dialogs to be retrieved.
+<li><p><strong>limit (``int``, *optional*)</strong> – Limits the number of dialogs to be retrieved.
 By default, no limit is applied and all dialogs are returned.</p></li>
-<li><p><strong>pinned_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if you want to get only pinned dialogs.
+<li><p><strong>pinned_only (``bool``, *optional*)</strong> – Pass True if you want to get only pinned dialogs.
 Defaults to False.</p></li>
-<li><p><strong>chat_list</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Chat list from which to get the dialogs; Only Main (0) and Archive (1) chat lists are supported. Defaults to (0) Main chat list.</p></li>
-<li><p><strong>offset_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – The date starting from which the dialogs need to be fetched. Use 0 or any date in the future to get results from the last dialog.</p></li>
-<li><p><strong>offset_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The message identifier of the last message in the last found dialog, or 0 for the first request.</p></li>
+<li><p><strong>chat_list (``int``, *optional*)</strong> – Chat list from which to get the dialogs; Only Main (0) and Archive (1) chat lists are supported. Defaults to (0) Main chat list.</p></li>
+<li><p><strong>offset_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – The date starting from which the dialogs need to be fetched. Use 0 or any date in the future to get results from the last dialog.</p></li>
+<li><p><strong>offset_message_id (``int``, *optional*)</strong> – The message identifier of the last message in the last found dialog, or 0 for the first request.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_dialogs-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_dialogs-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/Dialog.html#pyrogram.types.Dialog" title="pyrogram.types.Dialog (Python class) — A user's dialog."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/Dialog.html#pyrogram.types.Dialog" title="pyrogram.types.Dialog (Python class) — A user's dialog."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code></a> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

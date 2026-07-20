@@ -4593,30 +4593,30 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.GiftAttribute-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.GiftAttribute-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>type</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftAttributeType</span></code>) – Type of the attribute.</p></li>
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Name of the attribute.</p></li>
-<li><p><strong>backdrop_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique backdrop identifier.
+<li><p><strong>type (:obj:`~pyrogram.enums.GiftAttributeType`)</strong> – Type of the attribute.</p></li>
+<li><p><strong>name (``str``, *optional*)</strong> – Name of the attribute.</p></li>
+<li><p><strong>backdrop_id (``int``, *optional*)</strong> – Unique backdrop identifier.
 Available only if the backdrop attribute is available.</p></li>
-<li><p><strong>rarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftAttributeRarityPerMille</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftAttributeRarityUncommon</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftAttributeRarityRare</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftAttributeRarityEpic</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftAttributeRarityLegendary</span></code>, <em>optional</em>) – The rarity of the model.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift was received.
+<li><p><strong>rarity (:obj:`~pyrogram.types.UpgradedGiftAttributeRarityPerMille` | :obj:`~pyrogram.types.UpgradedGiftAttributeRarityUncommon` | :obj:`~pyrogram.types.UpgradedGiftAttributeRarityRare` | :obj:`~pyrogram.types.UpgradedGiftAttributeRarityEpic` | :obj:`~pyrogram.types.UpgradedGiftAttributeRarityLegendary`, *optional*)</strong> – The rarity of the model.</p></li>
+<li><p><strong>date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift was received.
 Available only if the original details are available.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text message.
+<li><p><strong>caption (``str``, *optional*)</strong> – Text message.
 Available only if the original details are available.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text.
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – For text messages, special entities like usernames, URLs, bot commands, etc. that appear in the text.
 Available only if the original details are available.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – User who sent the gift.
+<li><p><strong>from_user (:obj:`~pyrogram.types.User`, *optional*)</strong> – User who sent the gift.
 Available only if the original details are available.</p></li>
-<li><p><strong>to_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>, <em>optional</em>) – User who received the gift.
+<li><p><strong>to_user (:obj:`~pyrogram.types.User`, *optional*)</strong> – User who received the gift.
 Available only if the original details are available.</p></li>
-<li><p><strong>center_color</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Center color of the gift in decimal format.
+<li><p><strong>center_color (``int``, *optional*)</strong> – Center color of the gift in decimal format.
 Available only if the backdrop attribute is available.</p></li>
-<li><p><strong>edge_color</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Edge color of the gift in decimal format.
+<li><p><strong>edge_color (``int``, *optional*)</strong> – Edge color of the gift in decimal format.
 Available only if the backdrop attribute is available.</p></li>
-<li><p><strong>pattern_color</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pattern color of the gift in decimal format.
+<li><p><strong>pattern_color (``int``, *optional*)</strong> – Pattern color of the gift in decimal format.
 Available only if the backdrop attribute is available.</p></li>
-<li><p><strong>text_color</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Text color of the gift in decimal format.
+<li><p><strong>text_color (``int``, *optional*)</strong> – Text color of the gift in decimal format.
 Available only if the backdrop attribute is available.</p></li>
-<li><p><strong>sticker</strong> (<a class="reference internal" href="Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a>, <em>optional</em>) – Information about the sticker.</p></li>
+<li><p><strong>sticker (:obj:`~pyrogram.types.Sticker`, *optional*)</strong> – Information about the sticker.</p></li>
 </ul>
 </dd>
 </dl>

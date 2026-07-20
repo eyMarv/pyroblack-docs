@@ -2265,26 +2265,26 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.InputMediaAnimation-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.InputMediaAnimation-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>media</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a>) – Animation to send.
+<li><p><strong>media (``str`` | :obj:`io.BytesIO`)</strong> – Animation to send.
 Pass a file_id as string to send a file that exists on the Telegram servers or
 pass a file path as string to upload a new file that exists on your local machine or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads or
 pass an HTTP URL as a string for Telegram to get an animation from the Internet.</p></li>
-<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference external" href="https://docs.python.org/3/library/io.html#io.BytesIO" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">io.BytesIO</span></code></a>, <em>optional</em>) – Thumbnail of the animation file sent.
+<li><p><strong>thumb (``str`` | :obj:`io.BytesIO`, *optional*)</strong> – Thumbnail of the animation file sent.
 The thumbnail should be in JPEG format and less than 200 KB in size.
 A thumbnail’s width and height should not exceed 320 pixels.
 Thumbnails can’t be reused and can be only uploaded as a new file.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Caption of the animation to be sent, 0-1024 characters.
+<li><p><strong>caption (``str``, *optional*)</strong> – Caption of the animation to be sent, 0-1024 characters.
 If not specified, the original caption is kept. Pass “” (empty string) to remove the caption.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>show_caption_above_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if the caption must be shown above the message media.</p></li>
-<li><p><strong>width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Animation width.</p></li>
-<li><p><strong>height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Animation height.</p></li>
-<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Animation duration.</p></li>
-<li><p><strong>has_spoiler</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
-<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – File name of the animation sent.
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>show_caption_above_media (``bool``, *optional*)</strong> – Pass True, if the caption must be shown above the message media.</p></li>
+<li><p><strong>width (``int``, *optional*)</strong> – Animation width.</p></li>
+<li><p><strong>height (``int``, *optional*)</strong> – Animation height.</p></li>
+<li><p><strong>duration (``int``, *optional*)</strong> – Animation duration.</p></li>
+<li><p><strong>has_spoiler (``bool``, *optional*)</strong> – Pass True if the photo needs to be covered with a spoiler animation.</p></li>
+<li><p><strong>file_name (``str``, *optional*)</strong> – File name of the animation sent.
 Defaults to file’s path basename.</p></li>
 </ul>
 </dd>

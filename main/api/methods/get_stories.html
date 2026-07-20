@@ -3009,14 +3009,17 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_stories-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_stories-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>story_poster_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier of the chat that posted the story.</p></li>
-<li><p><strong>story_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pass a single story identifier or an iterable of story ids (as integers) to get the content of the
+<li><p><strong>story_poster_chat_id (``int`` | ``str``)</strong> – Identifier of the chat that posted the story.</p></li>
+<li><p><strong>story_ids (``int`` | Iterable of ``int``, *optional*)</strong> – Pass a single story identifier or an iterable of story ids (as integers) to get the content of the
 story themselves.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_stories-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_stories-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — This object represents a story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> | List of <a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — This object represents a story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> – In case <em>story_ids</em> was not
-a list, a single story is returned, otherwise a list of stories is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.Story` | List of :obj:`~pyrogram.types.Story`</strong> (<em>In case *story_ids</em> was not*)</p></li>
+<li><p><em>a list, a single story is returned, otherwise a list of stories is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

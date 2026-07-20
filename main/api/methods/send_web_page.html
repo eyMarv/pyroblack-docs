@@ -4185,46 +4185,46 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_web_page-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_web_page-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
-<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Link that will be previewed.
+<li><p><strong>url (``str``)</strong> – Link that will be previewed.
 If url not specified, the first URL found in the text will be used.</p></li>
-<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text of the message to be sent.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>text (``str``, *optional*)</strong> – Text of the message to be sent.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>large_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Make web page preview image larger.</p></li>
-<li><p><strong>invert_media</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Move web page preview to above the message.</p></li>
-<li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
+<li><p><strong>entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>large_media (``bool``, *optional*)</strong> – Make web page preview image larger.</p></li>
+<li><p><strong>invert_media (``bool``, *optional*)</strong> – Move web page preview to above the message.</p></li>
+<li><p><strong>disable_notification (``bool``, *optional*)</strong> – Sends the message silently.
 Users will receive a notification with no sound.</p></li>
-<li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target message thread (topic) of the forum.
+<li><p><strong>message_thread_id (``int``, *optional*)</strong> – Unique identifier for the target message thread (topic) of the forum.
 for forum supergroups only.</p></li>
-<li><p><strong>business_connection_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Business connection identifier.
+<li><p><strong>business_connection_id (``str``, *optional*)</strong> – Business connection identifier.
 for business bots only.</p></li>
-<li><p><strong>reply_to_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If the message is a reply, ID of the original message.</p></li>
-<li><p><strong>reply_to_story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target story.</p></li>
-<li><p><strong>reply_to_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier for the origin chat.
+<li><p><strong>reply_to_message_id (``int``, *optional*)</strong> – If the message is a reply, ID of the original message.</p></li>
+<li><p><strong>reply_to_story_id (``int``, *optional*)</strong> – Unique identifier for the target story.</p></li>
+<li><p><strong>reply_to_chat_id (``int`` | ``str``, *optional*)</strong> – Unique identifier for the origin chat.
 for reply to message from another chat.
 You can also use chat public link in form of <em>t.me/&lt;username&gt;</em> (str).</p></li>
-<li><p><strong>reply_to_monoforum_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier for the target user of monoforum.
+<li><p><strong>reply_to_monoforum_id (``int`` | ``str``, *optional*)</strong> – Unique identifier for the target user of monoforum.
 for reply to message from monoforum.
 for channel administrators only.</p></li>
-<li><p><strong>quote_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text to quote.
+<li><p><strong>quote_text (``str``, *optional*)</strong> – Text to quote.
 for reply_to_message only.</p></li>
-<li><p><strong>quote_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – List of special entities that appear in quote_text, which can be specified instead of <em>parse_mode</em>.
+<li><p><strong>quote_entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – List of special entities that appear in quote_text, which can be specified instead of <em>parse_mode</em>.
 for reply_to_message only.</p></li>
-<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent message from forwarding and saving.</p></li>
-<li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots</p></li>
-<li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup (Python class) — A custom keyboard with reply options."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove (Python class) — Object used to tell clients to remove a bot keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply (Python class) — Object used to force clients to show a reply interface."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
+<li><p><strong>schedule_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the message will be automatically sent.</p></li>
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Protects the contents of the sent message from forwarding and saving.</p></li>
+<li><p><strong>allow_paid_broadcast (``bool``, *optional*)</strong> – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots</p></li>
+<li><p><strong>message_effect_id (``int`` ``64-bit``, *optional*)</strong> – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
+<li><p><strong>reply_markup (:obj:`~pyrogram.types.InlineKeyboardMarkup` | :obj:`~pyrogram.types.ReplyKeyboardMarkup` | :obj:`~pyrogram.types.ReplyKeyboardRemove` | :obj:`~pyrogram.types.ForceReply`, *optional*)</strong> – Additional interface options. An object for an inline keyboard, custom reply keyboard,
 instructions to remove reply keyboard or to force a reply from the user.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_web_page-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_web_page-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent text message is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Message`</strong> (<em>On success, the sent text message is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

@@ -3009,22 +3009,22 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.edit_story_privacy-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_story_privacy-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Story identifier in the chat specified in chat_id.</p></li>
-<li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules" title="pyrogram.enums.StoriesPrivacyRules (Python class) — Stories privacy rules type enumeration used in send_story() and edit_story()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code></a>, <em>optional</em>) – Story privacy. Defaults to <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a>.</p></li>
-<li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – List of user_id or chat_id of chat users who are allowed to view stories.
+<li><p><strong>story_id (``int``)</strong> – Story identifier in the chat specified in chat_id.</p></li>
+<li><p><strong>privacy (:obj:`~pyrogram.enums.StoriesPrivacyRules`, *optional*)</strong> – Story privacy. Defaults to <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a>.</p></li>
+<li><p><strong>allowed_users (List of ``int`` | ``str``, *optional*)</strong> – List of user_id or chat_id of chat users who are allowed to view stories.
 Note: chat_id available only with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS" title="pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS (Python attribute) — Selected users stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SELECTED_USERS</span></code></a>.
 Works with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.CLOSE_FRIENDS" title="pyrogram.enums.StoriesPrivacyRules.CLOSE_FRIENDS (Python attribute) — Close_Friends stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CLOSE_FRIENDS</span></code></a>
 and <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS" title="pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS (Python attribute) — Selected users stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SELECTED_USERS</span></code></a> only</p></li>
-<li><p><strong>disallowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – List of user_id whos disallow to view the stories.
+<li><p><strong>disallowed_users (List of ``int`` | ``str``, *optional*)</strong> – List of user_id whos disallow to view the stories.
 Note: Works with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a>
 and <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.CONTACTS" title="pyrogram.enums.StoriesPrivacyRules.CONTACTS (Python attribute) — Contacts only stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONTACTS</span></code></a> only</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.edit_story_privacy-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_story_privacy-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — This object represents a story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> – On success, the edited story is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Story`</strong> (<em>On success, the edited story is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

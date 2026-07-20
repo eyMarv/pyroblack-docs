@@ -2740,16 +2740,19 @@
     <span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_code-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_code-parameters" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Phone number in international format (includes the country prefix).</p>
+<dd class="field-odd"><p><strong>phone_number (``str``)</strong> – Phone number in international format (includes the country prefix).</p>
 </dd>
 <dt class="field-even" id="pyrogram.Client.send_code-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_code-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/SentCode.html#pyrogram.types.SentCode" title="pyrogram.types.SentCode (Python class) — Contains info on a sent confirmation code."><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentCode</span></code></a> – On success, an object containing information on the sent confirmation code
-is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.SentCode`</strong> (<em>On success, an object containing information on the sent confirmation code</em>)</p></li>
+<li><p><em>is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 <dt class="field-odd" id="pyrogram.Client.send_code-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_code-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>BadRequest</strong> – In case the phone number is invalid.</p></li>
-<li><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p></li>
+<li><p><strong>BadRequest</strong> – In case the phone number is invalid.:</p></li>
+<li><p><strong>RPCError</strong> – </p></li>
 </ul>
 </dd>
 </dl>

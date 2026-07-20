@@ -2937,29 +2937,29 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Folder-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Folder-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique chat folder identifier.</p></li>
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The text of the chat folder name, 1-12 characters without line feeds.</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Special entities like bold, italic, etc. that appear in the folder name.</p></li>
-<li><p><strong>animate_custom_emoji</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if custom emoji in the name must be animated.</p></li>
-<li><p><strong>icon</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The chosen icon for the chat folder.</p></li>
-<li><p><strong>color</strong> (<a class="reference internal" href="../enums/FolderColor.html#pyrogram.enums.FolderColor" title="pyrogram.enums.FolderColor (Python class) — Folder color enumeration used in Folder."><code class="xref py py-obj docutils literal notranslate"><span class="pre">FolderColor</span></code></a>, <em>optional</em>) – The identifier of the chosen color for the chat folder icon.
+<li><p><strong>id (``int``, *optional*)</strong> – Unique chat folder identifier.</p></li>
+<li><p><strong>name (``str``, *optional*)</strong> – The text of the chat folder name, 1-12 characters without line feeds.</p></li>
+<li><p><strong>entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – Special entities like bold, italic, etc. that appear in the folder name.</p></li>
+<li><p><strong>animate_custom_emoji (``bool``, *optional*)</strong> – True, if custom emoji in the name must be animated.</p></li>
+<li><p><strong>icon (``str``, *optional*)</strong> – The chosen icon for the chat folder.</p></li>
+<li><p><strong>color (:obj:`~pyrogram.enums.FolderColor`, *optional*)</strong> – The identifier of the chosen color for the chat folder icon.
 Can’t be changed if folder tags are disabled or the current user doesn’t have Telegram Premium subscription.</p></li>
-<li><p><strong>is_shareable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if at least one link has been created for the folder.</p></li>
-<li><p><strong>pinned_chats</strong> (List of <a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – The pinned chats in the folder.
+<li><p><strong>is_shareable (``bool``, *optional*)</strong> – True, if at least one link has been created for the folder.</p></li>
+<li><p><strong>pinned_chats (List of :obj:`~pyrogram.types.Chat`, *optional*)</strong> – The pinned chats in the folder.
 There can be up to getOption(“chat_folder_chosen_chat_count_max”) pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.</p></li>
-<li><p><strong>included_chats</strong> (List of <a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – The always included chats in the folder.
+<li><p><strong>included_chats (List of :obj:`~pyrogram.types.Chat`, *optional*)</strong> – The always included chats in the folder.
 There can be up to getOption(“chat_folder_chosen_chat_count_max”) pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.</p></li>
-<li><p><strong>excluded_chats</strong> (List of <a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – The always excluded chats in the folder.
+<li><p><strong>excluded_chats (List of :obj:`~pyrogram.types.Chat`, *optional*)</strong> – The always excluded chats in the folder.
 There can be up to getOption(“chat_folder_chosen_chat_count_max”) always excluded non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium.</p></li>
-<li><p><strong>exclude_muted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if muted chats need to be excluded.</p></li>
-<li><p><strong>exclude_read</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if read chats need to be excluded.</p></li>
-<li><p><strong>exclude_archived</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if archived chats need to be excluded.</p></li>
-<li><p><strong>include_contacts</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if contacts need to be included.</p></li>
-<li><p><strong>include_non_contacts</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if non-contact users need to be included.</p></li>
-<li><p><strong>include_bots</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if bots need to be included.</p></li>
-<li><p><strong>include_groups</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if basic groups and supergroups need to be included.</p></li>
-<li><p><strong>include_channels</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if channels need to be included.</p></li>
-<li><p><strong>raw</strong> (<code class="docutils literal notranslate"><span class="pre">raw.base.DialogFilter</span></code>, <em>optional</em>) – The raw chat folder object.</p></li>
+<li><p><strong>exclude_muted (``bool``, *optional*)</strong> – True, if muted chats need to be excluded.</p></li>
+<li><p><strong>exclude_read (``bool``, *optional*)</strong> – True, if read chats need to be excluded.</p></li>
+<li><p><strong>exclude_archived (``bool``, *optional*)</strong> – True, if archived chats need to be excluded.</p></li>
+<li><p><strong>include_contacts (``bool``, *optional*)</strong> – True, if contacts need to be included.</p></li>
+<li><p><strong>include_non_contacts (``bool``, *optional*)</strong> – True, if non-contact users need to be included.</p></li>
+<li><p><strong>include_bots (``bool``, *optional*)</strong> – True, if bots need to be included.</p></li>
+<li><p><strong>include_groups (``bool``, *optional*)</strong> – True, if basic groups and supergroups need to be included.</p></li>
+<li><p><strong>include_channels (``bool``, *optional*)</strong> – True, if channels need to be included.</p></li>
+<li><p><strong>raw (``raw.base.DialogFilter``, *optional*)</strong> – The raw chat folder object.</p></li>
 </ul>
 </dd>
 </dl>

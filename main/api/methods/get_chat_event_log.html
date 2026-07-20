@@ -4043,16 +4043,16 @@ Results are returned in reverse chronological order (i.e., newest first).</p>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_chat_event_log-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_event_log-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Search query to filter events based on text.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>query (``str``, *optional*)</strong> – Search query to filter events based on text.
 By default, an empty query is applied and all events will be returned.</p></li>
-<li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Offset event identifier from which to start returning results.
+<li><p><strong>offset_id (``int``, *optional*)</strong> – Offset event identifier from which to start returning results.
 By default, no offset is applied and events will be returned starting from the latest.</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Maximum amount of events to be returned.
+<li><p><strong>limit (``int``, *optional*)</strong> – Maximum amount of events to be returned.
 By default, all events will be returned.</p></li>
-<li><p><strong>filters</strong> (<a class="reference internal" href="../types/ChatEventFilter.html#pyrogram.types.ChatEventFilter" title="pyrogram.types.ChatEventFilter (Python class) — Set of filters used to obtain a chat event log."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEventFilter</span></code></a>, <em>optional</em>) – The types of events to return.
+<li><p><strong>filters (:obj:`~pyrogram.types.ChatEventFilter`, *optional*)</strong> – The types of events to return.
 By default, all types will be returned.</p></li>
-<li><p><strong>user_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – User identifiers (int) or usernames (str) by which to filter events.
+<li><p><strong>user_ids (List of ``int`` | ``str``, *optional*)</strong> – User identifiers (int) or usernames (str) by which to filter events.
 By default, events relating to all users will be returned.</p></li>
 </ul>
 </dd>

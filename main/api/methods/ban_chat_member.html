@@ -4050,19 +4050,22 @@ that added them.</p>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.ban_chat_member-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.ban_chat_member-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>user_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target user.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>until_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the user will be unbanned.
+<li><p><strong>until_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the user will be unbanned.
 If user is banned for more than 366 days or less than 30 seconds from the current time they are
 considered to be banned forever. Defaults to epoch (ban forever).</p></li>
-<li><p><strong>revoke_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to delete all messages from the chat for the user that is being removed. If False, the user will be able to see messages in the group that were sent before the user was removed.
+<li><p><strong>revoke_messages (``bool``, *optional*)</strong> – Pass True to delete all messages from the chat for the user that is being removed. If False, the user will be able to see messages in the group that were sent before the user was removed.
 Always True for supergroups and channels.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.ban_chat_member-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.ban_chat_member-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | <code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, a service message will be returned (when applicable),
-otherwise, in case a message object couldn’t be returned, True is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.Message` | ``bool``</strong> (<em>On success, a service message will be returned (when applicable),</em>)</p></li>
+<li><p><em>otherwise, in case a message object couldn’t be returned, True is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

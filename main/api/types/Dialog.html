@@ -2937,20 +2937,20 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Dialog-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Dialog-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – Conversation the dialog belongs to.</p></li>
-<li><p><strong>top_message</strong> (<a class="reference internal" href="Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – The last message sent in the dialog at this time.</p></li>
-<li><p><strong>unread_messages_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Amount of unread messages in this dialog.</p></li>
-<li><p><strong>unread_mentions_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Amount of unread messages containing a mention in this dialog.</p></li>
-<li><p><strong>unread_reactions_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Amount of unread messages containing a reaction in this dialog.</p></li>
-<li><p><strong>unread_poll_vote_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Number of messages with unread poll votes in the topic.</p></li>
-<li><p><strong>unread_mark</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the dialog has the unread mark set.</p></li>
-<li><p><strong>is_pinned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the dialog is pinned.</p></li>
-<li><p><strong>chat_list</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Chat list in which the dialog is present; Only Main (0) and Archive (1) chat lists are supported.</p></li>
-<li><p><strong>message_auto_delete_time</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled.
+<li><p><strong>chat (:obj:`~pyrogram.types.Chat`)</strong> – Conversation the dialog belongs to.</p></li>
+<li><p><strong>top_message (:obj:`~pyrogram.types.Message`)</strong> – The last message sent in the dialog at this time.</p></li>
+<li><p><strong>unread_messages_count (``int``)</strong> – Amount of unread messages in this dialog.</p></li>
+<li><p><strong>unread_mentions_count (``int``)</strong> – Amount of unread messages containing a mention in this dialog.</p></li>
+<li><p><strong>unread_reactions_count (``int``)</strong> – Amount of unread messages containing a reaction in this dialog.</p></li>
+<li><p><strong>unread_poll_vote_count (``int``)</strong> – Number of messages with unread poll votes in the topic.</p></li>
+<li><p><strong>unread_mark (``bool``)</strong> – True, if the dialog has the unread mark set.</p></li>
+<li><p><strong>is_pinned (``bool``)</strong> – True, if the dialog is pinned.</p></li>
+<li><p><strong>chat_list (``int``)</strong> – Chat list in which the dialog is present; Only Main (0) and Archive (1) chat lists are supported.</p></li>
+<li><p><strong>message_auto_delete_time (``int``)</strong> – Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled.
 Self-destruct timer in secret chats starts after the message or its content is viewed.
 Auto-delete timer in other chats starts from the send date.</p></li>
-<li><p><strong>view_as_topics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the chat is a forum supergroup that must be shown in the “View as topics” mode, or Saved Messages chat that must be shown in the “View as chats”.</p></li>
-<li><p><strong>draft</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">DraftMessage</span></code>, <em>optional</em>) – Contains information about a message draft.</p></li>
+<li><p><strong>view_as_topics (``bool``)</strong> – True, if the chat is a forum supergroup that must be shown in the “View as topics” mode, or Saved Messages chat that must be shown in the “View as chats”.</p></li>
+<li><p><strong>draft (:obj:`~pyrogram.types.DraftMessage`, *optional*)</strong> – Contains information about a message draft.</p></li>
 </ul>
 </dd>
 </dl>

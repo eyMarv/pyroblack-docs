@@ -2578,13 +2578,13 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.InlineQuery-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.InlineQuery-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this query.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – Sender.</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the query (up to 512 characters).</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Offset of the results to be returned, can be controlled by the bot.</p></li>
-<li><p><strong>chat_type</strong> (<a class="reference internal" href="../enums/ChatType.html#pyrogram.enums.ChatType" title="pyrogram.enums.ChatType (Python class) — Chat type enumeration used in Chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatType</span></code></a>, <em>optional</em>) – Type of the chat, from which the inline query was sent.</p></li>
-<li><p><strong>location</strong> (<a class="reference internal" href="Location.html#pyrogram.types.Location" title="pyrogram.types.Location (Python class) — A point on the map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a>. <em>optional</em>) – Sender location, only for bots that request user location.</p></li>
-<li><p><strong>matches</strong> (<em>List of regex Matches, *optional*</em>) – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
+<li><p><strong>id (``str``)</strong> – Unique identifier for this query.</p></li>
+<li><p><strong>from_user (:obj:`~pyrogram.types.User`)</strong> – Sender.</p></li>
+<li><p><strong>query (``str``)</strong> – Text of the query (up to 512 characters).</p></li>
+<li><p><strong>offset (``str``)</strong> – Offset of the results to be returned, can be controlled by the bot.</p></li>
+<li><p><strong>chat_type (:obj:`~pyrogram.enums.ChatType`, *optional*)</strong> – Type of the chat, from which the inline query was sent.</p></li>
+<li><p><strong>location (:obj:`~pyrogram.types.Location`. *optional*)</strong> – Sender location, only for bots that request user location.</p></li>
+<li><p><strong>matches (List of regex Matches, *optional*)</strong> – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
 the query of this inline query. Only applicable when using <code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters.regex</span></code>.</p></li>
 </ul>
 </dd>

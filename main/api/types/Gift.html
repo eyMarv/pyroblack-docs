@@ -4593,92 +4593,92 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Gift-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Gift-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique identifier of the gift.</p></li>
-<li><p><strong>type</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftType</span></code>) – Type of the gift.</p></li>
-<li><p><strong>origin</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftOrigin</span></code>, <em>optional</em>) – Origin of the gift.</p></li>
-<li><p><strong>received_gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier of the received gift for the current user.</p></li>
-<li><p><strong>regular_gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier of the regular gift from which the gift was upgraded.</p></li>
-<li><p><strong>publisher_chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Information about the chat that published the gift.</p></li>
-<li><p><strong>sticker</strong> (<a class="reference internal" href="Sticker.html#pyrogram.types.Sticker" title="pyrogram.types.Sticker (Python class) — A sticker."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sticker</span></code></a>, <em>optional</em>) – The sticker that represents the gift.</p></li>
-<li><p><strong>text</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">FormattedText</span></code>, <em>optional</em>) – Message added to the gift.</p></li>
-<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift was sent or received.</p></li>
-<li><p><strong>first_sale_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift was sent for the first time.
+<li><p><strong>id (``int``)</strong> – Unique identifier of the gift.</p></li>
+<li><p><strong>type (:obj:`~pyrogram.enums.GiftType`)</strong> – Type of the gift.</p></li>
+<li><p><strong>origin (:obj:`~pyrogram.enums.UpgradedGiftOrigin`, *optional*)</strong> – Origin of the gift.</p></li>
+<li><p><strong>received_gift_id (``str``, *optional*)</strong> – Unique identifier of the received gift for the current user.</p></li>
+<li><p><strong>regular_gift_id (``int``, *optional*)</strong> – Unique identifier of the regular gift from which the gift was upgraded.</p></li>
+<li><p><strong>publisher_chat (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – Information about the chat that published the gift.</p></li>
+<li><p><strong>sticker (:obj:`~pyrogram.types.Sticker`, *optional*)</strong> – The sticker that represents the gift.</p></li>
+<li><p><strong>text (:obj:`~pyrogram.types.FormattedText`, *optional*)</strong> – Message added to the gift.</p></li>
+<li><p><strong>date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift was sent or received.</p></li>
+<li><p><strong>first_sale_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift was sent for the first time.
 For sold out gifts only.</p></li>
-<li><p><strong>last_sale_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift was sent for the last time.
+<li><p><strong>last_sale_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift was sent for the last time.
 For sold out gifts only.</p></li>
-<li><p><strong>locked_until_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift will be available for purchase.</p></li>
-<li><p><strong>craft_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift can be used to craft another gift can be in the past.</p></li>
-<li><p><strong>sender</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – User or a chat that sent the gift.</p></li>
-<li><p><strong>receiver</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – User or a chat that received the gift.</p></li>
-<li><p><strong>host</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – User or the chat to which the upgraded gift was assigned from blockchain.</p></li>
-<li><p><strong>owner</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – User or the chat that owns the gift.</p></li>
-<li><p><strong>owner_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Address of the gift owner in TON blockchain.</p></li>
-<li><p><strong>owner_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Name of the user who received the star gift.</p></li>
-<li><p><strong>gift_address</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Address of the gift in TON blockchain.</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The title of the upgraded gift.</p></li>
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique name of the upgraded gift.</p></li>
-<li><p><strong>model</strong> (<a class="reference internal" href="GiftAttribute.html#pyrogram.types.GiftAttribute" title="pyrogram.types.GiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftAttribute</span></code></a>, <em>optional</em>) – Model of the upgraded gift.</p></li>
-<li><p><strong>symbol</strong> (<a class="reference internal" href="GiftAttribute.html#pyrogram.types.GiftAttribute" title="pyrogram.types.GiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftAttribute</span></code></a>, <em>optional</em>) – Symbol of the upgraded gift.</p></li>
-<li><p><strong>backdrop</strong> (<a class="reference internal" href="GiftAttribute.html#pyrogram.types.GiftAttribute" title="pyrogram.types.GiftAttribute (Python class) — Contains information about a star gift attribute."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftAttribute</span></code></a>, <em>optional</em>) – Backdrop of the upgraded gift.</p></li>
-<li><p><strong>original_details</strong> (<a class="reference internal" href="UpgradedGiftOriginalDetails.html#pyrogram.types.UpgradedGiftOriginalDetails" title="pyrogram.types.UpgradedGiftOriginalDetails (Python class) — Describes the original details about the gift."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftOriginalDetails</span></code></a>, <em>optional</em>) – Information about the originally sent gift.</p></li>
-<li><p><strong>total_upgraded_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Total number of gifts that were upgraded from the same gift.</p></li>
-<li><p><strong>max_upgraded_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum number of gifts that can be upgraded from the same gift.</p></li>
-<li><p><strong>available_resale_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Total number of gifts that can be bought from other users on the market.</p></li>
-<li><p><strong>unique_gift_number</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique number of the gift among gifts upgraded from the same gift after upgrade.</p></li>
-<li><p><strong>unique_gift_variant_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The total number of different unique gifts that can be obtained by upgrading the gift.</p></li>
-<li><p><strong>star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid for the gift.</p></li>
-<li><p><strong>default_sell_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default.</p></li>
-<li><p><strong>convert_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that can be claimed by the receiver instead of the gift; omitted if the gift cannot be converted to Telegram Stars.</p></li>
-<li><p><strong>upgrade_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid to upgrade the gift.</p></li>
-<li><p><strong>transfer_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid to transfer the upgraded gift.</p></li>
-<li><p><strong>drop_original_details_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that must be paid to drop original details of the upgraded gift.</p></li>
-<li><p><strong>minimum_resell_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars for which sales begin on the market for the gift.</p></li>
-<li><p><strong>minimum_offer_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars required to make an offer for the gift.</p></li>
-<li><p><strong>prepaid_upgrade_star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.</p></li>
-<li><p><strong>prepaid_upgrade_hash</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If non-empty, then the user can pay for an upgrade of the gift using <a class="reference internal" href="../methods/buy_gift_upgrade.html#pyrogram.Client.buy_gift_upgrade" title="pyrogram.Client.buy_gift_upgrade (Python method) — Pays for upgrade of a regular gift that is owned by another user or channel chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">buy_gift_upgrade()</span></code></a>.</p></li>
-<li><p><strong>auction_info</strong> (<a class="reference internal" href="GiftAuction.html#pyrogram.types.GiftAuction" title="pyrogram.types.GiftAuction (Python class) — Describes an auction on which a gift can be purchased."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftAuction</span></code></a>, <em>optional</em>) – Information about the auction on which the gift can be purchased.</p></li>
-<li><p><strong>resale_parameters</strong> (<a class="reference internal" href="GiftResaleParameters.html#pyrogram.types.GiftResaleParameters" title="pyrogram.types.GiftResaleParameters (Python class) — Describes parameters of a unique gift available for resale."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftResaleParameters</span></code></a>, <em>optional</em>) – Resale parameters of the gift.</p></li>
-<li><p><strong>user_limits</strong> (<a class="reference internal" href="GiftPurchaseLimit.html#pyrogram.types.GiftPurchaseLimit" title="pyrogram.types.GiftPurchaseLimit (Python class) — Describes the maximum number of times that a specific gift can be purchased."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftPurchaseLimit</span></code></a>, <em>optional</em>) – Number of times the gift can be purchased by the current user.</p></li>
-<li><p><strong>overall_limits</strong> (<a class="reference internal" href="GiftPurchaseLimit.html#pyrogram.types.GiftPurchaseLimit" title="pyrogram.types.GiftPurchaseLimit (Python class) — Describes the maximum number of times that a specific gift can be purchased."><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftPurchaseLimit</span></code></a>, <em>optional</em>) – Number of times the gift can be purchased all users.</p></li>
-<li><p><strong>value_currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – ISO 4217 currency code of the currency in which value of the gift is represented.</p></li>
-<li><p><strong>value_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Estimated value of the gift; in the smallest units of the currency.</p></li>
-<li><p><strong>value_usd_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Estimated value of the gift in USD cents.</p></li>
-<li><p><strong>last_resale_currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For gifts bought from other users, the currency in which the payment for the gift was done.
+<li><p><strong>locked_until_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift will be available for purchase.</p></li>
+<li><p><strong>craft_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift can be used to craft another gift can be in the past.</p></li>
+<li><p><strong>sender (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – User or a chat that sent the gift.</p></li>
+<li><p><strong>receiver (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – User or a chat that received the gift.</p></li>
+<li><p><strong>host (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – User or the chat to which the upgraded gift was assigned from blockchain.</p></li>
+<li><p><strong>owner (:obj:`~pyrogram.types.Chat`, *optional*)</strong> – User or the chat that owns the gift.</p></li>
+<li><p><strong>owner_address (``str``, *optional*)</strong> – Address of the gift owner in TON blockchain.</p></li>
+<li><p><strong>owner_name (``str``, *optional*)</strong> – Name of the user who received the star gift.</p></li>
+<li><p><strong>gift_address (``str``, *optional*)</strong> – Address of the gift in TON blockchain.</p></li>
+<li><p><strong>title (``str``, *optional*)</strong> – The title of the upgraded gift.</p></li>
+<li><p><strong>name (``str``, *optional*)</strong> – Unique name of the upgraded gift.</p></li>
+<li><p><strong>model (:obj:`~pyrogram.types.GiftAttribute`, *optional*)</strong> – Model of the upgraded gift.</p></li>
+<li><p><strong>symbol (:obj:`~pyrogram.types.GiftAttribute`, *optional*)</strong> – Symbol of the upgraded gift.</p></li>
+<li><p><strong>backdrop (:obj:`~pyrogram.types.GiftAttribute`, *optional*)</strong> – Backdrop of the upgraded gift.</p></li>
+<li><p><strong>original_details (:obj:`~pyrogram.types.UpgradedGiftOriginalDetails`, *optional*)</strong> – Information about the originally sent gift.</p></li>
+<li><p><strong>total_upgraded_count (``int``, *optional*)</strong> – Total number of gifts that were upgraded from the same gift.</p></li>
+<li><p><strong>max_upgraded_count (``int``, *optional*)</strong> – The maximum number of gifts that can be upgraded from the same gift.</p></li>
+<li><p><strong>available_resale_count (``int``, *optional*)</strong> – Total number of gifts that can be bought from other users on the market.</p></li>
+<li><p><strong>unique_gift_number (``int``, *optional*)</strong> – Unique number of the gift among gifts upgraded from the same gift after upgrade.</p></li>
+<li><p><strong>unique_gift_variant_count (``int``, *optional*)</strong> – The total number of different unique gifts that can be obtained by upgrading the gift.</p></li>
+<li><p><strong>star_count (``int``, *optional*)</strong> – Number of Telegram Stars that must be paid for the gift.</p></li>
+<li><p><strong>default_sell_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that can be claimed by the receiver instead of the regular gift by default.</p></li>
+<li><p><strong>convert_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that can be claimed by the receiver instead of the gift; omitted if the gift cannot be converted to Telegram Stars.</p></li>
+<li><p><strong>upgrade_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that must be paid to upgrade the gift.</p></li>
+<li><p><strong>transfer_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that must be paid to transfer the upgraded gift.</p></li>
+<li><p><strong>drop_original_details_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that must be paid to drop original details of the upgraded gift.</p></li>
+<li><p><strong>minimum_resell_star_count (``int``, *optional*)</strong> – Number of Telegram Stars for which sales begin on the market for the gift.</p></li>
+<li><p><strong>minimum_offer_star_count (``int``, *optional*)</strong> – Number of Telegram Stars required to make an offer for the gift.</p></li>
+<li><p><strong>prepaid_upgrade_star_count (``int``, *optional*)</strong> – Number of Telegram Stars that were paid by the sender for the ability to upgrade the gift.</p></li>
+<li><p><strong>prepaid_upgrade_hash (``str``, *optional*)</strong> – If non-empty, then the user can pay for an upgrade of the gift using <a class="reference internal" href="../methods/buy_gift_upgrade.html#pyrogram.Client.buy_gift_upgrade" title="pyrogram.Client.buy_gift_upgrade (Python method) — Pays for upgrade of a regular gift that is owned by another user or channel chat."><code class="xref py py-meth docutils literal notranslate"><span class="pre">buy_gift_upgrade()</span></code></a>.</p></li>
+<li><p><strong>auction_info (:obj:`~pyrogram.types.GiftAuction`, *optional*)</strong> – Information about the auction on which the gift can be purchased.</p></li>
+<li><p><strong>resale_parameters (:obj:`~pyrogram.types.GiftResaleParameters`, *optional*)</strong> – Resale parameters of the gift.</p></li>
+<li><p><strong>user_limits (:obj:`~pyrogram.types.GiftPurchaseLimit`, *optional*)</strong> – Number of times the gift can be purchased by the current user.</p></li>
+<li><p><strong>overall_limits (:obj:`~pyrogram.types.GiftPurchaseLimit`, *optional*)</strong> – Number of times the gift can be purchased all users.</p></li>
+<li><p><strong>value_currency (``str``, *optional*)</strong> – ISO 4217 currency code of the currency in which value of the gift is represented.</p></li>
+<li><p><strong>value_amount (``int``, *optional*)</strong> – Estimated value of the gift; in the smallest units of the currency.</p></li>
+<li><p><strong>value_usd_amount (``int``, *optional*)</strong> – Estimated value of the gift in USD cents.</p></li>
+<li><p><strong>last_resale_currency (``str``, *optional*)</strong> – For gifts bought from other users, the currency in which the payment for the gift was done.
 Currently, one of “XTR” for Telegram Stars or “TON” for toncoins.</p></li>
-<li><p><strong>last_resale_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – For gifts bought from other users, the price paid for the gift in either Telegram Stars or nanotoncoins.</p></li>
-<li><p><strong>next_send_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift can be sent next time by the current user.</p></li>
-<li><p><strong>next_transfer_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift can be transferred to another owner.</p></li>
-<li><p><strong>next_resale_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift can be resold to another user.</p></li>
-<li><p><strong>export_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the gift can be transferred to the TON blockchain as an NFT.</p></li>
-<li><p><strong>collection_ids</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifiers of collections to which the gift is added.
+<li><p><strong>last_resale_amount (``int``, *optional*)</strong> – For gifts bought from other users, the price paid for the gift in either Telegram Stars or nanotoncoins.</p></li>
+<li><p><strong>next_send_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift can be sent next time by the current user.</p></li>
+<li><p><strong>next_transfer_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift can be transferred to another owner.</p></li>
+<li><p><strong>next_resale_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift can be resold to another user.</p></li>
+<li><p><strong>export_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the gift can be transferred to the TON blockchain as an NFT.</p></li>
+<li><p><strong>collection_ids (List of ``int``, *optional*)</strong> – Identifiers of collections to which the gift is added.
 Only for the receiver of the gift.</p></li>
-<li><p><strong>used_theme_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the chat for which the gift is used to set a theme.</p></li>
-<li><p><strong>craft_probability_per_mille</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Probability that the gift adds to the chance of successful crafting of a new gift.</p></li>
-<li><p><strong>has_colors</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be used to customize user’s name and backgrounds.</p></li>
-<li><p><strong>is_auction</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be purchased only on an auction.</p></li>
-<li><p><strong>is_private</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the sender and gift text are shown only to the gift receiver.</p></li>
-<li><p><strong>is_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is displayed on the chat’s profile page.</p></li>
-<li><p><strong>is_pinned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is pinned to the top of the chat’s profile page.</p></li>
-<li><p><strong>is_limited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the number of gifts is limited.</p></li>
-<li><p><strong>is_limited_per_user</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the number of gifts per user is limited.</p></li>
-<li><p><strong>is_sold_out</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is sold out.</p></li>
-<li><p><strong>is_burned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was used to craft another gift.</p></li>
-<li><p><strong>is_crafted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was craft from another gifts.</p></li>
-<li><p><strong>is_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be bought only by Telegram Premium subscribers.</p></li>
-<li><p><strong>is_for_birthday</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift is a birthday gift.</p></li>
-<li><p><strong>is_theme_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be used to set a theme in a chat.</p></li>
-<li><p><strong>is_upgrade_separate</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the upgrade was bought after the gift was sent.</p></li>
-<li><p><strong>is_name_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the owner name of the gift is hidden.</p></li>
-<li><p><strong>can_be_upgraded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift can be upgraded to a unique gift.</p></li>
-<li><p><strong>can_be_transferred</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the upgraded gift can be transferred to another owner.</p></li>
-<li><p><strong>can_send_purchase_offer</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if an offer to purchase the gift can be sent using <a class="reference internal" href="../methods/send_gift_purchase_offer.html#pyrogram.Client.send_gift_purchase_offer" title="pyrogram.Client.send_gift_purchase_offer (Python method) — Sends an offer to purchase an upgraded gift."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_gift_purchase_offer()</span></code></a>.</p></li>
-<li><p><strong>was_converted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was converted to Telegram Stars.
+<li><p><strong>used_theme_chat_id (``int``, *optional*)</strong> – Identifier of the chat for which the gift is used to set a theme.</p></li>
+<li><p><strong>craft_probability_per_mille (``int``, *optional*)</strong> – Probability that the gift adds to the chance of successful crafting of a new gift.</p></li>
+<li><p><strong>has_colors (``bool``, *optional*)</strong> – True, if the gift can be used to customize user’s name and backgrounds.</p></li>
+<li><p><strong>is_auction (``bool``, *optional*)</strong> – True, if the gift can be purchased only on an auction.</p></li>
+<li><p><strong>is_private (``bool``, *optional*)</strong> – True, if the sender and gift text are shown only to the gift receiver.</p></li>
+<li><p><strong>is_saved (``bool``, *optional*)</strong> – True, if the gift is displayed on the chat’s profile page.</p></li>
+<li><p><strong>is_pinned (``bool``, *optional*)</strong> – True, if the gift is pinned to the top of the chat’s profile page.</p></li>
+<li><p><strong>is_limited (``bool``, *optional*)</strong> – True, if the number of gifts is limited.</p></li>
+<li><p><strong>is_limited_per_user (``bool``, *optional*)</strong> – True, if the number of gifts per user is limited.</p></li>
+<li><p><strong>is_sold_out (``bool``, *optional*)</strong> – True, if the gift is sold out.</p></li>
+<li><p><strong>is_burned (``bool``, *optional*)</strong> – True, if the gift was used to craft another gift.</p></li>
+<li><p><strong>is_crafted (``bool``, *optional*)</strong> – True, if the gift was craft from another gifts.</p></li>
+<li><p><strong>is_premium (``bool``, *optional*)</strong> – True, if the gift can be bought only by Telegram Premium subscribers.</p></li>
+<li><p><strong>is_for_birthday (``bool``, *optional*)</strong> – True, if the gift is a birthday gift.</p></li>
+<li><p><strong>is_theme_available (``bool``, *optional*)</strong> – True, if the gift can be used to set a theme in a chat.</p></li>
+<li><p><strong>is_upgrade_separate (``bool``, *optional*)</strong> – True, if the upgrade was bought after the gift was sent.</p></li>
+<li><p><strong>is_name_hidden (``bool``, *optional*)</strong> – True, if the owner name of the gift is hidden.</p></li>
+<li><p><strong>can_be_upgraded (``bool``, *optional*)</strong> – True, if the gift can be upgraded to a unique gift.</p></li>
+<li><p><strong>can_be_transferred (``bool``, *optional*)</strong> – True, if the upgraded gift can be transferred to another owner.</p></li>
+<li><p><strong>can_send_purchase_offer (``bool``, *optional*)</strong> – True, if an offer to purchase the gift can be sent using <a class="reference internal" href="../methods/send_gift_purchase_offer.html#pyrogram.Client.send_gift_purchase_offer" title="pyrogram.Client.send_gift_purchase_offer (Python method) — Sends an offer to purchase an upgraded gift."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_gift_purchase_offer()</span></code></a>.</p></li>
+<li><p><strong>was_converted (``bool``, *optional*)</strong> – True, if the gift was converted to Telegram Stars.
 Only for the receiver of the gift.</p></li>
-<li><p><strong>was_upgraded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was upgraded to a unique gift.</p></li>
-<li><p><strong>was_refunded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the gift was refunded and isn’t available anymore.</p></li>
-<li><p><strong>raw</strong> (<a class="reference internal" href="../../telegram/base/star-gift.html#pyrogram.raw.base.StarGift" title="pyrogram.raw.base.StarGift (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGift</span></code></a> | <a class="reference internal" href="../../telegram/base/saved-star-gift.html#pyrogram.raw.base.SavedStarGift" title="pyrogram.raw.base.SavedStarGift (Python class) — Telegram API base type."><code class="xref py py-obj docutils literal notranslate"><span class="pre">SavedStarGift</span></code></a>) – The raw object as received from the server.</p></li>
-<li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – A link to the gift.</p></li>
-<li><p><strong>owned_gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Unique identifier of the gift.</p></li>
+<li><p><strong>was_upgraded (``bool``, *optional*)</strong> – True, if the gift was upgraded to a unique gift.</p></li>
+<li><p><strong>was_refunded (``bool``, *optional*)</strong> – True, if the gift was refunded and isn’t available anymore.</p></li>
+<li><p><strong>raw (:obj:`~pyrogram.raw.base.StarGift` | :obj:`~pyrogram.raw.base.SavedStarGift`)</strong> – The raw object as received from the server.</p></li>
+<li><p><strong>link (``str``, *property*)</strong> – A link to the gift.</p></li>
+<li><p><strong>owned_gift_id (``str``, *property*)</strong> – Unique identifier of the gift.</p></li>
 </ul>
 </dd>
 </dl>

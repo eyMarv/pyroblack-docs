@@ -2382,22 +2382,22 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.save_file-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.save_file-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>path</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>) – The path of the file you want to upload that exists on your local machine or a binary file-like object
+<li><p><strong>path (``str`` | ``BinaryIO``)</strong> – The path of the file you want to upload that exists on your local machine or a binary file-like object
 with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>file_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – In case a file part expired, pass the file_id and the file_part to retry uploading that specific chunk.</p></li>
-<li><p><strong>file_part</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – In case a file part expired, pass the file_id and the file_part to retry uploading that specific chunk.</p></li>
-<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+<li><p><strong>file_id (``int``, *optional*)</strong> – In case a file part expired, pass the file_id and the file_part to retry uploading that specific chunk.</p></li>
+<li><p><strong>file_part (``int``, *optional*)</strong> – In case a file part expired, pass the file_id and the file_part to retry uploading that specific chunk.</p></li>
+<li><p><strong>progress (``Callable``, *optional*)</strong> – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
 detailed description) and will be called back each time a new file chunk has been successfully
 transmitted.</p></li>
-<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.</p></li>
+<li><p><strong>progress_args (``tuple``, *optional*)</strong> – Extra custom arguments for the progress callback function.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.save_file-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.save_file-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">InputFile</span> <span class="pre">|</span> <span class="pre">InputFileBig</span></code> – On success, the uploaded file is returned.</p>
+<dd class="field-even"><p><strong>``InputFile | InputFileBig``</strong> (<em>On success, the uploaded file is returned.</em>)</p>
 </dd>
 <dt class="field-odd" id="pyrogram.Client.save_file-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.save_file-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.:</p>
 </dd>
 </dl>
 </dd></dl>

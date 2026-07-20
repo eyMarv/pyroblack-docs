@@ -4185,14 +4185,14 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.add_paid_message_reaction-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.add_paid_message_reaction-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Identifier of the target message. If the message belongs to a media group, the reaction is set to the first non-deleted message in the group instead.</p></li>
-<li><p><strong>star_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of Telegram Stars to be used for the reaction; 1-2500.</p></li>
-<li><p><strong>paid_reaction_type</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidReactionType</span></code>, <em>optional</em>) – Type of the paid reaction; pass None if the user didn’t choose reaction type explicitly, for example, the reaction is set from the message bubble.</p></li>
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>message_id (``int``)</strong> – Identifier of the target message. If the message belongs to a media group, the reaction is set to the first non-deleted message in the group instead.</p></li>
+<li><p><strong>star_count (``int``, *optional*)</strong> – Number of Telegram Stars to be used for the reaction; 1-2500.</p></li>
+<li><p><strong>paid_reaction_type (:obj:`~pyrogram.types.PaidReactionType`, *optional*)</strong> – Type of the paid reaction; pass None if the user didn’t choose reaction type explicitly, for example, the reaction is set from the message bubble.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.add_paid_message_reaction-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.add_paid_message_reaction-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p>On success, <a class="reference internal" href="../types/MessageReactions.html#pyrogram.types.MessageReactions" title="pyrogram.types.MessageReactions (Python class) — Contains information about a message reactions."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReactions</span></code></a> – is returned.</p>
+<dd class="field-even"><p><strong>On success, :obj:`~pyrogram.types.MessageReactions`</strong> (<em>is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

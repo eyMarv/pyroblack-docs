@@ -3029,46 +3029,46 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_story-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_story-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.</p></li>
-<li><p><strong>media</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>) – Video or photo to send.
+<li><p><strong>media (``str`` | ``BinaryIO``)</strong> – Video or photo to send.
 Pass a file_id as string to send a animation that exists on the Telegram servers,
 pass a file path as string to upload a new animation that exists on your local machine, or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Story caption, 0-1024 characters.</p></li>
-<li><p><strong>period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Period after which the story is moved to archive (and to the profile if pinned is set), in seconds.
+<li><p><strong>caption (``str``, *optional*)</strong> – Story caption, 0-1024 characters.</p></li>
+<li><p><strong>period (``int``, *optional*)</strong> – Period after which the story is moved to archive (and to the profile if pinned is set), in seconds.
 Must be one of <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">*</span> <span class="pre">3600</span></code>, <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">*</span> <span class="pre">3600</span></code>, <code class="docutils literal notranslate"><span class="pre">86400</span></code>, or <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">86400</span></code> for Telegram Premium users,
 and 86400 otherwise.</p></li>
-<li><p><strong>media_areas</strong> (List of <a class="reference internal" href="../types/MediaArea.html#pyrogram.types.MediaArea" title="pyrogram.types.MediaArea (Python class) — Content of a media areas in story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a>, <em>optional</em>) – List of media areas to add to the story.</p></li>
-<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Duration of sent video in seconds.</p></li>
-<li><p><strong>width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Video width.</p></li>
-<li><p><strong>height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Video height.</p></li>
-<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Thumbnail of the video sent.
+<li><p><strong>media_areas (List of :obj:`~pyrogram.types.MediaArea`, *optional*)</strong> – List of media areas to add to the story.</p></li>
+<li><p><strong>duration (``int``, *optional*)</strong> – Duration of sent video in seconds.</p></li>
+<li><p><strong>width (``int``, *optional*)</strong> – Video width.</p></li>
+<li><p><strong>height (``int``, *optional*)</strong> – Video height.</p></li>
+<li><p><strong>thumb (``str`` | ``BinaryIO``, *optional*)</strong> – Thumbnail of the video sent.
 The thumbnail should be in JPEG format and less than 200 KB in size.
 A thumbnail’s width and height should not exceed 320 pixels.
 Thumbnails can’t be reused and can be only uploaded as a new file.</p></li>
-<li><p><strong>supports_streaming</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the uploaded video is suitable for streaming.
+<li><p><strong>supports_streaming (``bool``, *optional*)</strong> – True, if the uploaded video is suitable for streaming.
 Defaults to True.</p></li>
-<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – File name of the story sent.</p></li>
-<li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules" title="pyrogram.enums.StoriesPrivacyRules (Python class) — Stories privacy rules type enumeration used in send_story() and edit_story()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code></a>, <em>optional</em>) – Story privacy.
+<li><p><strong>file_name (``str``, *optional*)</strong> – File name of the story sent.</p></li>
+<li><p><strong>privacy (:obj:`~pyrogram.enums.StoriesPrivacyRules`, *optional*)</strong> – Story privacy.
 Defaults to <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a></p></li>
-<li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id or chat_id of chat users who are allowed to view stories.
+<li><p><strong>allowed_users (List of ``int``, *optional*)</strong> – List of user_id or chat_id of chat users who are allowed to view stories.
 Note: chat_id available only with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS" title="pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS (Python attribute) — Selected users stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SELECTED_USERS</span></code></a>.
 Works with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.CLOSE_FRIENDS" title="pyrogram.enums.StoriesPrivacyRules.CLOSE_FRIENDS (Python attribute) — Close_Friends stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CLOSE_FRIENDS</span></code></a>
 and <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS" title="pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS (Python attribute) — Selected users stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SELECTED_USERS</span></code></a> only</p></li>
-<li><p><strong>disallowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – List of user_id whos disallow to view the stories.
+<li><p><strong>disallowed_users (List of ``int``, *optional*)</strong> – List of user_id whos disallow to view the stories.
 Note: Works with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a>
 and <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.CONTACTS" title="pyrogram.enums.StoriesPrivacyRules.CONTACTS (Python attribute) — Contacts only stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONTACTS</span></code></a> only</p></li>
-<li><p><strong>pinned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the story will be pinned.</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent story from forwarding and saving.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>pinned (``bool``, *optional*)</strong> – If True, the story will be pinned.</p></li>
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Protects the contents of the sent story from forwarding and saving.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>progress (``Callable``, *optional*)</strong> – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
 detailed description) and will be called back each time a new file chunk has been successfully
 transmitted.</p></li>
-<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.
+<li><p><strong>progress_args (``tuple``, *optional*)</strong> – Extra custom arguments for the progress callback function.
 You can pass anything you need to be available in the progress callback scope; for example, a Message
 object or a Client instance in order to edit the message with the updated progress status.</p></li>
 </ul>
@@ -3087,7 +3087,7 @@ object or a Client instance in order to edit the message with the updated progre
 </div>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.send_story-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.send_story-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.:</p>
 </dd>
 </dl>
 </dd></dl>

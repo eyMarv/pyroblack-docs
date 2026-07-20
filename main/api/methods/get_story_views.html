@@ -3009,20 +3009,20 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_story_views-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_story_views-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Pass a story identifier to get the story views.</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Offset of the results to be returned.</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Maximum number of views to return.</p></li>
-<li><p><strong>contacts_only</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Only Get views made by your contacts, Defaults to False.</p></li>
-<li><p><strong>reactions_first</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, return reactions first, Defaults to False.</p></li>
-<li><p><strong>forwards_first</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, return forwards first, Defaults to False.</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Search for specific users.</p></li>
+<li><p><strong>story_id (``int``)</strong> – Pass a story identifier to get the story views.</p></li>
+<li><p><strong>offset (``str``, *optional*)</strong> – Offset of the results to be returned.</p></li>
+<li><p><strong>limit (``int``, *optional*)</strong> – Maximum number of views to return.</p></li>
+<li><p><strong>contacts_only (``bool``, *optional*)</strong> – Only Get views made by your contacts, Defaults to False.</p></li>
+<li><p><strong>reactions_first (``bool``, *optional*)</strong> – If True, return reactions first, Defaults to False.</p></li>
+<li><p><strong>forwards_first (``bool``, *optional*)</strong> – If True, return forwards first, Defaults to False.</p></li>
+<li><p><strong>query (``str``, *optional*)</strong> – Search for specific users.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_story_views-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_story_views-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryView</span></code> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryView</span></code> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

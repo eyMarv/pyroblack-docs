@@ -3321,25 +3321,25 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_chat_gifts-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_gifts-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>collection_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pass collection identifier to get gifts only from the specified collection.</p></li>
-<li><p><strong>exclude_unsaved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to exclude gifts that aren’t saved to the account’s profile page.</p></li>
-<li><p><strong>exclude_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to exclude gifts that are saved to the account’s profile page.</p></li>
-<li><p><strong>exclude_unlimited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to exclude gifts that can be purchased an unlimited number of times.</p></li>
-<li><p><strong>exclude_upgradable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass true to exclude gifts that can be purchased limited number of times and can be upgraded.</p></li>
-<li><p><strong>exclude_non_upgradable</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass true to exclude gifts that can be purchased limited number of times and can’t be upgraded.</p></li>
-<li><p><strong>exclude_upgraded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to exclude upgraded gifts.</p></li>
-<li><p><strong>exclude_without_colors</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to exclude gifts that can’t be used in <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_upgraded_gift_colors()</span></code>.</p></li>
-<li><p><strong>exclude_hosted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to exclude gifts that are just hosted and are not owned by the owner.</p></li>
-<li><p><strong>sort_by_price</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to sort results by gift price instead of send date. Sorting is applied before pagination.</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Offset of the first entry to return as received from the previous request.</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum number of gifts to be returned.</p></li>
+<li><p><strong>collection_id (``int``, *optional*)</strong> – Pass collection identifier to get gifts only from the specified collection.</p></li>
+<li><p><strong>exclude_unsaved (``bool``, *optional*)</strong> – Pass True to exclude gifts that aren’t saved to the account’s profile page.</p></li>
+<li><p><strong>exclude_saved (``bool``, *optional*)</strong> – Pass True to exclude gifts that are saved to the account’s profile page.</p></li>
+<li><p><strong>exclude_unlimited (``bool``, *optional*)</strong> – Pass True to exclude gifts that can be purchased an unlimited number of times.</p></li>
+<li><p><strong>exclude_upgradable (``bool``, *optional*)</strong> – Pass true to exclude gifts that can be purchased limited number of times and can be upgraded.</p></li>
+<li><p><strong>exclude_non_upgradable (``bool``, *optional*)</strong> – Pass true to exclude gifts that can be purchased limited number of times and can’t be upgraded.</p></li>
+<li><p><strong>exclude_upgraded (``bool``, *optional*)</strong> – Pass True to exclude upgraded gifts.</p></li>
+<li><p><strong>exclude_without_colors (``bool``, *optional*)</strong> – Pass True to exclude gifts that can’t be used in <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_upgraded_gift_colors()</span></code>.</p></li>
+<li><p><strong>exclude_hosted (``bool``, *optional*)</strong> – Pass True to exclude gifts that are just hosted and are not owned by the owner.</p></li>
+<li><p><strong>sort_by_price (``bool``, *optional*)</strong> – Pass True to sort results by gift price instead of send date. Sorting is applied before pagination.</p></li>
+<li><p><strong>offset (``str``, *optional*)</strong> – Offset of the first entry to return as received from the previous request.</p></li>
+<li><p><strong>limit (``int``, *optional*)</strong> – The maximum number of gifts to be returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_chat_gifts-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_gifts-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/Gift.html#pyrogram.types.Gift" title="pyrogram.types.Gift (Python class) — Describes a gift or an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gift</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/Gift.html#pyrogram.types.Gift" title="pyrogram.types.Gift (Python class) — Describes a gift or an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gift</span></code></a> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

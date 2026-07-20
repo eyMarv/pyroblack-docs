@@ -1570,7 +1570,7 @@
       <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.Client.get_forum_topics (Python method) — Get one or more topic from a chat. Returns found forum topics in a forum chat. This is a temporary method for getting information about topic list from the server"><span>Client.<wbr>get_<wbr>forum_<wbr>topics</span></span>
+      <span title="pyrogram.Client.get_forum_topics (Python method) — Get one or more topic from a chat. Returns found forum topics in a forum chat. This is a temporary method for getting information about topic list from the server."><span>Client.<wbr>get_<wbr>forum_<wbr>topics</span></span>
     </span>
   </a>
   
@@ -3981,7 +3981,7 @@
       <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.Client.get_forum_topics (Python method) — Get one or more topic from a chat. Returns found forum topics in a forum chat. This is a temporary method for getting information about topic list from the server"><span>Client.<wbr>get_<wbr>forum_<wbr>topics</span></span>
+      <span title="pyrogram.Client.get_forum_topics (Python method) — Get one or more topic from a chat. Returns found forum topics in a forum chat. This is a temporary method for getting information about topic list from the server."><span>Client.<wbr>get_<wbr>forum_<wbr>topics</span></span>
     </span>
   </a>
   
@@ -4035,7 +4035,7 @@
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">get_forum_topics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.get_forum_topics" title="Link to this definition">¶</a></dt>
 <dd><p>Get one or more topic from a chat.
 Returns found forum topics in a forum chat.
-This is a temporary method for getting information about topic list from the server</p>
+This is a temporary method for getting information about topic list from the server.</p>
 <blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
@@ -4043,18 +4043,18 @@ This is a temporary method for getting information about topic list from the ser
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_forum_topics-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topics-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Query to search for in the forum topic’s name</p></li>
-<li><p><strong>offset_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic</p></li>
-<li><p><strong>offset_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The message identifier of the last message in the last found topic, or 0 for the first request</p></li>
-<li><p><strong>offset_message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The message thread identifier of the last found topic, or 0 for the first request</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum number of forum topics to be returned; up to 100.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>query (``str``, *optional*)</strong> – Query to search for in the forum topic’s name</p></li>
+<li><p><strong>offset_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic</p></li>
+<li><p><strong>offset_message_id (``int``, *optional*)</strong> – The message identifier of the last message in the last found topic, or 0 for the first request</p></li>
+<li><p><strong>offset_message_thread_id (``int``, *optional*)</strong> – The message thread identifier of the last found topic, or 0 for the first request</p></li>
+<li><p><strong>limit (``int``, *optional*)</strong> – The maximum number of forum topics to be returned; up to 100.
 For optimal performance, the number of returned forum topics is chosen by Telegram Server and can be smaller than the specified limit
 By default, no limit is applied and all topics are returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_forum_topics-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_forum_topics-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/ForumTopic.html#pyrogram.types.ForumTopic" title="pyrogram.types.ForumTopic (Python class) — A forum topic."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

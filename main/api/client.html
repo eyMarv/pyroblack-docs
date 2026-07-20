@@ -1785,96 +1785,96 @@ found starting from this page.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – A name for the client, e.g.: “my_account”.</p></li>
-<li><p><strong>api_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The <em>api_id</em> part of the Telegram API key, as integer or string.
+<li><p><strong>name (``str``)</strong> – A name for the client, e.g.: “my_account”.</p></li>
+<li><p><strong>api_id (``int`` | ``str``, *optional*)</strong> – The <em>api_id</em> part of the Telegram API key, as integer or string.
 E.g.: 12345 or “12345”.</p></li>
-<li><p><strong>api_hash</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The <em>api_hash</em> part of the Telegram API key, as string.
+<li><p><strong>api_hash (``str``, *optional*)</strong> – The <em>api_hash</em> part of the Telegram API key, as string.
 E.g.: “0123456789abcdef0123456789abcdef”.</p></li>
-<li><p><strong>app_version</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Application version.
+<li><p><strong>app_version (``str``, *optional*)</strong> – Application version.
 Defaults to “Pyrogram x.y.z”.</p></li>
-<li><p><strong>device_model</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Device model.
+<li><p><strong>device_model (``str``, *optional*)</strong> – Device model.
 Defaults to <em>platform.python_implementation() + “ “ + platform.python_version()</em>.</p></li>
-<li><p><strong>system_version</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Operating System version.
+<li><p><strong>system_version (``str``, *optional*)</strong> – Operating System version.
 Defaults to <em>platform.system() + “ “ + platform.release()</em>.</p></li>
-<li><p><strong>lang_pack</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Name of the language pack used on the client.
+<li><p><strong>lang_pack (``str``, *optional*)</strong> – Name of the language pack used on the client.
 Defaults to “” (empty string).</p></li>
-<li><p><strong>lang_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Code of the language used on the client, in ISO 639-1 standard.
+<li><p><strong>lang_code (``str``, *optional*)</strong> – Code of the language used on the client, in ISO 639-1 standard.
 Defaults to “en”.</p></li>
-<li><p><strong>system_lang_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Code of the language used on the system, in ISO 639-1 standard.
+<li><p><strong>system_lang_code (``str``, *optional*)</strong> – Code of the language used on the system, in ISO 639-1 standard.
 Defaults to “en”.</p></li>
-<li><p><strong>ipv6</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to connect to Telegram using IPv6.
+<li><p><strong>ipv6 (``bool``, *optional*)</strong> – Pass True to connect to Telegram using IPv6.
 Defaults to False (IPv4).</p></li>
-<li><p><strong>proxy</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>, <em>optional</em>) – The Proxy settings as dict.
+<li><p><strong>proxy (``dict``, *optional*)</strong> – The Proxy settings as dict.
 E.g.: <em>dict(scheme=”socks5”, hostname=”11.22.33.44”, port=1234, username=”user”, password=”pass”)</em>.
 The <em>username</em> and <em>password</em> can be omitted if the proxy doesn’t require authorization.</p></li>
-<li><p><strong>test_mode</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Enable or disable login to the test servers.
+<li><p><strong>test_mode (``bool``, *optional*)</strong> – Enable or disable login to the test servers.
 Only applicable for new sessions and will be ignored in case previously created sessions are loaded.
 Defaults to False.</p></li>
-<li><p><strong>bot_token</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the Bot API token to create a bot session, e.g.: “123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11”
+<li><p><strong>bot_token (``str``, *optional*)</strong> – Pass the Bot API token to create a bot session, e.g.: “123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11”
 Only applicable for new sessions.</p></li>
-<li><p><strong>session_string</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass a session string to load the session from a session string.
+<li><p><strong>session_string (``str``, *optional*)</strong> – Pass a session string to load the session from a session string.
 Do you want a .session file? Use <code class="docutils literal notranslate"><span class="pre">in_memory=False</span></code>,
 for in-memory use <code class="docutils literal notranslate"><span class="pre">in_memory=True</span></code>.</p></li>
-<li><p><strong>is_telethon_string</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">True</span></code> if your provided session_string is in the telethon format.
+<li><p><strong>is_telethon_string (``bool``, *optional*)</strong> – <code class="docutils literal notranslate"><span class="pre">True</span></code> if your provided session_string is in the telethon format.
 Requires <code class="docutils literal notranslate"><span class="pre">session_string</span></code> to be filled.</p></li>
-<li><p><strong>use_qrcode</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to sign in using a QR code.
+<li><p><strong>use_qrcode (``bool``, *optional*)</strong> – Pass True to sign in using a QR code.
 Defaults to False.</p></li>
-<li><p><strong>in_memory</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to start an in-memory session that will be discarded as soon as the client stops.
+<li><p><strong>in_memory (``bool``, *optional*)</strong> – Pass True to start an in-memory session that will be discarded as soon as the client stops.
 In order to reconnect again using an in-memory session without having to login again, you can use
 <a class="reference internal" href="methods/export_session_string.html#pyrogram.Client.export_session_string" title="pyrogram.Client.export_session_string (Python method) — Export the current authorized session as a serialized string."><code class="xref py py-meth docutils literal notranslate"><span class="pre">export_session_string()</span></code></a> before stopping the client to get a session string you can
 pass to the <code class="docutils literal notranslate"><span class="pre">session_string</span></code> parameter.
 Defaults to False.</p></li>
-<li><p><strong>alt_port</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to connect to Telegram using alternative port (5222).
+<li><p><strong>alt_port (``bool``, *optional*)</strong> – Pass True to connect to Telegram using alternative port (5222).
 Defaults to False (443).</p></li>
-<li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the phone number as string (with the Country Code prefix included) to avoid entering it manually.
+<li><p><strong>phone_number (``str``, *optional*)</strong> – Pass the phone number as string (with the Country Code prefix included) to avoid entering it manually.
 Only applicable for new sessions.</p></li>
-<li><p><strong>phone_code</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the phone code as string (for test numbers only) to avoid entering it manually.
+<li><p><strong>phone_code (``str``, *optional*)</strong> – Pass the phone code as string (for test numbers only) to avoid entering it manually.
 Only applicable for new sessions.</p></li>
-<li><p><strong>password</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass the Two-Step Verification password as string (if required) to avoid entering it manually.
+<li><p><strong>password (``str``, *optional*)</strong> – Pass the Two-Step Verification password as string (if required) to avoid entering it manually.
 Only applicable for new sessions.</p></li>
-<li><p><strong>workers</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Number of maximum concurrent workers for handling incoming updates.
+<li><p><strong>workers (``int``, *optional*)</strong> – Number of maximum concurrent workers for handling incoming updates.
 Defaults to <code class="docutils literal notranslate"><span class="pre">min(32,</span> <span class="pre">os.cpu_count()</span> <span class="pre">+</span> <span class="pre">4)</span></code>.</p></li>
-<li><p><strong>workdir</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Define a custom working directory.
+<li><p><strong>workdir (``str``, *optional*)</strong> – Define a custom working directory.
 The working directory is the location in the filesystem where Pyrogram will store the session files.
 Defaults to the parent directory of the main script.</p></li>
-<li><p><strong>plugins</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>, <em>optional</em>) – Smart Plugins settings as dict, e.g.: <em>dict(root=”plugins”)</em>.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – Set the global parse mode of the client. By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>plugins (``dict``, *optional*)</strong> – Smart Plugins settings as dict, e.g.: <em>dict(root=”plugins”)</em>.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – Set the global parse mode of the client. By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>no_updates</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to disable incoming updates.
+<li><p><strong>no_updates (``bool``, *optional*)</strong> – Pass True to disable incoming updates.
 When updates are disabled the client can’t receive messages or other updates.
 Useful for batch programs that don’t need to deal with updates.
 Defaults to False (updates enabled and received).</p></li>
-<li><p><strong>skip_updates</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to skip pending updates that arrived while the client was offline.
+<li><p><strong>skip_updates (``bool``, *optional*)</strong> – Pass True to skip pending updates that arrived while the client was offline.
 Defaults to True.</p></li>
-<li><p><strong>takeout</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to let the client use a takeout session instead of a normal one, implies <em>no_updates=True</em>.
+<li><p><strong>takeout (``bool``, *optional*)</strong> – Pass True to let the client use a takeout session instead of a normal one, implies <em>no_updates=True</em>.
 Useful for exporting Telegram data. Methods invoked inside a takeout session (such as get_chat_history,
 download_media, …) are less prone to throw FloodWait exceptions.
 Only available for users, bots will ignore this parameter.
 Defaults to False (normal session).</p></li>
-<li><p><strong>sleep_threshold</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Set a sleep threshold for flood wait exceptions happening globally in this client instance, below which any
+<li><p><strong>sleep_threshold (``int``, *optional*)</strong> – Set a sleep threshold for flood wait exceptions happening globally in this client instance, below which any
 request that raises a flood wait will be automatically invoked again after sleeping for the required amount
 of time. Flood wait exceptions requiring higher waiting times will be raised.
 Defaults to 10 seconds.</p></li>
-<li><p><strong>hide_password</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to hide the password when typing it during the login.
+<li><p><strong>hide_password (``bool``, *optional*)</strong> – Pass True to hide the password when typing it during the login.
 Defaults to False, because <code class="docutils literal notranslate"><span class="pre">getpass</span></code> (the library used) is known to be problematic in some
 terminal environments.</p></li>
-<li><p><strong>max_concurrent_transmissions</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Set the maximum amount of concurrent transmissions (uploads &amp; downloads).
+<li><p><strong>max_concurrent_transmissions (``int``, *optional*)</strong> – Set the maximum amount of concurrent transmissions (uploads &amp; downloads).
 A value that is too high may result in network related issues.
 Defaults to 1.</p></li>
-<li><p><strong>max_message_cache_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Set the maximum size of the message cache.
+<li><p><strong>max_message_cache_size (``int``, *optional*)</strong> – Set the maximum size of the message cache.
 Defaults to 10000.</p></li>
-<li><p><strong>max_business_user_connection_cache_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Set the maximum size of the message cache.
+<li><p><strong>max_business_user_connection_cache_size (``int``, *optional*)</strong> – Set the maximum size of the message cache.
 Defaults to 10000.</p></li>
-<li><p><strong>storage_engine</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Storage</span></code>, <em>optional</em>) – Pass an instance of your own implementation of session storage engine.
+<li><p><strong>storage_engine (:obj:`~pyrogram.storage.Storage`, *optional*)</strong> – Pass an instance of your own implementation of session storage engine.
 Useful when you want to store your session in databases like Mongo, Redis, etc.
 <a class="reference internal" href="../topics/storage-engines.html"><span class="doc">Storage Engines</span></a></p></li>
-<li><p><strong>no_joined_notifications</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to disable notification about the current user joining Telegram for other users that added them to contact list.
+<li><p><strong>no_joined_notifications (``bool``, *optional*)</strong> – Pass True to disable notification about the current user joining Telegram for other users that added them to contact list.
 Pass False to Notify people on Telegram who know my phone number that I signed up.
 Defaults to False</p></li>
-<li><p><strong>client_platform</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientPlatform</span></code>, <em>optional</em>) – The platform where this client is running.
+<li><p><strong>client_platform (:obj:`~pyrogram.enums.ClientPlatform`, *optional*)</strong> – The platform where this client is running.
 Defaults to ‘other’</p></li>
-<li><p><strong>link_preview_options</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkPreviewOptions</span></code>, <em>optional</em>) – Set the global link preview options for the client. By default, no link preview option is set.</p></li>
-<li><p><strong>fetch_replies</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Set the number of replies to be fetched when parsing the <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> object. Defaults to 1.
+<li><p><strong>link_preview_options (:obj:`~pyrogram.types.LinkPreviewOptions`, *optional*)</strong> – Set the global link preview options for the client. By default, no link preview option is set.</p></li>
+<li><p><strong>fetch_replies (``int``, *optional*)</strong> – Set the number of replies to be fetched when parsing the <a class="reference internal" href="types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> object. Defaults to 1.
 <a class="reference internal" href="errors/index.html"><span class="doc">More on Errors</span></a></p></li>
 </ul>
 </dd>

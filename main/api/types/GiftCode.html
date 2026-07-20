@@ -4593,21 +4593,21 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.GiftCode-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.GiftCode-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>via_giveaway</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True if the gift code is received via giveaway.</p></li>
-<li><p><strong>is_unclaimed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – True, if the winner for the corresponding Telegram Premium subscription wasn’t chosen.
+<li><p><strong>via_giveaway (``bool``)</strong> – True if the gift code is received via giveaway.</p></li>
+<li><p><strong>is_unclaimed (``bool``)</strong> – True, if the winner for the corresponding Telegram Premium subscription wasn’t chosen.
 <a class="reference external" href="https://telegram.org/tos/in#7-8-giveaways-in-channels">The code is received by creator of a chat, which started the giveaway that had less winners than planned.</a></p></li>
-<li><p><strong>boosted_chat</strong> (<a class="reference internal" href="Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – The channel where the gift code was won.</p></li>
-<li><p><strong>premium_subscription_month_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Number of months of subscription.</p></li>
-<li><p><strong>slug</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier of gift code.
+<li><p><strong>boosted_chat (:obj:`~pyrogram.types.Chat`)</strong> – The channel where the gift code was won.</p></li>
+<li><p><strong>premium_subscription_month_count (``int``)</strong> – Number of months of subscription.</p></li>
+<li><p><strong>slug (``str``)</strong> – Identifier of gift code.
 You can combine it with <cite>t.me/giftcode/{slug}</cite>
 to get link for this gift.</p></li>
-<li><p><strong>currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Currency for the paid amount</p></li>
-<li><p><strong>amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The paid amount, in the smallest units of the currency</p></li>
-<li><p><strong>cryptocurrency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Cryptocurrency used to pay for the gift; may be empty if none</p></li>
-<li><p><strong>cryptocurrency_amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The paid amount, in the smallest units of the cryptocurrency; 0 if none</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text message chosen by the sender.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Entities of the text message.</p></li>
-<li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a link to this gift code.</p></li>
+<li><p><strong>currency (``str``)</strong> – Currency for the paid amount</p></li>
+<li><p><strong>amount (``int``)</strong> – The paid amount, in the smallest units of the currency</p></li>
+<li><p><strong>cryptocurrency (``str``)</strong> – Cryptocurrency used to pay for the gift; may be empty if none</p></li>
+<li><p><strong>cryptocurrency_amount (``int``)</strong> – The paid amount, in the smallest units of the cryptocurrency; 0 if none</p></li>
+<li><p><strong>caption (``str``, *optional*)</strong> – Text message chosen by the sender.</p></li>
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`, *optional*)</strong> – Entities of the text message.</p></li>
+<li><p><strong>link (``str``, *property*)</strong> – Generate a link to this gift code.</p></li>
 </ul>
 </dd>
 </dl>

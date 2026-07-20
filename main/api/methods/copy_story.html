@@ -3009,34 +3009,34 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.copy_story-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.copy_story-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.</p></li>
-<li><p><strong>from_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the source chat where the original message was sent.
+<li><p><strong>from_chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the source chat where the original message was sent.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Message identifier in the chat specified in <em>from_chat_id</em>.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – New caption for story, 0-1024 characters after entities parsing.
+<li><p><strong>story_id (``int``)</strong> – Message identifier in the chat specified in <em>from_chat_id</em>.</p></li>
+<li><p><strong>caption (``str``, *optional*)</strong> – New caption for story, 0-1024 characters after entities parsing.
 If not specified, the original caption is kept.
 Pass “” (empty string) to remove the caption.</p></li>
-<li><p><strong>period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – How long the story will posted, in secs.
+<li><p><strong>period (``int``, *optional*)</strong> – How long the story will posted, in secs.
 only for premium users.</p></li>
-<li><p><strong>privacy</strong> (<a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules" title="pyrogram.enums.StoriesPrivacyRules (Python class) — Stories privacy rules type enumeration used in send_story() and edit_story()."><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoriesPrivacyRules</span></code></a>, <em>optional</em>) – Story privacy.
+<li><p><strong>privacy (:obj:`~pyrogram.enums.StoriesPrivacyRules`, *optional*)</strong> – Story privacy.
 Defaults to <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a></p></li>
-<li><p><strong>allowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – List of user_id or chat_id of chat users who are allowed to view stories.
+<li><p><strong>allowed_users (List of ``int`` | ``str``, *optional*)</strong> – List of user_id or chat_id of chat users who are allowed to view stories.
 Note: chat_id available only with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS" title="pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS (Python attribute) — Selected users stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SELECTED_USERS</span></code></a>.
 Works with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.CLOSE_FRIENDS" title="pyrogram.enums.StoriesPrivacyRules.CLOSE_FRIENDS (Python attribute) — Close_Friends stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CLOSE_FRIENDS</span></code></a>
 and <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS" title="pyrogram.enums.StoriesPrivacyRules.SELECTED_USERS (Python attribute) — Selected users stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SELECTED_USERS</span></code></a> only</p></li>
-<li><p><strong>disallowed_users</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – List of user_id whos disallow to view the stories.
+<li><p><strong>disallowed_users (List of ``int`` | ``str``, *optional*)</strong> – List of user_id whos disallow to view the stories.
 Note: Works with <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.PUBLIC" title="pyrogram.enums.StoriesPrivacyRules.PUBLIC (Python attribute) — Public stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PUBLIC</span></code></a>
 and <a class="reference internal" href="../enums/StoriesPrivacyRules.html#pyrogram.enums.StoriesPrivacyRules.CONTACTS" title="pyrogram.enums.StoriesPrivacyRules.CONTACTS (Python attribute) — Contacts only stories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONTACTS</span></code></a> only</p></li>
-<li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Protects the contents of the sent story from forwarding and saving.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>protect_content (``bool``, *optional*)</strong> – Protects the contents of the sent story from forwarding and saving.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the new caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the new caption, which can be specified instead of <em>parse_mode</em>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.copy_story-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.copy_story-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — This object represents a story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> – On success, the copied story is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Story`</strong> (<em>On success, the copied story is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

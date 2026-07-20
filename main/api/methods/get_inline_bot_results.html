@@ -1114,7 +1114,7 @@
       <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.Client.get_inline_bot_results (Python method) — Get bot results via inline queries. You can then send a result using send_inline_bot_result()"><span>Client.<wbr>get_<wbr>inline_<wbr>bot_<wbr>results</span></span>
+      <span title="pyrogram.Client.get_inline_bot_results (Python method) — Get bot results via inline queries. You can then send a result using send_inline_bot_result()."><span>Client.<wbr>get_<wbr>inline_<wbr>bot_<wbr>results</span></span>
     </span>
   </a>
   
@@ -2983,7 +2983,7 @@
       <span aria-label="Python method" class="objinfo-icon objinfo-icon__procedure" title="Python method">M</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.Client.get_inline_bot_results (Python method) — Get bot results via inline queries. You can then send a result using send_inline_bot_result()"><span>Client.<wbr>get_<wbr>inline_<wbr>bot_<wbr>results</span></span>
+      <span title="pyrogram.Client.get_inline_bot_results (Python method) — Get bot results via inline queries. You can then send a result using send_inline_bot_result()."><span>Client.<wbr>get_<wbr>inline_<wbr>bot_<wbr>results</span></span>
     </span>
   </a>
   
@@ -3046,7 +3046,7 @@
 <dt class="sig sig-object highlight py" id="pyrogram.Client.get_inline_bot_results">
 <span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">get_inline_bot_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.get_inline_bot_results" title="Link to this definition">¶</a></dt>
 <dd><p>Get bot results via inline queries.
-You can then send a result using <a class="reference internal" href="send_inline_bot_result.html#pyrogram.Client.send_inline_bot_result" title="pyrogram.Client.send_inline_bot_result (Python method) — Send an inline bot result. Bot results can be retrieved using get_inline_bot_results()"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_inline_bot_result()</span></code></a></p>
+You can then send a result using <a class="reference internal" href="send_inline_bot_result.html#pyrogram.Client.send_inline_bot_result" title="pyrogram.Client.send_inline_bot_result (Python method) — Send an inline bot result. Bot results can be retrieved using get_inline_bot_results()."><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_inline_bot_result()</span></code></a>.</p>
 <blockquote>
     <strong>Usable by</strong>
     <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
@@ -3054,27 +3054,27 @@ You can then send a result using <a class="reference internal" href="send_inline
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_inline_bot_results-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_inline_bot_results-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>bot</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier of the inline bot you want to get results from. You can specify
+<li><p><strong>bot (``int`` | ``str``)</strong> – Unique identifier of the inline bot you want to get results from. You can specify
 a &#64;username (str) or a bot ID (int).</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text of the query (up to 512 characters).
+<li><p><strong>query (``str``, *optional*)</strong> – Text of the query (up to 512 characters).
 Defaults to “” (empty string).</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Offset of the results to be returned.</p></li>
-<li><p><strong>latitude</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>optional</em>) – Latitude of the location.
+<li><p><strong>offset (``str``, *optional*)</strong> – Offset of the results to be returned.</p></li>
+<li><p><strong>latitude (``float``, *optional*)</strong> – Latitude of the location.
 Useful for location-based results only.</p></li>
-<li><p><strong>longitude</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>optional</em>) – Longitude of the location.
+<li><p><strong>longitude (``float``, *optional*)</strong> – Longitude of the location.
 Useful for location-based results only.</p></li>
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_inline_bot_results-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_inline_bot_results-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotResults</span></code> – On Success.</p>
+<dd class="field-even"><p><strong>:obj:`BotResults &lt;pyrogram.api.types.messages.BotResults&gt;`</strong> (<em>On Success.</em>)</p>
 </dd>
 <dt class="field-odd" id="pyrogram.Client.get_inline_bot_results-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_inline_bot_results-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TimeoutError" title="(in Python v3.14)"><strong>TimeoutError</strong></a> – In case the bot fails to answer within 10 seconds.</p></li>
-<li><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TimeoutError" title="(in Python v3.14)"><strong>TimeoutError</strong></a> – In case the bot fails to answer within 10 seconds.:</p></li>
+<li><p><strong>RPCError</strong> – </p></li>
 </ul>
 </dd>
 </dl>

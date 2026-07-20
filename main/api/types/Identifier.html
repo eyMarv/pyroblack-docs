@@ -970,7 +970,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><span>pyrogram.<wbr>types.<wbr>Identifier</span></span>
+      <span title="pyrogram.types.Identifier (Python class) — A dataclass for matching listeners to update data."><span>pyrogram.<wbr>types.<wbr>Identifier</span></span>
     </span>
   </a>
   
@@ -2099,7 +2099,7 @@
       <span aria-label="Python class" class="objinfo-icon objinfo-icon__data" title="Python class">C</span>
     
     <span class="md-ellipsis">
-      <span title="pyrogram.types.Identifier (Python class) — A dataclass that serves as a utility for matching listeners to the data of updates."><span>pyrogram.<wbr>types.<wbr>Identifier</span></span>
+      <span title="pyrogram.types.Identifier (Python class) — A dataclass for matching listeners to update data."><span>pyrogram.<wbr>types.<wbr>Identifier</span></span>
     </span>
   </a>
   
@@ -2141,14 +2141,18 @@
 <dl class="py class objdesc">
 <dt class="sig sig-object highlight py" id="pyrogram.types.Identifier">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">Identifier</span></span><a class="headerlink" href="#pyrogram.types.Identifier" title="Link to this definition">¶</a></dt>
-<dd><p>A dataclass that serves as a utility for matching listeners to the data of updates.</p>
+<dd><p>A dataclass for matching listeners to update data.</p>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Identifier-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Identifier-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>inline_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The inline message ID to match. If None, it is not considered for matching.</p></li>
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The chat ID to match. If None, it is not considered for matching.</p></li>
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>  | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>) – The message ID to match. If None, it is not considered for matching.</p></li>
-<li><p><strong>from_user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The user ID to match. If None, it is not considered for matching.</p></li>
+<li><p><strong>inline_message_id (``str`` | Iterable of ``str``, *optional*)</strong> – The inline message ID to match.
+If None, it is not considered for matching.</p></li>
+<li><p><strong>chat_id (``int`` | ``str`` | Iterable, *optional*)</strong> – The chat ID to match.
+If None, it is not considered for matching.</p></li>
+<li><p><strong>message_id (``int`` | Iterable of ``int``)</strong> – The message ID to match.
+If None, it is not considered for matching.</p></li>
+<li><p><strong>from_user_id (``int`` | ``str`` | Iterable, *optional*)</strong> – The user ID to match.
+If None, it is not considered for matching.</p></li>
 </ul>
 </dd>
 </dl>

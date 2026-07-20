@@ -2210,19 +2210,22 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.CallbackQuery.edit_message_caption-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.CallbackQuery.edit_message_caption-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – New caption of the message.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>caption (``str``)</strong> – New caption of the message.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup (Python class) — An inline keyboard that appears right next to the message it belongs to."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a>, <em>optional</em>) – An InlineKeyboardMarkup object.</p></li>
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in message text, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>reply_markup (:obj:`~pyrogram.types.InlineKeyboardMarkup`, *optional*)</strong> – An InlineKeyboardMarkup object.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.CallbackQuery.edit_message_caption-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.CallbackQuery.edit_message_caption-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | <code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, if the edited message was sent by the bot, the edited
-message is returned, otherwise True is returned (message sent via the bot, as inline query result).</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.Message` | ``bool``</strong> (<em>On success, if the edited message was sent by the bot, the edited</em>)</p></li>
+<li><p><em>message is returned, otherwise True is returned (message sent via the bot, as inline query result).</em></p></li>
+</ul>
+</p>
 </dd>
 <dt class="field-odd" id="pyrogram.types.CallbackQuery.edit_message_caption-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.CallbackQuery.edit_message_caption-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dd class="field-odd"><p><strong>RPCError</strong> – </p>
 </dd>
 </dl>
 </dd></dl>

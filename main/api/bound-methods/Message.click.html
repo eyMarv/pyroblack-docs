@@ -3127,37 +3127,48 @@ Only the first matching button will be pressed.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.Message.click-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.click-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Used as integer index, integer abscissa (in pair with y) or as string label.
+<li><p><strong>x (``int`` | ``str``)</strong> – Used as integer index, integer abscissa (in pair with y) or as string label.
 Defaults to 0 (first button).</p></li>
-<li><p><strong>y</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Used as ordinate only (in pair with x).</p></li>
-<li><p><strong>quote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Useful for normal buttons only, where pressing it will result in a new message sent.
+<li><p><strong>y (``int``, *optional*)</strong> – Used as ordinate only (in pair with x).</p></li>
+<li><p><strong>quote (``bool``, *optional*)</strong> – Useful for normal buttons only, where pressing it will result in a new message sent.
 If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
-<li><p><strong>timeout</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Timeout in seconds.</p></li>
-<li><p><strong>request_write_access</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Only used in case of <a class="reference internal" href="../types/LoginUrl.html#pyrogram.types.LoginUrl" title="pyrogram.types.LoginUrl (Python class) — Represents a parameter of the inline keyboard button used to automatically authorize a user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoginUrl</span></code></a> button.
+<li><p><strong>timeout (``int``, *optional*)</strong> – Timeout in seconds.</p></li>
+<li><p><strong>request_write_access (``bool``, *optional*)</strong> – Only used in case of <a class="reference internal" href="../types/LoginUrl.html#pyrogram.types.LoginUrl" title="pyrogram.types.LoginUrl (Python class) — Represents a parameter of the inline keyboard button used to automatically authorize a user."><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoginUrl</span></code></a> button.
 True, if the bot can send messages to the user.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
-<li><p><strong>password</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – When clicking certain buttons (such as BotFather’s confirmation button to transfer ownership), if your account has 2FA enabled, you need to provide your account’s password.
+<li><p><strong>password (``str``, *optional*)</strong> – When clicking certain buttons (such as BotFather’s confirmation button to transfer ownership), if your account has 2FA enabled, you need to provide your account’s password.
 The 2-step verification password for the current user. Only applicable, if the <a class="reference internal" href="../types/InlineKeyboardButton.html#pyrogram.types.InlineKeyboardButton" title="pyrogram.types.InlineKeyboardButton (Python class) — One button of an inline keyboard."><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardButton</span></code></a> contains <code class="docutils literal notranslate"><span class="pre">callback_data_with_password</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.types.Message.click-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.click-returns" title="Permalink to this headline">¶</a></dt>
 <dd class="field-even"><p><ul class="simple">
+<li><ul>
 <li><p>The result of <a class="reference internal" href="../methods/request_callback_answer.html#pyrogram.Client.request_callback_answer" title="pyrogram.Client.request_callback_answer (Python method) — Request a callback answer from bots. This is the equivalent of clicking an inline button containing callback data."><code class="xref py py-meth docutils literal notranslate"><span class="pre">request_callback_answer()</span></code></a> in case of inline callback button clicks.</p></li>
+</ul>
+</li>
+<li><ul>
 <li><p>The result of <a class="reference internal" href="Message.reply.html#pyrogram.types.Message.reply" title="pyrogram.types.Message.reply (Python method) — Bound method reply_text of Message."><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply()</span></code></a> in case of normal button clicks.</p></li>
-<li><p>A string in case the inline button is a URL, a <em>switch_inline_query</em> or a
-<em>switch_inline_query_current_chat</em> button or a <em>copy_text</em> button.</p></li>
-<li><p>A string URL with the user details, in case of a LoginUrl button.</p></li>
+</ul>
+</li>
+<li><p><em>-   A string in case the inline button is a URL, a *switch_inline_query</em> or a* – <em>switch_inline_query_current_chat</em> button or a <em>copy_text</em> button.</p></li>
+<li><p><em>-   A string URL with the user details, in case of a LoginUrl button.</em></p></li>
+<li><ul>
 <li><p>A <code class="xref py py-obj docutils literal notranslate"><span class="pre">SwitchInlineQueryChosenChat</span></code> object in case of a <code class="docutils literal notranslate"><span class="pre">switch_inline_query_chosen_chat</span></code>.</p></li>
+</ul>
+</li>
+<li><ul>
 <li><p>A <a class="reference internal" href="../types/User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a> object in case of a <code class="docutils literal notranslate"><span class="pre">KeyboardButtonUserProfile</span></code> button.</p></li>
+</ul>
+</li>
 </ul>
 </p>
 </dd>
 <dt class="field-odd" id="pyrogram.types.Message.click-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.Message.click-raises" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case the provided index or position is out of range or the button label was not found.</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TimeoutError" title="(in Python v3.14)"><strong>TimeoutError</strong></a> – In case, after clicking an inline button, the bot fails to answer within the timeout.</p></li>
-<li><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case the provided index or position is out of range or the button label was not found.:</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TimeoutError" title="(in Python v3.14)"><strong>TimeoutError</strong></a> – In case, after clicking an inline button, the bot fails to answer within the timeout.:</p></li>
+<li><p><strong>RPCError</strong> – </p></li>
 </ul>
 </dd>
 </dl>

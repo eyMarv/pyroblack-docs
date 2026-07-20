@@ -4186,25 +4186,25 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.search_messages_count-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_messages_count-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Text query string.
+<li><p><strong>query (``str``, *optional*)</strong> – Text query string.
 Required for text-only messages, optional for media messages (see the <code class="docutils literal notranslate"><span class="pre">filter</span></code> argument).
 When passed while searching for media messages, the query will be applied to captions.
 Defaults to “” (empty string).</p></li>
-<li><p><strong>filter</strong> (<a class="reference internal" href="../enums/MessagesFilter.html#pyrogram.enums.MessagesFilter" title="pyrogram.enums.MessagesFilter (Python class) — Messages filter enumeration used in search_messages() and search_global()"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessagesFilter</span></code></a>, <em>optional</em>) – Pass a filter in order to search for specific kind of messages only:</p></li>
-<li><p><strong>from_user</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the target user you want to search for messages from.</p></li>
-<li><p><strong>message_thread_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier for the target message thread (topic) of the forum; for forum supergroups only</p></li>
-<li><p><strong>min_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Pass a date as offset to retrieve only older messages starting from that date.</p></li>
-<li><p><strong>max_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Pass a date as offset to retrieve only newer messages starting from that date.</p></li>
-<li><p><strong>min_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If a positive value was provided, the method will return only messages with IDs more than min_id.</p></li>
-<li><p><strong>max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If a positive value was provided, the method will return only messages with IDs less than max_id.</p></li>
-<li><p><strong>saved_messages_topic_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If not None, only messages in the specified Saved Messages topic will be returned; pass None to return all messages, or for chats other than Saved Messages.</p></li>
+<li><p><strong>filter (:obj:`~pyrogram.enums.MessagesFilter`, *optional*)</strong> – Pass a filter in order to search for specific kind of messages only:</p></li>
+<li><p><strong>from_user (``int`` | ``str``, *optional*)</strong> – Unique identifier (int) or username (str) of the target user you want to search for messages from.</p></li>
+<li><p><strong>message_thread_id (``int``, *optional*)</strong> – Unique identifier for the target message thread (topic) of the forum; for forum supergroups only</p></li>
+<li><p><strong>min_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Pass a date as offset to retrieve only older messages starting from that date.</p></li>
+<li><p><strong>max_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Pass a date as offset to retrieve only newer messages starting from that date.</p></li>
+<li><p><strong>min_id (``int``, *optional*)</strong> – If a positive value was provided, the method will return only messages with IDs more than min_id.</p></li>
+<li><p><strong>max_id (``int``, *optional*)</strong> – If a positive value was provided, the method will return only messages with IDs less than max_id.</p></li>
+<li><p><strong>saved_messages_topic_id (``int`` | ``str``, *optional*)</strong> – If not None, only messages in the specified Saved Messages topic will be returned; pass None to return all messages, or for chats other than Saved Messages.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.search_messages_count-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_messages_count-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code> – On success, the messages count is returned.</p>
+<dd class="field-even"><p><strong>``int``</strong> (<em>On success, the messages count is returned.</em>)</p>
 </dd>
 </dl>
 </dd></dl>

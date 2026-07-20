@@ -3054,17 +3054,17 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.set_bot_default_privileges-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_bot_default_privileges-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>privileges</strong> (<a class="reference internal" href="../types/ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges (Python class) — Describes privileged actions an administrator is able to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a>) – New default privileges. None to clear.
+<li><p><strong>privileges (:obj:`~pyrogram.types.ChatPrivileges`)</strong> – New default privileges. None to clear.
 Defaults to None.</p></li>
-<li><p><strong>for_channels</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to change the default privileges of the bot in channels. Otherwise, the default privileges of
+<li><p><strong>for_channels (``bool``, *optional*)</strong> – Pass True to change the default privileges of the bot in channels. Otherwise, the default privileges of
 the bot for groups and supergroups will be changed.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.set_bot_default_privileges-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_bot_default_privileges-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, True is returned.</p>
+<dd class="field-even"><p><strong>``bool``</strong> (<em>On success, True is returned.</em>)</p>
 </dd>
 <dt class="field-odd" id="pyrogram.Client.set_bot_default_privileges-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.set_bot_default_privileges-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><strong>RPCError</strong> – In case of a Telegram RPC error.</p>
+<dd class="field-odd"><p><strong>RPCError</strong> – </p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

@@ -3321,19 +3321,19 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.search_gifts_for_resale-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_gifts_for_resale-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>gift_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Identifier of the regular gift that was upgraded to a unique gift.</p></li>
-<li><p><strong>order</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftForResaleOrder</span></code>) – Order in which the results will be sorted.</p></li>
-<li><p><strong>for_crafting</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to get only gifts suitable for crafting.</p></li>
-<li><p><strong>for_stars</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to get only gifts that can be bought using Telegram Stars.</p></li>
-<li><p><strong>attributes</strong> (List of <a class="reference internal" href="../types/UpgradedGiftAttributeId.html#pyrogram.types.UpgradedGiftAttributeId" title="pyrogram.types.UpgradedGiftAttributeId (Python class) — This object contains identifier of an upgraded gift attribute to search for."><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpgradedGiftAttributeId</span></code></a>, <em>optional</em>) – Attributes used to filter received gifts.
+<li><p><strong>gift_id (``int``)</strong> – Identifier of the regular gift that was upgraded to a unique gift.</p></li>
+<li><p><strong>order (:obj:`~pyrogram.enums.GiftForResaleOrder`)</strong> – Order in which the results will be sorted.</p></li>
+<li><p><strong>for_crafting (``bool``, *optional*)</strong> – Pass True to get only gifts suitable for crafting.</p></li>
+<li><p><strong>for_stars (``bool``, *optional*)</strong> – Pass True to get only gifts that can be bought using Telegram Stars.</p></li>
+<li><p><strong>attributes (List of :obj:`~pyrogram.types.UpgradedGiftAttributeId`, *optional*)</strong> – Attributes used to filter received gifts.
 If multiple attributes of the same type are specified, then all of them are allowed.
 If none attributes of specific type are specified, then all values for this attribute type are allowed.</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum number of gifts to return. Default is 0 (no limit).</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The offset from which to start returning results. Default is “” (no offset).</p></li>
+<li><p><strong>limit (``int``, *optional*)</strong> – The maximum number of gifts to return. Default is 0 (no limit).</p></li>
+<li><p><strong>offset (``str``, *optional*)</strong> – The offset from which to start returning results. Default is “” (no offset).</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.search_gifts_for_resale-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_gifts_for_resale-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/Gift.html#pyrogram.types.Gift" title="pyrogram.types.Gift (Python class) — Describes a gift or an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gift</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/Gift.html#pyrogram.types.Gift" title="pyrogram.types.Gift (Python class) — Describes a gift or an upgraded gift that can be transferred to another owner or transferred to the TON blockchain as an NFT."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gift</span></code></a> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

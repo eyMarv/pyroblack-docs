@@ -3009,17 +3009,17 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.edit_story_caption-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_story_caption-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.</p></li>
-<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Story identifier in the chat specified in chat_id.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – New caption of the story, 0-1024 characters.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>story_id (``int``)</strong> – Story identifier in the chat specified in chat_id.</p></li>
+<li><p><strong>caption (``str``)</strong> – New caption of the story, 0-1024 characters.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.edit_story_caption-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_story_caption-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — This object represents a story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> – On success, the edited story is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Story`</strong> (<em>On success, the edited story is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

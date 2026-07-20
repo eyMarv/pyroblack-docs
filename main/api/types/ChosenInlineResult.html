@@ -2582,14 +2582,14 @@ You can enable this feature with <a class="reference external" href="https://t.m
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.ChosenInlineResult-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.ChosenInlineResult-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>result_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The unique identifier for the result that was chosen.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – The user that chose the result.</p></li>
-<li><p><strong>query</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The query that was used to obtain the result.</p></li>
-<li><p><strong>location</strong> (<a class="reference internal" href="Location.html#pyrogram.types.Location" title="pyrogram.types.Location (Python class) — A point on the map."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Location</span></code></a>, <em>optional</em>) – Sender location, only for bots that require user location.</p></li>
-<li><p><strong>inline_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Identifier of the sent inline message.
+<li><p><strong>result_id (``str``)</strong> – The unique identifier for the result that was chosen.</p></li>
+<li><p><strong>from_user (:obj:`~pyrogram.types.User`)</strong> – The user that chose the result.</p></li>
+<li><p><strong>query (``str``)</strong> – The query that was used to obtain the result.</p></li>
+<li><p><strong>location (:obj:`~pyrogram.types.Location`, *optional*)</strong> – Sender location, only for bots that require user location.</p></li>
+<li><p><strong>inline_message_id (``str``, *optional*)</strong> – Identifier of the sent inline message.
 Available only if there is an <a class="reference internal" href="InlineKeyboardMarkup.html"><span class="doc">inline keyboard</span></a> attached to the message.
 Will be also received in <a class="reference internal" href="CallbackQuery.html"><span class="doc">callback queries</span></a> and can be used to edit the message.</p></li>
-<li><p><strong>matches</strong> (<em>List of regex Matches, *optional*</em>) – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
+<li><p><strong>matches (List of regex Matches, *optional*)</strong> – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
 the query of this inline query. Only applicable when using <code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters.regex</span></code>.</p></li>
 </ul>
 </dd>

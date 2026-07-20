@@ -4042,20 +4042,20 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.create_forum_topic-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.create_forum_topic-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Topic name, 1-128 characters</p></li>
-<li><p><strong>icon_color</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Color of the topic icon in RGB format.
+<li><p><strong>name (``str``)</strong> – Topic name, 1-128 characters</p></li>
+<li><p><strong>icon_color (``int``, *optional*)</strong> – Color of the topic icon in RGB format.
 Currently, must be one of 7322096 (0x6FB9F0), 16766590 (0xFFD67E), 13338331 (0xCB86DB), 9367192 (0x8EEE98), 16749490 (0xFF93B2), or 16478047 (0xFB6F5F)</p></li>
-<li><p><strong>icon_custom_emoji_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier of the custom emoji shown as the topic icon. Use <a class="reference internal" href="get_forum_topic_icon_stickers.html#pyrogram.Client.get_forum_topic_icon_stickers" title="pyrogram.Client.get_forum_topic_icon_stickers (Python method) — Use this method to get custom emoji stickers, which can be used as a forum topic icon by any user."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_forum_topic_icon_stickers()</span></code></a> to get all allowed custom emoji identifiers.</p></li>
-<li><p><strong>send_as</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier (int) or username (str) of the as chat.
+<li><p><strong>icon_custom_emoji_id (``str``, *optional*)</strong> – Unique identifier of the custom emoji shown as the topic icon. Use <a class="reference internal" href="get_forum_topic_icon_stickers.html#pyrogram.Client.get_forum_topic_icon_stickers" title="pyrogram.Client.get_forum_topic_icon_stickers (Python method) — Use this method to get custom emoji stickers, which can be used as a forum topic icon by any user."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_forum_topic_icon_stickers()</span></code></a> to get all allowed custom emoji identifiers.</p></li>
+<li><p><strong>send_as (``int`` | ``str``, *optional*)</strong> – Unique identifier (int) or username (str) of the as chat.
 For your personal cloud (Saved Messages) you can simply use “me”.
 Use <a class="reference internal" href="get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats (Python method) — Get the list of &quot;send_as&quot; chats available."><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_send_as_chats()</span></code></a> to get allowed values.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.create_forum_topic-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.create_forum_topic-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> – On success, the sent text message is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Message`</strong> (<em>On success, the sent text message is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

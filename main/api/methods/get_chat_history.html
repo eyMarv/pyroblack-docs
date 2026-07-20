@@ -4186,27 +4186,27 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_chat_history-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_history-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of messages to be retrieved.
+<li><p><strong>limit (``int``, *optional*)</strong> – Limits the number of messages to be retrieved.
 By default, no limit is applied and all messages are returned.</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Sequential number of the first message to be returned.
+<li><p><strong>offset (``int``, *optional*)</strong> – Sequential number of the first message to be returned.
 Negative values are also accepted and become useful in case you set offset_id or offset_date.</p></li>
-<li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Identifier of the first message to be returned.
+<li><p><strong>offset_id (``int``, *optional*)</strong> – Identifier of the first message to be returned.
 This parameter is deprecated and should not be used.
 Use <code class="docutils literal notranslate"><span class="pre">min_id</span></code> / <code class="docutils literal notranslate"><span class="pre">max_id</span></code> instead for proper filtering.</p></li>
-<li><p><strong>min_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If a positive value was transferred, the method will return only messages with IDs more than min_id.
+<li><p><strong>min_id (``int``, *optional*)</strong> – If a positive value was transferred, the method will return only messages with IDs more than min_id.
 Defaults to 0.</p></li>
-<li><p><strong>max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – If a positive value was transferred, the method will return only messages with IDs less than max_id.
+<li><p><strong>max_id (``int``, *optional*)</strong> – If a positive value was transferred, the method will return only messages with IDs less than max_id.
 Defaults to 0.</p></li>
-<li><p><strong>offset_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Pass a date as offset to retrieve only older messages starting from that date.</p></li>
-<li><p><strong>reverse</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to retrieve the messages in reversed order (from older to most recent). Defaults to False.</p></li>
-<li><p><strong>is_scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to get scheduled messages. Defaults to False.</p></li>
+<li><p><strong>offset_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Pass a date as offset to retrieve only older messages starting from that date.</p></li>
+<li><p><strong>reverse (``bool``, *optional*)</strong> – Pass True to retrieve the messages in reversed order (from older to most recent). Defaults to False.</p></li>
+<li><p><strong>is_scheduled (``bool``, *optional*)</strong> – Whether to get scheduled messages. Defaults to False.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_chat_history-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_chat_history-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

@@ -2675,7 +2675,7 @@ All the user needs to do is tap/click a button and confirm that they want to log
 <dl class="field-list">
 <dt class="field-odd" id="pyrogram.types.LoginUrl-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.LoginUrl-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul>
-<li><p><strong>url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – An HTTP URL to be opened with user authorization data added to the query string when the button is pressed.
+<li><p><strong>url (``str``)</strong> – An HTTP URL to be opened with user authorization data added to the query string when the button is pressed.
 If the user refuses to provide authorization data, the original URL without information about the user will
 be opened. The data added is the same as described in
 <cite>Receiving authorization data &lt;https://core.telegram.org/widgets/login#receiving-authorization-data&gt;</cite>.</p>
@@ -2685,15 +2685,15 @@ be opened. The data added is the same as described in
 and the integrity of the data as described in <a class="reference external" href="https://core.telegram.org/widgets/login#checking-authorization">Checking authorization</a>.</p>
 </div>
 </li>
-<li><p><strong>forward_text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – New text of the button in forwarded messages.</p></li>
-<li><p><strong>bot_username</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Username of a bot, which will be used for user authorization.
+<li><p><strong>forward_text (``str``, *optional*)</strong> – New text of the button in forwarded messages.</p></li>
+<li><p><strong>bot_username (``str``, *optional*)</strong> – Username of a bot, which will be used for user authorization.
 See <a class="reference external" href="https://core.telegram.org/widgets/login#setting-up-a-bot">Setting up a bot</a> for more details.
 If not specified, the current bot’s username will be assumed. The url’s domain must be the same as the
 domain linked with the bot.
 See <a class="reference external" href="https://core.telegram.org/widgets/login#linking-your-domain-to-the-bot">Linking your domain to the bot</a>
 for more details.</p></li>
-<li><p><strong>request_write_access</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Pass True to request the permission for your bot to send messages to the user.</p></li>
-<li><p><strong>button_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Button identifier.</p></li>
+<li><p><strong>request_write_access (``str``, *optional*)</strong> – Pass True to request the permission for your bot to send messages to the user.</p></li>
+<li><p><strong>button_id (``int``)</strong> – Button identifier.</p></li>
 </ul>
 </dd>
 </dl>

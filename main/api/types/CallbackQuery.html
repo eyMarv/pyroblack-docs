@@ -2676,16 +2676,16 @@ will be present. If the button was attached to a message sent via the bot (in in
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.CallbackQuery-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.CallbackQuery-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier for this query.</p></li>
-<li><p><strong>from_user</strong> (<a class="reference internal" href="User.html#pyrogram.types.User" title="pyrogram.types.User (Python class) — A Telegram user or bot."><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – Sender.</p></li>
-<li><p><strong>chat_instance</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Global identifier, uniquely corresponding to the chat to which the message with the callback button was
+<li><p><strong>id (``str``)</strong> – Unique identifier for this query.</p></li>
+<li><p><strong>from_user (:obj:`~pyrogram.types.User`)</strong> – Sender.</p></li>
+<li><p><strong>chat_instance (``str``, *optional*)</strong> – Global identifier, uniquely corresponding to the chat to which the message with the callback button was
 sent. Useful for high scores in games.</p></li>
-<li><p><strong>message</strong> (<a class="reference internal" href="Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>, <em>optional</em>) – Message with the callback button that originated the query. Note that message content and message date will
+<li><p><strong>message (:obj:`~pyrogram.types.Message`, *optional*)</strong> – Message with the callback button that originated the query. Note that message content and message date will
 not be available if the message is too old.</p></li>
-<li><p><strong>inline_message_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Identifier of the message sent via the bot in inline mode, that originated the query.</p></li>
-<li><p><strong>data</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>optional</em>) – Data associated with the callback button. Be aware that a bad client can send arbitrary data in this field.</p></li>
-<li><p><strong>game_short_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Short name of a Game to be returned, serves as the unique identifier for the game.</p></li>
-<li><p><strong>matches</strong> (<em>List of regex Matches, *optional*</em>) – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
+<li><p><strong>inline_message_id (``str``)</strong> – Identifier of the message sent via the bot in inline mode, that originated the query.</p></li>
+<li><p><strong>data (``str`` | ``bytes``, *optional*)</strong> – Data associated with the callback button. Be aware that a bad client can send arbitrary data in this field.</p></li>
+<li><p><strong>game_short_name (``str``, *optional*)</strong> – Short name of a Game to be returned, serves as the unique identifier for the game.</p></li>
+<li><p><strong>matches (List of regex Matches, *optional*)</strong> – A list containing all <a class="reference external" href="https://docs.python.org/3/library/re.html#match-objects">Match Objects</a> that match
 the data of this callback query. Only applicable when using <code class="xref py py-obj docutils literal notranslate"><span class="pre">Filters.regex</span></code>.</p></li>
 </ul>
 </dd>

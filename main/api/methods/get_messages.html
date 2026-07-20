@@ -4206,23 +4206,26 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_messages-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_messages-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``, *optional*, **kwargs)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>message_ids</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | Iterable of <code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Pass a single message identifier or an iterable of message ids (as integers) to get the content of the
+<li><p><strong>message_ids (``int`` | Iterable of ``int``, *optional*)</strong> – Pass a single message identifier or an iterable of message ids (as integers) to get the content of the
 message themselves.</p></li>
-<li><p><strong>replies</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The number of subsequent replies to get for each message.
+<li><p><strong>replies (``int``, *optional*)</strong> – The number of subsequent replies to get for each message.
 Pass 0 for no reply at all or -1 for unlimited replies.
 Defaults to 1.
 Is ignored if <code class="docutils literal notranslate"><span class="pre">is_scheduled</span></code> parameter is set.</p></li>
-<li><p><strong>is_scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to get scheduled messages. Defaults to False.
+<li><p><strong>is_scheduled (``bool``, *optional*)</strong> – Whether to get scheduled messages. Defaults to False.
 Only supported if both <code class="docutils literal notranslate"><span class="pre">chat_id</span></code> and <code class="docutils literal notranslate"><span class="pre">message_ids</span></code> are passed. Other parameters are ignored when this is set.</p></li>
-<li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – A link of the message, usually can be copied using <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Link</span></code> functionality OR obtained using <code class="xref py py-obj docutils literal notranslate"><span class="pre">link</span></code> OR  <a class="reference internal" href="../../telegram/functions/channels/export-message-link.html#pyrogram.raw.functions.channels.ExportMessageLink" title="pyrogram.raw.functions.channels.ExportMessageLink (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportMessageLink</span></code></a></p></li>
+<li><p><strong>link (``str``)</strong> – A link of the message, usually can be copied using <code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">Link</span></code> functionality OR obtained using <code class="xref py py-obj docutils literal notranslate"><span class="pre">link</span></code> OR  <a class="reference internal" href="../../telegram/functions/channels/export-message-link.html#pyrogram.raw.functions.channels.ExportMessageLink" title="pyrogram.raw.functions.channels.ExportMessageLink (Python class) — Telegram API function."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportMessageLink</span></code></a></p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.get_messages-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_messages-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | List of <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">DraftMessage</span></code> – In case <em>message_ids</em> was not
-a list, a single message is returned, otherwise a list of messages is returned.</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>:obj:`~pyrogram.types.Message` | List of :obj:`~pyrogram.types.Message` | :obj:`~pyrogram.types.DraftMessage`</strong> (<em>In case *message_ids</em> was not*)</p></li>
+<li><p><em>a list, a single message is returned, otherwise a list of messages is returned.</em></p></li>
+</ul>
+</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>
@@ -4241,7 +4244,7 @@ a list, a single message is returned, otherwise a list of messages is returned.<
 </div>
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.get_messages-raises">Raises<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.get_messages-raises" title="Permalink to this headline">¶</a></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – In case of invalid arguments.:</p>
 </dd>
 </dl>
 </dd></dl>

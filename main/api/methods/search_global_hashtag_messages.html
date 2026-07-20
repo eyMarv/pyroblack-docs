@@ -4186,15 +4186,15 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.search_global_hashtag_messages-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_global_hashtag_messages-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>hashtag</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Hashtag to search for.</p></li>
-<li><p><strong>offset_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.</p></li>
-<li><p><strong>offset_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Pass a date as offset to retrieve only older messages starting from that date.</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – The maximum number of messages to be returned.
+<li><p><strong>hashtag (``str``, *optional*)</strong> – Hashtag to search for.</p></li>
+<li><p><strong>offset_id (``int``, *optional*)</strong> – Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results.</p></li>
+<li><p><strong>offset_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Pass a date as offset to retrieve only older messages starting from that date.</p></li>
+<li><p><strong>limit (``int``, *optional*)</strong> – The maximum number of messages to be returned.
 By default, no limit is applied and all posts are returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.search_global_hashtag_messages-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.search_global_hashtag_messages-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> objects.</p>
+<dd class="field-even"><p><strong>``Generator``</strong> (A generator yielding <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message (Python class) — A message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> objects.)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

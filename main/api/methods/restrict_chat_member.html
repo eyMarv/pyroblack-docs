@@ -4043,21 +4043,21 @@ Pass True for all permissions to lift restrictions from a user.</p>
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.restrict_chat_member-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.restrict_chat_member-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.</p></li>
-<li><p><strong>user_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target user.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.</p></li>
+<li><p><strong>user_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target user.
 For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
-<li><p><strong>permissions</strong> (<a class="reference internal" href="../types/ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions (Python class) — Describes actions that a non-administrator user is allowed to take in a chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>) – New user permissions.</p></li>
-<li><p><strong>use_independent_chat_permissions</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if chat permissions are set independently.
+<li><p><strong>permissions (:obj:`~pyrogram.types.ChatPermissions`)</strong> – New user permissions.</p></li>
+<li><p><strong>use_independent_chat_permissions (``bool``, *optional*)</strong> – Pass True if chat permissions are set independently.
 Otherwise, the can_send_other_messages and can_add_web_page_previews permissions will
 imply the can_send_messages, can_send_audios, can_send_documents, can_send_photos, can_send_videos, can_send_video_notes, and can_send_voice_notes permissions;
 the can_send_polls permission will imply the can_send_messages permission.</p></li>
-<li><p><strong>until_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the user will be unbanned.
+<li><p><strong>until_date (:py:obj:`~datetime.datetime`, *optional*)</strong> – Date when the user will be unbanned.
 If user is banned for more than 366 days or less than 30 seconds from the current time they are
 considered to be banned forever. Defaults to epoch (ban forever).</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.restrict_chat_member-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.restrict_chat_member-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat (Python class) — A chat."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> – On success, a chat object is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Chat`</strong> (<em>On success, a chat object is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

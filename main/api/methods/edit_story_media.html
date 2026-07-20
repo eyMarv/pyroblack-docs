@@ -3009,38 +3009,38 @@
 </blockquote><dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.Client.edit_story_media-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_story_media-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+<li><p><strong>chat_id (``int`` | ``str``)</strong> – Unique identifier (int) or username (str) of the target chat.
 For your personal cloud (Saved Messages) you can simply use “me” or “self”.</p></li>
-<li><p><strong>story_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Story identifier in the chat specified in chat_id.</p></li>
-<li><p><strong>media</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Video or photo to send.
+<li><p><strong>story_id (``int``)</strong> – Story identifier in the chat specified in chat_id.</p></li>
+<li><p><strong>media (``str`` | ``BinaryIO``, *optional*)</strong> – Video or photo to send.
 Pass a file_id as string to send a animation that exists on the Telegram servers,
 pass a file path as string to upload a new animation that exists on your local machine, or
 pass a binary file-like object with its attribute “.name” set for in-memory uploads.</p></li>
-<li><p><strong>media_areas</strong> (List of <a class="reference internal" href="../types/MediaArea.html#pyrogram.types.MediaArea" title="pyrogram.types.MediaArea (Python class) — Content of a media areas in story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a>, <em>optional</em>) – List of media areas to edit in the story.</p></li>
-<li><p><strong>duration</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Duration of sent video in seconds.</p></li>
-<li><p><strong>width</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Video width.</p></li>
-<li><p><strong>height</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Video height.</p></li>
-<li><p><strong>thumb</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code> | <code class="docutils literal notranslate"><span class="pre">BinaryIO</span></code>, <em>optional</em>) – Thumbnail of the video sent.
+<li><p><strong>media_areas (List of :obj:`~pyrogram.types.MediaArea`, *optional*)</strong> – List of media areas to edit in the story.</p></li>
+<li><p><strong>duration (``int``, *optional*)</strong> – Duration of sent video in seconds.</p></li>
+<li><p><strong>width (``int``, *optional*)</strong> – Video width.</p></li>
+<li><p><strong>height (``int``, *optional*)</strong> – Video height.</p></li>
+<li><p><strong>thumb (``str`` | ``BinaryIO``, *optional*)</strong> – Thumbnail of the video sent.
 The thumbnail should be in JPEG format and less than 200 KB in size.
 A thumbnail’s width and height should not exceed 320 pixels.
 Thumbnails can’t be reused and can be only uploaded as a new file.</p></li>
-<li><p><strong>supports_streaming</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True, if the uploaded video is suitable for streaming.</p></li>
-<li><p><strong>file_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – File name of the story sent.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Story caption, 0-1024 characters.</p></li>
-<li><p><strong>parse_mode</strong> (<a class="reference internal" href="../enums/ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode (Python class) — Parse mode enumeration used in various places to set a specific parse mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a>, <em>optional</em>) – By default, texts are parsed using both Markdown and HTML styles.
+<li><p><strong>supports_streaming (``bool``, *optional*)</strong> – Pass True, if the uploaded video is suitable for streaming.</p></li>
+<li><p><strong>file_name (``str``, *optional*)</strong> – File name of the story sent.</p></li>
+<li><p><strong>caption (``str``, *optional*)</strong> – Story caption, 0-1024 characters.</p></li>
+<li><p><strong>parse_mode (:obj:`~pyrogram.enums.ParseMode`, *optional*)</strong> – By default, texts are parsed using both Markdown and HTML styles.
 You can combine both syntaxes together.</p></li>
-<li><p><strong>caption_entities</strong> (List of <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity (Python class) — One special entity in a text message."><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>) – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
-<li><p><strong>progress</strong> (<code class="docutils literal notranslate"><span class="pre">Callable</span></code>, <em>optional</em>) – Pass a callback function to view the file transmission progress.
+<li><p><strong>caption_entities (List of :obj:`~pyrogram.types.MessageEntity`)</strong> – List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em>.</p></li>
+<li><p><strong>progress (``Callable``, *optional*)</strong> – Pass a callback function to view the file transmission progress.
 The function must take <em>(current, total)</em> as positional arguments (look at Other Parameters below for a
 detailed description) and will be called back each time a new file chunk has been successfully
 transmitted.</p></li>
-<li><p><strong>progress_args</strong> (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <em>optional</em>) – Extra custom arguments for the progress callback function.
+<li><p><strong>progress_args (``tuple``, *optional*)</strong> – Extra custom arguments for the progress callback function.
 You can pass anything you need to be available in the progress callback scope; for example, a Message
 object or a Client instance in order to edit the message with the updated progress status.</p></li>
 </ul>
 </dd>
 <dt class="field-even" id="pyrogram.Client.edit_story_media-returns">Returns<span class="colon">:</span><a class="headerlink" href="#pyrogram.Client.edit_story_media-returns" title="Permalink to this headline">¶</a></dt>
-<dd class="field-even"><p><a class="reference internal" href="../types/Story.html#pyrogram.types.Story" title="pyrogram.types.Story (Python class) — This object represents a story."><code class="xref py py-obj docutils literal notranslate"><span class="pre">Story</span></code></a> – On success, the edited story is returned.</p>
+<dd class="field-even"><p><strong>:obj:`~pyrogram.types.Story`</strong> (<em>On success, the edited story is returned.</em>)</p>
 </dd>
 </dl>
 <p class="example rubric">Example</p>

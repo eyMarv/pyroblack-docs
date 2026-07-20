@@ -2675,25 +2675,25 @@
 <dl class="field-list simple">
 <dt class="field-odd" id="pyrogram.types.KeyboardButton-parameters">Parameters<span class="colon">:</span><a class="headerlink" href="#pyrogram.types.KeyboardButton-parameters" title="Permalink to this headline">¶</a></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the button. If none of the optional fields are used, it will be sent as a message when
+<li><p><strong>text (``str``)</strong> – Text of the button. If none of the optional fields are used, it will be sent as a message when
 the button is pressed.</p></li>
-<li><p><strong>icon_custom_emoji_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Unique identifier of the custom emoji shown before the text of the button. Can only be used by bots that purchased additional usernames on Fragment or in the messages directly sent by the bot to private, group and supergroup chats if the owner of the bot has a Telegram Premium subscription..</p></li>
-<li><p><strong>style</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ButtonStyle</span></code>, <em>optional</em>) – Style of the button.
+<li><p><strong>icon_custom_emoji_id (``str``, *optional*)</strong> – Unique identifier of the custom emoji shown before the text of the button. Can only be used by bots that purchased additional usernames on Fragment or in the messages directly sent by the bot to private, group and supergroup chats if the owner of the bot has a Telegram Premium subscription..</p></li>
+<li><p><strong>style (:obj:`~pyrogram.enums.ButtonStyle`, *optional*)</strong> – Style of the button.
 If omitted, then an app-specific style is used.</p></li>
-<li><p><strong>request_users</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestUsers</span></code>, <em>optional</em>) – If specified, pressing the button will open a list of suitable users. Identifiers of selected users will be sent to the bot in a “users_shared” service message.
+<li><p><strong>request_users (:obj:`~pyrogram.types.KeyboardButtonRequestUsers`, *optional*)</strong> – If specified, pressing the button will open a list of suitable users. Identifiers of selected users will be sent to the bot in a “users_shared” service message.
 Available in private chats only.</p></li>
-<li><p><strong>request_chat</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestChat</span></code>, <em>optional</em>) – If specified, pressing the button will open a list of suitable chats. Tapping on a chat will send its identifier to the bot in a “chat_shared” service message.
+<li><p><strong>request_chat (:obj:`~pyrogram.types.KeyboardButtonRequestChat`, *optional*)</strong> – If specified, pressing the button will open a list of suitable chats. Tapping on a chat will send its identifier to the bot in a “chat_shared” service message.
 Available in private chats only.</p></li>
-<li><p><strong>request_managed_bot</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestManagedBot</span></code>, <em>optional</em>) – If specified, pressing the button will ask the user to create and share a bot that will be managed by the current bot.
+<li><p><strong>request_managed_bot (:obj:`~pyrogram.types.KeyboardButtonRequestManagedBot`, *optional*)</strong> – If specified, pressing the button will ask the user to create and share a bot that will be managed by the current bot.
 Available for bots that enabled management of other bots in the &#64;BotFather Mini App.
 Available in private chats only.</p></li>
-<li><p><strong>request_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the user’s phone number will be sent as a contact when the button is pressed.
+<li><p><strong>request_contact (``bool``, *optional*)</strong> – If True, the user’s phone number will be sent as a contact when the button is pressed.
 Available in private chats only.</p></li>
-<li><p><strong>request_location</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the user’s current location will be sent when the button is pressed.
+<li><p><strong>request_location (``bool``, *optional*)</strong> – If True, the user’s current location will be sent when the button is pressed.
 Available in private chats only.</p></li>
-<li><p><strong>request_poll</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonPollType</span></code>, <em>optional</em>) – If specified, the user will be asked to create a poll and send it to the bot when the button is pressed.
+<li><p><strong>request_poll (:obj:`~pyrogram.types.KeyboardButtonPollType`, *optional*)</strong> – If specified, the user will be asked to create a poll and send it to the bot when the button is pressed.
 Available in private chats only</p></li>
-<li><p><strong>web_app</strong> (<a class="reference internal" href="WebAppInfo.html#pyrogram.types.WebAppInfo" title="pyrogram.types.WebAppInfo (Python class) — Contains information about a Web App."><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppInfo</span></code></a>, <em>optional</em>) – If specified, the described <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> will be launched when the
+<li><p><strong>web_app (:obj:`~pyrogram.types.WebAppInfo`, *optional*)</strong> – If specified, the described <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> will be launched when the
 button is pressed. The Web App will be able to send a “web_app_data” service message. Available in private
 chats only.</p></li>
 </ul>
