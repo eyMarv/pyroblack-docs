@@ -21,7 +21,7 @@
     
     
       
-        <title>Raw Types - pyroblack Documentation v2.9.9</title>
+        <title>Raw Types - pyroblack Documentation v3.0.0</title>
       
     
     
@@ -85,7 +85,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.9" class="md-header__button md-logo" aria-label="pyroblack Documentation v2.9.9" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v3.0.0" class="md-header__button md-logo" aria-label="pyroblack Documentation v3.0.0" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v2.9.9
+            pyroblack Documentation v3.0.0
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -323,10 +323,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v2.9.9" class="md-nav__button md-logo" aria-label="pyroblack Documentation v2.9.9" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v3.0.0" class="md-nav__button md-logo" aria-label="pyroblack Documentation v3.0.0" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v2.9.9
+    pyroblack Documentation v3.0.0
   </label>
   
     <div class="md-nav__source">
@@ -1737,6 +1737,11 @@
 <li class="toctree-l2"><a class="reference internal" href="chatlists/exported-invites.html">ExportedInvites</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="communities/index.html">Communities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="communities/participant-joined-chats.html">ParticipantJoinedChats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="communities/peer-link-requests.html">PeerLinkRequests</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="contacts/index.html">Contacts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contacts/blocked.html">Blocked</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contacts/blocked-slice.html">BlockedSlice</a></li>
@@ -1817,6 +1822,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/chats-slice.html">ChatsSlice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/checked-history-import-peer.html">CheckedHistoryImportPeer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/composed-message-with-ai.html">ComposedMessageWithAI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/composed-rich-message-with-ai.html">ComposedRichMessageWithAI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/dh-config.html">DhConfig</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/dh-config-not-modified.html">DhConfigNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/dialog-filters.html">DialogFilters</a></li>
@@ -1884,6 +1890,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/stickers-not-modified.html">StickersNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/transcribed-audio.html">TranscribedAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/translate-result.html">TranslateResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/translated-rich-message.html">TranslatedRichMessage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/votes-list.html">VotesList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/web-page.html">WebPage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/web-page-preview.html">WebPagePreview</a></li>
@@ -2205,6 +2212,11 @@
 <li class="toctree-l1"><a class="reference internal" href="chat-theme-unique-gift.html">ChatThemeUniqueGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="client-dh-inner-data.html">ClientDHInnerData</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code-settings.html">CodeSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community-forbidden.html">CommunityForbidden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community-full.html">CommunityFull</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community-peer.html">CommunityPeer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community-peer-request.html">CommunityPeerRequest</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="connected-bot.html">ConnectedBot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="connected-bot-star-ref.html">ConnectedBotStarRef</a></li>
@@ -2223,12 +2235,14 @@
 <li class="toctree-l1"><a class="reference internal" href="dh-gen-ok.html">DhGenOk</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dh-gen-retry.html">DhGenRetry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog.html">Dialog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dialog-community.html">DialogCommunity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter.html">DialogFilter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter-chatlist.html">DialogFilterChatlist</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter-default.html">DialogFilterDefault</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-filter-suggested.html">DialogFilterSuggested</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-folder.html">DialogFolder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-peer.html">DialogPeer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dialog-peer-community.html">DialogPeerCommunity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dialog-peer-folder.html">DialogPeerFolder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="disallowed-gifts-settings.html">DisallowedGiftsSettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document.html">Document</a></li>
@@ -2271,6 +2285,7 @@
 <li class="toctree-l1"><a class="reference internal" href="encrypted-file-empty.html">EncryptedFileEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypted-message.html">EncryptedMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypted-message-service.html">EncryptedMessageService</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ephemeral-message.html">EphemeralMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exported-chatlist-invite.html">ExportedChatlistInvite</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exported-contact-token.html">ExportedContactToken</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exported-message-link.html">ExportedMessageLink</a></li>
@@ -2308,6 +2323,7 @@
 <li class="toctree-l1"><a class="reference internal" href="inline-query-peer-type-same-bot-pm.html">InlineQueryPeerTypeSameBotPM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-default.html">InputAiComposeToneDefault</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-id.html">InputAiComposeToneID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-single-use.html">InputAiComposeToneSingleUse</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-ai-compose-tone-slug.html">InputAiComposeToneSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-app-event.html">InputAppEvent</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-bot-app-id.html">InputBotAppID</a></li>
@@ -2349,6 +2365,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-collectible-phone.html">InputCollectiblePhone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-collectible-username.html">InputCollectibleUsername</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-dialog-peer.html">InputDialogPeer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-dialog-peer-community.html">InputDialogPeerCommunity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-dialog-peer-folder.html">InputDialogPeerFolder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-document.html">InputDocument</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-document-empty.html">InputDocumentEmpty</a></li>
@@ -2439,6 +2456,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-messages-filter-voice.html">InputMessagesFilterVoice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-broadcasts.html">InputNotifyBroadcasts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-chats.html">InputNotifyChats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-notify-community.html">InputNotifyCommunity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-forum-topic.html">InputNotifyForumTopic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-peer.html">InputNotifyPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-users.html">InputNotifyUsers</a></li>
@@ -2497,6 +2515,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-value-disallow-users.html">InputPrivacyValueDisallowUsers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-quick-reply-shortcut.html">InputQuickReplyShortcut</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-quick-reply-shortcut-id.html">InputQuickReplyShortcutId</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-reply-to-ephemeral-message.html">InputReplyToEphemeralMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-reply-to-message.html">InputReplyToMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-reply-to-mono-forum.html">InputReplyToMonoForum</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-reply-to-story.html">InputReplyToStory</a></li>
@@ -2616,6 +2635,7 @@
 <li class="toctree-l1"><a class="reference internal" href="message.html">Message</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-boost-apply.html">MessageActionBoostApply</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-bot-allowed.html">MessageActionBotAllowed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-change-community.html">MessageActionChangeCommunity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-change-creator.html">MessageActionChangeCreator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-channel-create.html">MessageActionChannelCreate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-channel-migrate-from.html">MessageActionChannelMigrateFrom</a></li>
@@ -2760,6 +2780,7 @@
 <li class="toctree-l1"><a class="reference internal" href="notification-sound-ringtone.html">NotificationSoundRingtone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notify-broadcasts.html">NotifyBroadcasts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notify-chats.html">NotifyChats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notify-community.html">NotifyCommunity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notify-forum-topic.html">NotifyForumTopic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notify-peer.html">NotifyPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notify-users.html">NotifyUsers</a></li>
@@ -3110,6 +3131,7 @@
 <li class="toctree-l1"><a class="reference internal" href="text-concat.html">TextConcat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-custom-emoji.html">TextCustomEmoji</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-date.html">TextDate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text-diff.html">TextDiff</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-email.html">TextEmail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-empty.html">TextEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text-fixed.html">TextFixed</a></li>
@@ -3167,6 +3189,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-bot-precheckout-query.html">UpdateBotPrecheckoutQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-purchased-paid-media.html">UpdateBotPurchasedPaidMedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-shipping-query.html">UpdateBotShippingQuery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-bot-stars-subscription.html">UpdateBotStarsSubscription</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-stopped.html">UpdateBotStopped</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-webhook-json.html">UpdateBotWebhookJSON</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-bot-webhook-json-query.html">UpdateBotWebhookJSONQuery</a></li>
@@ -3194,6 +3217,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-contacts-reset.html">UpdateContactsReset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-dc-options.html">UpdateDcOptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-channel-messages.html">UpdateDeleteChannelMessages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-delete-ephemeral-messages.html">UpdateDeleteEphemeralMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-group-call-messages.html">UpdateDeleteGroupCallMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-messages.html">UpdateDeleteMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-quick-reply.html">UpdateDeleteQuickReply</a></li>
@@ -3206,11 +3230,13 @@
 <li class="toctree-l1"><a class="reference internal" href="update-dialog-unread-mark.html">UpdateDialogUnreadMark</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-draft-message.html">UpdateDraftMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-edit-channel-message.html">UpdateEditChannelMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-edit-ephemeral-message.html">UpdateEditEphemeralMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-edit-message.html">UpdateEditMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-emoji-game-info.html">UpdateEmojiGameInfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-encrypted-chat-typing.html">UpdateEncryptedChatTyping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-encrypted-messages-read.html">UpdateEncryptedMessagesRead</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-encryption.html">UpdateEncryption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-ephemeral-bot-callback-query.html">UpdateEphemeralBotCallbackQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-faved-stickers.html">UpdateFavedStickers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-folder-peers.html">UpdateFolderPeers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-geo-live-viewed.html">UpdateGeoLiveViewed</a></li>
@@ -3237,6 +3263,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-new-bot-connection.html">UpdateNewBotConnection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-new-channel-message.html">UpdateNewChannelMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-new-encrypted-message.html">UpdateNewEncryptedMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-new-ephemeral-message.html">UpdateNewEphemeralMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-new-message.html">UpdateNewMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-new-quick-reply.html">UpdateNewQuickReply</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-new-scheduled-message.html">UpdateNewScheduledMessage</a></li>
