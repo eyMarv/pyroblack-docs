@@ -21,7 +21,7 @@
     
     
       
-        <title>Decorators - pyroblack Documentation v3.0.3</title>
+        <title>Decorators - pyroblack Documentation v3.0.8</title>
       
     
     
@@ -42,7 +42,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.ea45d37e128f92747.min.css?v=01f2d16f" />
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.3810c526266e09c15.min.css?v=86ba194e" />
         <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../_static/css/all.min.css?v=c9188041" />
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="pyroblack Documentation v3.0.3" class="md-header__button md-logo" aria-label="pyroblack Documentation v3.0.3" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v3.0.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v3.0.8" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v3.0.3
+            pyroblack Documentation v3.0.8
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -328,10 +328,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="pyroblack Documentation v3.0.3" class="md-nav__button md-logo" aria-label="pyroblack Documentation v3.0.3" data-md-component="logo">
+    <a href="../index.html" title="pyroblack Documentation v3.0.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v3.0.8" data-md-component="logo">
       <img src="../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v3.0.3
+    pyroblack Documentation v3.0.8
   </label>
   
     <div class="md-nav__source">
@@ -1437,6 +1437,16 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternative-spellings" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Alternative spellings</span>
+    </span>
+  </a>
   
 </li>
       
@@ -2763,6 +2773,16 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#alternative-spellings" class="md-nav__link">
+    
+    <span class="md-ellipsis">
+      <span>Alternative spellings</span>
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2802,6 +2822,7 @@ functions.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#index" id="id1">Index</a></p></li>
 <li><p><a class="reference internal" href="#details" id="id2">Details</a></p></li>
+<li><p><a class="reference internal" href="#alternative-spellings" id="id3">Alternative spellings</a></p></li>
 </ul>
 </nav>
 <hr class="docutils" />
@@ -3207,6 +3228,47 @@ to be passed in your callback function.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<hr class="docutils" />
+<h2 id="alternative-spellings">Alternative spellings<a class="headerlink" href="#alternative-spellings" title="Link to this heading">¶</a></h2>
+<p>The other Pyrogram forks (kurigram, wzgram, DzGram) name several of these
+decorators without the <code class="docutils literal notranslate"><span class="pre">bot_</span></code> infix, and use <code class="docutils literal notranslate"><span class="pre">on_message_reaction</span></code> where
+pyroblack uses <code class="docutils literal notranslate"><span class="pre">on_message_reaction_updated</span></code>. Those spellings are bound as
+aliases of the same decorator, so a bot written against another fork registers
+its handlers unchanged:</p>
+<table class="docutils data align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Alias</p></th>
+<th class="head"><p>pyroblack decorator</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">on_business_connect</span></code></p></td>
+<td><p><a class="reference internal" href="#pyrogram.Client.on_bot_business_connect" title="pyrogram.Client.on_bot_business_connect (Python function) — Decorator for handling bot business connection."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_bot_business_connect()</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">on_business_connection</span></code></p></td>
+<td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_bot_business_connection()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">on_business_message</span></code></p></td>
+<td><p><a class="reference internal" href="#pyrogram.Client.on_bot_business_message" title="pyrogram.Client.on_bot_business_message (Python function) — Decorator for handling new bot business messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_bot_business_message()</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">on_deleted_business_messages</span></code></p></td>
+<td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_deleted_bot_business_messages()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">on_edited_business_message</span></code></p></td>
+<td><p><a class="reference internal" href="#id0" title="pyrogram.Client.on_edited_bot_business_message (Python function) — Decorator for handling edited messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_edited_bot_business_message()</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">on_message_reaction</span></code></p></td>
+<td><p><a class="reference internal" href="#pyrogram.Client.on_message_reaction_updated" title="pyrogram.Client.on_message_reaction_updated (Python function) — Decorator for handling reaction changes on messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message_reaction_updated()</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">on_message_reaction_count</span></code></p></td>
+<td><p><a class="reference internal" href="#pyrogram.Client.on_message_reaction_count_updated" title="pyrogram.Client.on_message_reaction_count_updated (Python function) — Decorator for handling anonymous reaction changes on messages."><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message_reaction_count_updated()</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">on_purchased_paid_media</span></code></p></td>
+<td><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_bot_purchased_paid_media()</span></code></p></td>
+</tr>
+</tbody>
+</table>
 
 
 

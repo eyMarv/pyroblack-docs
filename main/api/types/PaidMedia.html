@@ -21,7 +21,7 @@
     
     
       
-        <title>PaidMedia - pyroblack Documentation v3.0.3</title>
+        <title>PaidMedia - pyroblack Documentation v3.0.8</title>
       
     
     
@@ -42,7 +42,7 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.ea45d37e128f92747.min.css?v=01f2d16f" />
+        <link rel="stylesheet" type="text/css" href="../../_static/sphinx_immaterial_theme.3810c526266e09c15.min.css?v=86ba194e" />
         <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=5f99b059" />
         <link rel="stylesheet" type="text/css" href="../../_static/css/all.min.css?v=c9188041" />
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../index.html" title="pyroblack Documentation v3.0.3" class="md-header__button md-logo" aria-label="pyroblack Documentation v3.0.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v3.0.8" class="md-header__button md-logo" aria-label="pyroblack Documentation v3.0.8" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            pyroblack Documentation v3.0.3
+            pyroblack Documentation v3.0.8
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -328,10 +328,10 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../index.html" title="pyroblack Documentation v3.0.3" class="md-nav__button md-logo" aria-label="pyroblack Documentation v3.0.3" data-md-component="logo">
+    <a href="../../index.html" title="pyroblack Documentation v3.0.8" class="md-nav__button md-logo" aria-label="pyroblack Documentation v3.0.8" data-md-component="logo">
       <img src="../../_static/pyroblack.png" alt="logo">
     </a>
-    pyroblack Documentation v3.0.3
+    pyroblack Documentation v3.0.8
   </label>
   
     <div class="md-nav__source">
@@ -4564,6 +4564,13 @@
 <li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidMediaPhoto</span></code></p></li>
 <li><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidMediaVideo</span></code></p></li>
 </ul>
+<p>In pyroblack &lt;= 2.7.6 this class was the whole payload and carried
+<code class="docutils literal notranslate"><span class="pre">stars_amount</span></code> plus a list of <code class="docutils literal notranslate"><span class="pre">extended_media</span></code>. That role belongs to
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">PaidMediaInfo</span></code> now — which is what
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">Message.paid_media</span></code> holds, and
+which still answers to both old attribute names. The two legacy keyword
+arguments are accepted here so a direct <code class="docutils literal notranslate"><span class="pre">PaidMedia(...)</span></code> construction does
+not raise, and they are readable back off the instance.</p>
 </dd></dl>
 
 
